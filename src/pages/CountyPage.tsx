@@ -1,27 +1,10 @@
 import { useParams, Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
 import { getCounty, getCitiesByCounty, getDistrictsByCounty, getNeighborhoodsByCounty, formatPrice, formatNumber } from '../data/lookups';
-import { COUNTIES } from '../data/seedingTable';
 import { getHeroImage, getCityImage } from './exploreImages';
 import { generateCountyGuide, generateCountyMarketAnalysis, generateCountyFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
 
-function getRatingColor(rating: string): string {
-  switch (rating.toLowerCase()) {
-    case 'excellent':
-      return 'bg-green-600';
-    case 'good':
-      return 'bg-green-500';
-    case 'above average':
-      return 'bg-blue-500';
-    case 'average':
-      return 'bg-yellow-500';
-    case 'below average':
-      return 'bg-orange-500';
-    default:
-      return 'bg-gray-500';
-  }
-}
 
 export default function CountyPage() {
   const { countySlug } = useParams<{ countySlug: string }>();

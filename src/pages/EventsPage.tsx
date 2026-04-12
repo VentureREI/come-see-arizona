@@ -2,7 +2,6 @@ import { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import type { EventItem } from '../data/events';
 import { lastUpdated, MANUAL_EVENTS } from '../data/events';
-import { getMergedEvents, getEventsLastUpdated } from '../data/dynamicLoader';
 import { getEvents } from '../utils/eventsFetcher';
 import SEOHead from '../components/seo/SEOHead';
 

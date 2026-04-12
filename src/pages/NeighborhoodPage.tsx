@@ -9,7 +9,6 @@ import {
   getSchoolDistrict,
   formatPrice,
 } from '../data/lookups';
-import type { Neighborhood } from '../data/types';
 import { getNeighborhoodImage } from './exploreImages';
 import { generateNeighborhoodGuide, generateNeighborhoodMarketAnalysis, generateNeighborhoodFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';

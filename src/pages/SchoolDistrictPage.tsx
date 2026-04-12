@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
-import { getSchoolDistrict, getCity, getCounty, getZipCode, formatNumber } from '../data/lookups';
+import { getSchoolDistrict, getCity, getCounty, formatNumber } from '../data/lookups';
 import { getHeroImage, getCityImage } from './exploreImages';
 import { generateDistrictGuide, generateDistrictMarketAnalysis, generateDistrictFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
@@ -36,7 +36,6 @@ export default function SchoolDistrictPage() {
 
   const county = getCounty(district.countySlug);
   const cities = district.citySlugs.map(s => getCity(s)).filter(Boolean) as NonNullable<ReturnType<typeof getCity>>[];
-  const zipCodes = district.zipCodes.map(z => getZipCode(z)).filter(Boolean) as NonNullable<ReturnType<typeof getZipCode>>[];
   const cityNames = cities.map(c => c.name);
 
   const guideParagraphs = county ? generateDistrictGuide(district, cities, county) : [district.description];
@@ -122,7 +121,7 @@ export default function SchoolDistrictPage() {
       </section>
 
       {/* Answer Block */}
-      <AnswerBlock answer={`${district.name} serves students across ${district.citySlugs.length} cities in ${county.name}, Arizona. The district is rated ${district.rating} and includes ${district.totalSchools} schools with approximately ${formatNumber(district.studentCount)} students. ${district.description.split('.')[0]}.`} />
+      <AnswerBlock answer={`${district.name} serves students across ${district.citySlugs.length} cities in ${county?.name ?? 'Arizona'}. The district is rated ${district.rating} and includes ${district.totalSchools} schools with approximately ${formatNumber(district.studentCount)} students. ${district.description.split('.')[0]}.`} />
 
       {/* B) Stats Row */}
       <div className="explore-stats-row">
