@@ -1588,25 +1588,21 @@ a.neighborhood-card {
 /* Image Card (used for counties, cities, neighborhoods) */
 .explore-image-card {
   position: relative;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
   display: block;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   min-height: 260px;
   aspect-ratio: 16 / 10;
   text-decoration: none;
   margin-bottom: 20px;
 }
 
-.explore-card-grid .explore-image-card {
-  margin-bottom: 0;
-}
-
 .explore-image-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 48px rgba(0,0,0,0.18);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.2);
 }
 
 .explore-image-card .card-img {
@@ -1726,7 +1722,7 @@ a.neighborhood-card {
   padding: 24px;
   transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
   display: block;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .explore-info-card:hover {
