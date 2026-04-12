@@ -258,7 +258,7 @@ export default function ItineraryPage() {
 
       {/* Overview Section */}
       <div className="explore-section">
-        <div className="explore-container">
+        <div className="explore-container-narrow">
           {descriptionParagraphs.map((paragraph, index) => (
             <p key={index} className="explore-description">
               {paragraph}
@@ -271,8 +271,8 @@ export default function ItineraryPage() {
       {itinerary.days.map((day) => {
         const dayParagraphs = day.description.split('\n\n');
         return (
-          <div key={day.dayNumber} className="explore-section">
-            <div className="explore-container">
+          <div key={day.dayNumber} className={`explore-section${day.dayNumber % 2 === 0 ? ' alt-bg' : ''}`}>
+            <div className="explore-container-narrow">
               <h2 className="explore-section-title">
                 Day {day.dayNumber}: {day.title}
               </h2>
@@ -286,46 +286,39 @@ export default function ItineraryPage() {
         );
       })}
 
-      {/* Back and Explore More */}
-      <div className="explore-section" style={{ textAlign: 'center' }}>
-        <div className="explore-container">
-          <Link
-            to="/"
-            style={{
-              display: 'inline-block',
-              background: 'var(--color-primary)',
-              color: 'white',
-              padding: '14px 32px',
-              borderRadius: '50px',
-              fontFamily: 'var(--font-body)',
-              fontWeight: 600,
-              fontSize: '15px',
-              marginBottom: '40px',
-            }}
-          >
-            Back to Home
-          </Link>
-
-          <h2 className="explore-section-title">Explore More Itineraries</h2>
-          <div
-            style={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              justifyContent: 'center',
-              gap: '12px',
-              marginTop: '20px',
-            }}
-          >
+      {/* More Itineraries */}
+      <div className="explore-section alt-bg">
+        <div className="explore-container-narrow">
+          <h2 className="explore-section-title">More Itineraries</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '20px' }}>
             {otherItineraries.map((otherSlug) => (
               <Link
                 key={otherSlug}
                 to={`/itineraries/${otherSlug}`}
-                className="explore-pill"
+                className="explore-image-card"
+                style={{ minHeight: 200 }}
               >
-                {ITINERARIES[otherSlug].title}
+                <img src={HERO_IMAGES[otherSlug]} alt={ITINERARIES[otherSlug].title} className="card-img" />
+                <div className="card-gradient" />
+                <div className="card-body">
+                  <h3>{ITINERARIES[otherSlug].title}</h3>
+                </div>
               </Link>
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* Venture REI Footer */}
+      <div style={{ background: '#FAF5F0', padding: '48px 24px' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700, color: '#1A1A1A', marginBottom: 12 }}>Planning Your Arizona Trip?</h2>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 20 }}>
+            Many visitors who fall in love with Arizona on trips like this decide to make it home. Venture REI helps buyers find the right community, from resort-adjacent Scottsdale to family-friendly Gilbert to emerging west Valley markets. Frank Vazquez and team offer straightforward guidance with no pressure.
+          </p>
+          <Link to="/explore" style={{ display: 'inline-block', background: '#D32F2F', color: '#fff', padding: '14px 32px', borderRadius: 28, fontFamily: 'var(--font-body)', fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
+            Explore Arizona Communities
+          </Link>
         </div>
       </div>
     </>
