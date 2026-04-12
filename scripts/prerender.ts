@@ -60,7 +60,7 @@ async function prerender() {
     logLevel: 'warn',
   });
 
-  const { render } = await vite.ssrLoadModule('/src/entry-server.tsx') as { render: (url: string) => string };
+  const { render } = await vite.ssrLoadModule('/src/entry-server.tsx') as { render: (url: string) => { html: string; head: string } };
 
   // Build the complete route list
   const routes: string[] = [
@@ -132,12 +132,11 @@ async function prerender() {
 
   for (const route of routes) {
     try {
-      const appHtml = render(route);
+      const { html: appHtml, head } = render(route);
 
-      const html = template.replace(
-        '<div id="root"></div>',
-        `<div id="root">${appHtml}</div>`
-      );
+      const html = template
+        .replace('</head>', `${head}\n</head>`)
+        .replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
 
       const filePath = route === '/'
         ? path.join(distPath, 'index.html')

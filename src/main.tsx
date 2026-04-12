@@ -1,12 +1,15 @@
 import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
+import { HelmetProvider } from 'react-helmet-async'
 import './index.css'
 import Router from './Router'
 
 const rootElement = document.getElementById('root')!;
 const app = (
   <StrictMode>
-    <Router />
+    <HelmetProvider>
+      <Router />
+    </HelmetProvider>
   </StrictMode>
 );
 
