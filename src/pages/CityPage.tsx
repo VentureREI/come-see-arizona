@@ -83,7 +83,7 @@ export default function CityPage() {
     },
     containedInPlace: {
       '@type': 'AdministrativeArea',
-      name: `${county.name} County, Arizona`,
+      name: `${county.name}, Arizona`,
     },
   };
 
@@ -134,14 +134,14 @@ export default function CityPage() {
   return (
     <div>
       <SEOHead
-        title={`Things to Do in ${city.name}, AZ | Come And See Arizona`}
+        title={`${city.name}, Arizona - Neighborhoods, Home Prices, Schools & Guide | Come And See Arizona`}
         description={seoDescription}
         canonical={`/explore/city/${city.slug}`}
         schema={[placeSchema, faqSchema]}
         breadcrumbs={[
           { name: 'Home', url: '/' },
           { name: 'Explore', url: '/explore' },
-          { name: `${county.name} County`, url: `/explore/county/${county.slug}` },
+          { name: `${county.name}`, url: `/explore/county/${county.slug}` },
           { name: city.name, url: `/explore/city/${city.slug}` },
         ]}
       />
@@ -155,7 +155,7 @@ export default function CityPage() {
         <div className="explore-hero-content">
           <nav className="breadcrumb-hero" aria-label="Breadcrumb">
             <Link to="/">Home</Link> &rsaquo; <Link to="/explore">Explore</Link> &rsaquo;{' '}
-            <Link to={`/explore/county/${county.slug}`}>{county.name} County</Link> &rsaquo; {city.name}
+            <Link to={`/explore/county/${county.slug}`}>{county.name}</Link> &rsaquo; {city.name}
           </nav>
           <h1>Guide to Living in {city.name}, Arizona</h1>
           <p className="hero-subtitle">

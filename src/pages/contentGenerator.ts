@@ -173,7 +173,7 @@ export function generateCityGuide(
 
   // Geographic context
   paragraphs.push(
-    `${city.name} sits within ${county.name} County in the heart of Arizona, home to approximately ${formatNumber(city.population)} residents who enjoy a median household income of ${formatPrice(city.medianHouseholdIncome)}. ` +
+    `${city.name} sits within ${county.name} in the heart of Arizona, home to approximately ${formatNumber(city.population)} residents who enjoy a median household income of ${formatPrice(city.medianHouseholdIncome)}. ` +
     (city.population > 200000
       ? `As one of the largest cities in the Phoenix metropolitan area, ${city.name} has evolved from its early agricultural and suburban roots into a fully realized city with its own economic identity, cultural institutions, and distinct character that sets it apart from its neighbors.`
       : city.population > 50000
@@ -183,9 +183,12 @@ export function generateCityGuide(
 
   // Neighborhoods overview
   if (topNeighborhoods.length > 0) {
-    const nhText = topNeighborhoods.map(n =>
-      `${n.name} (median home price ${formatPrice(n.medianHomePrice)}), known for its ${n.vibe.toLowerCase().replace(/\.$/, '')}`
-    ).join('; ');
+    const nhText = topNeighborhoods.map(n => {
+      let vibe = n.vibe.replace(/\.$/, '');
+      // Remove leading article to avoid "known for its a ..." or "known for its one of..."
+      vibe = vibe.replace(/^(A |An |The |One of )/i, (match) => match.toLowerCase());
+      return `${n.name} (${formatPrice(n.medianHomePrice)} median), described as ${vibe}`;
+    }).join('; ');
     paragraphs.push(
       `The ${city.name} residential landscape divides into ${neighborhoods.length} distinct neighborhoods and communities, each offering a different texture of daily life. Among the most notable are ${nhText}. ` +
       `The housing stock varies considerably across these areas. ${topNeighborhoods[0]?.homeTypes?.length > 0 ? `In ${topNeighborhoods[0].name}, you will primarily find ${topNeighborhoods[0].homeTypes.slice(0, 3).join(', ').toLowerCase()} homes` : `Residential options range from starter homes to luxury estates`}, while other parts of the city feature newer construction with contemporary floor plans, energy-efficient features, and community amenities like pools, splash pads, and trail systems.`
@@ -227,7 +230,7 @@ export function generateCityGuide(
   // Climate and lifestyle
   paragraphs.push(
     `Like most of central Arizona, ${city.name} experiences a desert climate with hot summers and mild winters that are the envy of most of the country. Summer temperatures regularly exceed 105 degrees from June through September, which shifts outdoor life to early mornings and evenings. But from October through May, the weather is genuinely extraordinary, with clear blue skies, low humidity, and daytime highs in the 60s to 80s that make patio dining, hiking, and outdoor recreation a daily occurrence rather than a special event. ` +
-    `${city.highlights.length > 0 ? `Local highlights that define the ${city.name} experience include ${city.highlights.slice(0, 3).join(', ')}.` : ''}`
+    `${city.highlights.length > 0 ? `${city.name} is known for ${city.highlights.slice(0, 3).map(h => h.charAt(0).toLowerCase() + h.slice(1).replace(/\.$/, '')).join(', ')}.` : ''}`
   );
 
   // Housing overview
@@ -325,7 +328,7 @@ export function generateZipCodeGuide(
 
   // Geographic detail
   paragraphs.push(
-    `The ${zipData.zip} zip code falls within ${city.name} in ${county.name} County, covering a population of approximately ${formatNumber(zipData.population)} residents. ` +
+    `The ${zipData.zip} zip code falls within ${city.name} in ${county.name}, covering a population of approximately ${formatNumber(zipData.population)} residents. ` +
     (neighborhoods.length > 0
       ? `Notable communities within this zip code include ${neighborhoods.map(n => n.name).join(', ')}, each contributing to the area's overall character. `
       : '') +
@@ -381,7 +384,7 @@ export function generateDistrictGuide(
   paragraphs.push(district.description);
 
   paragraphs.push(
-    `${district.name} operates ${district.totalSchools} schools serving approximately ${formatNumber(district.studentCount)} students across ${district.zipCodes.length} zip codes in ${county.name} County. The district holds a ${district.rating} rating from the Arizona Department of Education, ${district.rating.startsWith('A') ? 'placing it among the top-performing public school systems in the state' : district.rating.startsWith('B') ? 'reflecting solid academic performance and ongoing improvement efforts' : 'with active initiatives underway to strengthen academic outcomes across all grade levels'}. ` +
+    `${district.name} operates ${district.totalSchools} schools serving approximately ${formatNumber(district.studentCount)} students across ${district.zipCodes.length} zip codes in ${county.name}. The district holds a ${district.rating} rating from the Arizona Department of Education, ${district.rating.startsWith('A') ? 'placing it among the top-performing public school systems in the state' : district.rating.startsWith('B') ? 'reflecting solid academic performance and ongoing improvement efforts' : 'with active initiatives underway to strengthen academic outcomes across all grade levels'}. ` +
     `The district serves families in ${cityNames.join(', ')}, making it a key consideration for homebuyers evaluating these communities.`
   );
 
@@ -477,8 +480,15 @@ export function generateCityFaqs(city: City, county: County, neighborhoods: { na
     {
       question: `What are the best neighborhoods in ${city.name}?`,
       answer: topNh.length > 0
-        ? `The most desirable neighborhoods in ${city.name} include ${topNh.map(n => `${n.name} (${formatPrice(n.medianHomePrice)} median)`).join(', ')}. "Best" depends on your priorities. Families typically prioritize school quality, while young professionals may prefer walkability and nightlife access. Retirees often gravitate toward 55-plus communities with resort-style amenities. Touring multiple neighborhoods before committing is strongly recommended.`
-        : `${city.name} offers a variety of residential communities, each with its own character. Exploring individual neighborhoods in person is the best way to find the right fit for your lifestyle and budget.`,
+        ? (() => {
+            const hash = Math.abs(city.name.split('').reduce((h, c) => ((h << 5) - h) + c.charCodeAt(0), 0)) % 3;
+            const lowest = neighborhoods.reduce((a, b) => a.medianHomePrice < b.medianHomePrice ? a : b);
+            const highest = neighborhoods.reduce((a, b) => a.medianHomePrice > b.medianHomePrice ? a : b);
+            if (hash === 0) return `Neighborhoods in ${city.name} range from ${lowest.name} (${formatPrice(lowest.medianHomePrice)}) to ${highest.name} (${formatPrice(highest.medianHomePrice)}). For families, school district boundaries are often the deciding factor. For luxury, ${highest.name} stands out with premium finishes and larger lots.`;
+            if (hash === 1) return `It depends on what you prioritize. ${topNh[0].name} (${formatPrice(topNh[0].medianHomePrice)}) appeals to buyers seeking prestige and location. ${topNh.length > 2 ? `${topNh[2].name} (${formatPrice(topNh[2].medianHomePrice)})` : lowest.name} offers more accessible pricing with strong community amenities. Most buyers tour at least three neighborhoods before deciding.`;
+            return `${city.name}'s most sought-after neighborhoods include ${topNh.slice(0, 3).map(n => n.name).join(', ')}, though value-conscious buyers often find strong options in ${lowest.name} where the median sits at ${formatPrice(lowest.medianHomePrice)}.`;
+          })()
+        : `${city.name} offers a variety of residential communities, each with its own character. Exploring individual neighborhoods in person is the best way to find the right fit.`,
     },
     {
       question: `Is ${city.name} a good place to live?`,

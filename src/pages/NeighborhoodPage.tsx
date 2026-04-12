@@ -79,7 +79,7 @@ export default function NeighborhoodPage() {
       name: city.name,
       containedInPlace: {
         '@type': 'AdministrativeArea',
-        name: `${county.name} County`,
+        name: `${county.name}`,
       },
     },
   };
@@ -100,7 +100,7 @@ export default function NeighborhoodPage() {
   const breadcrumbs = [
     { name: 'Home', url: '/' },
     { name: 'Explore', url: '/explore' },
-    { name: `${county.name} County`, url: `/explore/county/${county.slug}` },
+    { name: `${county.name}`, url: `/explore/county/${county.slug}` },
     { name: city.name, url: `/explore/city/${city.slug}` },
     { name: neighborhood.name, url: `/explore/neighborhood/${neighborhood.slug}` },
   ];
@@ -315,7 +315,7 @@ export default function NeighborhoodPage() {
               {city.name} City Guide
             </Link>
             <Link to={`/explore/county/${county.slug}`} className="explore-pill" style={{ fontSize: 15, padding: '12px 28px' }}>
-              {county.name} County Guide
+              {county.name} Guide
             </Link>
           </div>
         </div>

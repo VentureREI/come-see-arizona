@@ -270,9 +270,9 @@ export default function ZipCodePage() {
               </p>
             </Link>
             <Link to={`/explore/county/${county.slug}`} className="explore-info-card">
-              <h3>{county.name} County Overview</h3>
+              <h3>{county.name} Overview</h3>
               <p style={{ fontSize: '13px', color: 'var(--color-text-secondary)', marginTop: '4px' }}>
-                Discover the greater {county.name} County area
+                Discover the greater {county.name} area
               </p>
             </Link>
             {nearbyZips.map(z => (

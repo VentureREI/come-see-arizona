@@ -134,7 +134,21 @@ async function prerender() {
     try {
       const { html: appHtml, head } = render(route);
 
-      const html = template
+      // Strip hardcoded title and meta tags from template so Helmet's page-specific ones take precedence
+      let html = template;
+      if (head.includes('<title')) {
+        html = html.replace(/<title>[^<]*<\/title>/g, '');
+        html = html.replace(/<meta\s[^>]*name="description"[^>]*>/g, '');
+        html = html.replace(/<meta\s[^>]*property="og:title"[^>]*>/g, '');
+        html = html.replace(/<meta\s[^>]*property="og:description"[^>]*>/g, '');
+        html = html.replace(/<meta\s[^>]*name="twitter:title"[^>]*>/g, '');
+        html = html.replace(/<meta\s[^>]*name="twitter:description"[^>]*>/g, '');
+        html = html.replace(/<meta\s[^>]*name="twitter:card"[^>]*>/g, '');
+        html = html.replace(/<meta\s[^>]*name="robots"[^>]*>/g, '');
+        html = html.replace(/<link\s[^>]*rel="canonical"[^>]*>/g, '');
+        html = html.replace(/<meta\s[^>]*property="og:url"[^>]*>/g, '');
+      }
+      html = html
         .replace('</head>', `${head}\n</head>`)
         .replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
 

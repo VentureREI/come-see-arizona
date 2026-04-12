@@ -1,7 +1,6 @@
 import { renderToString } from 'react-dom/server';
 import { StaticRouter, Routes, Route } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
-import type { HelmetServerState } from 'react-helmet-async';
+import { HelmetProvider, HelmetData } from 'react-helmet-async';
 
 import App from './App';
 import ThingsToDoPage from './pages/ThingsToDoPage';
@@ -58,18 +57,24 @@ function ServerApp({ location }: { location: string }) {
 }
 
 export function render(url: string): { html: string; head: string } {
-  const helmetContext: { helmet?: HelmetServerState | null } = {};
   const html = renderToString(
-    <HelmetProvider context={helmetContext}>
+    <HelmetProvider>
       <ServerApp location={url} />
     </HelmetProvider>
   );
-  const helmet = helmetContext.helmet;
-  const head = helmet ? [
-    helmet.title.toString(),
-    helmet.meta.toString(),
-    helmet.link.toString(),
-    helmet.script.toString(),
-  ].join('\n') : '';
+
+  // Extract Helmet-rendered tags from the HTML body to inject into <head>
+  const titleMatch = html.match(/<title[^>]*>([^<]*)<\/title>/);
+  const metaMatches = html.match(/<meta[^>]*(?:name="description"|property="og:|name="twitter:|name="robots")[^>]*>/g) || [];
+  const linkMatches = html.match(/<link[^>]*rel="canonical"[^>]*>/g) || [];
+  const scriptMatches = html.match(/<script type="application\/ld\+json">[^<]*<\/script>/g) || [];
+
+  const head = [
+    titleMatch ? `<title>${titleMatch[1]}</title>` : '',
+    ...metaMatches,
+    ...linkMatches,
+    ...scriptMatches,
+  ].filter(Boolean).join('\n');
+
   return { html, head };
 }
