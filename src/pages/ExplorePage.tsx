@@ -191,7 +191,7 @@ export default function ExplorePage() {
           <h2 className="explore-section-title">Explore by County</h2>
         </div>
         <div className="explore-container">
-          <div className="explore-card-grid">
+          <div className="explore-card-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
             {COUNTIES.map((county) => {
               const cityCount = CITIES.filter((c) => c.countySlug === county.slug).length;
               return (
