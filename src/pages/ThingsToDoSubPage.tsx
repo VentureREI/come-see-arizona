@@ -116,7 +116,7 @@ export default function ThingsToDoSubPage() {
       <div className="explore-section alt-bg">
         <div className="explore-container">
           <h2 className="explore-section-title">{category.name}: Top Picks</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 340px), 1fr))", gap: "24px" }}>
+          <div className="explore-grid-2">
             {category.listings.map((listing: Listing) => (
               <div className="ttd-listing-card" key={listing.name}>
                 <h3>{listing.name}</h3>

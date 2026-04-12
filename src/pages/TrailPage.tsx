@@ -285,7 +285,7 @@ export default function TrailPage() {
         <section className="explore-section">
           <div className="explore-container">
             <h2 className="explore-section-title">Nearby Trails</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
+            <div className="explore-grid-3">
               {nearbyTrails.map((nearby) => (
                 <Link
                   key={nearby.slug}

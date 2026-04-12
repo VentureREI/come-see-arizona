@@ -132,7 +132,7 @@ export default function TrailsLandingPage() {
               <p style={{ fontSize: '14px' }}>Try adjusting the region or difficulty to see more results.</p>
             </div>
           ) : (
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
+            <div className="explore-grid-3">
               {filteredTrails.map((trail) => (
                 <div key={trail.slug} className="explore-info-card">
                   <h3 style={{ marginBottom: '8px' }}>

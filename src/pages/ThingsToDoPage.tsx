@@ -81,7 +81,7 @@ export default function ThingsToDoPage() {
       <div className="explore-section alt-bg">
         <div className="explore-container">
           <h2 className="explore-section-title">Explore by Category</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
+          <div className="explore-grid-3">
             {THINGS_TO_DO_CATEGORIES.map((category) => (
               <Link to={`/things-to-do/${category.slug}`} className="ttd-category-card" key={category.slug}>
                 <img src={category.heroImage} alt={category.name} className="card-img" />
@@ -101,7 +101,7 @@ export default function ThingsToDoPage() {
       <div className="explore-section">
         <div className="explore-container">
           <h2 className="explore-section-title">Featured Activities & Attractions</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px" }}>
+          <div className="explore-grid-4">
             {FEATURED_ACTIVITIES.map((activity) => (
               <div className="ttd-featured-card" key={activity.name}>
                 <img src={activity.image} alt={activity.name} className="ttd-featured-img" />

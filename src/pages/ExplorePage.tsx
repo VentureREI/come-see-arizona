@@ -190,8 +190,8 @@ export default function ExplorePage() {
         <div className="explore-container-narrow">
           <h2 className="explore-section-title">Explore by County</h2>
         </div>
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
+        <div className="explore-container">
+          <div className="explore-card-grid">
             {COUNTIES.map((county) => {
               const cityCount = CITIES.filter((c) => c.countySlug === county.slug).length;
               return (
@@ -225,8 +225,8 @@ export default function ExplorePage() {
         <div className="explore-container-narrow">
           <h2 className="explore-section-title">Featured Cities</h2>
         </div>
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '24px' }}>
+        <div className="explore-container">
+          <div className="explore-card-grid">
             {featuredCities.map((city) => (
               <Link
                 key={city.slug}
@@ -273,7 +273,7 @@ export default function ExplorePage() {
 
           {/* Cities Tab */}
           {activeTab === 'cities' && (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '24px' }}>
+            <div className="explore-grid-3">
               {citiesByCounty.map(({ county, cities }) => (
                 <div key={county.slug}>
                   <h4 style={{
