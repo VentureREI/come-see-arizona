@@ -88,7 +88,7 @@ export default function SchoolDistrictPage() {
   return (
     <div>
       <SEOHead
-        title={`${district.name} Schools & Ratings | Come And See Arizona`}
+        title={`${district.name} Schools & Ratings | Come See Arizona`}
         description={seoDescription}
         canonical={canonical}
         schema={[educationalOrgSchema, faqSchema]}

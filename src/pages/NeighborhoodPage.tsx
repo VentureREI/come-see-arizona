@@ -111,7 +111,7 @@ export default function NeighborhoodPage() {
   return (
     <div>
       <SEOHead
-        title={`${neighborhood.name} Neighborhood Guide | Come And See Arizona`}
+        title={`${neighborhood.name} Neighborhood Guide | Come See Arizona`}
         description={seoDescription}
         canonical={`/explore/neighborhood/${neighborhood.slug}`}
         schema={[placeSchema, faqSchema]}

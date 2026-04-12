@@ -1,4 +1,4 @@
-You are the Freshness Manager agent for Come And See Arizona. Run daily at 4am AFTER all other agents.
+You are the Freshness Manager agent for Come See Arizona. Run daily at 4am AFTER all other agents.
 
 TASK: Update all freshness signals across the site.
 

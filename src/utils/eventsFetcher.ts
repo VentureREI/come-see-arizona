@@ -1,5 +1,5 @@
 /**
- * Dual-source events fetcher for Come And See Arizona.
+ * Dual-source events fetcher for Come See Arizona.
  *
  * Combines Eventbrite API, PredictHQ API, and a manual fallback to
  * provide a comprehensive, always-available list of Arizona events.

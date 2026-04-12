@@ -174,7 +174,7 @@ export default function TouristInfoPage() {
   return (
     <>
       <SEOHead
-        title="Arizona Visitor Information | Come And See Arizona"
+        title="Arizona Visitor Information | Come See Arizona"
         description="Essential visitor information for Arizona travelers including visitor centers, emergency contacts, weather and climate guides, safety tips, and answers to the most common questions about visiting the Grand Canyon State."
         canonical="/tourist-info"
         schema={[webPageSchema, faqSchema]}

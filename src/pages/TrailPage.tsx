@@ -112,7 +112,7 @@ export default function TrailPage() {
     .map((s) => getTrailBySlug(s))
     .filter((t): t is Trail => t !== undefined);
 
-  const seoTitle = `${trail.name} Trail Guide | Arizona Hiking | Come And See Arizona`;
+  const seoTitle = `${trail.name} Trail Guide | Arizona Hiking | Come See Arizona`;
   const seoDescription = `Hike ${trail.name} in ${trail.region}, Arizona. ${trail.distance} miles, ${trail.elevationGain} ft elevation gain. Difficulty: ${trail.difficulty}. Complete trail guide with directions, tips, and nearby trails.`.slice(0, 160);
 
   const placeSchema = {

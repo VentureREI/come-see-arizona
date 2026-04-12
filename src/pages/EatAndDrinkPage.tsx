@@ -16,7 +16,7 @@ const webPageSchema = {
   url: 'https://comeseearizona.com/eat-and-drink',
   publisher: {
     '@type': 'Organization',
-    name: 'Come And See Arizona',
+    name: 'Come See Arizona',
     url: 'https://comeseearizona.com',
   },
 };
@@ -219,7 +219,7 @@ export default function EatAndDrinkPage() {
   return (
     <>
       <SEOHead
-        title="Eat and Drink in Arizona - Best Restaurants, Bars & Food | Come And See Arizona"
+        title="Eat and Drink in Arizona - Best Restaurants, Bars & Food | Come See Arizona"
         description="Explore Arizona's best restaurants, bars, breweries, coffee shops, and food halls. From award-winning Mexican cuisine and fine dining to craft beer and rooftop cocktails."
         canonical="/eat-and-drink"
         schema={[webPageSchema, faqSchema]}

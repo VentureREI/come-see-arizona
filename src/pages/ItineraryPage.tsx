@@ -224,7 +224,7 @@ export default function ItineraryPage() {
   return (
     <>
       <SEOHead
-        title={`${itinerary.title} | Come And See Arizona`}
+        title={`${itinerary.title} | Come See Arizona`}
         description={descriptionParagraphs[0]}
         canonical={`/itineraries/${slug}`}
         breadcrumbs={[

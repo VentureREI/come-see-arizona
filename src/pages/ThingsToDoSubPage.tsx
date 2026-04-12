@@ -69,7 +69,7 @@ export default function ThingsToDoSubPage() {
   return (
     <>
       <SEOHead
-        title={`${category.name} in Arizona | Come And See Arizona`}
+        title={`${category.name} in Arizona | Come See Arizona`}
         description={category.description.slice(0, 160)}
         canonical={`/things-to-do/${category.slug}`}
         schema={[collectionSchema, ...listingSchemas, ...(category.faqItems.length > 0 ? [faqSchema] : [])]}

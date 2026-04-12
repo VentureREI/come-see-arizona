@@ -123,7 +123,7 @@ export default function CountyPage() {
   return (
     <>
       <SEOHead
-        title={`${county.name} - Cities, Home Prices & Community Guide | Come And See Arizona`}
+        title={`${county.name} - Cities, Home Prices & Community Guide | Come See Arizona`}
         description={seoDescription}
         canonical={canonical}
         schema={[placeSchema, faqSchema]}

@@ -1,4 +1,4 @@
-# Come And See Arizona - Design Specification
+# Come See Arizona - Design Specification
 ## Clone of DiscoverLosAngeles.com adapted for Arizona
 
 ---
@@ -49,7 +49,7 @@ scroll_library: native scroll
 
 **Layout**
 - Sticky header with white background
-- Left: Hamburger menu + Logo "Come And See Arizona"
+- Left: Hamburger menu + Logo "Come See Arizona"
 - Center: Navigation links (Things to Do, Eat & Drink, Events, Where to Stay, Travel Guides)
 - Right: Search icon
 
@@ -219,7 +219,7 @@ scroll_library: native scroll
 **Layout**
 - Full-width section with background image
 - Centered form
-- Title: "Come And See Arizona Newsletter"
+- Title: "Come See Arizona Newsletter"
 - Email input + consent checkbox + Submit button
 
 ---

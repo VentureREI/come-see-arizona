@@ -53,7 +53,7 @@ export default function TrailsLandingPage() {
   return (
     <>
       <SEOHead
-        title="Arizona Hiking Trails Directory - 50+ Trails with Maps & Guides | Come And See Arizona"
+        title="Arizona Hiking Trails Directory - 50+ Trails with Maps & Guides | Come See Arizona"
         description="Browse 50+ Arizona hiking trails with detailed maps, difficulty ratings, and trail guides across Phoenix, Sedona, Tucson, Flagstaff, and the Grand Canyon."
         canonical="/trails"
         schema={webPageSchema}

@@ -24,12 +24,12 @@ const articleSchema = {
   url: 'https://comeseearizona.com/articles/arizona-best-hiking-trails',
   author: {
     '@type': 'Organization',
-    name: 'Come And See Arizona',
+    name: 'Come See Arizona',
     url: 'https://comeseearizona.com',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Come And See Arizona',
+    name: 'Come See Arizona',
     url: 'https://comeseearizona.com',
   },
   datePublished: '2025-01-15',
@@ -92,7 +92,7 @@ export default function HikingGuidePage() {
   return (
     <>
       <SEOHead
-        title="The Complete Guide to Hiking in Arizona: 50+ Best Trails Across the State | Come And See Arizona"
+        title="The Complete Guide to Hiking in Arizona: 50+ Best Trails Across the State | Come See Arizona"
         description="Arizona hiking guide covering 50+ trails across Phoenix, Sedona, Tucson, Flagstaff, and the Grand Canyon with difficulty ratings, seasonal tips, and safety info."
         canonical="/articles/arizona-best-hiking-trails"
         schema={articleSchema}
@@ -596,7 +596,7 @@ export default function HikingGuidePage() {
               About This Guide
             </h3>
             <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444', marginBottom: 16 }}>
-              This hiking guide is published by Come And See Arizona and Venture REI, a full-service
+              This hiking guide is published by Come See Arizona and Venture REI, a full-service
               real estate team led by Frank Vazquez. With over 2,400 homes sold across the Phoenix
               metropolitan area, Frank and his team bring deep local knowledge to every aspect of
               Arizona living, from the best trails to hike on a Saturday morning to the neighborhoods

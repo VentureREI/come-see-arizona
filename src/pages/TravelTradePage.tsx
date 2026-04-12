@@ -160,7 +160,7 @@ export default function TravelTradePage() {
   return (
     <>
       <SEOHead
-        title="Arizona Travel Trade - Resources for Travel Professionals | Come And See Arizona"
+        title="Arizona Travel Trade - Resources for Travel Professionals | Come See Arizona"
         description="Trade resources for travel agents, tour operators, and meeting planners working with Arizona as a destination. Destination highlights, tourism statistics, and partnership opportunities."
         canonical="/travel-trade"
         schema={[webPageSchema, faqSchema]}
@@ -373,13 +373,13 @@ export default function TravelTradePage() {
         </div>
       </div>
 
-      {/* ─── 5. Working With Come And See Arizona ─── */}
+      {/* ─── 5. Working With Come See Arizona ─── */}
       <div style={{ background: '#fff', padding: '48px 24px' }}>
         <div style={narrowContainer}>
-          <SectionHeading>Working With Come And See Arizona</SectionHeading>
+          <SectionHeading>Working With Come See Arizona</SectionHeading>
           <div style={bodyText}>
             <p style={{ marginBottom: 16 }}>
-              Come And See Arizona is a comprehensive destination resource powered by {siteConfig.brokerageName}, led by {siteConfig.leaderName} with {siteConfig.leaderCredential}. We provide in-depth neighborhood guides, community profiles, and lifestyle content that goes beyond typical tourism resources.
+              Come See Arizona is a comprehensive destination resource powered by {siteConfig.brokerageName}, led by {siteConfig.leaderName} with {siteConfig.leaderCredential}. We provide in-depth neighborhood guides, community profiles, and lifestyle content that goes beyond typical tourism resources.
             </p>
             <p style={{ marginBottom: 16 }}>
               For travel professionals, we offer partnership and content licensing opportunities. Our local expertise covers the Phoenix metro area and surrounding communities in granular detail, making us an ideal resource for clients considering extended stays, relocation-tourism, or investment travel.

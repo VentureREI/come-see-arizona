@@ -15,7 +15,7 @@ const webPageSchema = {
   url: 'https://comeseearizona.com/travel-guides',
   publisher: {
     '@type': 'Organization',
-    name: 'Come And See Arizona',
+    name: 'Come See Arizona',
     url: 'https://comeseearizona.com',
   },
 };
@@ -124,7 +124,7 @@ export default function TravelGuidesPage() {
   return (
     <>
       <SEOHead
-        title="Arizona Travel Guides - Plan Your Perfect Trip | Come And See Arizona"
+        title="Arizona Travel Guides - Plan Your Perfect Trip | Come See Arizona"
         description="Comprehensive Arizona travel planning guide with tips on getting here, getting around, when to visit, what to pack, sample itineraries, budget tips, and seasonal highlights."
         canonical="/travel-guides"
         schema={[webPageSchema, faqSchema]}

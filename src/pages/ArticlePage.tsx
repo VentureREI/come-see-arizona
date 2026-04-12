@@ -150,7 +150,7 @@ export default function ArticlePage() {
     return (
       <>
         <SEOHead
-          title="Article Not Found | Come And See Arizona"
+          title="Article Not Found | Come See Arizona"
           description="The article you are looking for could not be found. Explore our other guides to Arizona destinations, culture, and adventures."
           canonical={`/articles/${slug || ''}`}
           breadcrumbs={[
@@ -177,7 +177,7 @@ export default function ArticlePage() {
   return (
     <>
       <SEOHead
-        title={`${article.title} | Come And See Arizona`}
+        title={`${article.title} | Come See Arizona`}
         description={article.description[0].slice(0, 160)}
         canonical={`/articles/${slug}`}
         breadcrumbs={[

@@ -38,24 +38,24 @@ const TIMELINE_EVENTS = [
 
 const FAQS = [
   {
-    question: 'Who runs Come And See Arizona?',
-    answer: `Come And See Arizona is published by ${siteConfig.brokerageName}, led by ${siteConfig.leaderName} (${siteConfig.leaderCredential}). Our editorial team combines local expertise with AI-driven content intelligence to provide the most comprehensive resource for Arizona visitors and residents.`,
+    question: 'Who runs Come See Arizona?',
+    answer: `Come See Arizona is published by ${siteConfig.brokerageName}, led by ${siteConfig.leaderName} (${siteConfig.leaderCredential}). Our editorial team combines local expertise with AI-driven content intelligence to provide the most comprehensive resource for Arizona visitors and residents.`,
   },
   {
     question: 'How is content kept accurate?',
     answer: 'We use a combination of real-time data feeds, AI-powered content agents, and human editorial review. Our sources include MLS listings, Eventbrite, PredictHQ, USFS trail databases, and official municipal records. Content is refreshed on a continuous cycle to ensure accuracy.',
   },
   {
-    question: 'Is Come And See Arizona affiliated with the Arizona Office of Tourism?',
-    answer: 'No. Come And See Arizona is an independent publication. While we reference and support the Arizona Office of Tourism\'s initiatives, including AppreciateAZ and Visit Arizona campaigns, we are not affiliated with or funded by any government tourism agency.',
+    question: 'Is Come See Arizona affiliated with the Arizona Office of Tourism?',
+    answer: 'No. Come See Arizona is an independent publication. While we reference and support the Arizona Office of Tourism\'s initiatives, including AppreciateAZ and Visit Arizona campaigns, we are not affiliated with or funded by any government tourism agency.',
   },
   {
     question: 'How can I suggest a correction?',
     answer: 'We take accuracy seriously. If you spot an error or outdated information, please contact us at info@comeseearizona.com with the page URL and a description of the issue. Our editorial team reviews all submissions and publishes corrections promptly.',
   },
   {
-    question: 'Does Come And See Arizona accept advertising?',
-    answer: 'No. Come And See Arizona does not accept paid placements, sponsored content, or advertising. All recommendations and rankings are based on editorial judgment, public data, and community feedback. This policy ensures our readers can trust every recommendation.',
+    question: 'Does Come See Arizona accept advertising?',
+    answer: 'No. Come See Arizona does not accept paid placements, sponsored content, or advertising. All recommendations and rankings are based on editorial judgment, public data, and community feedback. This policy ensures our readers can trust every recommendation.',
   },
 ];
 
@@ -91,7 +91,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   name: 'About Arizona Tourism',
   description:
-    'Learn about Arizona\'s tourism industry, the Come And See Arizona mission, and our commitment to providing the most comprehensive guide to the Grand Canyon State.',
+    'Learn about Arizona\'s tourism industry, the Come See Arizona mission, and our commitment to providing the most comprehensive guide to the Grand Canyon State.',
   url: 'https://comeseearizona.com/about-arizona-tourism',
 };
 
@@ -99,8 +99,8 @@ export default function AboutArizonaTourismPage() {
   return (
     <>
       <SEOHead
-        title="About Arizona Tourism | Come And See Arizona"
-        description="Learn about Arizona's tourism industry, the Come And See Arizona mission, and our commitment to providing the most comprehensive guide to the Grand Canyon State."
+        title="About Arizona Tourism | Come See Arizona"
+        description="Learn about Arizona's tourism industry, the Come See Arizona mission, and our commitment to providing the most comprehensive guide to the Grand Canyon State."
         canonical="/about-arizona-tourism"
         schema={webPageSchema}
         breadcrumbs={[
@@ -121,36 +121,36 @@ export default function AboutArizonaTourismPage() {
           </div>
           <h1>About Arizona Tourism</h1>
           <p className="hero-subtitle">
-            From the Grand Canyon to the Sonoran Desert, Arizona draws over 45 million visitors each year. Learn about the state's tourism industry and the mission behind Come And See Arizona.
+            From the Grand Canyon to the Sonoran Desert, Arizona draws over 45 million visitors each year. Learn about the state's tourism industry and the mission behind Come See Arizona.
           </p>
         </div>
       </div>
 
-      <AnswerBlock answer="Come And See Arizona is an independent destination and community resource covering the entire state. Content is researched by local experts and updated multiple times per week. Real estate market analysis is provided by Venture REI, led by Frank Vazquez with over 2,400 homes personally sold across the Phoenix metropolitan area." />
+      <AnswerBlock answer="Come See Arizona is an independent destination and community resource covering the entire state. Content is researched by local experts and updated multiple times per week. Real estate market analysis is provided by Venture REI, led by Frank Vazquez with over 2,400 homes personally sold across the Phoenix metropolitan area." />
 
-      {/* Section 1: About Come And See Arizona */}
+      {/* Section 1: About Come See Arizona */}
       <div style={{ background: '#fff', padding: '48px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          <SectionHeading>About Come And See Arizona</SectionHeading>
+          <SectionHeading>About Come See Arizona</SectionHeading>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 40, alignItems: 'flex-start' }}>
             <div style={{ flex: '1 1 400px', fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
               <p>
-                Come And See Arizona is the most comprehensive travel and relocation resource for the Grand Canyon State. Our mission is to help visitors, newcomers, and lifelong residents discover everything Arizona has to offer - from world-famous landmarks to hidden neighborhood gems.
+                Come See Arizona is the most comprehensive travel and relocation resource for the Grand Canyon State. Our mission is to help visitors, newcomers, and lifelong residents discover everything Arizona has to offer - from world-famous landmarks to hidden neighborhood gems.
               </p>
               <p style={{ marginTop: 16 }}>
                 We cover every city, neighborhood, zip code, and school district across Maricopa, Pinal, and Pima counties. Each community page features real data on home prices, school ratings, local events, trails, restaurants, and things to do - all powered by AI-driven content intelligence that keeps information fresh and accurate.
               </p>
               <p style={{ marginTop: 16 }}>
-                Come And See Arizona is published in partnership with <strong>{siteConfig.brokerageName}</strong>, a leading Arizona real estate team led by <strong>{siteConfig.leaderName}</strong>, with {siteConfig.leaderCredential}. Our combination of local expertise, real estate knowledge, and advanced content technology makes this the definitive guide for anyone exploring Arizona.
+                Come See Arizona is published in partnership with <strong>{siteConfig.brokerageName}</strong>, a leading Arizona real estate team led by <strong>{siteConfig.leaderName}</strong>, with {siteConfig.leaderCredential}. Our combination of local expertise, real estate knowledge, and advanced content technology makes this the definitive guide for anyone exploring Arizona.
               </p>
               <p style={{ marginTop: 16 }}>
-                Whether you're planning a weekend getaway, scouting your next hometown, or simply curious about what makes Arizona special, Come And See Arizona is your starting point.
+                Whether you're planning a weekend getaway, scouting your next hometown, or simply curious about what makes Arizona special, Come See Arizona is your starting point.
               </p>
             </div>
             <div style={{ flex: '0 1 320px', display: 'flex', justifyContent: 'center' }}>
               <img
                 src="/come-see-arizona.png"
-                alt="Come And See Arizona"
+                alt="Come See Arizona"
                 style={{ width: '100%', maxWidth: 300, borderRadius: 16 }}
               />
             </div>
@@ -287,7 +287,7 @@ export default function AboutArizonaTourismPage() {
           <SectionHeading>Our Editorial Standards</SectionHeading>
           <div style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
             <p>
-              Every page on Come And See Arizona is built on real data, not guesswork. We pull from authoritative sources including MLS real estate listings, Eventbrite and PredictHQ for events, USFS trail databases for hiking information, and official school district records for education data.
+              Every page on Come See Arizona is built on real data, not guesswork. We pull from authoritative sources including MLS real estate listings, Eventbrite and PredictHQ for events, USFS trail databases for hiking information, and official school district records for education data.
             </p>
             <p style={{ marginTop: 16 }}>
               We do not accept paid inclusion. No business, neighborhood, or community can pay to be featured, ranked higher, or reviewed favorably. Our editorial decisions are based entirely on data quality, reader interest, and geographic completeness.
@@ -341,7 +341,7 @@ export default function AboutArizonaTourismPage() {
           <SectionHeading>About This Guide</SectionHeading>
           <div style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
             <p>
-              Come And See Arizona is published by <strong>{siteConfig.brokerageName}</strong>, one of Arizona's most experienced real estate teams. Led by <strong>{siteConfig.leaderName}</strong>, with {siteConfig.leaderCredential}, {siteConfig.brokerageName} combines deep local knowledge with cutting-edge technology to serve buyers, sellers, and investors across the Phoenix metro area and beyond.
+              Come See Arizona is published by <strong>{siteConfig.brokerageName}</strong>, one of Arizona's most experienced real estate teams. Led by <strong>{siteConfig.leaderName}</strong>, with {siteConfig.leaderCredential}, {siteConfig.brokerageName} combines deep local knowledge with cutting-edge technology to serve buyers, sellers, and investors across the Phoenix metro area and beyond.
             </p>
             <p style={{ marginTop: 16 }}>
               This guide reflects our belief that choosing where to live - or where to visit - deserves the same quality of research and insight that goes into buying a home. Every page is designed to help you make confident decisions about Arizona.

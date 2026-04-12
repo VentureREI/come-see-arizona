@@ -151,7 +151,7 @@ export default function WhereToStayPage() {
   return (
     <>
       <SEOHead
-        title="Where to Stay in Arizona - Hotels, Resorts & Vacation Rentals | Come And See Arizona"
+        title="Where to Stay in Arizona - Hotels, Resorts & Vacation Rentals | Come See Arizona"
         description="A comprehensive guide to Arizona accommodations including luxury resorts, boutique hotels, vacation rentals, budget-friendly stays, and RV parks across Phoenix, Scottsdale, Sedona, and Tucson."
         canonical="/where-to-stay"
         schema={[webPageSchema, faqSchema]}

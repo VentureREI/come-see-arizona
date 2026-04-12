@@ -171,7 +171,7 @@ export default function MeetingsPage() {
   return (
     <>
       <SEOHead
-        title="Meetings and Conventions in Arizona | Come And See Arizona"
+        title="Meetings and Conventions in Arizona | Come See Arizona"
         description="Plan your next meeting or convention in Arizona. Explore major venues like Phoenix Convention Center, upcoming events, and planning resources across Phoenix, Scottsdale, Tucson, and Sedona."
         canonical="/meetings"
         schema={[webPageSchema, faqSchema]}

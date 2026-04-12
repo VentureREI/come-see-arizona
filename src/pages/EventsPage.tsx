@@ -76,7 +76,7 @@ export default function EventsPage() {
   return (
     <>
       <SEOHead
-        title="Arizona Events - Concerts, Sports, Festivals & Things to Do | Come And See Arizona"
+        title="Arizona Events - Concerts, Sports, Festivals & Things to Do | Come See Arizona"
         description="Discover upcoming events across Arizona including Cactus League spring training, Diamondbacks games, concerts, festivals, farmers markets, and more in Phoenix, Scottsdale, Tucson, and beyond."
         canonical="/events"
         schema={eventSchemas}
@@ -297,7 +297,7 @@ export default function EventsPage() {
       }}>
         <p>Events last updated: {lastUpdated}</p>
         <p style={{ marginTop: 4 }}>
-          Events sourced from Eventbrite and PredictHQ. Some events are manually curated by the Come And See Arizona editorial team.
+          Events sourced from Eventbrite and PredictHQ. Some events are manually curated by the Come See Arizona editorial team.
           {!loaded && ' Currently showing curated events. API sources will load when configured.'}
         </p>
       </div>

@@ -94,7 +94,7 @@ export default function ZipCodePage() {
   return (
     <>
       <SEOHead
-        title={`${zipData.zip} Zip Code Guide - ${city.name}, AZ | Come And See Arizona`}
+        title={`${zipData.zip} Zip Code Guide - ${city.name}, AZ | Come See Arizona`}
         description={seoDescription}
         canonical={`/explore/zip/${zipData.zip}`}
         schema={[postalAddressSchema, faqSchema]}

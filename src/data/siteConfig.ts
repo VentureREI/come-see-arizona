@@ -1,5 +1,5 @@
 export const siteConfig = {
-  siteName: 'Come And See Arizona',
+  siteName: 'Come See Arizona',
   siteUrl: 'https://www.comeseearizona.com',
   brokerageName: 'Venture REI',
   leaderName: 'Frank Vazquez',

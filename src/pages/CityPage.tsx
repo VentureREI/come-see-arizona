@@ -134,7 +134,7 @@ export default function CityPage() {
   return (
     <div>
       <SEOHead
-        title={`${city.name}, Arizona - Neighborhoods, Home Prices, Schools & Guide | Come And See Arizona`}
+        title={`${city.name}, Arizona - Neighborhoods, Home Prices, Schools & Guide | Come See Arizona`}
         description={seoDescription}
         canonical={`/explore/city/${city.slug}`}
         schema={[placeSchema, faqSchema]}

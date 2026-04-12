@@ -89,7 +89,7 @@ export default function ExplorePage() {
   return (
     <>
       <SEOHead
-        title="Explore Arizona Cities, Neighborhoods & Zip Codes | Come And See Arizona"
+        title="Explore Arizona Cities, Neighborhoods & Zip Codes | Come See Arizona"
         description="Explore every city, neighborhood, zip code, and school district in Maricopa, Pinal, and Pima counties. Find detailed guides to Arizona communities with home prices, schools, and things to do."
         canonical="/explore"
         schema={webPageSchema}
@@ -116,7 +116,7 @@ export default function ExplorePage() {
         </div>
       </div>
 
-      <AnswerBlock answer="Come And See Arizona covers every city, neighborhood, zip code, and school district across Maricopa, Pinal, and Pima counties. Browse 42 cities, 130-plus neighborhoods, 180 zip codes, and 34 school districts with median home prices, walk scores, school ratings, and local insights powered by current ARMLS data." />
+      <AnswerBlock answer="Come See Arizona covers every city, neighborhood, zip code, and school district across Maricopa, Pinal, and Pima counties. Browse 42 cities, 130-plus neighborhoods, 180 zip codes, and 34 school districts with median home prices, walk scores, school ratings, and local insights powered by current ARMLS data." />
 
       {/* B) Search Bar */}
       <div className="explore-container">

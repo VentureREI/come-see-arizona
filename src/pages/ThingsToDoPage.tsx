@@ -20,7 +20,7 @@ const webPageSchema = {
   url: 'https://comeseearizona.com/things-to-do',
   publisher: {
     '@type': 'Organization',
-    name: 'Come And See Arizona',
+    name: 'Come See Arizona',
     url: 'https://comeseearizona.com',
   },
 };
@@ -42,7 +42,7 @@ export default function ThingsToDoPage() {
   return (
     <>
       <SEOHead
-        title="Things to Do in Arizona - Activities, Attractions & Experiences | Come And See Arizona"
+        title="Things to Do in Arizona - Activities, Attractions & Experiences | Come See Arizona"
         description="Discover the best things to do in Arizona from desert hiking and world-class golf to museums, nightlife, spa resorts, and family adventures. 300+ days of sunshine await."
         canonical="/things-to-do"
         schema={[webPageSchema, faqSchema]}

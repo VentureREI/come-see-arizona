@@ -27,7 +27,7 @@ const FEATURED_ARTICLES = [
     subcategory: 'Culture',
     title: "Celebrate Arizona's Rich Heritage",
     description: 'Explore Arizona\'s rich cultural heritage from Native American traditions and ancient cliff dwellings to Spanish colonial missions and vibrant modern celebrations across the state.',
-    author: 'Come And See Arizona',
+    author: 'Come See Arizona',
     datePublished: '2026-03-01',
     url: '/articles/celebrate-arizonas-rich-heritage',
   },
@@ -39,7 +39,7 @@ const FEATURED_ARTICLES = [
     subcategory: 'Museums',
     title: 'Ancient Civilizations of the Southwest',
     description: 'Explore Arizona\'s ancient civilizations at sites like Montezuma Castle, Tuzigoot National Monument, Casa Grande Ruins, and the cliff dwellings of Canyon de Chelly.',
-    author: 'Come And See Arizona',
+    author: 'Come See Arizona',
     datePublished: '2026-02-15',
     url: '/articles/ancient-civilizations-southwest',
   },
@@ -55,7 +55,7 @@ const SECONDARY_ARTICLES = [
     subcategory: 'Arts',
     title: "Scottsdale's Art District Guide",
     description: 'Navigate Scottsdale\'s thriving art district featuring over 100 galleries, the Thursday evening ArtWalk, Scottsdale Museum of Contemporary Art, and Western art at the Cattletrack Arts Compound.',
-    author: 'Come And See Arizona',
+    author: 'Come See Arizona',
     datePublished: '2026-02-20',
     url: '/articles/scottsdale-art-district-guide',
   },
@@ -67,7 +67,7 @@ const SECONDARY_ARTICLES = [
     subcategory: 'Attractions',
     title: 'Route 66 Through Arizona',
     description: 'Drive the longest remaining stretch of historic Route 66 through Arizona, from the Painted Desert and Petrified Forest to Seligman, Williams, and Flagstaff. Over 400 miles of Americana.',
-    author: 'Come And See Arizona',
+    author: 'Come See Arizona',
     datePublished: '2026-01-10',
     url: '/articles/route-66-through-arizona',
   },
@@ -213,7 +213,7 @@ const MORE_ARTICLES = [
     subcategory: 'Outdoors',
     title: "Arizona's Best Hiking Trails",
     description: 'A guide to Arizona\'s best hiking trails from Camelback Mountain in Phoenix and Cathedral Rock in Sedona to Bright Angel Trail at the Grand Canyon.',
-    author: 'Come And See Arizona',
+    author: 'Come See Arizona',
     datePublished: '2026-02-01',
     url: '/articles/arizona-best-hiking-trails',
   },
@@ -225,7 +225,7 @@ const MORE_ARTICLES = [
     subcategory: 'Wellness',
     title: 'Best Desert Resorts & Spas',
     description: 'Arizona\'s finest desert resorts and spas including The Phoenician, Sanctuary on Camelback Mountain, The Boulders Resort, and Four Seasons Scottsdale.',
-    author: 'Come And See Arizona',
+    author: 'Come See Arizona',
     datePublished: '2026-01-20',
     url: '/articles/best-desert-resorts-spas',
   },
@@ -340,8 +340,8 @@ function App() {
             <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={menuOpen}>
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
-            <a href="/" className="logo" aria-label="Come And See Arizona - Home">
-              <img src="/come-see-arizona.png" alt="Come And See Arizona" style={{ height: 90, width: 'auto' }} />
+            <a href="/" className="logo" aria-label="Come See Arizona - Home">
+              <img src="/come-see-arizona.png" alt="Come See Arizona" style={{ height: 90, width: 'auto' }} />
             </a>
           </div>
 
@@ -358,7 +358,7 @@ function App() {
           </nav>
 
           <div className="nav-right">
-            <button className="search-btn" aria-label="Search Come And See Arizona">
+            <button className="search-btn" aria-label="Search Come See Arizona">
               <Search size={20} />
             </button>
           </div>
@@ -387,7 +387,7 @@ function App() {
           <div className="hero-overlay" />
         </div>
         <div className="hero-content">
-          <h1 className="visually-hidden">Come And See Arizona - Your Guide to Things to Do, Events, Dining & Travel</h1>
+          <h1 className="visually-hidden">Come See Arizona - Your Guide to Things to Do, Events, Dining & Travel</h1>
           <span className="quote-mark">"</span>
           <blockquote>
             Arizona is not just a place you visit. It's a place that stays with you long after you've left.
@@ -696,14 +696,14 @@ function App() {
       </section>
 
       {/* Newsletter */}
-      <section className="newsletter-section" aria-label="Subscribe to the Come And See Arizona newsletter">
+      <section className="newsletter-section" aria-label="Subscribe to the Come See Arizona newsletter">
         <div className="newsletter-bg">
           <img src="/newsletter-bg.jpg" alt="Arizona desert sunset with saguaro cacti silhouettes against an orange and purple sky" />
           <div className="newsletter-overlay" />
         </div>
         <div className="container">
           <div className="newsletter-content">
-            <h2>Come And See Arizona Newsletter</h2>
+            <h2>Come See Arizona Newsletter</h2>
             {!subscribed ? (
               <form onSubmit={handleSubscribe} className="newsletter-form">
                 <div className="input-group">
@@ -720,7 +720,7 @@ function App() {
                 <label className="consent">
                   <input type="checkbox" required />
                   <span>
-                    I consent to receive the Come And See Arizona newsletter. You can learn more by reading our
+                    I consent to receive the Come See Arizona newsletter. You can learn more by reading our
                     <a href="/privacy-policy"> privacy policy</a>, and you can opt out at any time.
                   </span>
                 </label>
@@ -741,8 +741,8 @@ function App() {
           <div className="footer-grid">
             <div className="footer-brand">
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
-                <img src="/come-see-arizona.png" alt="Come And See Arizona" style={{ height: 40, width: 'auto' }} />
-                <h3 className="footer-logo" style={{ margin: 0 }}>Come And See Arizona</h3>
+                <img src="/come-see-arizona.png" alt="Come See Arizona" style={{ height: 40, width: 'auto' }} />
+                <h3 className="footer-logo" style={{ margin: 0 }}>Come See Arizona</h3>
               </div>
               <p>The official guide to Arizona. Find great deals, things to do, travel guides and more.</p>
               <address className="footer-address">
@@ -769,15 +769,15 @@ function App() {
             <div className="footer-social">
               <h4>Follow Us</h4>
               <div className="social-icons">
-                <a href="https://facebook.com/comeseearizona" aria-label="Follow Come And See Arizona on Facebook"><Facebook size={20} /></a>
-                <a href="https://twitter.com/comeseearizona" aria-label="Follow Come And See Arizona on Twitter"><Twitter size={20} /></a>
-                <a href="https://instagram.com/comeseearizona" aria-label="Follow Come And See Arizona on Instagram"><Instagram size={20} /></a>
-                <a href="https://youtube.com/comeseearizona" aria-label="Follow Come And See Arizona on YouTube"><Youtube size={20} /></a>
+                <a href="https://facebook.com/comeseearizona" aria-label="Follow Come See Arizona on Facebook"><Facebook size={20} /></a>
+                <a href="https://twitter.com/comeseearizona" aria-label="Follow Come See Arizona on Twitter"><Twitter size={20} /></a>
+                <a href="https://instagram.com/comeseearizona" aria-label="Follow Come See Arizona on Instagram"><Instagram size={20} /></a>
+                <a href="https://youtube.com/comeseearizona" aria-label="Follow Come See Arizona on YouTube"><Youtube size={20} /></a>
               </div>
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2026 Come And See Arizona. All rights reserved. <span className="last-updated">Last Updated: March 2026</span></p>
+            <p>&copy; 2026 Come See Arizona. All rights reserved. <span className="last-updated">Last Updated: March 2026</span></p>
             <div className="footer-legal">
               <a href="/privacy-policy">Privacy Policy</a>
               <a href="/terms-of-use">Terms of Use</a>
