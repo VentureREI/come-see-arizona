@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
+import AnswerBlock from '../components/AnswerBlock';
 import { THINGS_TO_DO_CATEGORIES } from '../data/thingsToDo';
 import type { ThingsToDoCategory, Listing } from '../data/thingsToDo';
 
@@ -93,6 +94,8 @@ export default function ThingsToDoSubPage() {
           <p className="hero-subtitle">{category.tagline}</p>
         </div>
       </div>
+
+      <AnswerBlock answer={`${category.name} in Arizona: ${category.description ? category.description.split('.').slice(0, 2).join('.') + '.' : 'Explore the best ' + category.name.toLowerCase() + ' activities across the state.'}`} />
 
       {/* Editorial Introduction */}
       <div className="explore-section">

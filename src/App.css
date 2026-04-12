@@ -2629,3 +2629,19 @@ html, body {
     min-width: 100% !important;
   }
 }
+
+/* ============================================================
+   RESPONSIVE: SMALL SCREENS (max-width: 640px)
+   Ensures grids collapse, stats wrap, and heroes fit
+   ============================================================ */
+@media (max-width: 640px) {
+  .explore-hero h1 {
+    font-size: clamp(24px, 5vw, 36px);
+  }
+  .explore-stats-row {
+    flex-wrap: wrap;
+  }
+  .explore-stat-card {
+    flex: 1 1 140px;
+  }
+}

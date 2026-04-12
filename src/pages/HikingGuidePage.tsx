@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
+import AnswerBlock from '../components/AnswerBlock';
 import { TRAILS } from '../data/trails';
 import { TRAILS_SOUTHERN_NORTHERN } from '../data/trailsSouthernNorthern';
 import type { Trail } from '../data/trails';
@@ -117,6 +118,8 @@ export default function HikingGuidePage() {
           </p>
         </div>
       </div>
+
+      <AnswerBlock answer="Arizona offers some of the best hiking in the American West, from the iconic Camelback Mountain summit scramble in Scottsdale to Cathedral Rock in Sedona and Humphreys Peak near Flagstaff at 12,633 feet. This guide covers 50-plus trails with distances, difficulty ratings, seasonal recommendations, and critical desert safety information." />
 
       {/* B) Introduction */}
       <div className="explore-section">

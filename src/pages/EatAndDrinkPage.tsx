@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
 import { siteConfig } from '../data/siteConfig';
+import AnswerBlock from '../components/AnswerBlock';
 
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80&auto=format';
@@ -248,6 +249,8 @@ export default function EatAndDrinkPage() {
           </p>
         </div>
       </div>
+
+      <AnswerBlock answer="Arizona's dining scene spans Sonoran Mexican traditions, James Beard-recognized chefs, UNESCO-designated Tucson gastronomy, and a craft brewery boom across the Phoenix Valley. From Barrio Cafe's elevated Mexican cuisine to Binkley's tasting menus in Cave Creek, the state offers dining at every level. This guide covers restaurants, bars, breweries, coffee shops, and food halls across Phoenix, Scottsdale, Tucson, Mesa, Tempe, Gilbert, and Chandler." />
 
       {/* 1. Intro */}
       <div style={{ background: '#fff' }}>

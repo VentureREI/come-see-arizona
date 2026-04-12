@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
 import { siteConfig } from '../data/siteConfig';
+import AnswerBlock from '../components/AnswerBlock';
 
 /* ───────────────────────── helpers ───────────────────────── */
 
@@ -203,6 +204,8 @@ export default function TouristInfoPage() {
           </p>
         </div>
       </div>
+
+      <AnswerBlock answer="Arizona visitors should know that the state does not observe daylight saving time, summer temperatures regularly exceed 110 degrees in the Phoenix metro, and a rental car is essential for getting around the Valley. This page covers visitor centers, emergency contacts, weather by season, health and safety tips, and accessibility resources." />
 
       {/* ─── 1. Visitor Centers ─── */}
       <div style={{ background: '#FAFAFA', padding: '48px 24px' }}>

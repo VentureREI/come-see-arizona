@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
 import { siteConfig } from '../data/siteConfig';
+import AnswerBlock from '../components/AnswerBlock';
 
 /* ───────────────────────── Helpers ───────────────────────── */
 
@@ -185,6 +186,8 @@ export default function TravelTradePage() {
           </p>
         </div>
       </div>
+
+      <AnswerBlock answer="Arizona welcomes over 45 million visitors annually with more than 25 billion dollars in direct travel spending. The state offers travel professionals a year-round destination with world-class resorts, five national parks, and 300-plus days of sunshine. This page provides tourism statistics, destination highlights, and Arizona Office of Tourism partnership resources." />
 
       {/* ─── 1. Why Arizona ─── */}
       <div style={{ background: '#fff', padding: '48px 24px' }}>

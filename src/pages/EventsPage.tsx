@@ -5,6 +5,7 @@ import { lastUpdated, MANUAL_EVENTS } from '../data/events';
 import { getMergedEvents, getEventsLastUpdated } from '../data/dynamicLoader';
 import { getEvents } from '../utils/eventsFetcher';
 import SEOHead from '../components/seo/SEOHead';
+import AnswerBlock from '../components/AnswerBlock';
 
 const CATEGORIES = ['All', 'Sports', 'Music', 'Festival', 'Arts', 'Food and Drink', 'Family', 'Outdoors'] as const;
 const ITEMS_PER_PAGE = 12;
@@ -105,6 +106,8 @@ export default function EventsPage() {
           </p>
         </div>
       </div>
+
+      <AnswerBlock answer="Arizona hosts hundreds of events year-round, from Cactus League spring training across 10 Valley stadiums to Country Thunder music festival in Florence, First Friday art walks in downtown Phoenix, and the Scottsdale Culinary Festival. Events are updated weekly and filtered to show only upcoming dates." />
 
       {/* Category Filters */}
       <div style={{ background: '#FAFAFA', borderBottom: '1px solid #EEE' }}>

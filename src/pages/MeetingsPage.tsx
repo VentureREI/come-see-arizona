@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
 import { siteConfig } from '../data/siteConfig';
+import AnswerBlock from '../components/AnswerBlock';
 
 /* ───────────────────────── DATA ───────────────────────── */
 
@@ -201,6 +202,8 @@ export default function MeetingsPage() {
           </p>
         </div>
       </div>
+
+      <AnswerBlock answer="Phoenix Convention Center offers over 900,000 square feet of meeting and exhibition space in downtown Phoenix, hosting 70-plus conventions annually with nearly 300,000 delegates. Arizona's consistent weather eliminates event disruption risk, and attendees benefit from world-class dining, golf, and recreation options." />
 
       {/* ─── 1. Why Meet in Arizona ─── */}
       <div style={{ background: '#fff', padding: '48px 24px' }}>

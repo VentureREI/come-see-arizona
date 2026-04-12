@@ -5,6 +5,7 @@ import { COUNTIES } from '../data/seedingTable';
 import { getHeroImage, getCityImage } from './exploreImages';
 import { generateCountyGuide, generateCountyMarketAnalysis, generateCountyFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
+import { getMarketPricesLastUpdated } from '../data/dynamicLoader';
 
 function getRatingColor(rating: string): string {
   switch (rating.toLowerCase()) {
@@ -175,6 +176,9 @@ export default function CountyPage() {
           <div className="stat-number">{districts.length}</div>
           <div className="stat-label">School Districts</div>
         </div>
+      </div>
+      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#888' }}>
+        Market data last updated: {getMarketPricesLastUpdated()}
       </div>
 
       {/* C) Description Section */}

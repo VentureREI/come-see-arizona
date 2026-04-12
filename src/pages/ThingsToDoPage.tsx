@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
+import AnswerBlock from '../components/AnswerBlock';
 import {
   THINGS_TO_DO_CATEGORIES,
   FEATURED_ACTIVITIES,
@@ -67,6 +68,8 @@ export default function ThingsToDoPage() {
           </p>
         </div>
       </div>
+
+      <AnswerBlock answer="Arizona offers outdoor adventures across 300 days of annual sunshine, from hiking Camelback Mountain and exploring Sedona's red rocks to golfing 300-plus courses and floating the Salt River. Cultural attractions include the Musical Instrument Museum, Heard Museum, Taliesin West, and Desert Botanical Garden. This guide covers 10 categories of activities across the state." />
 
       {/* Intro Section */}
       <div className="explore-section">

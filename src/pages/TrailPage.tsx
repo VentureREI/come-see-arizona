@@ -3,7 +3,7 @@ import SEOHead from '../components/seo/SEOHead';
 import { TRAILS } from '../data/trails';
 import { TRAILS_SOUTHERN_NORTHERN } from '../data/trailsSouthernNorthern';
 import type { Trail } from '../data/trails';
-import { getMergedTrail } from '../data/dynamicLoader';
+import { getMergedTrail, getTrailConditionsLastUpdated } from '../data/dynamicLoader';
 import AnswerBlock from '../components/AnswerBlock';
 
 const ALL_TRAILS: Trail[] = [...TRAILS, ...TRAILS_SOUTHERN_NORTHERN];
@@ -208,6 +208,9 @@ export default function TrailPage() {
             <div className="stat-label">Fee Required</div>
           </div>
         </div>
+      </div>
+      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#888' }}>
+        Trail conditions last checked: {getTrailConditionsLastUpdated()}
       </div>
 
       {/* Answer Block */}

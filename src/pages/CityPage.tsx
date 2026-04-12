@@ -4,6 +4,7 @@ import { getCity, getCounty, getNeighborhoodsByCity, getZipCodesByCity, getDistr
 import { getCityImage, getNeighborhoodImage, getHeroImage } from './exploreImages';
 import { generateCityGuide, generateCityMarketAnalysis, generateCityFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
+import { getMarketPricesLastUpdated } from '../data/dynamicLoader';
 
 function getRatingClass(rating: string): string {
   const letter = rating.charAt(0).toUpperCase();
@@ -184,6 +185,9 @@ export default function CityPage() {
           <div className="stat-number" style={{ color: 'var(--color-text)' }}>{neighborhoods.length}</div>
           <div className="stat-label">Neighborhoods</div>
         </div>
+      </div>
+      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#888' }}>
+        Market data last updated: {getMarketPricesLastUpdated()}
       </div>
 
       {/* C) Definitive Guide */}

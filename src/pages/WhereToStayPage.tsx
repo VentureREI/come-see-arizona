@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
 import { siteConfig } from '../data/siteConfig';
+import AnswerBlock from '../components/AnswerBlock';
 
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80&auto=format';
@@ -181,6 +182,8 @@ export default function WhereToStayPage() {
           </p>
         </div>
       </div>
+
+      <AnswerBlock answer="Arizona accommodations range from five-star desert resorts like The Phoenician and Sanctuary on Camelback Mountain to budget-friendly hotels along the I-10 and I-17 corridors. Scottsdale and Paradise Valley concentrate the highest density of luxury properties, while Tempe and Mesa offer the best value. This guide covers resorts, boutique hotels, vacation rentals, and RV parks across the state." />
 
       {/* ─── 1. Intro ─── */}
       <div style={{ background: '#fff' }}>

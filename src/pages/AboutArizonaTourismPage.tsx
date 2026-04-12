@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
 import { siteConfig } from '../data/siteConfig';
+import AnswerBlock from '../components/AnswerBlock';
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
@@ -125,6 +126,8 @@ export default function AboutArizonaTourismPage() {
         </div>
       </div>
 
+      <AnswerBlock answer="Come And See Arizona is an independent destination and community resource covering the entire state. Content is researched by local experts and updated multiple times per week. Real estate market analysis is provided by Venture REI, led by Frank Vazquez with over 2,400 homes personally sold across the Phoenix metropolitan area." />
+
       {/* Section 1: About Come And See Arizona */}
       <div style={{ background: '#fff', padding: '48px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
@@ -132,10 +135,10 @@ export default function AboutArizonaTourismPage() {
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 40, alignItems: 'flex-start' }}>
             <div style={{ flex: '1 1 400px', fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
               <p>
-                Come And See Arizona is the most comprehensive travel and relocation resource for the Grand Canyon State. Our mission is to help visitors, newcomers, and lifelong residents discover everything Arizona has to offer — from world-famous landmarks to hidden neighborhood gems.
+                Come And See Arizona is the most comprehensive travel and relocation resource for the Grand Canyon State. Our mission is to help visitors, newcomers, and lifelong residents discover everything Arizona has to offer - from world-famous landmarks to hidden neighborhood gems.
               </p>
               <p style={{ marginTop: 16 }}>
-                We cover every city, neighborhood, zip code, and school district across Maricopa, Pinal, and Pima counties. Each community page features real data on home prices, school ratings, local events, trails, restaurants, and things to do — all powered by AI-driven content intelligence that keeps information fresh and accurate.
+                We cover every city, neighborhood, zip code, and school district across Maricopa, Pinal, and Pima counties. Each community page features real data on home prices, school ratings, local events, trails, restaurants, and things to do - all powered by AI-driven content intelligence that keeps information fresh and accurate.
               </p>
               <p style={{ marginTop: 16 }}>
                 Come And See Arizona is published in partnership with <strong>{siteConfig.brokerageName}</strong>, a leading Arizona real estate team led by <strong>{siteConfig.leaderName}</strong>, with {siteConfig.leaderCredential}. Our combination of local expertise, real estate knowledge, and advanced content technology makes this the definitive guide for anyone exploring Arizona.
@@ -222,7 +225,7 @@ export default function AboutArizonaTourismPage() {
                 {/* Content */}
                 <div style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
                   <strong style={{ color: '#1A1A1A', fontFamily: 'var(--font-heading)' }}>{event.year}</strong>
-                  <span style={{ margin: '0 8px', color: '#ccc' }}>—</span>
+                  <span style={{ margin: '0 8px', color: '#ccc' }}> -</span>
                   {event.description}
                 </div>
               </div>
@@ -266,13 +269,13 @@ export default function AboutArizonaTourismPage() {
             }}
           >
             <p>
-              <strong style={{ color: '#2E7D32' }}>AppreciateAZ</strong> is Arizona's statewide initiative to promote responsible tourism. The campaign asks visitors and residents alike to treat the state's natural treasures with care — from the Grand Canyon's fragile rim trails to the delicate Sonoran Desert ecosystem.
+              <strong style={{ color: '#2E7D32' }}>AppreciateAZ</strong> is Arizona's statewide initiative to promote responsible tourism. The campaign asks visitors and residents alike to treat the state's natural treasures with care - from the Grand Canyon's fragile rim trails to the delicate Sonoran Desert ecosystem.
             </p>
             <p style={{ marginTop: 16 }}>
               Key principles include staying on marked trails, carrying out all trash, respecting wildlife, conserving water, and supporting locally owned businesses. These guidelines align with the national <strong>Leave No Trace</strong> framework, which provides seven principles for minimizing human impact on the outdoors.
             </p>
             <p style={{ marginTop: 16 }}>
-              Arizona's desert environment is more fragile than many visitors realize. Cryptobiotic soil crusts can take decades to recover from a single footprint, and saguaro cacti — Arizona's iconic symbol — grow as little as one inch per year. Sustainable tourism practices ensure these irreplaceable resources endure for future generations.
+              Arizona's desert environment is more fragile than many visitors realize. Cryptobiotic soil crusts can take decades to recover from a single footprint, and saguaro cacti - Arizona's iconic symbol - grow as little as one inch per year. Sustainable tourism practices ensure these irreplaceable resources endure for future generations.
             </p>
           </div>
         </div>
@@ -290,7 +293,7 @@ export default function AboutArizonaTourismPage() {
               We do not accept paid inclusion. No business, neighborhood, or community can pay to be featured, ranked higher, or reviewed favorably. Our editorial decisions are based entirely on data quality, reader interest, and geographic completeness.
             </p>
             <p style={{ marginTop: 16 }}>
-              Our AI-driven content agents continuously monitor data sources for changes — new trail closures, updated home prices, rescheduled events — and flag content for refresh. Every automated update is validated against editorial standards before publication, ensuring accuracy without sacrificing timeliness.
+              Our AI-driven content agents continuously monitor data sources for changes - new trail closures, updated home prices, rescheduled events - and flag content for refresh. Every automated update is validated against editorial standards before publication, ensuring accuracy without sacrificing timeliness.
             </p>
           </div>
         </div>
@@ -341,7 +344,7 @@ export default function AboutArizonaTourismPage() {
               Come And See Arizona is published by <strong>{siteConfig.brokerageName}</strong>, one of Arizona's most experienced real estate teams. Led by <strong>{siteConfig.leaderName}</strong>, with {siteConfig.leaderCredential}, {siteConfig.brokerageName} combines deep local knowledge with cutting-edge technology to serve buyers, sellers, and investors across the Phoenix metro area and beyond.
             </p>
             <p style={{ marginTop: 16 }}>
-              This guide reflects our belief that choosing where to live — or where to visit — deserves the same quality of research and insight that goes into buying a home. Every page is designed to help you make confident decisions about Arizona.
+              This guide reflects our belief that choosing where to live - or where to visit - deserves the same quality of research and insight that goes into buying a home. Every page is designed to help you make confident decisions about Arizona.
             </p>
             <div style={{ marginTop: 24, textAlign: 'center' }}>
               <Link

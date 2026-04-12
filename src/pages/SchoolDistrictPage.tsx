@@ -4,6 +4,7 @@ import { getSchoolDistrict, getCity, getCounty, getZipCode, formatNumber } from 
 import { getHeroImage, getCityImage } from './exploreImages';
 import { generateDistrictGuide, generateDistrictMarketAnalysis, generateDistrictFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
+import { getMarketPricesLastUpdated } from '../data/dynamicLoader';
 
 function ratingClass(rating: string): string {
   const r = rating.charAt(0).toUpperCase();
@@ -144,6 +145,9 @@ export default function SchoolDistrictPage() {
           <div className="stat-number">{district.zipCodes.length}</div>
           <div className="stat-label">Zip Codes Served</div>
         </div>
+      </div>
+      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#888' }}>
+        Market data last updated: {getMarketPricesLastUpdated()}
       </div>
 
       {/* C) District Guide */}

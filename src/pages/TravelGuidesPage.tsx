@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
 import { siteConfig } from '../data/siteConfig';
+import AnswerBlock from '../components/AnswerBlock';
 
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&q=80&auto=format';
@@ -145,6 +146,8 @@ export default function TravelGuidesPage() {
           <p className="hero-subtitle">Everything you need to plan your perfect Arizona trip.</p>
         </div>
       </div>
+
+      <AnswerBlock answer="Planning an Arizona trip starts with timing. October through April offers ideal weather in the 70s and 80s with peak season pricing. Summer brings extreme heat above 105 degrees but hotel rates drop 40 to 60 percent. Phoenix Sky Harbor International Airport serves as the primary gateway with direct flights from most major US cities." />
 
       {/* Intro */}
       <div style={{ background: '#fff', padding: '48px 24px' }}>

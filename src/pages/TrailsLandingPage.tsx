@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
+import AnswerBlock from '../components/AnswerBlock';
 import { TRAILS } from '../data/trails';
 import { TRAILS_SOUTHERN_NORTHERN } from '../data/trailsSouthernNorthern';
 import type { Trail } from '../data/trails';
@@ -78,6 +79,8 @@ export default function TrailsLandingPage() {
           </p>
         </div>
       </div>
+
+      <AnswerBlock answer="Arizona has over 200 miles of hiking trails in Phoenix alone, plus world-class destinations in Sedona, Tucson, Flagstaff, and the Grand Canyon. This directory covers 47 trails across the state with difficulty ratings, distances, elevation gains, and current trail conditions. Filter by region to find trails near you." />
 
       {/* B) Filter Bar */}
       <div className="explore-section">

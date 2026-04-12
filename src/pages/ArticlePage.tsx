@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
+import AnswerBlock from '../components/AnswerBlock';
 
 interface Article {
   title: string;
@@ -199,6 +200,8 @@ export default function ArticlePage() {
           <p className="hero-subtitle">{article.category}</p>
         </div>
       </div>
+
+      <AnswerBlock answer={article.description[0].slice(0, 300)} />
 
       {/* Article Content */}
       <div className="explore-section">

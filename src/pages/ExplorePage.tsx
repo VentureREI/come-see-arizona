@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
+import AnswerBlock from '../components/AnswerBlock';
 import { COUNTIES, CITIES, NEIGHBORHOODS, ZIP_CODES, SCHOOL_DISTRICTS } from '../data/seedingTable';
 import { searchAll, formatPrice, formatNumber } from '../data/lookups';
 import { heroImages, getHeroImage, getCityImage } from './exploreImages';
@@ -115,6 +116,8 @@ export default function ExplorePage() {
         </div>
       </div>
 
+      <AnswerBlock answer="Come And See Arizona covers every city, neighborhood, zip code, and school district across Maricopa, Pinal, and Pima counties. Browse 42 cities, 130-plus neighborhoods, 180 zip codes, and 34 school districts with median home prices, walk scores, school ratings, and local insights powered by current ARMLS data." />
+
       {/* B) Search Bar */}
       <div className="explore-container">
         <div className="explore-search">
@@ -191,7 +194,7 @@ export default function ExplorePage() {
           <h2 className="explore-section-title">Explore by County</h2>
         </div>
         <div className="explore-container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px', maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '32px', maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             {COUNTIES.map((county) => {
               const cityCount = CITIES.filter((c) => c.countySlug === county.slug).length;
               return (

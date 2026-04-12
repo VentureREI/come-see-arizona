@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
+import AnswerBlock from '../components/AnswerBlock';
 
 interface ItineraryDay {
   dayNumber: number;
@@ -252,6 +253,8 @@ export default function ItineraryPage() {
           <h1>{itinerary.title}</h1>
         </div>
       </div>
+
+      <AnswerBlock answer={`${itinerary.title}: ${itinerary.description.split('.').slice(0, 2).join('.') + '.'}`} />
 
       {/* Overview Section */}
       <div className="explore-section">

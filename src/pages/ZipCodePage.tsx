@@ -12,6 +12,7 @@ import {
 import { getHeroImage, getNeighborhoodImage } from './exploreImages';
 import { generateZipCodeGuide, generateZipCodeMarketAnalysis, generateZipCodeFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
+import { getMarketPricesLastUpdated } from '../data/dynamicLoader';
 
 export default function ZipCodePage() {
   const { zipCode } = useParams<{ zipCode: string }>();
@@ -147,6 +148,9 @@ export default function ZipCodePage() {
           <div className="stat-number">{zipData.medianAge}</div>
           <div className="stat-label">Median Age</div>
         </div>
+      </div>
+      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#888' }}>
+        Market data last updated: {getMarketPricesLastUpdated()}
       </div>
 
       {/* C) Guide */}

@@ -13,6 +13,7 @@ import type { Neighborhood } from '../data/types';
 import { getNeighborhoodImage } from './exploreImages';
 import { generateNeighborhoodGuide, generateNeighborhoodMarketAnalysis, generateNeighborhoodFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
+import { getMarketPricesLastUpdated } from '../data/dynamicLoader';
 
 export default function NeighborhoodPage() {
   const { neighborhoodSlug } = useParams<{ neighborhoodSlug: string }>();
@@ -164,6 +165,9 @@ export default function NeighborhoodPage() {
           <div className="stat-number">{neighborhood.homeTypes.length}</div>
           <div className="stat-label">Home Types</div>
         </div>
+      </div>
+      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#888' }}>
+        Market data last updated: {getMarketPricesLastUpdated()}
       </div>
 
       {/* C) Definitive Guide */}
