@@ -9,7 +9,7 @@ import {
   formatPrice,
   formatNumber,
 } from '../data/lookups';
-import { getHeroImage } from './exploreImages';
+import { getHeroImage, getNeighborhoodImage } from './exploreImages';
 import { generateZipCodeGuide, generateZipCodeMarketAnalysis, generateZipCodeFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
 

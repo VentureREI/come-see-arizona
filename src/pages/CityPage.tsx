@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
 import { getCity, getCounty, getNeighborhoodsByCity, getZipCodesByCity, getDistrictsByCity, getNearbyCities, formatPrice, formatNumber } from '../data/lookups';
-import { getCityImage, getHeroImage } from './exploreImages';
+import { getCityImage, getNeighborhoodImage, getHeroImage } from './exploreImages';
 import { generateCityGuide, generateCityMarketAnalysis, generateCityFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
 
@@ -54,6 +54,9 @@ export default function CityPage() {
     );
   }
 
+  const descriptionParagraphs = city.description.length > 300
+    ? [city.description.slice(0, city.description.indexOf('.', Math.floor(city.description.length / 2)) + 1), city.description.slice(city.description.indexOf('.', Math.floor(city.description.length / 2)) + 1).trim()]
+    : [city.description];
 
   const guideParagraphs = generateCityGuide(city, county, neighborhoods, districts, zipCodes);
   const marketParagraphs = generateCityMarketAnalysis(city, county);
@@ -61,6 +64,11 @@ export default function CityPage() {
   const aboutFooter = getAboutFooter(city.name);
 
   const seoDescription = `${city.name}, AZ has a median home price of ${formatPrice(city.medianHomePrice)} and a population of ${formatNumber(city.population)}. Explore neighborhoods, schools, and things to do.`.slice(0, 155);
+
+  const topNeighborhoods = neighborhoods.slice(0, 3).map(n => n.name).join(', ');
+  const topDistricts = districts.slice(0, 3).map(d => d.name).join(', ');
+  const topThingsToDo = city.thingsToDo.slice(0, 3).join(', ');
+  const zipList = zipCodes.map(z => z.zip).join(', ');
 
   const placeSchema = {
     '@context': 'https://schema.org',
@@ -78,6 +86,36 @@ export default function CityPage() {
     },
   };
 
+  const faqItems = [
+    {
+      question: `What is the median home price in ${city.name}?`,
+      answer: `The median home price in ${city.name}, Arizona is ${formatPrice(city.medianHomePrice)}. This reflects current market conditions across the city's ${neighborhoods.length} neighborhoods, with prices varying by area.`,
+    },
+    {
+      question: `What are the best neighborhoods in ${city.name}?`,
+      answer: neighborhoods.length > 0
+        ? `${city.name} has ${neighborhoods.length} distinct neighborhoods including ${topNeighborhoods}. Each offers a unique character, home styles, and price range to suit different lifestyles.`
+        : `${city.name} offers a variety of residential areas. Explore the city to find the neighborhood that best fits your lifestyle and budget.`,
+    },
+    {
+      question: `What school districts serve ${city.name}?`,
+      answer: districts.length > 0
+        ? `${city.name} is served by ${districts.length} school district${districts.length > 1 ? 's' : ''}, including ${topDistricts}. These districts serve ${formatNumber(districts.reduce((sum, d) => sum + d.studentCount, 0))} students combined.`
+        : `Contact local education authorities for information about school districts serving ${city.name}.`,
+    },
+    {
+      question: `What is there to do in ${city.name}?`,
+      answer: city.thingsToDo.length > 0
+        ? `Popular things to do in ${city.name} include ${topThingsToDo}, and more. The city offers ${city.thingsToDo.length} notable attractions and activities for residents and visitors.`
+        : `${city.name} offers a variety of activities and attractions for residents and visitors to enjoy throughout the year.`,
+    },
+    {
+      question: `What zip codes are in ${city.name}?`,
+      answer: zipCodes.length > 0
+        ? `${city.name}, Arizona includes ${zipCodes.length} zip code${zipCodes.length > 1 ? 's' : ''}: ${zipList}. Each zip code area has its own median home price and demographic profile.`
+        : `Contact the USPS or local postal service for zip code information in ${city.name}.`,
+    },
+  ];
 
   const faqSchema = {
     '@context': 'https://schema.org',
