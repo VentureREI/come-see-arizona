@@ -2034,31 +2034,25 @@ a.neighborhood-card {
 .explore-card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-  row-gap: 20px;
-  column-gap: 20px;
-}
-
-.explore-card-grid > * {
-  margin-bottom: 0;
+  gap: 20px 20px;
 }
 
 .explore-grid-3 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 24px;
+  gap: 20px 20px;
 }
 
 .explore-grid-4 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px;
+  gap: 20px 20px;
 }
 
 .explore-grid-2 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
-  gap: 20px;
+  gap: 20px 20px;
 }
 
 /* Horizontal scroll row */
