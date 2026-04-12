@@ -51,7 +51,7 @@ const DESTINATIONS = [
     name: 'Tucson & Southern Arizona',
     location: 'Southern Arizona',
     description: 'UNESCO City of Gastronomy, Saguaro National Park, Old West history in Tombstone, world-class birding, and authentic Sonoran Desert culture.',
-    image: 'https://images.unsplash.com/photo-1512958789522-1a8b93228cd4?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Northern Arizona',

@@ -1019,7 +1019,7 @@ Arizona's nightlife is as warm and inviting as the desert evening itself - come 
     shortName: "Sports",
     tagline: "Pro teams, spring training, motorsports, and college athletics",
     heroImage:
-      "https://images.unsplash.com/photo-1461896836934-bd45ba8fcf9b?w=1920&q=80&auto=format",
+      "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=1920&q=80&auto=format",
     description: `Arizona has evolved into one of America's most dynamic sports markets, home to professional franchises across every major league, a beloved spring training tradition that fills stadiums across the Valley each February and March, and a motorsports scene that hosts NASCAR's championship weekend. Whether you are a lifelong fan or a casual spectator drawn by the atmosphere, the state's sports calendar delivers twelve months of action set against a backdrop of sunshine, mountain views, and enthusiastic, knowledgeable crowds.
 
 The Valley of the Sun is home to teams in all four major professional leagues plus a growing roster of additional franchises. The Arizona Diamondbacks play at Chase Field in downtown Phoenix, one of the few MLB stadiums with a retractable roof - a necessity when summer temperatures soar past 110 degrees. The Phoenix Suns and Phoenix Mercury share the Footprint Center, also downtown, bringing NBA and WNBA action to a passionate fanbase. The Arizona Cardinals play at State Farm Stadium in Glendale, an architectural marvel with both a retractable roof and a roll-out natural grass field, and the facility also hosts the Fiesta Bowl and has been home to multiple Super Bowls. Phoenix Rising FC represents the Valley in the USL Championship, adding to the soccer culture fueled by the area's large and passionate Latino community.

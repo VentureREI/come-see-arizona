@@ -101,7 +101,7 @@ const ARTICLES: Record<string, Article> = {
       "The arts and dining scene punches well above its weight for a town of roughly 10,000 residents. Tlaquepaque Arts and Shopping Village is a beautifully designed marketplace modeled after a traditional Mexican village, filled with galleries, boutiques, and studios. Elote Cafe has earned a cult following for its Mexican-inspired dishes built around fire-roasted corn and bold Southwestern flavors. Mariposa Latin Inspired Grill offers stunning red rock views alongside creative Latin American cuisine that draws foodies from across the state.",
       "Sedona rewards visitors who slow down and stay a while. Catch the sunrise from Airport Mesa, hike to the saddle of Cathedral Rock in the morning light, browse galleries in the afternoon, and end the day with a memorable dinner as the rocks turn gold outside your window. It is a place that stays with you long after you leave.",
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1500534314263-0869cceaebeb?auto=format&fit=crop&w=1600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=1600&q=80',
     category: 'Destinations',
   },
 
@@ -137,7 +137,7 @@ const ARTICLES: Record<string, Article> = {
       "Prescott National Forest surrounds the town on nearly every side, providing endless opportunities for hiking, mountain biking, horseback riding, and camping. The Granite Mountain Wilderness and Thumb Butte are local favorites for day hikes with rewarding views. Back in town, the antique shops along Cortez Street and Montezuma Street are a treasure hunter's dream, stocked with Western memorabilia, vintage furniture, and one-of-a-kind finds.",
       "The town's calendar is packed with events that celebrate its heritage, including the World's Oldest Rodeo held every Fourth of July since 1888. Prescott manages to honor its past without feeling stuck in it. The growing craft beer scene, farm-to-table restaurants, and thriving arts community give it a contemporary edge that keeps both longtime residents and first-time visitors coming back for more.",
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1500069532477-843cbe12af69?auto=format&fit=crop&w=1600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?auto=format&fit=crop&w=1600&q=80',
     category: 'Destinations',
   },
 };

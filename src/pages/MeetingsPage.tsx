@@ -11,7 +11,7 @@ const VENUES = [
     location: '100 N 3rd St, Phoenix',
     stats: '900K+ sq ft | 99 meeting rooms | 312,500 sq ft exhibit hall',
     description: 'One of the largest convention centers in the Southwest, centrally located in downtown Phoenix with direct light rail access, hundreds of nearby hotel rooms, and a walkable entertainment district.',
-    image: 'https://images.unsplash.com/photo-1587825140708-dfaf18c4e236?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Scottsdale Resort Conference Centers',

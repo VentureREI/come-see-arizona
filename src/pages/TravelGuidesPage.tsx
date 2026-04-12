@@ -170,7 +170,7 @@ export default function TravelGuidesPage() {
               <p style={{ ...body }}>Amtrak's Southwest Chief stops in Flagstaff (Chicago to LA), and the Sunset Limited passes through Tucson (New Orleans to LA).</p>
             </div>
             <div style={{ flex: '0 1 420px', minWidth: 280 }}>
-              <img src="https://images.unsplash.com/photo-1436491865332-7a61a109db05?auto=format&fit=crop&w=800&q=80" alt="Aerial view of Phoenix Sky Harbor airport" style={{ width: '100%', borderRadius: 16, marginBottom: 24 }} loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1577643816920-65b43ba99fba?auto=format&fit=crop&w=800&q=80" alt="Aerial view of Phoenix Sky Harbor airport" style={{ width: '100%', borderRadius: 16, marginBottom: 24 }} loading="lazy" />
               <div style={{ background: '#fff', borderRadius: 12, padding: 24, boxShadow: '0 1px 3px rgba(0,0,0,0.06)' }}>
                 <h4 style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, marginBottom: 12, color: '#1A1A1A' }}>Driving Distances to Phoenix</h4>
                 {[['Los Angeles', '5 hours', 'I-10'], ['Las Vegas', '4.5 hours', 'US-93'], ['San Diego', '5.5 hours', 'I-8'], ['Albuquerque', '6.5 hours', 'I-40']].map(([city, time, route]) => (
