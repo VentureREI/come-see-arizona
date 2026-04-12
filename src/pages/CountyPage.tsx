@@ -215,7 +215,7 @@ export default function CountyPage() {
             <h2 className="explore-section-title">Cities in {county.name}</h2>
           </div>
           <div className="explore-container">
-            <div className="explore-card-grid">
+            <div className="explore-card-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '24px' }}>
               {cities.map((city) => (
                 <Link
                   key={city.slug}

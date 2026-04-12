@@ -277,7 +277,7 @@ export default function NeighborhoodPage() {
             <h2 className="explore-section-title">More Neighborhoods in {city.name}</h2>
           </div>
           <div className="explore-container">
-            <div className="explore-card-grid">
+            <div className="explore-card-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '24px' }}>
               {displayedSiblings.map((sibling) => (
                 <Link
                   key={sibling.slug}
