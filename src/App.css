@@ -1701,7 +1701,7 @@ a.neighborhood-card {
 
 /* County cards - taller */
 .county-card {
-  min-height: 320px;
+  min-height: 280px;
 }
 
 /* City cards */
