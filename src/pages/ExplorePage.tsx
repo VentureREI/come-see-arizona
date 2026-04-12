@@ -12,7 +12,7 @@ const webPageSchema = {
   name: 'Explore Arizona Cities, Neighborhoods & Zip Codes',
   description:
     'Explore every city, neighborhood, zip code, and school district in Maricopa, Pinal, and Pima counties. Find detailed guides to Arizona communities with home prices, schools, and things to do.',
-  url: 'https://comeandseearizona.com/explore',
+  url: 'https://comeseearizona.com/explore',
 };
 
 type ActiveTab = 'cities' | 'neighborhoods' | 'zips' | 'districts';

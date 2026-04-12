@@ -9,7 +9,7 @@
  * Usage: npx tsx scripts/ping-indexnow.ts https://example.com/page1 https://example.com/page2
  */
 
-const SITE_URL = 'https://www.comeandseearizona.com';
+const SITE_URL = 'https://www.comeseearizona.com';
 
 async function pingIndexNow(urls: string[]) {
   const apiKey = process.env.INDEXNOW_API_KEY;

@@ -30,7 +30,7 @@ export default function ThingsToDoSubPage() {
     '@type': 'CollectionPage',
     name: `${category.name} in Arizona`,
     description: category.description.slice(0, 300),
-    url: `https://comeandseearizona.com/things-to-do/${category.slug}`,
+    url: `https://comeseearizona.com/things-to-do/${category.slug}`,
   };
 
   // Schema: TouristAttraction for first 10 listings

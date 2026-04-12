@@ -51,7 +51,7 @@ const FAQS = [
   },
   {
     question: 'How can I suggest a correction?',
-    answer: 'We take accuracy seriously. If you spot an error or outdated information, please contact us at info@comeandseearizona.com with the page URL and a description of the issue. Our editorial team reviews all submissions and publishes corrections promptly.',
+    answer: 'We take accuracy seriously. If you spot an error or outdated information, please contact us at info@comeseearizona.com with the page URL and a description of the issue. Our editorial team reviews all submissions and publishes corrections promptly.',
   },
   {
     question: 'Does Come And See Arizona accept advertising?',
@@ -64,7 +64,7 @@ const CONTACT_CARDS = [
     icon: '✉',
     title: 'General Inquiries',
     text: 'Questions, feedback, or partnership ideas',
-    detail: 'info@comeandseearizona.com',
+    detail: 'info@comeseearizona.com',
   },
   {
     icon: '🏠',
@@ -76,13 +76,13 @@ const CONTACT_CARDS = [
     icon: '📝',
     title: 'Content Corrections',
     text: 'Report inaccurate or outdated information',
-    detail: 'info@comeandseearizona.com',
+    detail: 'info@comeseearizona.com',
   },
   {
     icon: '📱',
     title: 'Social Media',
     text: 'Follow us for daily Arizona inspiration',
-    detail: '@comeandseearizona',
+    detail: '@comeseearizona',
   },
 ];
 
@@ -92,7 +92,7 @@ const webPageSchema = {
   name: 'About Arizona Tourism',
   description:
     'Learn about Arizona\'s tourism industry, the Come And See Arizona mission, and our commitment to providing the most comprehensive guide to the Grand Canyon State.',
-  url: 'https://comeandseearizona.com/about-arizona-tourism',
+  url: 'https://comeseearizona.com/about-arizona-tourism',
 };
 
 export default function AboutArizonaTourismPage() {
@@ -149,7 +149,7 @@ export default function AboutArizonaTourismPage() {
             </div>
             <div style={{ flex: '0 1 320px', display: 'flex', justifyContent: 'center' }}>
               <img
-                src="/come_see_arizona_logo.png"
+                src="/come-see-arizona.png"
                 alt="Come And See Arizona"
                 style={{ width: '100%', maxWidth: 300, borderRadius: 16 }}
               />

@@ -1,6 +1,6 @@
 export const siteConfig = {
   siteName: 'Come And See Arizona',
-  siteUrl: 'https://www.comeandseearizona.com',
+  siteUrl: 'https://www.comeseearizona.com',
   brokerageName: 'Venture REI',
   leaderName: 'Frank Vazquez',
   leaderCredential: 'over 2,400 homes sold across the Valley',

@@ -37,7 +37,7 @@ const webPageSchema = {
   name: 'Arizona Hiking Trails Directory',
   description:
     'Browse 50+ Arizona hiking trails with detailed maps, difficulty ratings, and trail guides across Phoenix, Sedona, Tucson, Flagstaff, and the Grand Canyon.',
-  url: 'https://comeandseearizona.com/trails',
+  url: 'https://comeseearizona.com/trails',
 };
 
 export default function TrailsLandingPage() {

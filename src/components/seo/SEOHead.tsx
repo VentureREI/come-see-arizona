@@ -9,7 +9,7 @@ interface SEOHeadProps {
 }
 
 export default function SEOHead({ title, description, canonical, schema, breadcrumbs }: SEOHeadProps) {
-  const siteUrl = 'https://comeandseearizona.com';
+  const siteUrl = 'https://comeseearizona.com';
   const fullCanonical = `${siteUrl}${canonical}`;
 
   const breadcrumbSchema = {

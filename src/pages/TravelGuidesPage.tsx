@@ -12,11 +12,11 @@ const webPageSchema = {
   name: 'Arizona Travel Guides - Plan Your Perfect Trip',
   description:
     'Comprehensive Arizona travel planning guide with tips on getting here, getting around, when to visit, what to pack, sample itineraries, budget tips, and seasonal highlights.',
-  url: 'https://comeandseearizona.com/travel-guides',
+  url: 'https://comeseearizona.com/travel-guides',
   publisher: {
     '@type': 'Organization',
     name: 'Come And See Arizona',
-    url: 'https://comeandseearizona.com',
+    url: 'https://comeseearizona.com',
   },
 };
 

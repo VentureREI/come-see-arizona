@@ -17,11 +17,11 @@ const webPageSchema = {
   name: 'Things to Do in Arizona',
   description:
     'Discover the best things to do in Arizona from desert hiking and world-class golf to museums, nightlife, spa resorts, and family adventures. 300+ days of sunshine await.',
-  url: 'https://comeandseearizona.com/things-to-do',
+  url: 'https://comeseearizona.com/things-to-do',
   publisher: {
     '@type': 'Organization',
     name: 'Come And See Arizona',
-    url: 'https://comeandseearizona.com',
+    url: 'https://comeseearizona.com',
   },
 };
 

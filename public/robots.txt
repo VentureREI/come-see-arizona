@@ -25,6 +25,6 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-# AI Crawler Guide: https://comeandseearizona.com/llms.txt
+# AI Crawler Guide: https://comeseearizona.com/llms.txt
 
-Sitemap: https://comeandseearizona.com/sitemap.xml
+Sitemap: https://comeseearizona.com/sitemap.xml

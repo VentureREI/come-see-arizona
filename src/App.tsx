@@ -341,7 +341,7 @@ function App() {
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
             <a href="/" className="logo" aria-label="Come And See Arizona - Home">
-              <img src="/come_see_arizona_logo.png" alt="Come And See Arizona" style={{ height: 90, width: 'auto' }} />
+              <img src="/come-see-arizona.png" alt="Come And See Arizona" style={{ height: 90, width: 'auto' }} />
             </a>
           </div>
 
@@ -741,13 +741,13 @@ function App() {
           <div className="footer-grid">
             <div className="footer-brand">
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
-                <img src="/come_see_arizona_logo.png" alt="Come And See Arizona" style={{ height: 40, width: 'auto' }} />
+                <img src="/come-see-arizona.png" alt="Come And See Arizona" style={{ height: 40, width: 'auto' }} />
                 <h3 className="footer-logo" style={{ margin: 0 }}>Come And See Arizona</h3>
               </div>
               <p>The official guide to Arizona. Find great deals, things to do, travel guides and more.</p>
               <address className="footer-address">
                 Arizona, United States<br />
-                <a href="mailto:info@comeandseearizona.com">info@comeandseearizona.com</a>
+                <a href="mailto:info@comeseearizona.com">info@comeseearizona.com</a>
               </address>
             </div>
             <div className="footer-links-col">
@@ -769,10 +769,10 @@ function App() {
             <div className="footer-social">
               <h4>Follow Us</h4>
               <div className="social-icons">
-                <a href="https://facebook.com/comeandseearizona" aria-label="Follow Come And See Arizona on Facebook"><Facebook size={20} /></a>
-                <a href="https://twitter.com/comeandseearizona" aria-label="Follow Come And See Arizona on Twitter"><Twitter size={20} /></a>
-                <a href="https://instagram.com/comeandseearizona" aria-label="Follow Come And See Arizona on Instagram"><Instagram size={20} /></a>
-                <a href="https://youtube.com/comeandseearizona" aria-label="Follow Come And See Arizona on YouTube"><Youtube size={20} /></a>
+                <a href="https://facebook.com/comeseearizona" aria-label="Follow Come And See Arizona on Facebook"><Facebook size={20} /></a>
+                <a href="https://twitter.com/comeseearizona" aria-label="Follow Come And See Arizona on Twitter"><Twitter size={20} /></a>
+                <a href="https://instagram.com/comeseearizona" aria-label="Follow Come And See Arizona on Instagram"><Instagram size={20} /></a>
+                <a href="https://youtube.com/comeseearizona" aria-label="Follow Come And See Arizona on YouTube"><Youtube size={20} /></a>
               </div>
             </div>
           </div>

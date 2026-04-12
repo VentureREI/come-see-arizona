@@ -13,11 +13,11 @@ const webPageSchema = {
   name: 'Eat and Drink in Arizona',
   description:
     'Explore Arizona\'s best restaurants, bars, breweries, coffee shops, and food halls. From award-winning Mexican cuisine and fine dining to craft beer and rooftop cocktails.',
-  url: 'https://comeandseearizona.com/eat-and-drink',
+  url: 'https://comeseearizona.com/eat-and-drink',
   publisher: {
     '@type': 'Organization',
     name: 'Come And See Arizona',
-    url: 'https://comeandseearizona.com',
+    url: 'https://comeseearizona.com',
   },
 };
 

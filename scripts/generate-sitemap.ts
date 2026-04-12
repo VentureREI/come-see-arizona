@@ -12,7 +12,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const SITE_URL = 'https://www.comeandseearizona.com';
+const SITE_URL = 'https://www.comeseearizona.com';
 const TODAY = new Date().toISOString().split('T')[0];
 const STATIC_DATE = '2026-01-01';
 
