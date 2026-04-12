@@ -1,0 +1,5 @@
+REPLACE THIS FILE WITH YOUR INDEXNOW API KEY
+
+Generate a free key at https://www.bing.com/indexnow
+The filename should be your key value (e.g., abc123.txt) and the file contents should be the key itself.
+Place the key file at public/[your-key].txt for verification.
