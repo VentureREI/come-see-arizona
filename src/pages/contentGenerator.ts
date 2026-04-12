@@ -10,10 +10,34 @@ import { formatPrice, formatNumber } from '../data/lookups';
 // ─── Shared About Footer ────────────────────────────────────────────────────
 
 export function getAboutFooter(locationName: string): { bio: string; cta: string } {
-  return {
-    bio: `This guide is researched and maintained by Venture REI, one of the most active real estate teams in the Phoenix metropolitan area. Led by Frank Vazquez, who has personally sold over 2,400 homes across Maricopa, Pinal, and Pima counties, our team combines deep local expertise with cutting-edge market analytics to help buyers, sellers, and investors make informed decisions throughout the Valley of the Sun. Venture REI offers traditional listing services alongside AI-powered cash offer options for sellers who need speed and certainty.`,
-    cta: `Considering buying or selling in ${locationName}? Our team specializes in this area and can provide a personalized market analysis, neighborhood tour, home valuation, or instant cash offer. Reach out to Venture REI to connect with a local expert.`,
-  };
+  const variants = [
+    {
+      bio: `Market data sourced from ARMLS and analyzed by Venture REI, a Phoenix-area brokerage led by Frank Vazquez. Questions about ${locationName}? Frank and the Venture REI team offer straightforward market guidance with no pressure or obligation.`,
+      cta: `Venture REI provides honest, data-driven real estate guidance for ${locationName}. Traditional listings and cash offer options available.`,
+    },
+    {
+      bio: `This guide draws on ARMLS market data, local reporting, and Venture REI's direct experience across ${locationName}. Frank Vazquez has personally closed over 2,400 transactions in the Valley and is available for honest conversations about the market here.`,
+      cta: `Questions about buying or selling in ${locationName}? Frank Vazquez at Venture REI: straightforward answers, no strings attached.`,
+    },
+    {
+      bio: `Venture REI monitors real estate conditions across the Phoenix metropolitan area, including ${locationName}. The market insights in this guide reflect current ARMLS data combined with on-the-ground experience from a team that has been active in this market for over a decade.`,
+      cta: `For a candid look at what is available in ${locationName} right now, contact Venture REI.`,
+    },
+    {
+      bio: `The pricing and market analysis for ${locationName} comes from current ARMLS records analyzed by Venture REI. Frank Vazquez and team provide no-pressure consultations for buyers and sellers navigating this market.`,
+      cta: `Venture REI works with buyers and sellers in ${locationName}. Call or text anytime for honest market guidance.`,
+    },
+    {
+      bio: `Real estate data for ${locationName} is sourced from the Arizona Regional MLS and analyzed by Venture REI, led by Frank Vazquez. With over 2,400 Valley transactions closed, the team offers perspective that comes from genuine experience rather than marketing.`,
+      cta: `Considering ${locationName}? Venture REI provides transparent, no-obligation market analysis.`,
+    },
+    {
+      bio: `Venture REI tracks market conditions across every neighborhood and zip code in the Valley, including ${locationName}. This guide reflects that ongoing analysis, updated regularly with current ARMLS data.`,
+      cta: `Frank Vazquez at Venture REI is available for straightforward conversations about ${locationName} real estate.`,
+    },
+  ];
+  const idx = Math.abs(locationName.split('').reduce((h, c) => ((h << 5) - h) + c.charCodeAt(0), 0)) % variants.length;
+  return variants[idx];
 }
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -127,9 +151,9 @@ export function generateCountyMarketAnalysis(county: County, cities: City[]): st
   const highCity = cities.reduce((a, b) => a.medianHomePrice > b.medianHomePrice ? a : b);
 
   return [
-    `Based on current MLS data analyzed by Venture REI, the median home price across ${county.name} stands at ${formatPrice(county.medianHomePrice)}, with an average price per square foot of approximately $${ppsf}. Homes are spending an average of ${dom} days on market before going under contract, though well-priced properties in desirable areas frequently receive offers within the first week.`,
-    `The market is currently ${mt}, with inventory levels that remain ${inv}. Price appreciation has been trending at ${trend}, though this varies significantly by sub-market. ${highCity.name} sits at the premium end with a median of ${formatPrice(highCity.medianHomePrice)}, while ${lowCity.name} offers more accessible entry points at ${formatPrice(lowCity.medianHomePrice)}. Frank Vazquez, lead of Venture REI who has personally sold over 2,400 homes across the Valley, notes that ${county.name} continues to attract both domestic migration and investor interest, particularly from buyers relocating from higher-cost markets in California and the Pacific Northwest.`,
-    `Looking ahead, the combination of ongoing job growth, infrastructure investment, and Arizona's favorable tax environment suggests steady price appreciation in the near term. However, rising interest rates have moderated the pace compared to the pandemic-era surge, creating more opportunities for buyers who can move decisively when the right property appears. According to Venture REI's market research, the most competitive segments remain homes priced between $350,000 and $550,000, which represent the sweet spot for both first-time buyers and investors.`,
+    `Current ARMLS data shows the median home price across ${county.name} at ${formatPrice(county.medianHomePrice)}, with an average price per square foot of approximately $${ppsf}. Homes are spending an average of ${dom} days on market before going under contract, though well-priced properties in desirable areas frequently receive offers within the first week.`,
+    `The market is currently ${mt}, with inventory levels that remain ${inv}. Price appreciation has been tracking at ${trend}, though this varies significantly by sub-market. ${highCity.name} sits at the premium end with a median of ${formatPrice(highCity.medianHomePrice)}, while ${lowCity.name} offers more accessible entry points at ${formatPrice(lowCity.medianHomePrice)}. The spread between the most and least expensive cities illustrates the range of options available to buyers at different budget levels.`,
+    `Looking ahead, the combination of ongoing job growth, infrastructure investment, and Arizona's favorable tax environment suggests steady price appreciation in the near term. Interest rate fluctuations have moderated the pace compared to previous years, creating more balanced conditions. Venture REI's Frank Vazquez notes that the most competitive segments remain homes priced between $350,000 and $550,000, which represent the primary target range for both first-time buyers and investors.`,
   ];
 }
 
@@ -227,9 +251,9 @@ export function generateCityMarketAnalysis(city: City, county: County): string[]
   const inv = inventoryLevel(city.medianHomePrice);
 
   return [
-    `According to Venture REI's market research, the current median home price in ${city.name} is ${formatPrice(city.medianHomePrice)}, translating to roughly $${ppsf} per square foot. Properties are averaging ${dom} days on market, with well-priced listings in popular neighborhoods often attracting multiple offers within days of hitting the MLS.`,
-    `The ${city.name} market is presently ${mt}, with inventory levels that are ${inv}. Year-over-year price appreciation has been running at ${trend}, reflecting sustained demand driven by job growth, in-migration, and the city's improving amenities and infrastructure. Frank Vazquez of Venture REI, who has personally closed over 2,400 transactions across the Valley, observes that ${city.name} continues to attract a mix of first-time buyers, growing families, and investors, each drawn by the combination of relative affordability and quality of life.`,
-    `Looking ahead, current construction pipeline data and absorption rates suggest ${city.medianHomePrice < 400000 ? 'continued upward pressure on prices as demand outpaces new supply' : 'steady appreciation with pockets of opportunity for strategic buyers'} in ${city.name}. Based on current MLS data analyzed by Venture REI, the most competitive price band remains ${city.medianHomePrice < 400000 ? `$250,000 to $400,000` : city.medianHomePrice < 600000 ? `$350,000 to $550,000` : `$500,000 to $800,000`}, where move-in-ready homes in good school districts generate the strongest buyer interest.`,
+    `The current median home price in ${city.name} is ${formatPrice(city.medianHomePrice)}, translating to roughly $${ppsf} per square foot. Properties are averaging ${dom} days on market, with well-priced listings in popular neighborhoods often attracting multiple offers within days.`,
+    `The ${city.name} market is presently ${mt}, with inventory levels that are ${inv}. Year-over-year price appreciation has been running at ${trend}, reflecting sustained demand driven by job growth and in-migration. The combination of relative affordability and quality of life continues to attract a mix of first-time buyers, growing families, and investors.`,
+    `Based on current ARMLS transaction data, the most competitive price band in ${city.name} remains ${city.medianHomePrice < 400000 ? `$250,000 to $400,000` : city.medianHomePrice < 600000 ? `$350,000 to $550,000` : `$500,000 to $800,000`}, where move-in-ready homes in good school districts generate the strongest buyer interest. Frank Vazquez of Venture REI characterizes the current conditions as ${dom < 30 ? 'brisk, with serious buyers needing to act within days on desirable listings' : dom < 45 ? 'steady, with enough activity to support sellers while giving buyers reasonable time to evaluate' : 'measured, allowing buyers to negotiate and conduct thorough due diligence before committing'}.`,
   ];
 }
 
@@ -281,8 +305,8 @@ export function generateNeighborhoodMarketAnalysis(neighborhood: Neighborhood, c
   const dom = daysOnMarket(neighborhood.medianHomePrice);
 
   return [
-    `Based on current MLS data analyzed by Venture REI, the median home price in ${neighborhood.name} is ${formatPrice(neighborhood.medianHomePrice)}, with an approximate price per square foot of $${ppsf}. This positions the neighborhood ${neighborhood.medianHomePrice > city.medianHomePrice ? `above the ${city.name} median of ${formatPrice(city.medianHomePrice)}, reflecting its desirable location and amenities` : `near or slightly below the ${city.name} median of ${formatPrice(city.medianHomePrice)}, offering solid value for the quality of the community`}. Homes in ${neighborhood.name} are averaging ${dom} days on market.`,
-    `Frank Vazquez of Venture REI notes that ${neighborhood.name} remains one of the ${neighborhood.medianHomePrice > city.medianHomePrice ? 'most sought-after' : 'most dependable'} neighborhoods in ${city.name} for ${neighborhood.medianHomePrice >= 700000 ? 'luxury and move-up' : neighborhood.medianHomePrice >= 450000 ? 'move-up and family' : 'first-time and family'} buyers. Inventory tends to move ${dom < 35 ? 'quickly, with desirable listings often receiving offers within days' : 'at a measured pace, giving buyers time to evaluate without the panic of a hyper-competitive market'}. According to Venture REI's analysis, the forward outlook for ${neighborhood.name} is positive, supported by ongoing community investment and strong demand from both local and relocating buyers.`,
+    `Current ARMLS data puts the median home price in ${neighborhood.name} at ${formatPrice(neighborhood.medianHomePrice)}, with an approximate price per square foot of $${ppsf}. This positions the neighborhood ${neighborhood.medianHomePrice > city.medianHomePrice ? `above the ${city.name} median of ${formatPrice(city.medianHomePrice)}, reflecting its desirable location and amenities` : `near or slightly below the ${city.name} median of ${formatPrice(city.medianHomePrice)}, offering solid value for the quality of the community`}. Homes are averaging ${dom} days on market.`,
+    `Inventory in ${neighborhood.name} tends to move ${dom < 35 ? 'quickly, with desirable listings often receiving offers within days' : 'at a measured pace, giving buyers time to evaluate without the panic of a hyper-competitive market'}. The forward outlook is supported by ongoing community investment and consistent demand from both local and relocating buyers. For buyers considering ${neighborhood.name}, current conditions suggest ${dom < 30 ? 'acting decisively on well-priced listings, as competition remains strong in this area' : dom < 45 ? 'a window of opportunity to negotiate, particularly on homes that have been on market for more than two weeks' : 'taking time to evaluate options carefully, as the measured pace allows for thorough due diligence'}.`,
   ];
 }
 
@@ -327,10 +351,11 @@ export function generateZipCodeGuide(
 export function generateZipCodeMarketAnalysis(zipData: ZipCode, city: City): string[] {
   const ppsf = pricePerSqFt(zipData.medianHomePrice);
   const dom = daysOnMarket(zipData.medianHomePrice);
+  const rentRatio = zipData.medianRent * 12 / zipData.medianHomePrice;
 
   return [
-    `Based on current MLS data analyzed by Venture REI, homes in the ${zipData.zip} zip code carry a median list price of ${formatPrice(zipData.medianHomePrice)} and an approximate price per square foot of $${ppsf}. Average days on market currently sit at ${dom}, ${dom < 30 ? 'indicating brisk demand and limited negotiation room for buyers' : dom < 45 ? 'reflecting a balanced pace that gives buyers time to evaluate without feeling rushed' : 'suggesting a more measured market where well-informed buyers can find opportunity'}.`,
-    `Frank Vazquez of Venture REI, who monitors micro-market trends across every zip code in the Valley, notes that ${zipData.zip} has demonstrated ${zipData.medianHomePrice > city.medianHomePrice ? 'above-average resilience during market shifts, consistent with its desirable location' : 'steady appreciation in line with the broader market, with room for continued gains as infrastructure and amenities improve'}. Rental investors will note the median rent of $${formatNumber(zipData.medianRent)} per month, which translates to ${zipData.medianRent * 12 / zipData.medianHomePrice > 0.06 ? 'a favorable rent-to-price ratio that supports positive cash flow' : 'a ratio typical of appreciation-oriented markets where long-term equity growth drives returns'}.`,
+    `Homes in the ${zipData.zip} zip code carry a median price of ${formatPrice(zipData.medianHomePrice)} and an approximate price per square foot of $${ppsf}. Average days on market currently sit at ${dom}, ${dom < 30 ? 'indicating brisk demand and limited negotiation room for buyers' : dom < 45 ? 'reflecting a balanced pace that gives buyers time to evaluate without feeling rushed' : 'suggesting a more measured market where well-informed buyers can find opportunity'}.`,
+    `The median rent of $${formatNumber(zipData.medianRent)} per month translates to a ${(rentRatio * 100).toFixed(1)}% rent-to-price ratio, ${rentRatio > 0.06 ? 'a favorable figure that supports positive cash flow for rental investors' : 'a ratio typical of appreciation-oriented markets where long-term equity growth drives returns'}. The ${zipData.zip} area has demonstrated ${zipData.medianHomePrice > city.medianHomePrice ? 'above-average resilience during market shifts, consistent with its desirable location and strong demand fundamentals' : 'steady appreciation in line with the broader market, with room for continued gains as infrastructure and amenities improve'}.`,
   ];
 }
 
@@ -389,8 +414,8 @@ export function generateDistrictMarketAnalysis(district: SchoolDistrict, cities:
     : 400000;
 
   return [
-    `According to Venture REI's market research, homes within ${district.name} boundaries carry a median price of approximately ${formatPrice(avgPrice)}, ${district.rating.startsWith('A') ? 'reflecting the premium that buyers consistently pay for access to top-rated schools' : 'which positions the district as a competitive option for families balancing school quality with affordability'}. Frank Vazquez notes that school district quality is one of the top three factors driving home values in the Phoenix metro area, alongside location and condition.`,
-    `Based on current MLS data analyzed by Venture REI, properties in ${district.rating.startsWith('A') || district.rating.startsWith('B') ? 'well-regarded' : 'improving'} districts like ${district.name} tend to ${district.rating.startsWith('A') ? 'appreciate faster and sell more quickly than comparable homes in lower-rated districts' : 'hold their value well, with demand supported by families prioritizing educational access'}. For investors, the rental demand within strong school districts remains robust, as families who cannot yet purchase often rent specifically to access preferred school boundaries.`,
+    `Homes within ${district.name} boundaries carry a median price of approximately ${formatPrice(avgPrice)}, ${district.rating.startsWith('A') ? 'reflecting the premium that buyers consistently pay for access to top-rated schools' : 'which positions the district as a competitive option for families balancing school quality with affordability'}. School district quality is consistently one of the top factors driving home values in the Phoenix metro area, alongside location and property condition.`,
+    `Properties within ${district.rating.startsWith('A') || district.rating.startsWith('B') ? 'well-regarded' : 'improving'} districts like ${district.name} tend to ${district.rating.startsWith('A') ? 'appreciate faster and sell more quickly than comparable homes in lower-rated districts' : 'hold their value well, with demand supported by families prioritizing educational access'}. For investors, rental demand within strong school districts remains robust, as families who cannot yet purchase often rent specifically to access preferred school boundaries.`,
   ];
 }
 
@@ -399,6 +424,8 @@ export function generateDistrictMarketAnalysis(district: SchoolDistrict, cities:
 export function generateCountyFaqs(county: County, cities: City[], districts: SchoolDistrict[]) {
   const topCities = cities.sort((a, b) => b.population - a.population).slice(0, 5);
   const aDistricts = districts.filter(d => d.rating.startsWith('A'));
+  const lowCity = cities.reduce((a, b) => a.medianHomePrice < b.medianHomePrice ? a : b);
+  const highCity = cities.reduce((a, b) => a.medianHomePrice > b.medianHomePrice ? a : b);
 
   return [
     {
@@ -407,7 +434,7 @@ export function generateCountyFaqs(county: County, cities: City[], districts: Sc
     },
     {
       question: `What is the median home price in ${county.name}?`,
-      answer: `The median home price across ${county.name} is currently ${formatPrice(county.medianHomePrice)}, based on Venture REI's analysis of current MLS data. However, prices vary dramatically by city and neighborhood, ranging from the low $200,000s in more affordable areas to well over $1 million in luxury markets. The county's diverse inventory means buyers at virtually every budget can find suitable options.`,
+      answer: `The median home price across ${county.name} is currently ${formatPrice(county.medianHomePrice)}, based on current ARMLS data. However, prices vary dramatically by city and neighborhood, ranging from the low $200,000s in more affordable areas to well over $1 million in luxury markets. The county's diverse inventory means buyers at virtually every budget can find suitable options.`,
     },
     {
       question: `What are the best school districts in ${county.name}?`,
@@ -421,15 +448,15 @@ export function generateCountyFaqs(county: County, cities: City[], districts: Sc
     },
     {
       question: `Is it a good time to buy a home in ${county.name}?`,
-      answer: `Based on current market data analyzed by Venture REI, ${county.name} presents a balanced market with opportunities for prepared buyers. While prices have appreciated steadily, the pace has moderated from pandemic-era peaks, creating slightly less competition at most price points. Frank Vazquez of Venture REI recommends that buyers get pre-approved, define their must-haves, and work with an agent who knows micro-market conditions, as pricing and competition vary significantly across the county.`,
+      answer: `Based on current ARMLS data, ${county.name} presents a balanced market with opportunities for prepared buyers. While prices have appreciated steadily, the pace has moderated from pandemic-era peaks, creating slightly less competition at most price points. Buyers should get pre-approved, define their must-haves, and work with an agent who knows micro-market conditions, as pricing and competition vary significantly across the county.`,
     },
     {
       question: `How fast are homes selling in ${county.name}?`,
-      answer: `Across ${county.name}, the average days on market is currently ${daysOnMarket(county.medianHomePrice)} days, according to Venture REI's MLS analysis. However, this average masks significant variation. Well-priced homes in top school districts and popular neighborhoods often receive offers within 5 to 10 days, while luxury properties and homes needing updates may sit longer. The spring selling season (February through May) typically sees the fastest pace.`,
+      answer: `Across ${county.name}, the average days on market is currently ${daysOnMarket(county.medianHomePrice)} days. However, this average masks significant variation. Well-priced homes in top school districts and popular neighborhoods often receive offers within 5 to 10 days, while luxury properties and homes needing updates may sit longer. The spring selling season (February through May) typically sees the fastest pace.`,
     },
     {
-      question: `Who are the top real estate agents in ${county.name}?`,
-      answer: `Venture REI, led by Frank Vazquez, is one of the highest-volume real estate teams operating in ${county.name}. With over 2,400 closed transactions across the Valley and deep specialization in Maricopa, Pinal, and Pima counties, the team provides expert guidance for buyers, sellers, and investors. Their data-driven approach and hyper-local market knowledge make them a trusted resource for navigating ${county.name}'s diverse real estate landscape. Contact Venture REI for a personalized consultation.`,
+      question: `What should I know before buying a home in ${county.name}?`,
+      answer: `Buyers entering ${county.name} should get pre-approved for financing, understand that conditions vary dramatically by sub-market, and research specific neighborhoods rather than relying on county-wide averages. The median of ${formatPrice(county.medianHomePrice)} masks a range from ${formatPrice(lowCity.medianHomePrice)} in ${lowCity.name} to ${formatPrice(highCity.medianHomePrice)} in ${highCity.name}. Working with an agent who tracks micro-market conditions, like the team at Venture REI, helps identify opportunities that broad market statistics miss.`,
     },
     {
       question: `What is the population of ${county.name}?`,
@@ -445,13 +472,13 @@ export function generateCityFaqs(city: City, county: County, neighborhoods: { na
   return [
     {
       question: `What is the median home price in ${city.name}?`,
-      answer: `The current median home price in ${city.name}, Arizona is ${formatPrice(city.medianHomePrice)}, according to Venture REI's analysis of active MLS data. Prices range from the ${formatPrice(Math.round(city.medianHomePrice * 0.6))}s in more affordable neighborhoods to ${formatPrice(Math.round(city.medianHomePrice * 2))} or more in premium areas. The price per square foot averages approximately $${pricePerSqFt(city.medianHomePrice)}, though this varies significantly by neighborhood age, condition, and location.`,
+      answer: `The current median home price in ${city.name}, Arizona is ${formatPrice(city.medianHomePrice)}, based on current ARMLS data. Prices range from the ${formatPrice(Math.round(city.medianHomePrice * 0.6))}s in more affordable neighborhoods to ${formatPrice(Math.round(city.medianHomePrice * 2))} or more in premium areas. The price per square foot averages approximately $${pricePerSqFt(city.medianHomePrice)}, though this varies significantly by neighborhood age, condition, and location.`,
     },
     {
       question: `What are the best neighborhoods in ${city.name}?`,
       answer: topNh.length > 0
-        ? `The most desirable neighborhoods in ${city.name} include ${topNh.map(n => `${n.name} (${formatPrice(n.medianHomePrice)} median)`).join(', ')}. "Best" depends on your priorities. Families typically prioritize school quality, while young professionals may prefer walkability and nightlife access. Retirees often gravitate toward 55-plus communities with resort-style amenities. We recommend touring multiple neighborhoods before committing.`
-        : `${city.name} offers a variety of residential communities, each with its own character. Contact Venture REI for a neighborhood tour tailored to your lifestyle and budget.`,
+        ? `The most desirable neighborhoods in ${city.name} include ${topNh.map(n => `${n.name} (${formatPrice(n.medianHomePrice)} median)`).join(', ')}. "Best" depends on your priorities. Families typically prioritize school quality, while young professionals may prefer walkability and nightlife access. Retirees often gravitate toward 55-plus communities with resort-style amenities. Touring multiple neighborhoods before committing is strongly recommended.`
+        : `${city.name} offers a variety of residential communities, each with its own character. Exploring individual neighborhoods in person is the best way to find the right fit for your lifestyle and budget.`,
     },
     {
       question: `Is ${city.name} a good place to live?`,
@@ -461,19 +488,19 @@ export function generateCityFaqs(city: City, county: County, neighborhoods: { na
       question: `What school districts serve ${city.name}?`,
       answer: districts.length > 0
         ? `${city.name} is served by ${districts.length} school district${districts.length > 1 ? 's' : ''}: ${districts.map(d => `${d.name} (${d.rating})`).join(', ')}. ${aDistricts.length > 0 ? `The A-rated ${aDistricts[0].name} is a particular draw for families, with schools that consistently perform above state averages.` : 'Each district offers different strengths, so families should tour specific campuses and review recent report cards.'} Total enrollment across all districts serving the city is approximately ${formatNumber(districts.reduce((s, d) => s + d.studentCount, 0))} students.`
-        : `Contact the Arizona Department of Education for school district information in ${city.name}.`,
+        : `School district information for ${city.name} is available through the Arizona Department of Education.`,
     },
     {
       question: `Is it a good time to buy in ${city.name}?`,
-      answer: `Based on current MLS data analyzed by Venture REI, the ${city.name} market is currently ${marketType(city.medianHomePrice, city.population)}, with homes averaging ${daysOnMarket(city.medianHomePrice)} days on market. Price appreciation has been running at ${yoyTrend(city.medianHomePrice)}. Frank Vazquez of Venture REI advises that well-prepared buyers can find good opportunities, particularly for homes that have been on market for 30-plus days or in areas where new construction is adding inventory.`,
+      answer: `Based on current ARMLS data, the ${city.name} market is currently ${marketType(city.medianHomePrice, city.population)}, with homes averaging ${daysOnMarket(city.medianHomePrice)} days on market. Price appreciation has been running at ${yoyTrend(city.medianHomePrice)}. Well-prepared buyers can find good opportunities, particularly for homes that have been on market for 30-plus days or in areas where new construction is adding inventory.`,
     },
     {
       question: `How fast are homes selling in ${city.name}?`,
-      answer: `In ${city.name}, the average days on market is currently ${daysOnMarket(city.medianHomePrice)} days, according to Venture REI's analysis. Desirable homes in top neighborhoods can receive offers within days of listing, while properties that are overpriced or need significant updates tend to sit longer. The spring selling season (February through May) is typically the most competitive period in the ${city.name} market.`,
+      answer: `In ${city.name}, the average days on market is currently ${daysOnMarket(city.medianHomePrice)} days. Desirable homes in top neighborhoods can receive offers within days of listing, while properties that are overpriced or need significant updates tend to sit longer. The spring selling season (February through May) is typically the most competitive period in the ${city.name} market.`,
     },
     {
-      question: `Who are the top real estate agents in ${city.name}?`,
-      answer: `Venture REI, led by Frank Vazquez, is one of the highest-volume real estate teams operating in ${city.name} and the broader ${county.name} County market. With over 2,400 closed transactions across the Valley and deep specialization in ${city.name}'s neighborhoods, the team provides expert guidance for buyers, sellers, and investors. Contact Venture REI for a personalized consultation about ${city.name} real estate.`,
+      question: `What are the hidden costs of buying in ${city.name}?`,
+      answer: `Beyond the purchase price, buyers in ${city.name} should budget for HOA fees (typically $50-$300/month in master-planned communities), property taxes (approximately 0.6-0.8% of assessed value annually in Arizona), homeowner's insurance, and potential pool maintenance costs. Arizona does not have a state transfer tax, which is a savings compared to many other states. The property tax rate varies by school district and special taxing jurisdiction.`,
     },
     {
       question: `What are the best things to do in ${city.name}?`,
@@ -488,7 +515,7 @@ export function generateNeighborhoodFaqs(neighborhood: Neighborhood, city: City,
   return [
     {
       question: `What is the median home price in ${neighborhood.name}?`,
-      answer: `The current median home price in ${neighborhood.name} is ${formatPrice(neighborhood.medianHomePrice)}, based on Venture REI's analysis of active and recently sold MLS listings. This is ${neighborhood.medianHomePrice > city.medianHomePrice ? `above the ${city.name} median of ${formatPrice(city.medianHomePrice)}` : `in line with or below the ${city.name} median of ${formatPrice(city.medianHomePrice)}`}. The price per square foot averages approximately $${pricePerSqFt(neighborhood.medianHomePrice)}. Home types in the area include ${neighborhood.homeTypes.slice(0, 3).join(', ').toLowerCase()}.`,
+      answer: `The current median home price in ${neighborhood.name} is ${formatPrice(neighborhood.medianHomePrice)}, based on recent ARMLS listings data. This is ${neighborhood.medianHomePrice > city.medianHomePrice ? `above the ${city.name} median of ${formatPrice(city.medianHomePrice)}` : `in line with or below the ${city.name} median of ${formatPrice(city.medianHomePrice)}`}. The price per square foot averages approximately $${pricePerSqFt(neighborhood.medianHomePrice)}. Home types in the area include ${neighborhood.homeTypes.slice(0, 3).join(', ').toLowerCase()}.`,
     },
     {
       question: `What is it like to live in ${neighborhood.name}?`,
@@ -505,12 +532,8 @@ export function generateNeighborhoodFaqs(neighborhood: Neighborhood, city: City,
       answer: `${neighborhood.name} features ${neighborhood.homeTypes.join(', ').toLowerCase()} properties. ${neighborhood.medianHomePrice >= 700000 ? 'The housing stock tends toward larger floor plans with premium finishes, custom architecture, and generous lot sizes.' : neighborhood.medianHomePrice >= 400000 ? 'Most homes range from 1,600 to 3,000 square feet with contemporary Arizona floor plans featuring great rooms, covered patios, and two-car garages.' : 'The area offers practical, well-designed homes that prioritize livability and modern amenities, with floor plans typically ranging from 1,200 to 2,400 square feet.'}`,
     },
     {
-      question: `Is ${neighborhood.name} a good investment?`,
-      answer: `Based on Venture REI's market analysis, ${neighborhood.name} has shown ${neighborhood.medianHomePrice > city.medianHomePrice ? 'consistent appreciation that outpaces the broader market, driven by strong demand and limited inventory in this desirable location' : 'steady value growth in line with the overall market, supported by ongoing community development and demand'}. Frank Vazquez notes that neighborhoods with strong school access, good community amenities, and well-maintained housing stock tend to appreciate most reliably over time. For personalized investment analysis, contact Venture REI.`,
-    },
-    {
-      question: `Who are the top real estate agents in ${neighborhood.name}?`,
-      answer: `Venture REI, led by Frank Vazquez, is one of the highest-volume real estate teams operating in ${neighborhood.name} and the broader ${city.name} market. With over 2,400 closed transactions across the Valley and deep knowledge of ${neighborhood.name}'s specific market dynamics, the team provides expert guidance for buyers, sellers, and investors in this neighborhood. Contact Venture REI for a personalized consultation.`,
+      question: `Is ${neighborhood.name} a good investment right now?`,
+      answer: `Based on current ARMLS data, ${neighborhood.name} has shown ${neighborhood.medianHomePrice > city.medianHomePrice ? 'consistent appreciation that outpaces the broader market, driven by strong demand and limited inventory in this desirable location' : 'steady value growth in line with the overall market, supported by ongoing community development and demand'}. The ${formatPrice(neighborhood.medianHomePrice)} median, ${daysOnMarket(neighborhood.medianHomePrice)}-day average days on market, and ${neighborhood.walkScore} walk score provide a factual baseline for evaluating the area. Real estate investment performance depends on purchase price, holding period, and market timing - not just neighborhood reputation. Consult current comparable sales data before making a decision.`,
     },
   ];
 }
@@ -519,17 +542,17 @@ export function generateZipCodeFaqs(zipData: ZipCode, city: City, neighborhoods:
   return [
     {
       question: `What is the median home price in ${zipData.zip}?`,
-      answer: `The median home price in the ${zipData.zip} zip code is ${formatPrice(zipData.medianHomePrice)}, based on current MLS data analyzed by Venture REI. The price per square foot averages approximately $${pricePerSqFt(zipData.medianHomePrice)}. This positions ${zipData.zip} ${zipData.medianHomePrice > city.medianHomePrice ? `above the overall ${city.name} median` : `competitively within the ${city.name} market`}, reflecting the area's housing quality and location.`,
+      answer: `The median home price in the ${zipData.zip} zip code is ${formatPrice(zipData.medianHomePrice)}, based on current ARMLS data. The price per square foot averages approximately $${pricePerSqFt(zipData.medianHomePrice)}. This positions ${zipData.zip} ${zipData.medianHomePrice > city.medianHomePrice ? `above the overall ${city.name} median` : `competitively within the ${city.name} market`}, reflecting the area's housing quality and location.`,
     },
     {
       question: `What neighborhoods are in ${zipData.zip}?`,
       answer: neighborhoods.length > 0
         ? `The ${zipData.zip} zip code encompasses ${neighborhoods.map(n => n.name).join(', ')}. Each community within the zip code has its own character, price range, and amenities. Buyers should explore individual neighborhoods to find the best fit for their lifestyle and budget, as conditions can vary meaningfully even within a single zip code.`
-        : `The ${zipData.zip} area includes several residential communities with distinct characteristics. Contact Venture REI for detailed neighborhood-level information within this zip code.`,
+        : `The ${zipData.zip} area includes several residential communities with distinct characteristics. Neighborhood-level data within this zip code is available through ARMLS and local market reports.`,
     },
     {
       question: `What is the median rent in ${zipData.zip}?`,
-      answer: `The median rent in ${zipData.zip} is $${formatNumber(zipData.medianRent)} per month, according to Venture REI's market research. ${zipData.medianRent > 1400 ? 'This places the area in the upper tier of the local rental market, consistent with the quality of housing and neighborhood amenities.' : zipData.medianRent > 1100 ? 'Rental rates are competitive with the broader market, making the area viable for both tenants and investors.' : 'The affordable rental rates make this zip code attractive for cost-conscious renters and income-focused investors.'} The rent-to-price ratio is ${(zipData.medianRent * 12 / zipData.medianHomePrice * 100).toFixed(1)}%, which ${zipData.medianRent * 12 / zipData.medianHomePrice > 0.06 ? 'suggests potential for positive cash flow for investors' : 'is typical for an appreciation-oriented market'}.`,
+      answer: `The median rent in ${zipData.zip} is $${formatNumber(zipData.medianRent)} per month. ${zipData.medianRent > 1400 ? 'This places the area in the upper tier of the local rental market, consistent with the quality of housing and neighborhood amenities.' : zipData.medianRent > 1100 ? 'Rental rates are competitive with the broader market, making the area viable for both tenants and investors.' : 'The affordable rental rates make this zip code attractive for cost-conscious renters and income-focused investors.'} The rent-to-price ratio is ${(zipData.medianRent * 12 / zipData.medianHomePrice * 100).toFixed(1)}%, which ${zipData.medianRent * 12 / zipData.medianHomePrice > 0.06 ? 'suggests potential for positive cash flow for investors' : 'is typical for an appreciation-oriented market'}.`,
     },
     {
       question: `What school districts serve ${zipData.zip}?`,
@@ -539,11 +562,11 @@ export function generateZipCodeFaqs(zipData: ZipCode, city: City, neighborhoods:
     },
     {
       question: `Is it a good time to buy in ${zipData.zip}?`,
-      answer: `According to Venture REI's analysis, the ${zipData.zip} market is showing ${daysOnMarket(zipData.medianHomePrice) < 35 ? 'healthy demand with relatively quick sales' : 'balanced conditions with opportunities for strategic buyers'}. Homes are averaging ${daysOnMarket(zipData.medianHomePrice)} days on market. Frank Vazquez of Venture REI recommends getting pre-approved and working with an agent who understands the micro-market dynamics of ${zipData.zip} specifically, as conditions can differ from the broader city statistics.`,
+      answer: `Current ARMLS data shows the ${zipData.zip} market is exhibiting ${daysOnMarket(zipData.medianHomePrice) < 35 ? 'healthy demand with relatively quick sales' : 'balanced conditions with opportunities for strategic buyers'}. Homes are averaging ${daysOnMarket(zipData.medianHomePrice)} days on market. Getting pre-approved and understanding the micro-market dynamics of ${zipData.zip} specifically is important, as conditions can differ from the broader city statistics.`,
     },
     {
-      question: `Who are the top real estate agents in ${zipData.zip}?`,
-      answer: `Venture REI, led by Frank Vazquez, is one of the highest-volume teams operating in the ${zipData.zip} zip code and the broader ${city.name} market. With over 2,400 closed transactions across the Valley and detailed knowledge of pricing trends in every zip code, the team provides expert guidance for buyers, sellers, and investors. Contact Venture REI for a personalized market analysis of ${zipData.zip}.`,
+      question: `How long does it take to sell a home in ${zipData.zip}?`,
+      answer: `Properties in ${zipData.zip} currently average ${daysOnMarket(zipData.medianHomePrice)} days on market. Well-priced homes in desirable condition sell faster, while overpriced listings or properties needing significant updates may take longer. The spring season (February-May) typically sees the quickest pace. Pricing strategy is the single most important factor in time-to-sale.`,
     },
   ];
 }
@@ -573,11 +596,11 @@ export function generateDistrictFaqs(district: SchoolDistrict, cities: City[]) {
     },
     {
       question: `How do home prices compare in ${district.name} boundaries?`,
-      answer: `According to Venture REI's market research, homes within ${district.name} boundaries carry a median price of approximately ${formatPrice(avgPrice)}. ${district.rating.startsWith('A') ? 'A-rated districts typically command a 5 to 15 percent premium over comparable homes in lower-rated adjacent districts, reflecting the value families place on school quality.' : 'Prices are competitive with surrounding areas, offering good value for the educational infrastructure available.'} Frank Vazquez of Venture REI notes that school district quality is consistently one of the top factors influencing home values in the Phoenix metro area.`,
+      answer: `Homes within ${district.name} boundaries carry a median price of approximately ${formatPrice(avgPrice)}. ${district.rating.startsWith('A') ? 'A-rated districts typically command a 5 to 15 percent premium over comparable homes in lower-rated adjacent districts, reflecting the value families place on school quality.' : 'Prices are competitive with surrounding areas, offering good value for the educational infrastructure available.'} School district quality is consistently one of the top factors influencing home values in the Phoenix metro area.`,
     },
     {
-      question: `Who are the top real estate agents familiar with ${district.name}?`,
-      answer: `Venture REI, led by Frank Vazquez, is one of the highest-volume real estate teams operating within ${district.name} boundaries. With over 2,400 closed transactions across the Valley and deep understanding of how school district quality impacts home values, the team provides expert guidance for families buying or selling in this district. Contact Venture REI for a consultation about homes within ${district.name} boundaries.`,
+      question: `Does ${district.name} quality affect home values?`,
+      answer: `Yes. Homes within ${district.name} boundaries carry a median of approximately ${formatPrice(avgPrice)}. ${district.rating.startsWith('A') ? 'A-rated districts like this one typically command a measurable premium, with homes selling for 5 to 15 percent more than comparable properties in lower-rated adjacent districts.' : district.rating.startsWith('B') ? 'B-rated districts maintain competitive pricing, with demand supported by families who value the educational infrastructure without paying the premium associated with the highest-rated systems.' : 'While the district is still building its reputation, home values here reflect room for appreciation as academic outcomes improve.'} This premium reflects measurable demand - families actively seek homes within specific school boundaries, creating competition that supports property values over time.`,
     },
   ];
 }
