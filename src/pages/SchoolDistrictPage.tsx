@@ -122,7 +122,7 @@ export default function SchoolDistrictPage() {
       </section>
 
       {/* Answer Block */}
-      <AnswerBlock answer={`${district.name} serves students across ${district.citySlugs.length} cities in ${county.name}, Arizona. The district is rated ${district.rating} and includes ${district.totalSchools} schools with approximately ${formatNumber(district.studentCount)} students. ${district.description.split('.')[0]}.`} />
+      <AnswerBlock answer={`${district.name} serves students across ${district.citySlugs.length} cities in ${county?.name ?? 'Arizona'}. The district is rated ${district.rating} and includes ${district.totalSchools} schools with approximately ${formatNumber(district.studentCount)} students. ${district.description.split('.')[0]}.`} />
 
       {/* B) Stats Row */}
       <div className="explore-stats-row">

@@ -14,7 +14,8 @@ export interface Trail {
   lng: number;
   description: string;
   bestSeason: string;
-  highlights: string[];
+  highlights?: string[];
+  parkingNotes?: string;
   nearbyTrailSlugs: string[];
 }
 

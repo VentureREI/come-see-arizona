@@ -202,8 +202,8 @@ export default function TrailPage() {
             <div className="stat-label">Dog Friendly</div>
           </div>
           <div className="explore-stat-card">
-            <div className="stat-number" style={{ color: trail.fee ? '#e65100' : '#2e7d32' }}>
-              {trail.fee ? trail.fee : 'Free'}
+            <div className="stat-number" style={{ color: trail.feeRequired ? '#e65100' : '#2e7d32' }}>
+              {trail.feeAmount ? trail.feeAmount : 'Free'}
             </div>
             <div className="stat-label">Fee Required</div>
           </div>
