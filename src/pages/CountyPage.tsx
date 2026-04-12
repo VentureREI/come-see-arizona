@@ -211,7 +211,7 @@ export default function CountyPage() {
             <h2 className="explore-section-title">Cities in {county.name}</h2>
           </div>
           <div className="explore-container">
-            <div className="explore-card-grid">
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
               {cities.map((city) => (
                 <Link
                   key={city.slug}
@@ -241,7 +241,7 @@ export default function CountyPage() {
         <section className="explore-section alt-bg">
           <div className="explore-container-narrow">
             <h2 className="explore-section-title">School Districts in {county.name}</h2>
-            <div className="explore-card-grid">
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
               {districts.map((district) => (
                 <Link
                   key={district.slug}
@@ -272,7 +272,7 @@ export default function CountyPage() {
           <h2 className="explore-section-title">Explore More Counties</h2>
         </div>
         <div className="explore-container">
-          <div className="explore-card-grid">
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
             {otherCounties.map((other) =>
               other ? (
                 <Link

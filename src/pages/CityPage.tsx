@@ -213,7 +213,7 @@ export default function CityPage() {
             <h2 className="explore-section-title">Neighborhoods in {city.name}</h2>
           </div>
           <div className="explore-container">
-            <div className="explore-card-grid">
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
               {neighborhoods.map(neighborhood => (
                 <Link
                   key={neighborhood.slug}
@@ -279,7 +279,7 @@ export default function CityPage() {
         <section className="explore-section alt-bg">
           <div className="explore-container-narrow">
             <h2 className="explore-section-title">School Districts Serving {city.name}</h2>
-            <div className="explore-grid-2">
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 340px), 1fr))", gap: "24px" }}>
               {districts.map(district => (
                 <Link
                   key={district.slug}
@@ -313,7 +313,7 @@ export default function CityPage() {
             <h2 className="explore-section-title">Nearby Cities</h2>
           </div>
           <div className="explore-container">
-            <div className="explore-card-grid">
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
               {nearbyCities.map(nearby => (
                 <Link
                   key={nearby.slug}

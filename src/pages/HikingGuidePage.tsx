@@ -77,7 +77,7 @@ function RegionSection({ id, title, intro, trails, altBg }: RegionSectionProps) 
         {intro}
       </div>
       <div className="explore-container">
-        <div className="explore-grid-3">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
           {trails.map(trail => (
             <TrailCard key={trail.slug} trail={trail} />
           ))}

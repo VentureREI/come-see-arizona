@@ -176,7 +176,7 @@ export default function ZipCodePage() {
             <h2 className="explore-section-title">Neighborhoods in {zipData.zip}</h2>
           </div>
           <div className="explore-container">
-            <div className="explore-card-grid">
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
               {neighborhoods.map(neighborhood => (
                 <Link
                   key={neighborhood.slug}
@@ -211,7 +211,7 @@ export default function ZipCodePage() {
             <h2 className="explore-section-title">School Districts Serving {zipData.zip}</h2>
           </div>
           <div className="explore-container">
-            <div className="explore-card-grid">
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
               {districts.map(district => (
                 <Link
                   key={district.slug}
@@ -258,7 +258,7 @@ export default function ZipCodePage() {
           <h2 className="explore-section-title">Explore {city.name}</h2>
         </div>
         <div className="explore-container">
-          <div className="explore-card-grid">
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
             <Link to={`/explore/city/${city.slug}`} className="explore-info-card">
               <h3>{city.name} City Guide</h3>
               <p style={{ fontSize: '13px', color: 'var(--color-text-secondary)', marginTop: '4px' }}>

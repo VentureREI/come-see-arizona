@@ -173,7 +173,7 @@ export default function SchoolDistrictPage() {
             <h2 className="explore-section-title">Notable Schools in {district.name}</h2>
           </div>
           <div className="explore-container">
-            <div className="explore-card-grid">
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
               {district.notableSchools.map(school => (
                 <div key={school} className="explore-info-card" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                   <span
@@ -195,7 +195,7 @@ export default function SchoolDistrictPage() {
             <h2 className="explore-section-title">Cities Served by {district.name}</h2>
           </div>
           <div className="explore-container">
-            <div className="explore-card-grid">
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
               {cities.map(city => (
                 <Link key={city.slug} to={`/explore/city/${city.slug}`} className="explore-image-card city-card" style={{ aspectRatio: '16/10' }}>
                   <img className="card-img" src={getCityImage(city.slug)} alt={city.name} />
