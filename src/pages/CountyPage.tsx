@@ -215,12 +215,13 @@ export default function CountyPage() {
             <h2 className="explore-section-title">Cities in {county.name}</h2>
           </div>
           <div className="explore-container">
-            <div className="explore-card-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '24px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '24px' }}>
               {cities.map((city) => (
                 <Link
                   key={city.slug}
                   to={`/explore/city/${city.slug}`}
                   className="explore-image-card city-card"
+                  style={{ maxWidth: '380px', width: '100%', justifySelf: 'center' }}
                   aria-label={`Explore ${city.name}, AZ`}
                 >
                   <img src={getCityImage(city.slug)} alt={`${city.name}, Arizona`} className="card-img" style={{ aspectRatio: '16/10' }} />
