@@ -191,7 +191,7 @@ export default function ExplorePage() {
           <h2 className="explore-section-title">Explore by County</h2>
         </div>
         <div className="explore-container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px', maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
             {COUNTIES.map((county) => {
               const cityCount = CITIES.filter((c) => c.countySlug === county.slug).length;
               return (
@@ -199,6 +199,7 @@ export default function ExplorePage() {
                   key={county.slug}
                   to={`/explore/county/${county.slug}`}
                   className="explore-image-card county-card"
+                  style={{ maxWidth: '340px', width: '100%', justifySelf: 'center' }}
                 >
                   <img src={getHeroImage(county.slug)} alt={county.name} className="card-img" />
                   <div className="card-gradient" />
