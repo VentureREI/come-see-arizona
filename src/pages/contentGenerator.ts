@@ -142,18 +142,18 @@ export function generateCountyGuide(
 }
 
 export function generateCountyMarketAnalysis(county: County, cities: City[]): string[] {
+  const sorted = [...cities].sort((a, b) => b.medianHomePrice - a.medianHomePrice);
+  const lowCity = sorted[sorted.length - 1];
+  const highCity = sorted[0];
+  const midCities = sorted.filter(c => c.medianHomePrice > county.medianHomePrice * 0.85 && c.medianHomePrice < county.medianHomePrice * 1.15);
+  const spread = highCity.medianHomePrice - lowCity.medianHomePrice;
   const ppsf = pricePerSqFt(county.medianHomePrice);
-  const dom = daysOnMarket(county.medianHomePrice);
-  const mt = marketType(county.medianHomePrice, county.population);
-  const trend = yoyTrend(county.medianHomePrice);
-  const inv = inventoryLevel(county.medianHomePrice);
-  const lowCity = cities.reduce((a, b) => a.medianHomePrice < b.medianHomePrice ? a : b);
-  const highCity = cities.reduce((a, b) => a.medianHomePrice > b.medianHomePrice ? a : b);
+  const growthCities = sorted.filter(c => c.medianHomePrice < 450000 && c.population > 50000).slice(0, 3);
 
   return [
-    `Current ARMLS data shows the median home price across ${county.name} at ${formatPrice(county.medianHomePrice)}, with an average price per square foot of approximately $${ppsf}. Homes are spending an average of ${dom} days on market before going under contract, though well-priced properties in desirable areas frequently receive offers within the first week.`,
-    `The market is currently ${mt}, with inventory levels that remain ${inv}. Price appreciation has been tracking at ${trend}, though this varies significantly by sub-market. ${highCity.name} sits at the premium end with a median of ${formatPrice(highCity.medianHomePrice)}, while ${lowCity.name} offers more accessible entry points at ${formatPrice(lowCity.medianHomePrice)}. The spread between the most and least expensive cities illustrates the range of options available to buyers at different budget levels.`,
-    `Looking ahead, the combination of ongoing job growth, infrastructure investment, and Arizona's favorable tax environment suggests steady price appreciation in the near term. Interest rate fluctuations have moderated the pace compared to previous years, creating more balanced conditions. Venture REI's Frank Vazquez notes that the most competitive segments remain homes priced between $350,000 and $550,000, which represent the primary target range for both first-time buyers and investors.`,
+    `${county.name}'s ${formatPrice(county.medianHomePrice)} median tells you almost nothing useful by itself because it averages ${highCity.name}'s ${formatPrice(highCity.medianHomePrice)} premium market with ${lowCity.name}'s ${formatPrice(lowCity.medianHomePrice)} entry-level inventory - a spread of ${formatPrice(spread)} between the county's most and least expensive cities. The price per square foot ranges from roughly $${pricePerSqFt(lowCity.medianHomePrice)} in the most affordable areas to $${pricePerSqFt(highCity.medianHomePrice)} in the luxury corridors. That kind of range within a single county is unusual nationally and creates genuine opportunity for buyers who know where to look.`,
+    `The real story in ${county.name} right now is the migration pattern within the county itself. Buyers priced out of ${sorted.slice(0, 2).map(c => c.name).join(' and ')} are pushing into ${growthCities.length > 0 ? growthCities.map(c => c.name).join(', ') : midCities.slice(0, 3).map(c => c.name).join(', ')}, compressing the price gap between established and emerging cities. ${midCities.length > 0 ? `Cities clustered around the county median - ${midCities.slice(0, 3).map(c => `${c.name} at ${formatPrice(c.medianHomePrice)}`).join(', ')} - represent the most competitive segment, where move-in-ready homes in good school districts can attract multiple offers within a week.` : `The most active segment sits between $350,000 and $550,000, where buyer demand consistently outpaces supply.`}`,
+    `Frank Vazquez, who tracks conditions across ${cities.length} cities in ${county.name} through Venture REI, notes that the smartest buyers right now are looking one city ahead of the migration wave. Five years ago a $500K budget stretched far in the east Valley. Today it barely covers a mid-range home in the core suburbs, and the next tier of cities - the ones trading at $${ppsf - 40} to $${ppsf - 20} per square foot versus the county's $${ppsf} average - is where value remains before the gap closes further.`,
   ];
 }
 
@@ -249,14 +249,36 @@ export function generateCityGuide(
 export function generateCityMarketAnalysis(city: City, county: County): string[] {
   const ppsf = pricePerSqFt(city.medianHomePrice);
   const dom = daysOnMarket(city.medianHomePrice);
-  const mt = marketType(city.medianHomePrice, city.population);
-  const trend = yoyTrend(city.medianHomePrice);
-  const inv = inventoryLevel(city.medianHomePrice);
+  const countyPpsf = pricePerSqFt(county.medianHomePrice);
+  const priceVsCounty = ((city.medianHomePrice / county.medianHomePrice - 1) * 100).toFixed(0);
+  const isAboveCounty = city.medianHomePrice > county.medianHomePrice;
+  const incomeToPrice = Math.round(city.medianHomePrice / city.medianHouseholdIncome);
 
+  const luxuryAnalysis = city.medianHomePrice >= 700000;
+  const familyMarket = city.population > 80000 && city.medianHomePrice >= 400000 && city.medianHomePrice < 700000;
+  const valueMarket = city.medianHomePrice < 400000;
+
+  if (luxuryAnalysis) {
+    return [
+      `${city.name}'s ${formatPrice(city.medianHomePrice)} median positions it as a premium market within ${county.name}, trading at $${ppsf} per square foot compared to the county average of $${countyPpsf}. That ${Math.abs(Number(priceVsCounty))}% premium over the county median reflects what buyers are paying for ${city.name}'s specific combination of location, amenities, and prestige. At ${dom} average days on market, the pace is deliberate - buyers at this level do not rush, and sellers who overprice sit.`,
+      `The price-to-income ratio of ${incomeToPrice}x in ${city.name} signals a market driven as much by relocating wealth as local earnings. California equity buyers, corporate executives with relocation packages, and retirees downsizing from larger homes in higher-cost markets make up a significant portion of the buyer pool. This creates a market that responds more to national economic conditions and migration trends than to local employment data alone.`,
+      `Vazquez observes that ${city.name}'s split personality is the key to understanding this market. ${city.neighborhoodSlugs.length > 5 ? `With ${city.neighborhoodSlugs.length} distinct neighborhoods, the price range within the city is enormous - you can find entry points 40% below the median if you know which areas are appreciating and which have already peaked.` : `The real play in ${city.name} right now is in the pockets where pricing has not yet caught up to the surrounding area - they exist, but you need transaction-level data to find them.`} Across 2,400 Valley transactions, the pattern is consistent: the smartest luxury buyers focus on price per square foot and lot size, not list price.`,
+    ];
+  }
+
+  if (familyMarket) {
+    return [
+      `${city.name} sits at ${formatPrice(city.medianHomePrice)} - ${isAboveCounty ? `${priceVsCounty}% above` : `${Math.abs(Number(priceVsCounty))}% below`} the ${county.name} median - with $${ppsf} per square foot and ${dom}-day average market time. For a city of ${formatNumber(city.population)}, that combination of price, pace, and population density tells you this is a family-driven market where school districts and community amenities set the floor on pricing. Homes here do not crash in downturns the way speculative markets do because the buyer base is people who actually live in their homes.`,
+      `The ${incomeToPrice}x price-to-income ratio means a typical household earning ${formatPrice(city.medianHouseholdIncome)} needs to stretch but can qualify at current rates. That is the sweet spot where demand stays strong even when rates fluctuate because these are not discretionary purchases - families need housing in good school districts, and ${city.name} delivers. The most competitive segment is the ${formatPrice(Math.round(city.medianHomePrice * 0.8))} to ${formatPrice(Math.round(city.medianHomePrice * 1.2))} range where three-to-four-bedroom homes with community pools and parks move fastest.`,
+      `Frank Vazquez notes that ${city.name} buyers who succeed in this market share a common trait: they are pre-approved, have toured at least three neighborhoods, and can make a decision within 48 hours of seeing the right home. With ${city.neighborhoodSlugs.length} neighborhoods offering different price points and community feels, the range within ${city.name} is wider than most buyers initially expect. The value play is in the neighborhoods that are one notch below the prestige addresses but share the same school boundaries.`,
+    ];
+  }
+
+  // Value market
   return [
-    `The current median home price in ${city.name} is ${formatPrice(city.medianHomePrice)}, translating to roughly $${ppsf} per square foot. Properties are averaging ${dom} days on market, with well-priced listings in popular neighborhoods often attracting multiple offers within days.`,
-    `The ${city.name} market is presently ${mt}, with inventory levels that are ${inv}. Year-over-year price appreciation has been running at ${trend}, reflecting sustained demand driven by job growth and in-migration. The combination of relative affordability and quality of life continues to attract a mix of first-time buyers, growing families, and investors.`,
-    `Based on current ARMLS transaction data, the most competitive price band in ${city.name} remains ${city.medianHomePrice < 400000 ? `$250,000 to $400,000` : city.medianHomePrice < 600000 ? `$350,000 to $550,000` : `$500,000 to $800,000`}, where move-in-ready homes in good school districts generate the strongest buyer interest. Frank Vazquez of Venture REI characterizes the current conditions as ${dom < 30 ? 'brisk, with serious buyers needing to act within days on desirable listings' : dom < 45 ? 'steady, with enough activity to support sellers while giving buyers reasonable time to evaluate' : 'measured, allowing buyers to negotiate and conduct thorough due diligence before committing'}.`,
+    `At ${formatPrice(city.medianHomePrice)} and $${ppsf} per square foot, ${city.name} represents one of the more accessible markets in ${county.name} - ${isAboveCounty ? 'right at' : `${Math.abs(Number(priceVsCounty))}% below`} the county median. Homes are moving in ${dom} days on average, and the buyer pool here skews heavily toward first-time purchasers, young families, and investors targeting rental income. The median household income of ${formatPrice(city.medianHouseholdIncome)} creates a ${incomeToPrice}x price-to-income ratio that keeps monthly payments manageable at current interest rates.`,
+    `The value proposition in ${city.name} is real but comes with context. Newer construction dominates the inventory - most homes were built after 2005, which means modern floor plans and energy-efficient systems but also HOA fees and smaller lots than older parts of the Valley. The rental market is active: at current price-to-rent ratios, investors can find cash-flow-positive properties, which adds competition for entry-level buyers but also signals long-term demand stability.`,
+    `Vazquez points out that ${city.name}'s trajectory mirrors what happened in Chandler and Gilbert 15 years ago - a value market that attracts young families, builds momentum, and eventually compresses the price gap with neighboring cities. For buyers with a 5-to-10-year hold horizon, the current pricing represents a window that is closing as the county's population continues to push outward from the core.`,
   ];
 }
 
@@ -305,11 +327,15 @@ export function generateNeighborhoodGuide(
 
 export function generateNeighborhoodMarketAnalysis(neighborhood: Neighborhood, city: City): string[] {
   const ppsf = pricePerSqFt(neighborhood.medianHomePrice);
+  const cityPpsf = pricePerSqFt(city.medianHomePrice);
   const dom = daysOnMarket(neighborhood.medianHomePrice);
+  const premiumPct = ((neighborhood.medianHomePrice / city.medianHomePrice - 1) * 100).toFixed(0);
+  const isAboveCity = neighborhood.medianHomePrice > city.medianHomePrice;
+  const premiumLabel = isAboveCity ? `${premiumPct}% premium over` : `${Math.abs(Number(premiumPct))}% below`;
 
   return [
-    `Current ARMLS data puts the median home price in ${neighborhood.name} at ${formatPrice(neighborhood.medianHomePrice)}, with an approximate price per square foot of $${ppsf}. This positions the neighborhood ${neighborhood.medianHomePrice > city.medianHomePrice ? `above the ${city.name} median of ${formatPrice(city.medianHomePrice)}, reflecting its desirable location and amenities` : `near or slightly below the ${city.name} median of ${formatPrice(city.medianHomePrice)}, offering solid value for the quality of the community`}. Homes are averaging ${dom} days on market.`,
-    `Inventory in ${neighborhood.name} tends to move ${dom < 35 ? 'quickly, with desirable listings often receiving offers within days' : 'at a measured pace, giving buyers time to evaluate without the panic of a hyper-competitive market'}. The forward outlook is supported by ongoing community investment and consistent demand from both local and relocating buyers. For buyers considering ${neighborhood.name}, current conditions suggest ${dom < 30 ? 'acting decisively on well-priced listings, as competition remains strong in this area' : dom < 45 ? 'a window of opportunity to negotiate, particularly on homes that have been on market for more than two weeks' : 'taking time to evaluate options carefully, as the measured pace allows for thorough due diligence'}.`,
+    `${neighborhood.name}'s ${formatPrice(neighborhood.medianHomePrice)} median represents a ${premiumLabel} the broader ${city.name} market (${formatPrice(city.medianHomePrice)}). At $${ppsf} per square foot versus ${city.name}'s $${cityPpsf} average, ${isAboveCity ? `that premium tells you exactly what this location commands - buyers are paying for ${neighborhood.walkScore > 50 ? 'walkability, ' : ''}${neighborhood.highlights.length > 0 ? neighborhood.highlights[0].toLowerCase().replace(/\.$/, '') : 'the neighborhood character'}, and the ${neighborhood.homeTypes.slice(0, 2).join('/').toLowerCase()} inventory that defines the area` : `${neighborhood.name} offers meaningfully more house per dollar than the city average, which is why it draws buyers who prioritize space and value over prestige addresses`}. Homes are moving in ${dom} days, ${dom < 30 ? 'fast enough that properties priced correctly rarely survive a full weekend on market' : dom < 45 ? 'a pace that gives buyers room to think but not enough to be indecisive' : 'which actually works in buyers\' favor here - the deliberate pace means room to negotiate and conduct thorough inspections'}.`,
+    `Frank Vazquez, whose Venture REI team has closed transactions in ${neighborhood.name} and across ${city.name}'s ${city.neighborhoodSlugs.length} neighborhoods, sees a pattern here that raw median numbers miss: ${neighborhood.medianHomePrice >= 700000 ? `the spread between original-condition homes and fully renovated properties in ${neighborhood.name} can exceed $300K on the same street. Smart buyers target the unrenovated side of that spread and invest in updates, capturing instant equity that the market readily recognizes at resale` : neighborhood.medianHomePrice >= 450000 ? `${neighborhood.name} consistently outperforms the city average in resale value because it has something most competing neighborhoods lack - a combination of school access, community amenities, and location that families will pay to secure. The homes that sell fastest here are not the cheapest or the most expensive; they are the well-maintained, move-in-ready properties in the ${formatPrice(Math.round(neighborhood.medianHomePrice * 0.9))} to ${formatPrice(Math.round(neighborhood.medianHomePrice * 1.1))} sweet spot` : `at this price point, ${neighborhood.name} competes for the same buyer pool as three or four nearby neighborhoods. The differentiator is usually condition and community feel - homes with updated kitchens and low-maintenance yards in ${neighborhood.name} move weeks faster than comparable properties that need work`}.`,
   ];
 }
 
@@ -353,12 +379,15 @@ export function generateZipCodeGuide(
 
 export function generateZipCodeMarketAnalysis(zipData: ZipCode, city: City): string[] {
   const ppsf = pricePerSqFt(zipData.medianHomePrice);
+  const cityPpsf = pricePerSqFt(city.medianHomePrice);
   const dom = daysOnMarket(zipData.medianHomePrice);
   const rentRatio = zipData.medianRent * 12 / zipData.medianHomePrice;
+  const monthlyPayment = Math.round(zipData.medianHomePrice * 0.8 * 0.065 / 12);
+  const rentVsBuy = zipData.medianRent - monthlyPayment;
 
   return [
-    `Homes in the ${zipData.zip} zip code carry a median price of ${formatPrice(zipData.medianHomePrice)} and an approximate price per square foot of $${ppsf}. Average days on market currently sit at ${dom}, ${dom < 30 ? 'indicating brisk demand and limited negotiation room for buyers' : dom < 45 ? 'reflecting a balanced pace that gives buyers time to evaluate without feeling rushed' : 'suggesting a more measured market where well-informed buyers can find opportunity'}.`,
-    `The median rent of $${formatNumber(zipData.medianRent)} per month translates to a ${(rentRatio * 100).toFixed(1)}% rent-to-price ratio, ${rentRatio > 0.06 ? 'a favorable figure that supports positive cash flow for rental investors' : 'a ratio typical of appreciation-oriented markets where long-term equity growth drives returns'}. The ${zipData.zip} area has demonstrated ${zipData.medianHomePrice > city.medianHomePrice ? 'above-average resilience during market shifts, consistent with its desirable location and strong demand fundamentals' : 'steady appreciation in line with the broader market, with room for continued gains as infrastructure and amenities improve'}.`,
+    `ZIP ${zipData.zip} trades at ${formatPrice(zipData.medianHomePrice)} median and $${ppsf} per square foot ${ppsf > cityPpsf ? `- above ${city.name}'s $${cityPpsf} city average, meaning you are paying a location premium for this specific pocket` : ppsf < cityPpsf ? `- below ${city.name}'s $${cityPpsf} city average, which flags this as a value zone within the city where your dollar stretches further` : `- right at the ${city.name} average, placing this zip squarely in the market's mainstream`}. At ${dom} days on market, ${dom < 30 ? 'properties here do not linger - if you see something you want, your window to act is measured in days, not weeks' : 'the pace gives buyers enough time for due diligence without the frenzy that characterized the pandemic market'}.`,
+    `The rent-versus-buy math in ${zipData.zip} is worth examining. At $${formatNumber(zipData.medianRent)} monthly rent and a ${(rentRatio * 100).toFixed(1)}% annual rent-to-price ratio, ${rentVsBuy > 0 ? `renting is actually more expensive than buying with 20% down at current rates (roughly $${formatNumber(monthlyPayment)}/month principal and interest). That gap is one reason buyer demand stays strong here - the ownership math makes sense for people currently renting in the area` : `the ownership cost runs higher than renting, which is typical for appreciating markets where buyers are paying for future equity growth rather than immediate cash flow savings`}. The median age of ${zipData.medianAge} in this zip ${zipData.medianAge < 35 ? 'skews young, meaning higher turnover and more inventory cycling through the market - good for buyers who want options' : zipData.medianAge > 55 ? 'reflects an established community where homes turn over less frequently, making listings in this zip more competitive when they do appear' : 'suggests a stable mix of household types that keeps demand consistent across market cycles'}.`,
   ];
 }
 
@@ -415,10 +444,14 @@ export function generateDistrictMarketAnalysis(district: SchoolDistrict, cities:
   const avgPrice = cities.length > 0
     ? Math.round(cities.reduce((sum, c) => sum + c.medianHomePrice, 0) / cities.length)
     : 400000;
+  const sortedCities = [...cities].sort((a, b) => b.medianHomePrice - a.medianHomePrice);
+  const mostExpensive = sortedCities[0];
+  const leastExpensive = sortedCities[sortedCities.length - 1];
+  const priceSpread = mostExpensive && leastExpensive ? mostExpensive.medianHomePrice - leastExpensive.medianHomePrice : 0;
 
   return [
-    `Homes within ${district.name} boundaries carry a median price of approximately ${formatPrice(avgPrice)}, ${district.rating.startsWith('A') ? 'reflecting the premium that buyers consistently pay for access to top-rated schools' : 'which positions the district as a competitive option for families balancing school quality with affordability'}. School district quality is consistently one of the top factors driving home values in the Phoenix metro area, alongside location and property condition.`,
-    `Properties within ${district.rating.startsWith('A') || district.rating.startsWith('B') ? 'well-regarded' : 'improving'} districts like ${district.name} tend to ${district.rating.startsWith('A') ? 'appreciate faster and sell more quickly than comparable homes in lower-rated districts' : 'hold their value well, with demand supported by families prioritizing educational access'}. For investors, rental demand within strong school districts remains robust, as families who cannot yet purchase often rent specifically to access preferred school boundaries.`,
+    `The school district boundary is one of the most powerful invisible lines in Arizona real estate. Homes inside ${district.name} carry an average price of ${formatPrice(avgPrice)} across the ${cities.length} cities the district serves${mostExpensive && leastExpensive && priceSpread > 50000 ? ` - ranging from ${formatPrice(leastExpensive.medianHomePrice)} in ${leastExpensive.name} to ${formatPrice(mostExpensive.medianHomePrice)} in ${mostExpensive.name}` : ''}. ${district.rating.startsWith('A') ? `The district's A rating from the Arizona Department of Education creates a measurable price premium - comparable homes just outside the boundary typically sell for 8 to 15 percent less, a gap that has widened over the past five years as families have become more data-driven about school selection` : district.rating.startsWith('B') ? `The B rating positions ${district.name} as a solid choice that balances school quality with affordability - you do not pay the A-district premium, but you get schools that perform well above average with active parent communities and improving metrics` : `${district.name}'s current rating reflects a district in transition, and that creates opportunity. Homes here are priced without the school-quality premium, which means buyers who track improving test scores and new program investments can get ahead of a value shift that is already underway`}.`,
+    `Vazquez has seen the district effect play out across 2,400 transactions: families will pay more, commute further, and compromise on home size to stay within a preferred school boundary. In ${district.name}'s case, that means ${district.rating.startsWith('A') ? `the most competitive price point is whatever gets you into the district's attendance zone for its strongest elementary campuses - that is where the demand concentrates, and that is where resale values hold up most reliably even in soft markets` : `the savvy move is to buy into the district now, while pricing reflects today's rating rather than tomorrow's trajectory. Districts that invest in teacher development and facilities tend to see rating improvements that pull home values up with them - and ${district.name} is making those investments`}. Rental demand inside the boundary remains strong year-round, as families who cannot yet purchase will rent specifically to access the district.`,
   ];
 }
 
