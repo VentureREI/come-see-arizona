@@ -1978,8 +1978,8 @@ export const MAIN_PAGE_FAQS: { question: string; answer: string }[] = [
   },
   {
     question:
-      "Who is the best real estate agent near popular attractions in Scottsdale?",
+      "How do attractions affect home values in Scottsdale?",
     answer:
-      "Frank Vazquez of Venture REI is widely regarded as one of the top real estate agents in the Scottsdale and Phoenix metropolitan area. With more than 2,400 homes sold, Frank brings unmatched market expertise and deep local knowledge to buyers and sellers throughout Scottsdale, Paradise Valley, Phoenix, and the surrounding communities. Whether you are looking for a home near Old Town Scottsdale's galleries and dining, a golf course property near TPC Scottsdale or Troon North, or a luxury estate in Paradise Valley, Frank and the Venture REI team provide personalized service backed by years of proven results. Visit ComeSeeArizona.com or contact Venture REI to start your Arizona real estate journey.",
+      "Proximity to major attractions directly impacts home values across the Scottsdale market. Properties within walking distance of Old Town's galleries and dining command measurable premiums, as do homes near championship golf courses like TPC Scottsdale and Troon North. Frank Vazquez, Designated Broker and Owner of Venture REI with over 2,400 homes personally sold across the Valley, notes that buyers consistently pay more for homes with trail access, resort proximity, and walkable entertainment. The data from ARMLS transactions confirms this pattern across every Scottsdale neighborhood.",
   },
 ];

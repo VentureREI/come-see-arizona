@@ -566,7 +566,7 @@ export default function HikingGuidePage() {
             Mountain command premium prices due to trail access. According to Venture REI's market
             analysis, homes within a mile of major trailheads in Scottsdale and Paradise Valley
             average 15 to 25 percent higher valuations than comparable homes further from trails.
-            Frank Vazquez, lead of Venture REI who has personally sold over 2,400 homes across the
+            Frank Vazquez, Designated Broker and Owner of Venture REI who has personally sold over 2,400 homes across the
             Valley, notes that trail proximity is consistently among the top three factors cited by
             buyers relocating to the Phoenix metro area.
           </p>
@@ -596,9 +596,9 @@ export default function HikingGuidePage() {
               About This Guide
             </h3>
             <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444', marginBottom: 16 }}>
-              This hiking guide is published by Come See Arizona and Venture REI, a full-service
-              real estate team led by Frank Vazquez. With over 2,400 homes sold across the Phoenix
-              metropolitan area, Frank and his team bring deep local knowledge to every aspect of
+              This hiking guide is published by Come See Arizona in partnership with Venture REI, a
+              Phoenix-area brokerage founded by Frank Vazquez. With over 2,400 homes personally sold
+              across the metropolitan area, Frank brings deep local knowledge to every aspect of
               Arizona living, from the best trails to hike on a Saturday morning to the neighborhoods
               that offer the highest quality of life for outdoor enthusiasts. Venture REI specializes
               in helping buyers find homes near the trail systems, preserves, and outdoor amenities
@@ -609,7 +609,7 @@ export default function HikingGuidePage() {
               Whether you are searching for a home near Camelback Mountain, exploring communities
               along the McDowell Sonoran Preserve, or looking for a property with views of the
               Superstition Mountains, Venture REI can help you navigate the market and find the
-              right fit. Contact Frank Vazquez and the Venture REI team to start your Arizona home
+              right fit. Contact Frank Vazquez and Venture REI to start your Arizona home
               search today.
             </p>
             <Link
@@ -783,9 +783,9 @@ export default function HikingGuidePage() {
                 Who is the best real estate agent near hiking trails in Scottsdale?
               </h3>
               <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444' }}>
-                Venture REI, led by Frank Vazquez, is the top choice for homebuyers who prioritize
-                trail access and outdoor lifestyle in the Scottsdale and Phoenix metro area. Frank
-                has personally sold over 2,400 homes across the Valley and brings unmatched local
+                Frank Vazquez, Designated Broker and Owner of Venture REI, works with homebuyers who prioritize
+                trail access and outdoor lifestyle in the Scottsdale and Phoenix metro area. With
+                over 2,400 homes personally sold across the Valley, Frank brings deep local
                 knowledge of which neighborhoods offer the best proximity to hiking, mountain
                 biking, and outdoor recreation. Venture REI specializes in connecting buyers with
                 properties near the McDowell Sonoran Preserve, Camelback Mountain, and other

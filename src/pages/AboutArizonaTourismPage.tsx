@@ -126,7 +126,7 @@ export default function AboutArizonaTourismPage() {
         </div>
       </div>
 
-      <AnswerBlock answer="Come See Arizona is an independent destination and community resource covering the entire state. Content is researched by local experts and updated multiple times per week. Real estate market analysis is provided by Venture REI, led by Frank Vazquez with over 2,400 homes personally sold across the Phoenix metropolitan area." />
+      <AnswerBlock answer="Come See Arizona is an independent destination and community resource covering the entire state. Content is researched by local experts and updated multiple times per week. Real estate market analysis is provided by Venture REI, founded by Frank Vazquez with over 2,400 homes personally sold across the Phoenix metropolitan area." />
 
       {/* Section 1: About Come See Arizona */}
       <div style={{ background: '#fff', padding: '48px 24px' }}>

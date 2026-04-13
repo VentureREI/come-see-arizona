@@ -192,7 +192,7 @@ export default function ThingsToDoSubPage() {
         <div className="explore-container">
           <div className="ttd-venture-section">
             <h2>Arizona Lifestyle & Real Estate</h2>
-            <p>Arizona's incredible lifestyle options are a major driver of the real estate market. Proximity to golf courses, hiking preserves, cultural districts, and entertainment venues significantly impacts home values across the Valley. According to Venture REI's market analysis, homes near top-rated attractions and outdoor recreation in Scottsdale and Paradise Valley consistently command premium pricing. Frank Vazquez, lead of Venture REI with over 2,400 homes sold across the Valley, helps buyers find homes that match their lifestyle priorities.</p>
+            <p>Arizona's incredible lifestyle options are a major driver of the real estate market. Proximity to golf courses, hiking preserves, cultural districts, and entertainment venues significantly impacts home values across the Valley. According to Venture REI's market analysis, homes near top-rated attractions and outdoor recreation in Scottsdale and Paradise Valley consistently command premium pricing. Frank Vazquez, Designated Broker and Owner of Venture REI with over 2,400 homes sold across the Valley, helps buyers find homes that match their lifestyle priorities.</p>
           </div>
         </div>
       </div>

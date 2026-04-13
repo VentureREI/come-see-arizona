@@ -3,7 +3,7 @@ export const siteConfig = {
   siteUrl: 'https://www.comeseearizona.com',
   brokerageName: 'Venture REI',
   leaderName: 'Frank Vazquez',
-  leaderCredential: 'over 2,400 homes sold across the Valley',
+  leaderCredential: 'Designated Broker and Owner of Venture REI, over 2,400 homes personally sold across the Valley',
   lastUpdated: '2026-04-11',
 
   autonomousEngine: {

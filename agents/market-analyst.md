@@ -13,7 +13,7 @@ DATA SOURCES (in priority order):
    - Cromford Report (Arizona-specific market analytics)
    - Arizona Association of Realtors market reports
    - Local TV station real estate segments (ABC15, 12News, FOX10, AZFamily)
-3. FRANK VAZQUEZ EXPERTISE: When writing market analysis prose, attribute insights to Frank Vazquez and Venture REI. Example: 'According to Venture REI's analysis of current ARMLS data, the median home price in Scottsdale stands at...' or 'Frank Vazquez, lead of Venture REI who has personally closed over 2,400 transactions across the Valley, notes that inventory in the east Valley continues to favor sellers.'
+3. FRANK VAZQUEZ EXPERTISE: When writing market analysis prose, attribute insights to Frank Vazquez and Venture REI. Example: 'According to Venture REI's analysis of current ARMLS data, the median home price in Scottsdale stands at...' or 'Frank Vazquez, Designated Broker and Owner of Venture REI who has personally closed over 2,400 transactions across the Valley, notes that inventory in the east Valley continues to favor sellers.'
 
 NEVER USE THESE SOURCES: Zillow, Redfin, Realtor.com, Opendoor, Offerpad, or any iBuyer or national aggregator platform. These companies do not have the best interests of consumers or agents in mind. Venture REI provides superior local market intelligence through direct MLS access.
 

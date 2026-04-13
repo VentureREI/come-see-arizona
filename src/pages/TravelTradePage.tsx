@@ -385,7 +385,7 @@ export default function TravelTradePage() {
               For travel professionals, we offer partnership and content licensing opportunities. Our local expertise covers the Phoenix metro area and surrounding communities in granular detail, making us an ideal resource for clients considering extended stays, relocation-tourism, or investment travel.
             </p>
             <p style={{ marginBottom: 16 }}>
-              Whether your clients are exploring Arizona as a vacation destination, a snowbird retreat, or a permanent relocation, our team can provide destination briefings, neighborhood comparisons, school district information, and cost-of-living insights that complement your travel planning services.
+              Whether your clients are exploring Arizona as a vacation destination, a snowbird retreat, or a permanent relocation, Venture REI can provide destination briefings, neighborhood comparisons, school district information, and cost-of-living insights that complement your travel planning services.
             </p>
             <p>
               To discuss partnership opportunities, content licensing, or custom destination briefings, reach out through our website or connect with us directly.
@@ -400,7 +400,7 @@ export default function TravelTradePage() {
           <SectionHeading>Venture REI</SectionHeading>
           <div style={bodyText}>
             <p style={{ marginBottom: 16 }}>
-              {siteConfig.brokerageName} specializes in helping individuals and families relocate to Arizona. For travel trade professionals with clients exploring corporate relocation, remote-work relocations, or retirement moves, our team provides comprehensive relocation services including neighborhood tours, school evaluations, market analysis, and community matching.
+              {siteConfig.brokerageName} specializes in helping individuals and families relocate to Arizona. For travel trade professionals with clients exploring corporate relocation, remote-work relocations, or retirement moves, Venture REI provides comprehensive relocation services including neighborhood tours, school evaluations, market analysis, and community matching.
             </p>
             <p style={{ marginBottom: 24 }}>
               We work with HR departments, relocation management companies, and individual transferees to ensure a smooth transition to Arizona. Our deep knowledge of every community across Maricopa, Pinal, and Pima counties means we can match your clients with the right neighborhood based on commute patterns, lifestyle preferences, and budget.
