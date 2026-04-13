@@ -15,6 +15,7 @@ const NAV_ITEMS = [
   { label: 'Arizona Events', shortLabel: 'Events', href: '/events' },
   { label: 'Where to Stay in Arizona', shortLabel: 'Where to Stay', href: '/where-to-stay' },
   { label: 'Arizona Travel Guides', shortLabel: 'Travel Guides', href: '/travel-guides' },
+  { label: 'Explore Arizona Communities', shortLabel: 'Explore AZ', href: '/explore' },
 ];
 
 // Featured articles
@@ -271,6 +272,7 @@ const FOOTER_LINKS = {
     { label: 'Find Arizona Events', href: '/events' },
     { label: 'Where to Stay in Arizona', href: '/where-to-stay' },
     { label: 'Arizona Travel Guides', href: '/travel-guides' },
+    { label: 'Explore Arizona Communities', href: '/explore' },
   ],
   plan: [
     { label: 'Tourist Info', href: '/tourist-info' },
