@@ -202,7 +202,7 @@ const MORE_ARTICLES = [
     subcategory: 'Bars',
     title: "Phoenix's Best Rooftop Bars",
     description: 'Discover the best rooftop bars in Phoenix for craft cocktails, city skyline views, and sunset happy hours, from downtown hotspots to Scottsdale lounges.',
-    author: 'Daniel Djang',
+    author: 'Come See Arizona',
     datePublished: '2026-03-05',
     url: '/articles/phoenix-best-rooftop-bars',
   },
