@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
+import { buildArticleSchema } from '../components/seo/schema';
 import AnswerBlock from '../components/AnswerBlock';
 
 interface Article {
@@ -180,6 +181,17 @@ export default function ArticlePage() {
         title={`${article.title} | Come See Arizona`}
         description={article.description[0].slice(0, 160)}
         canonical={`/articles/${slug}`}
+        image={article.imageUrl}
+        imageAlt={article.title}
+        schema={buildArticleSchema({
+          headline: article.title,
+          description: article.description[0].slice(0, 250),
+          url: `/articles/${slug}`,
+          image: article.imageUrl,
+          // TODO: replace placeholders with real per-article dates added to ARTICLES data.
+          datePublished: '2026-01-01',
+          dateModified: '2026-03-26',
+        })}
         breadcrumbs={[
           { name: 'Home', url: '/' },
           { name: article.title, url: `/articles/${slug}` },

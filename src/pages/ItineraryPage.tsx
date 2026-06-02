@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
+import { buildItinerarySchema } from '../components/seo/schema';
 import AnswerBlock from '../components/AnswerBlock';
 
 interface ItineraryDay {
@@ -227,9 +228,17 @@ export default function ItineraryPage() {
         title={`${itinerary.title} | Come See Arizona`}
         description={descriptionParagraphs[0]}
         canonical={`/itineraries/${slug}`}
+        image={HERO_IMAGES[slug!] || itinerary.heroImage}
+        imageAlt={itinerary.title}
+        schema={buildItinerarySchema({
+          name: itinerary.title,
+          description: itinerary.description,
+          url: `/itineraries/${slug}`,
+          image: HERO_IMAGES[slug!] || itinerary.heroImage,
+          days: itinerary.days,
+        })}
         breadcrumbs={[
           { name: 'Home', url: '/' },
-          { name: 'Itineraries', url: '/' },
           { name: itinerary.title, url: `/itineraries/${slug}` },
         ]}
       />

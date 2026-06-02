@@ -21,6 +21,7 @@ const articleSchema = {
   headline: 'The Complete Guide to Hiking in Arizona: 50+ Best Trails Across the State',
   description:
     'Arizona hiking guide covering 50+ trails across Phoenix, Sedona, Tucson, Flagstaff, and the Grand Canyon with difficulty ratings, distances, and seasonal tips.',
+  image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80&auto=format',
   url: 'https://comeseearizona.com/articles/arizona-best-hiking-trails',
   author: {
     '@type': 'Organization',

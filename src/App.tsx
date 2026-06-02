@@ -343,7 +343,7 @@ function App() {
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
             <a href="/" className="logo" aria-label="Come See Arizona - Home">
-              <img src="/come-see-arizona.png" alt="Come See Arizona" style={{ height: 90, width: 'auto' }} />
+              <img src="/come-see-arizona.png" alt="Come See Arizona" width={677} height={369} fetchPriority="high" decoding="async" style={{ height: 90, width: 'auto' }} />
             </a>
           </div>
 
@@ -385,7 +385,7 @@ function App() {
       {/* Hero Section */}
       <section className="hero-section" aria-label="Welcome to Arizona">
         <div className="hero-video">
-          <img src="/hero-desert.jpg" alt="Aerial view of Arizona's Sonoran Desert landscape at golden hour with dramatic canyon formations" className="hero-image" />
+          <img src="/hero-desert.jpg" alt="Aerial view of Arizona's Sonoran Desert landscape at golden hour with dramatic canyon formations" className="hero-image" fetchPriority="high" decoding="async" width={1600} height={900} />
           <div className="hero-overlay" />
         </div>
         <div className="hero-content">
@@ -408,7 +408,7 @@ function App() {
               <article key={article.id} className="article-card large">
                 <a href={article.url} aria-label={`Read: ${article.title}`}>
                   <div className="article-image">
-                    <img src={article.image} alt={article.imageAlt} />
+                    <img src={article.image} alt={article.imageAlt} loading="lazy" decoding="async" />
                     <div className="article-overlay" />
                   </div>
                   <div className="article-content">
@@ -439,7 +439,7 @@ function App() {
               <article key={article.id} className="article-card medium">
                 <a href={article.url} aria-label={`Read: ${article.title}`}>
                   <div className="article-image">
-                    <img src={article.image} alt={article.imageAlt} />
+                    <img src={article.image} alt={article.imageAlt} loading="lazy" decoding="async" />
                     <div className="article-overlay" />
                   </div>
                   <div className="article-content">
@@ -516,7 +516,7 @@ function App() {
       {featuredEvent ? (
         <section className="promo-section" aria-label={`Featured: ${featuredEvent.title}`}>
           <div className="promo-bg">
-            <img src="/promo-stadium.jpg" alt="Arizona event venue illuminated at night" />
+            <img src="/promo-stadium.jpg" alt="Arizona event venue illuminated at night" loading="lazy" decoding="async" />
             <div className="promo-overlay" />
           </div>
           <div className="container">
@@ -533,7 +533,7 @@ function App() {
       ) : (
         <section className="promo-section" aria-label="Experience Arizona">
           <div className="promo-bg">
-            <img src="/hero-desert.jpg" alt="Arizona desert sunset with saguaro cacti and dramatic sky" />
+            <img src="/hero-desert.jpg" alt="Arizona desert sunset with saguaro cacti and dramatic sky" loading="lazy" decoding="async" />
             <div className="promo-overlay" />
           </div>
           <div className="container">
@@ -573,7 +573,7 @@ function App() {
             {ITINERARIES.map((itinerary) => (
               <article key={itinerary.id} className="itinerary-card">
                 <div className="itinerary-image">
-                  <img src={itinerary.image} alt={itinerary.imageAlt} />
+                  <img src={itinerary.image} alt={itinerary.imageAlt} loading="lazy" decoding="async" />
                 </div>
                 <div className="itinerary-content">
                   <h3>{itinerary.title}</h3>
@@ -596,7 +596,7 @@ function App() {
               <article key={article.id} className="article-card small">
                 <a href={article.url} aria-label={`Read: ${article.title}`}>
                   <div className="article-image">
-                    <img src={article.image} alt={article.imageAlt} />
+                    <img src={article.image} alt={article.imageAlt} loading="lazy" decoding="async" />
                   </div>
                   <div className="article-content-below">
                     <div className="article-meta">
@@ -627,7 +627,7 @@ function App() {
           <div className="artist-carousel">
             <div className="artist-slide">
               <div className="artist-image">
-                <img src={ARTIST_QUOTES[activeQuote].image} alt={ARTIST_QUOTES[activeQuote].imageAlt} />
+                <img src={ARTIST_QUOTES[activeQuote].image} alt={ARTIST_QUOTES[activeQuote].imageAlt} loading="lazy" decoding="async" />
                 <div className="artist-overlay" />
               </div>
               <div className="artist-quote-content">
@@ -671,7 +671,7 @@ function App() {
             {NEIGHBORHOODS.map((hood) => (
               <a key={hood.name} href={hood.url} className="neighborhood-card" aria-label={`Explore ${hood.name} - ${hood.subtitle}`}>
                 <div className="neighborhood-image">
-                  <img src={hood.image} alt={hood.imageAlt} />
+                  <img src={hood.image} alt={hood.imageAlt} loading="lazy" decoding="async" />
                   <div className="neighborhood-overlay">
                     <span className="plus-icon">+</span>
                   </div>
@@ -700,7 +700,7 @@ function App() {
       {/* Newsletter */}
       <section className="newsletter-section" aria-label="Subscribe to the Come See Arizona newsletter">
         <div className="newsletter-bg">
-          <img src="/newsletter-bg.jpg" alt="Arizona desert sunset with saguaro cacti silhouettes against an orange and purple sky" />
+          <img src="/newsletter-bg.jpg" alt="Arizona desert sunset with saguaro cacti silhouettes against an orange and purple sky" loading="lazy" decoding="async" />
           <div className="newsletter-overlay" />
         </div>
         <div className="container">
@@ -743,7 +743,7 @@ function App() {
           <div className="footer-grid">
             <div className="footer-brand">
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
-                <img src="/come-see-arizona.png" alt="Come See Arizona" style={{ height: 40, width: 'auto' }} />
+                <img src="/come-see-arizona.png" alt="Come See Arizona" width={677} height={369} loading="lazy" decoding="async" style={{ height: 40, width: 'auto' }} />
                 <h3 className="footer-logo" style={{ margin: 0 }}>Come See Arizona</h3>
               </div>
               <p>The official guide to Arizona. Find great deals, things to do, travel guides and more.</p>

@@ -57,7 +57,7 @@ function ServerApp({ location }: { location: string }) {
 }
 
 export function render(url: string): { html: string; head: string } {
-  const html = renderToString(
+  let html = renderToString(
     <HelmetProvider>
       <ServerApp location={url} />
     </HelmetProvider>
@@ -75,6 +75,14 @@ export function render(url: string): { html: string; head: string } {
     ...linkMatches,
     ...scriptMatches,
   ].filter(Boolean).join('\n');
+
+  // react-helmet-async leaves these tags inline in the rendered body. They are
+  // injected into <head> above, so strip them from the body to avoid duplicate
+  // title/description/canonical/og tags inside <div id="root"> (one copy only).
+  for (const tag of [...metaMatches, ...linkMatches, ...scriptMatches]) {
+    html = html.replace(tag, '');
+  }
+  if (titleMatch) html = html.replace(titleMatch[0], '');
 
   return { html, head };
 }

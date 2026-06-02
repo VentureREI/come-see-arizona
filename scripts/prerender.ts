@@ -125,6 +125,14 @@ async function prerender() {
     }
   }
 
+  // ArticlePage data-driven routes (ARTICLES object keys in src/pages/ArticlePage.tsx)
+  // arizona-best-hiking-trails is served by HikingGuidePage and already in the base list.
+  const articleSlugs = extractSlugs('src/pages/ArticlePage.tsx', /'([a-z0-9]+(?:-[a-z0-9]+)+)':\s*\{/g);
+  for (const slug of articleSlugs) {
+    const route = `/articles/${slug}`;
+    if (!routes.includes(route)) routes.push(route);
+  }
+
   console.log(`Prerendering ${routes.length} routes...`);
 
   let success = 0;
@@ -147,6 +155,11 @@ async function prerender() {
         html = html.replace(/<meta\s[^>]*name="robots"[^>]*>/g, '');
         html = html.replace(/<link\s[^>]*rel="canonical"[^>]*>/g, '');
         html = html.replace(/<meta\s[^>]*property="og:url"[^>]*>/g, '');
+        // Strip template image/identity OG tags so SEOHead's per-page versions win (no duplicates)
+        html = html.replace(/<meta\s[^>]*property="og:image"[^>]*>/g, '');
+        html = html.replace(/<meta\s[^>]*name="twitter:image"[^>]*>/g, '');
+        html = html.replace(/<meta\s[^>]*property="og:site_name"[^>]*>/g, '');
+        html = html.replace(/<meta\s[^>]*property="og:locale"[^>]*>/g, '');
       }
       html = html
         .replace('</head>', `${head}\n</head>`)

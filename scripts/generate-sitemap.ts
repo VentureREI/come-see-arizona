@@ -12,7 +12,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const SITE_URL = 'https://www.comeseearizona.com';
+const SITE_URL = 'https://comeseearizona.com';
 const TODAY = new Date().toISOString().split('T')[0];
 const STATIC_DATE = '2026-01-01';
 
@@ -106,9 +106,14 @@ function generateSitemap(): void {
   }
 
   // Things to do sub-pages
-  const thingsToDoSlugs = loadTsArraySlugs('src/data/thingsToDo.ts', /slug:\s*'([^']+)'/g);
+  const thingsToDoSlugs = loadTsArraySlugs('src/data/thingsToDo.ts', /slug:\s*"([^"]+)"/g);
   for (const slug of thingsToDoSlugs) {
     entries.push({ url: `/things-to-do/${slug}`, lastmod: STATIC_DATE, priority: 0.7, changefreq: 'monthly' });
+  }
+
+  // Itinerary pages (route list mirrors scripts/prerender.ts)
+  for (const slug of ['natural-wonders', 'arts-and-culture', 'arizona-dining', 'golf-paradise', 'family-fun', 'old-west-history']) {
+    entries.push({ url: `/itineraries/${slug}`, lastmod: STATIC_DATE, priority: 0.6, changefreq: 'monthly' });
   }
 
   // Article pages - scan src/pages for article-like routes
@@ -118,6 +123,14 @@ function generateSitemap(): void {
     for (const file of articleFiles) {
       const slug = file.replace('.tsx', '').replace(/([A-Z])/g, '-$1').toLowerCase().replace(/^-/, '');
       entries.push({ url: `/articles/${slug}`, lastmod: TODAY, priority: 0.5, changefreq: 'monthly' });
+    }
+  }
+
+  // ArticlePage data-driven routes (ARTICLES object keys in src/pages/ArticlePage.tsx)
+  const articleSlugs = loadTsArraySlugs('src/pages/ArticlePage.tsx', /'([a-z0-9]+(?:-[a-z0-9]+)+)':\s*\{/g);
+  for (const slug of articleSlugs) {
+    if (!entries.some(e => e.url === `/articles/${slug}`)) {
+      entries.push({ url: `/articles/${slug}`, lastmod: TODAY, priority: 0.6, changefreq: 'monthly' });
     }
   }
 

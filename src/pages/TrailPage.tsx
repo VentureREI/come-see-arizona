@@ -67,6 +67,44 @@ function getPackingList(difficulty: string, region: string): string[] {
   return base;
 }
 
+function getTrailFaqs(
+  trail: Trail & { condition?: { status: string; note: string; lastChecked: string } }
+): { question: string; answer: string }[] {
+  const faqs: { question: string; answer: string }[] = [
+    {
+      question: `How long is the ${trail.name}?`,
+      answer: `The ${trail.name} is ${trail.distance} with ${trail.elevationGain} of elevation gain. Most hikers complete it in ${trail.estimatedTime}. It is rated ${trail.difficulty} and located in ${trail.region}, Arizona.`,
+    },
+    {
+      question: `Is the ${trail.name} dog-friendly?`,
+      answer: trail.dogFriendly
+        ? `Yes, dogs are allowed on the ${trail.name}. Bring extra water for your dog and avoid hiking during peak heat, as exposed desert rock can burn paw pads.`
+        : `No, dogs are not permitted on the ${trail.name}. Plan to leave pets at home for this hike.`,
+    },
+    {
+      question: `Is there a fee to hike the ${trail.name}?`,
+      answer: trail.feeRequired
+        ? `Yes. The ${trail.name} requires a fee of ${trail.feeAmount ?? 'a posted amount'}. Check the managing agency's website for current rates before you go.`
+        : `No, there is no fee to hike the ${trail.name}. Parking and trail access are free.`,
+    },
+    {
+      question: `What is the best time to hike the ${trail.name}?`,
+      answer: `The best season to hike the ${trail.name} is ${trail.bestSeason}. In warmer months, start early in the morning to avoid peak heat, and always check current trail and weather conditions before heading out.`,
+    },
+    {
+      question: `How hard is the ${trail.name}?`,
+      answer: `The ${trail.name} is rated ${trail.difficulty}. With ${trail.elevationGain} of elevation gain over ${trail.distance}, plan for roughly ${trail.estimatedTime} on the trail.`,
+    },
+  ];
+  if (trail.trailheadAddress) {
+    faqs.push({
+      question: `Where does the ${trail.name} start?`,
+      answer: `The trailhead for the ${trail.name} is located at ${trail.trailheadAddress}.${trail.parkingNotes ? ` ${trail.parkingNotes}` : ''}`,
+    });
+  }
+  return faqs;
+}
+
 export default function TrailPage() {
   const { slug } = useParams<{ slug: string }>();
 
@@ -113,11 +151,11 @@ export default function TrailPage() {
     .filter((t): t is Trail => t !== undefined);
 
   const seoTitle = `${trail.name} Trail Guide | Arizona Hiking | Come See Arizona`;
-  const seoDescription = `Hike ${trail.name} in ${trail.region}, Arizona. ${trail.distance} miles, ${trail.elevationGain} ft elevation gain. Difficulty: ${trail.difficulty}. Complete trail guide with directions, tips, and nearby trails.`.slice(0, 160);
+  const seoDescription = `Hike ${trail.name} in ${trail.region}, Arizona. ${trail.distance}, ${trail.elevationGain} elevation gain. Difficulty: ${trail.difficulty}. Complete trail guide with directions, tips, and nearby trails.`.slice(0, 160);
 
   const placeSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Place',
+    '@type': 'TouristAttraction',
     name: trail.name,
     description: trail.description,
     geo: {
@@ -128,13 +166,28 @@ export default function TrailPage() {
     address: trail.trailheadAddress || undefined,
   };
 
+  const trailFaqs = getTrailFaqs(trail);
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: trailFaqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  };
+
+  const heroImage = 'https://images.unsplash.com/photo-1682686581362-796145f0e123?auto=format&fit=crop&w=1600&q=80';
+
   return (
     <div>
       <SEOHead
         title={seoTitle}
         description={seoDescription}
         canonical={`/trails/${trail.slug}`}
-        schema={placeSchema}
+        schema={[placeSchema, faqSchema]}
+        image={heroImage}
+        imageAlt={`${trail.name} hiking trail in ${trail.region}, Arizona`}
         breadcrumbs={[
           { name: 'Home', url: '/' },
           { name: 'Arizona Hiking Guide', url: '/articles/arizona-best-hiking-trails' },
@@ -146,9 +199,11 @@ export default function TrailPage() {
       <section className="explore-hero">
         <div className="explore-hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1682686581362-796145f0e123?auto=format&fit=crop&w=1600&q=80"
+            src={heroImage}
             alt={`${trail.name} hiking trail in Arizona`}
             className="card-img"
+            fetchPriority="high"
+            decoding="async"
           />
         </div>
         <div className="explore-hero-overlay" />
@@ -170,13 +225,13 @@ export default function TrailPage() {
         <div className="explore-stats-row">
           <div className="explore-stat-card">
             <div className="stat-number" style={{ color: 'var(--color-text)' }}>
-              {trail.distance} mi
+              {trail.distance}
             </div>
             <div className="stat-label">Distance</div>
           </div>
           <div className="explore-stat-card">
             <div className="stat-number" style={{ color: 'var(--color-text)' }}>
-              {trail.elevationGain.toLocaleString()} ft
+              {trail.elevationGain}
             </div>
             <div className="stat-label">Elevation Gain</div>
           </div>
@@ -214,7 +269,7 @@ export default function TrailPage() {
       </div>
 
       {/* Answer Block */}
-      <AnswerBlock answer={`${trail.name} is a ${trail.distance} ${trail.difficulty.toLowerCase()} trail in ${trail.region}, Arizona with ${trail.elevationGain} of elevation gain. The estimated hiking time is ${trail.estimatedTime}. ${trail.description.split('.')[0]}.`} />
+      <AnswerBlock answer={`The ${trail.name} is a ${trail.difficulty.toLowerCase()} hike in ${trail.region}, Arizona — ${trail.distance} with ${trail.elevationGain} of elevation gain, typically completed in ${trail.estimatedTime}. ${trail.dogFriendly ? 'Dogs are allowed.' : 'No dogs allowed.'} ${trail.feeRequired ? `Fee: ${trail.feeAmount ?? 'required'}.` : 'No entry fee.'} Best hiked ${trail.bestSeason}.`} />
 
       {/* C) Trail Description */}
       <section className="explore-section">
@@ -297,7 +352,7 @@ export default function TrailPage() {
                 >
                   <h3>{nearby.name}</h3>
                   <p style={{ fontSize: '14px', color: 'var(--color-text-secondary)', margin: '8px 0' }}>
-                    {nearby.distance} miles
+                    {nearby.distance}
                   </p>
                   <span
                     style={{
@@ -323,6 +378,24 @@ export default function TrailPage() {
           </div>
         </section>
       )}
+
+      {/* G2) FAQ */}
+      <section className="explore-section">
+        <div className="explore-container-narrow">
+          <div className="explore-faq-section">
+            <h2 className="explore-faq-title">Frequently Asked Questions</h2>
+            {trailFaqs.map((faq, i) => (
+              <details key={i} className="explore-faq">
+                <summary>
+                  {faq.question}
+                  <span className="faq-icon">+</span>
+                </summary>
+                <div className="faq-answer">{faq.answer}</div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* H) Back Links */}
       <section className="explore-section alt-bg">
