@@ -40,42 +40,122 @@
 
 ---
 
-<!-- Agents append their sections below this line. -->
+_Each section below was authored by its specialist auditor and reflects only what is committed on this branch. Items the auditors proposed but that were judged risky/data-dependent were NOT applied — they appear in the Punch List. Build verified green (474 routes) after every change._
 
 ## 1. Crawlability
 
-_pending_
+The site was already crawler-friendly: all routes prerender to static HTML with real content in `<div id="root">`, and Vercel serves the prerendered clean-URL files from the filesystem before the SPA rewrite fires (so the catch-all rewrite does **not** shadow real pages). Two headline problems were fixed: a host mismatch between the sitemap and everything else, and routes missing from prerender/sitemap.
+
+| Item | Before | After |
+|---|---|---|
+| Canonical host (dist pages) | `comeseearizona.com` (apex) | unchanged (already correct) |
+| Sitemap host | `www.comeseearizona.com` (mismatch) | `comeseearizona.com` (aligned) |
+| `siteConfig.siteUrl` | `www.comeseearizona.com` | `comeseearizona.com` |
+| `scripts/ping-indexnow.ts` host | `www.` | `comeseearizona.com` |
+| Prerendered routes | ~458 (no ArticlePage articles) | **474** (incl. 11 articles + 6 itineraries) |
+| Sitemap URL count | 448 (missing routes) | **474** (complete) |
+| `/things-to-do/*` in sitemap | 0 (regex quote-mismatch) | 10 |
+| `/itineraries/*` in sitemap | 0 (never emitted) | 6 |
+| `/articles/*` (data-driven) in prerender + sitemap | 0 | 11 |
+| AI/search bots in robots.txt | 9 allowed | + OAI-SearchBot, Bingbot, Googlebot, Amazonbot, meta-externalagent, Applebot, CCBot, Claude-User, Claude-SearchBot, Perplexity-User |
+| URL canonicalization | `.html`/trailing-slash variants not normalized | `cleanUrls:true` + `trailingSlash:false` (308 to one form) |
+| JS-shell risk | none | none |
+
+**Fixed:** host unified on apex (the host the entire dist + robots + llms already used); sitemap generator quote-regex + itinerary + ArticlePage-slug coverage; **prerender now emits the 11 ArticlePage articles** (previously only client-rendered → bots got the shell); robots.txt expanded; `cleanUrls`/`trailingSlash` added (Vercel filesystem-first confirmed, so safe).
+
+**Flagged (Punch List):** footer orphans (`/contact`, `/privacy-policy`, `/terms-of-use`, `/accessibility`) and absent `/articles` & `/itineraries` index routes; `code-path="…"` dev attributes leaking into prerendered HTML (prerender runs through Vite's dev SSR server).
 
 ## 2. Schema (JSON-LD)
 
-_pending_
+Schemas ship two ways: static blocks in `index.html` (home) and per-page objects built in each page component and passed to `SEOHead`. Verified against shipped `dist/`.
+
+| Page / template | Before | After |
+|---|---|---|
+| Home (`index.html`) | Org/WebSite+SearchAction/TouristDestination/FAQ/7×Article; SearchAction invalid, 7 broken `mainEntityOfPage`, fake `sameAs`, missing `logo.png`, stale `Daniel Djang` byline | SearchAction removed (no `/search` route; feature deprecated); 7 `mainEntityOfPage` → `/articles/<slug>`; `sameAs` removed (unverified); logo → real `/come-see-arizona.png`; byline → Organization |
+| ArticlePage (11 URLs) | breadcrumb only | **Article** (headline, image, dates, Organization publisher, `mainEntityOfPage`) via new `schema.ts` helper |
+| ItineraryPage (6 URLs) | breadcrumb only; bogus "Itineraries → /" crumb | **TouristTrip + ItemList** of per-day TouristAttraction; crumb fixed |
+| TrailPage (47 URLs) | `Place` + geo/address | **TouristAttraction** + **FAQPage** (6 Q&A) |
+| HikingGuidePage | Article without `image` | Article + recommended `image` |
+| City/County/Neighborhood/Zip/SchoolDistrict/ThingsToDoSub/Events | Place/FAQ/Event/etc. | unchanged (already strong) |
+
+New centralized `src/components/seo/schema.ts` (`organizationSchema` with `@id`, `buildArticleSchema`, `buildItinerarySchema`) derives host from `siteConfig`, so one edit governs host + author/publisher across all article/itinerary URLs. **No fabricated ratings/reviews exist** anywhere (verified). All emitted `@id`/`mainEntityOfPage` now resolve to real, single-host URLs. Verifier confirmed every ld+json block parses and TrailPage FAQ schema matches the visible `<details>`.
+
+**Flagged:** real per-article `datePublished` (placeholder used); optional Venture REI `RealEstateAgent`/Person entity (needs verified NAP); confirm-or-restore social `sameAs`.
 
 ## 3. AEO (Answer Engine Optimization)
 
-_pending_
+Already strong: `AnswerBlock` (answer-first lead) on every content page; FAQPage + visible `<details>` on 13 templates with data-driven (non-fabricated) answers; one rendered `<h1>` per page (the apparent multi-H1 grep hits are all in not-found early-return branches that never co-render); one topic per page; `/llms.txt` points only at real routes.
+
+**Fixed:** **TrailPage** was the one gap — answer-first content but no FAQ. Added a data-driven `getTrailFaqs()` (answers built strictly from real `Trail` fields), `FAQPage` JSON-LD (`schema={[placeSchema, faqSchema]}`), a matching visible FAQ section, and an extractable AnswerBlock (distance, elevation, dog/fee/season). Added a "Most Citable Facts" section to `llms.txt` signposting per-page stat blocks, trail metrics, and freshness timestamps. (During integration, double-unit bugs surfaced in the trail quotable layer — "3.3 miles miles", "250 ft ft" — in the AnswerBlock, FAQ, `seoDescription`, stat cards, and nearby-trail cards; all corrected since `distance`/`elevationGain` are strings that already carry units.)
+
+**Flagged:** no template is thin; minor optional enrichment only (e.g., ThingsToDoSub hours/phone, structured summer-closure field).
 
 ## 4. GEO (Generative Engine Optimization)
 
-_pending_
+**Resolved the critical NAP/host split** (apex everywhere; `siteConfig` is now the single source). Organization logo corrected from non-existent `/logo.png` to the real `/come-see-arizona.png`; fabricated social `sameAs` removed (negative E-E-A-T signal). `siteConfig` extended with `leaderJobTitle`/`leaderKnowsAbout`/`socialProfiles` to support a future Person/RealEstateAgent entity. **Coordinate checks:** all 42 cities + 3 counties carry plausible in-state coords (Phoenix 33.4484/-112.074, Tucson 32.2226/-110.9747, Sedona/Flagstaff present in home TouristDestination); neighborhoods/ZIPs intentionally carry no coords. Location-hub coverage (county/city/neighborhood/zip/school-district across Maricopa/Pinal/Pima) is complete; no low-risk hub gap.
+
+**Flagged:** real Venture REI address/phone (none in repo — do **not** invent) before any LocalBusiness/RealEstateAgent node; verify-or-drop social profiles; add a visible Person entity for Frank Vazquez once profiles confirmed; bind the stale footer "Last Updated: March 2026" to `siteConfig.lastUpdated`.
 
 ## 5. On-Page SEO
 
-_pending_
+**Root-caused and fixed the duplicate-tag bug** the architect flagged: every prerendered route shipped **2×** `title`/`description`/`canonical`/`og:title`/`og:url`. Cause was in `entry-server.tsx` — `react-helmet-async` leaves its tags inline in the SSR body; `render()` copied them to `<head>` but returned the body unchanged, so they also remained in `<div id="root">`. Fix strips the extracted tags from the body → now exactly **1×** each (verified across 6 page types).
+
+`SEOHead` gained per-page `og:image`/`twitter:image`/`og:image:alt`/`twitter:image:alt` (defaulting to the site hero) plus `og:site_name`/`og:locale`; `prerender.ts` now strips the template's image/identity OG tags so Helmet's per-page versions win (no conflicts). Article/Itinerary/Trail templates pass their own hero as the share image. Titles/descriptions audited: all unique and keyword-first; double-unit text in the trail `seoDescription` fixed.
+
+**Flagged (Punch List):** tighten 9 over-length static titles + 3 data-driven title templates to ≤60 chars; wire per-page `image=` into the remaining data-driven templates (City/County/etc.); optional richer alt on five bare-`alt={name}` card images.
 
 ## 6. Performance
 
-_pending_
+No Lighthouse run was possible here; findings are from build/source inspection vs. 2026 CWV guidance.
+
+**Safe fixes applied:** font `preconnect` to `fonts.googleapis.com`/`fonts.gstatic.com` (`index.html`); preload the homepage LCP hero `/hero-desert.jpg` with `fetchpriority="high"` + `fetchPriority`/`decoding`/`width`/`height` on the hero `<img>`; intrinsic dimensions (true 677×369 ratio) + priority on the above-fold header logo (kills CLS), `loading="lazy"` on the footer logo; `loading="lazy" decoding="async"` on all below-the-fold homepage images; `fetchPriority="high" decoding="async"` on the TrailPage hero.
+
+**Worst image offenders (unoptimized JPG/PNG in `public/`):** neighborhood-bisbee 259 KB, neighborhood-scottsdale 201 KB, neighborhood-flagstaff 204 KB, featured-heritage 200 KB, article-hiking 199 KB, active logo come-see-arizona.png 172 KB, hero-desert 119 KB.
+
+**Flagged (Punch List, risky/large — not auto-applied):** per-route hero preload + `fetchPriority` for the ~16 other templates (data-driven hero src; a small `<HeroPreload>` component); remove the render-blocking Google Fonts `@import` in `src/App.css` for a non-blocking `<link>` or self-hosted fonts; a WebP/AVIF + responsive `srcset` build pipeline (highest single LCP/bandwidth win); delete dead `OLD--come_see_arizona_logo.png`/duplicate logo PNG.
 
 ## 7. Verification
 
-_pending_
+Re-validated the full sweep against a fresh production build (runs last, alone).
+
+- **Build:** green — `tsc` clean, vite OK, prerender **474 succeeded / 0 failed**, sitemap 474 URLs.
+- **Duplicate tags:** exactly 1× `title`/`description`/`canonical`/`og:title`/`og:url`/`og:image` across home, things-to-do, city, trail, article, itinerary pages; 0 head tags leaked into `<body>`.
+- **Schema:** every ld+json block parses; ArticlePage=Article, ItineraryPage=TouristTrip+ItemList, TrailPage=TouristAttraction+FAQPage (6 Q&A matching visible FAQ), home=Organization(no sameAs)/WebSite(no SearchAction)/TouristDestination; all 7 home `mainEntityOfPage` → `/articles/<slug>`; zero `www` host in any block.
+- **Robots/Sitemap:** all required AI + search crawlers allowed, none disallowed; sitemap valid, 474 entries, every one with `<lastmod>`, all apex, incl. 6 itineraries + 11 articles.
+- **Repair applied by verifier:** 7 stale visible `<a href>` links in the homepage `<noscript>` SEO block were redirected from non-existent `/things-to-do/…` & `/eat-and-drink/…` paths to `/articles/<slug>` (matching the corrected JSON-LD), removing 7 internal 404s; build re-confirmed green.
 
 ---
 
 ## Prioritized Human-Decision Punch List
 
-_consolidated by architect after merge_
+**P1 — content/routing correctness**
+1. **Create or unlink orphan pages:** `/contact`, `/privacy-policy`, `/terms-of-use`, `/accessibility` are linked but 404 (no route/prerender). Standard pages crawlers expect — add them or remove the links.
+2. **`/articles` & `/itineraries` index routes:** the home page links to `/itineraries` but only `:slug` pages exist. Add landing pages or remove the links.
+3. **Real per-article dates:** `ArticlePage` Article schema uses placeholder `datePublished`. Add real dates to the `ARTICLES` data.
+
+**P2 — identity / E-E-A-T (need owner-supplied facts; do NOT invent)**
+4. **Confirm canonical host = apex** `https://comeseearizona.com` and set a 301 from `www` → apex at the DNS/Vercel domain level (code is now all-apex).
+5. **Social `sameAs`:** restore only real, owned profile URLs (removed as unverified) or leave omitted.
+6. **Venture REI NAP:** supply a real address + phone to add a `RealEstateAgent`/`LocalBusiness` + visible Person entity for Frank Vazquez (backs the 2,400-homes authority claim). No fabricated NAP.
+7. **Bind footer "Last Updated"** to `siteConfig.lastUpdated` (currently hardcoded "March 2026").
+
+**P3 — performance (larger/riskier)**
+8. **Image pipeline:** generate WebP/AVIF + responsive `srcset` for `public/` images (largest LCP/bandwidth win). Interim: re-export JPGs at ~75% quality / true display size.
+9. **Per-route hero preload + `fetchPriority`** for the ~16 non-home templates (add a `<HeroPreload>` component) and `loading="lazy"` on their non-hero images.
+10. **De-block Google Fonts:** replace the `@import` in `src/App.css` with a non-blocking `<link>` or self-host (`@fontsource/*`).
+11. **Strip dev artifacts:** prerender via a production SSR build (or disable `kimi-plugin-inspect-react` in prerender) so `code-path="…"` attributes stop shipping; delete dead logo PNGs.
+
+**P4 — on-page polish**
+12. Tighten 9 over-length static titles + City/County/Trail title templates to ≤60 chars.
+13. Wire per-page `image=` into remaining data-driven templates (City/County/Neighborhood/Zip/SchoolDistrict) for topical share images; enrich five bare `alt={name}` card images.
 
 ## Post-Deploy Signals to Watch
 
-_consolidated by architect after merge_
+- **Google Search Console:** Coverage/Indexing for the 16 newly prerendered routes (11 articles + 6 itineraries); Page Indexing "Duplicate without canonical" should drop now that one canonical ships per page; confirm `www` URLs are no longer indexed after the 301; Rich Results status for Article, FAQ, Event, Breadcrumb.
+- **Rich Results Test / Schema validator:** spot-check a TrailPage (TouristAttraction + FAQPage), an ArticlePage, and an ItineraryPage post-deploy.
+- **Bing Webmaster / IndexNow:** confirm submissions succeed on the apex host.
+- **Core Web Vitals (field data, CrUX/GSC):** LCP on home + a hero-heavy template after the preload/fetchpriority changes; CLS after the logo dimension fix; revisit once the image pipeline (P3) lands.
+- **AI-crawler access logs:** verify GPTBot / ClaudeBot / OAI-SearchBot / PerplexityBot / Google-Extended fetch full HTML (200, not the shell) for article/trail/city pages; watch `/llms.txt` fetches.
+- **Sitemap freshness:** ensure each deploy re-runs `generate-sitemap.ts` so `lastmod` reflects real build dates.
+
+> No traffic or ranking outcomes are guaranteed. These changes improve structural discoverability, citation eligibility, and crawl correctness; impact must be measured against the signals above.
