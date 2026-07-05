@@ -12,7 +12,7 @@ import {
 import { getHeroImage, getNeighborhoodImage } from './exploreImages';
 import { generateZipCodeGuide, generateZipCodeMarketAnalysis, generateZipCodeFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
-import { getMarketPricesLastUpdated } from '../data/dynamicLoader';
+import { getMarketAttribution } from '../data/dynamicLoader';
 
 export default function ZipCodePage() {
   const { zipCode } = useParams<{ zipCode: string }>();
@@ -150,7 +150,7 @@ export default function ZipCodePage() {
         </div>
       </div>
       <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#8D847A' }}>
-        Market data last updated: {getMarketPricesLastUpdated()}
+        {getMarketAttribution()}
       </div>
 
       {/* C) Guide */}

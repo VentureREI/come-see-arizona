@@ -9,11 +9,10 @@ import {
   getSchoolDistrict,
   formatPrice,
 } from '../data/lookups';
-import type { Neighborhood } from '../data/types';
 import { getNeighborhoodImage } from './exploreImages';
 import { generateNeighborhoodGuide, generateNeighborhoodMarketAnalysis, generateNeighborhoodFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
-import { getMarketPricesLastUpdated } from '../data/dynamicLoader';
+import { getMarketAttribution } from '../data/dynamicLoader';
 
 export default function NeighborhoodPage() {
   const { neighborhoodSlug } = useParams<{ neighborhoodSlug: string }>();
@@ -58,9 +57,9 @@ export default function NeighborhoodPage() {
     );
   }
 
-  const guideParagraphs = generateNeighborhoodGuide(neighborhood, city, county);
+  const guideParagraphs = generateNeighborhoodGuide(neighborhood, city);
   const marketParagraphs = generateNeighborhoodMarketAnalysis(neighborhood, city);
-  const expandedFaqs = generateNeighborhoodFaqs(neighborhood, city, county);
+  const expandedFaqs = generateNeighborhoodFaqs(neighborhood, city);
   const aboutFooter = getAboutFooter(neighborhood.name);
 
   const seoDescription =
@@ -167,7 +166,7 @@ export default function NeighborhoodPage() {
         </div>
       </div>
       <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#8D847A' }}>
-        Market data last updated: {getMarketPricesLastUpdated()}
+        {getMarketAttribution()}
       </div>
 
       {/* C) Definitive Guide */}

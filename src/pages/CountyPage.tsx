@@ -1,28 +1,10 @@
 import { useParams, Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
 import { getCounty, getCitiesByCounty, getDistrictsByCounty, getNeighborhoodsByCounty, formatPrice, formatNumber } from '../data/lookups';
-import { COUNTIES } from '../data/seedingTable';
 import { getHeroImage, getCityImage } from './exploreImages';
 import { generateCountyGuide, generateCountyMarketAnalysis, generateCountyFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
-import { getMarketPricesLastUpdated } from '../data/dynamicLoader';
-
-function getRatingColor(rating: string): string {
-  switch (rating.toLowerCase()) {
-    case 'excellent':
-      return 'bg-green-600';
-    case 'good':
-      return 'bg-green-500';
-    case 'above average':
-      return 'bg-blue-500';
-    case 'average':
-      return 'bg-yellow-500';
-    case 'below average':
-      return 'bg-orange-500';
-    default:
-      return 'bg-gray-500';
-  }
-}
+import { getMarketAttribution, getCountyMarket } from '../data/dynamicLoader';
 
 export default function CountyPage() {
   const { countySlug } = useParams<{ countySlug: string }>();
@@ -71,8 +53,9 @@ export default function CountyPage() {
     );
   }
 
-  const guideParagraphs = generateCountyGuide(county, cities, districts, neighborhoods);
+  const guideParagraphs = generateCountyGuide(county, cities, districts);
   const marketAnalysis = generateCountyMarketAnalysis(county, cities);
+  const countyMarket = getCountyMarket(county.slug);
   const expandedFaqs = generateCountyFaqs(county, cities, districts);
   const aboutFooter = getAboutFooter(county.name);
 
@@ -178,7 +161,7 @@ export default function CountyPage() {
         </div>
       </div>
       <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#8D847A' }}>
-        Market data last updated: {getMarketPricesLastUpdated()}
+        {getMarketAttribution()}
       </div>
 
       {/* C) Description Section */}
@@ -205,6 +188,38 @@ export default function CountyPage() {
           {marketAnalysis.map((p, i) => (
             <p key={i} className="explore-description">{p}</p>
           ))}
+          {countyMarket?.narrative && (
+            <div style={{
+              marginTop: 24,
+              padding: '18px 22px',
+              background: '#FAF3EB',
+              border: '1px solid #E7DFD3',
+              borderLeft: '3px solid var(--color-primary)',
+              borderRadius: '0 12px 12px 0',
+            }}>
+              <p style={{
+                fontFamily: 'var(--font-body)', fontSize: 11, fontWeight: 700,
+                textTransform: 'uppercase', letterSpacing: 1.4,
+                color: 'var(--color-text-light)', marginBottom: 8,
+              }}>
+                Current Trend Research{countyMarket.asOf ? ` · ${countyMarket.asOf}` : ''}
+              </p>
+              <p className="explore-description" style={{ marginBottom: countyMarket.narrativeCitations?.length ? 10 : 0 }}>
+                {countyMarket.narrative}
+              </p>
+              {countyMarket.narrativeCitations && countyMarket.narrativeCitations.length > 0 && (
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: 12, color: 'var(--color-text-light)' }}>
+                  Sources:{' '}
+                  {countyMarket.narrativeCitations.map((url, i) => (
+                    <a key={url} href={url} target="_blank" rel="noopener noreferrer nofollow"
+                       style={{ color: 'var(--color-primary)' }}>
+                      [{i + 1}]
+                    </a>
+                  )).reduce<React.ReactNode[]>((acc, el, i) => i === 0 ? [el] : [...acc, ' ', el], [])}
+                </p>
+              )}
+            </div>
+          )}
         </div>
       </section>
 

@@ -22,18 +22,27 @@ import eventsData from './dynamic/events.json';
 
 interface DynamicCityPrice {
   medianHomePrice: number;
-  pricePerSqFt: number;
-  avgDaysOnMarket: number;
+  pricePerSqFt: number | null;
+  avgDaysOnMarket: number | null;
   marketType: string;
+  yearOverYearChange?: string | null;
+  asOf?: string;
+  confidence?: string;
+  citations?: string[];
 }
 
 interface DynamicCountyPrice {
   medianHomePrice: number;
-  pricePerSqFt: number;
-  avgDaysOnMarket: number;
+  pricePerSqFt: number | null;
+  avgDaysOnMarket: number | null;
   inventoryLevel: string;
   marketTrend: string;
-  yearOverYearChange: string;
+  yearOverYearChange: string | null;
+  asOf?: string;
+  confidence?: string;
+  citations?: string[];
+  narrative?: string;
+  narrativeCitations?: string[];
 }
 
 interface DynamicNeighborhoodPrice {
@@ -63,11 +72,11 @@ export function getMergedCounty(slug: string): (County & { pricePerSqFt?: number
   return {
     ...county,
     medianHomePrice: dynamic.medianHomePrice,
-    pricePerSqFt: dynamic.pricePerSqFt,
-    avgDaysOnMarket: dynamic.avgDaysOnMarket,
+    pricePerSqFt: dynamic.pricePerSqFt ?? undefined,
+    avgDaysOnMarket: dynamic.avgDaysOnMarket ?? undefined,
     inventoryLevel: dynamic.inventoryLevel,
     marketTrend: dynamic.marketTrend,
-    yearOverYearChange: dynamic.yearOverYearChange,
+    yearOverYearChange: dynamic.yearOverYearChange ?? undefined,
   };
 }
 
@@ -79,8 +88,8 @@ export function getMergedCity(slug: string): (City & { pricePerSqFt?: number; av
   return {
     ...city,
     medianHomePrice: dynamic.medianHomePrice,
-    pricePerSqFt: dynamic.pricePerSqFt,
-    avgDaysOnMarket: dynamic.avgDaysOnMarket,
+    pricePerSqFt: dynamic.pricePerSqFt ?? undefined,
+    avgDaysOnMarket: dynamic.avgDaysOnMarket ?? undefined,
     marketType: dynamic.marketType,
   };
 }
@@ -121,6 +130,34 @@ export function getFeaturedContent() {
 
 export function getMarketPricesLastUpdated(): string {
   return marketPrices?.lastUpdated ?? '';
+}
+
+// ── Verified market data accessors ──────────────────────────────────────
+// Content generators must pull market metrics (price/sqft, days on market,
+// YoY change, market type) ONLY from here. If an entity has no entry, the
+// metric is unknown and must be omitted from copy — never approximated.
+
+export function getCountyMarket(slug: string): DynamicCountyPrice | undefined {
+  return countyPrices[slug];
+}
+
+export function getCityMarket(slug: string): DynamicCityPrice | undefined {
+  return cityPrices[slug];
+}
+
+/** Names of the public sources behind the current marketPrices.json (e.g. ["redfin.com", "realtor.com"]). */
+export function getMarketSourceNames(): string[] {
+  return ((marketPrices as { sourceNames?: string[] }).sourceNames ?? []);
+}
+
+/** Footer attribution: update date plus source hostnames when available. */
+export function getMarketAttribution(): string {
+  const date = getMarketPricesLastUpdated();
+  const sources = getMarketSourceNames();
+  if (!date) return '';
+  return sources.length > 0
+    ? `Market data last updated: ${date} · Sources: ${sources.join(', ')}`
+    : `Market data last updated: ${date}`;
 }
 
 export function getTrailConditionsLastUpdated(): string {
