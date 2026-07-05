@@ -13,6 +13,8 @@ import { getNeighborhoodImage } from './exploreImages';
 import { generateNeighborhoodGuide, generateNeighborhoodMarketAnalysis, generateNeighborhoodFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
 import { getMarketAttribution } from '../data/dynamicLoader';
+import SeeHomesCta from '../components/SeeHomesCta';
+import { homesForNeighborhood } from '../data/homesSearch';
 
 export default function NeighborhoodPage() {
   const { neighborhoodSlug } = useParams<{ neighborhoodSlug: string }>();
@@ -186,6 +188,10 @@ export default function NeighborhoodPage() {
           {marketParagraphs.map((p, i) => (
             <p key={i} className="explore-description">{p}</p>
           ))}
+          <SeeHomesCta
+            href={homesForNeighborhood(neighborhood.zipCodes, city.name)}
+            areaLabel={`${neighborhood.name}, ${city.name}`}
+          />
         </div>
       </section>
 

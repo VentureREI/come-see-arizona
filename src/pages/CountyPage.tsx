@@ -6,6 +6,8 @@ import { generateCountyGuide, generateCountyMarketAnalysis, generateCountyFaqs, 
 import AnswerBlock from '../components/AnswerBlock';
 import { getMarketAttribution, getCountyMarket, getCityMarket } from '../data/dynamicLoader';
 import { PriceTrendChart, MedianBarsChart } from '../components/MarketCharts';
+import SeeHomesCta from '../components/SeeHomesCta';
+import { homesSearchUrl } from '../data/homesSearch';
 
 export default function CountyPage() {
   const { countySlug } = useParams<{ countySlug: string }>();
@@ -238,6 +240,7 @@ export default function CountyPage() {
               }))}
             />
           </div>
+          <SeeHomesCta href={homesSearchUrl()} areaLabel={county.name} />
         </div>
       </section>
 

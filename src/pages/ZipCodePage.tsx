@@ -9,10 +9,12 @@ import {
   formatPrice,
   formatNumber,
 } from '../data/lookups';
-import { getHeroImage, getNeighborhoodImage } from './exploreImages';
+import { getHeroImage } from './exploreImages';
 import { generateZipCodeGuide, generateZipCodeMarketAnalysis, generateZipCodeFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
 import { getMarketAttribution } from '../data/dynamicLoader';
+import SeeHomesCta from '../components/SeeHomesCta';
+import { homesForZip } from '../data/homesSearch';
 
 export default function ZipCodePage() {
   const { zipCode } = useParams<{ zipCode: string }>();
@@ -170,6 +172,10 @@ export default function ZipCodePage() {
           {marketParagraphs.map((p, i) => (
             <p key={i} className="explore-description">{p}</p>
           ))}
+          <SeeHomesCta
+            href={homesForZip(zipData.zip)}
+            areaLabel={`ZIP ${zipData.zip} (${city.name})`}
+          />
         </div>
       </section>
 

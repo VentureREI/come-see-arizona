@@ -6,6 +6,8 @@ import { generateCityGuide, generateCityMarketAnalysis, generateCityFaqs, getAbo
 import AnswerBlock from '../components/AnswerBlock';
 import { getMarketAttribution, getCityMarket, getCountyMarket } from '../data/dynamicLoader';
 import { ComparisonChart, MedianBarsChart } from '../components/MarketCharts';
+import SeeHomesCta from '../components/SeeHomesCta';
+import { homesForCity } from '../data/homesSearch';
 
 function getRatingClass(rating: string): string {
   const letter = rating.charAt(0).toUpperCase();
@@ -184,6 +186,7 @@ export default function CityPage() {
               />
             )}
           </div>
+          <SeeHomesCta href={homesForCity(city.name)} areaLabel={`${city.name}, Arizona`} />
         </div>
       </section>
 
