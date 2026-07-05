@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter, Routes, Route } from 'react-router-dom';
-import { HelmetProvider, HelmetData } from 'react-helmet-async';
+import { HelmetProvider } from 'react-helmet-async';
 
 import App from './App';
 import ThingsToDoPage from './pages/ThingsToDoPage';
@@ -26,7 +26,10 @@ import TravelTradePage from './pages/TravelTradePage';
 import MeetingsPage from './pages/MeetingsPage';
 import AboutArizonaTourismPage from './pages/AboutArizonaTourismPage';
 import AIHubPage from './pages/AIHubPage';
+import SiteHeader from './components/SiteHeader';
+import SiteFooter from './components/SiteFooter';
 
+// eslint-disable-next-line react-refresh/only-export-components -- server-only file, fast refresh does not apply
 function ServerApp({ location }: { location: string }) {
   // The Suspense boundary must mirror the client Router's structure: without
   // it the prerendered HTML lacks the <!--$--> boundary markers hydrateRoot
@@ -35,6 +38,7 @@ function ServerApp({ location }: { location: string }) {
   // the fallback never renders on the server.
   return (
     <StaticRouter location={location}>
+      <SiteHeader />
       <Suspense fallback={null}>
       <Routes>
         <Route path="/" element={<App />} />
@@ -62,6 +66,7 @@ function ServerApp({ location }: { location: string }) {
         <Route path="/explore/school-district/:districtSlug" element={<SchoolDistrictPage />} />
       </Routes>
       </Suspense>
+      <SiteFooter />
     </StaticRouter>
   );
 }
@@ -80,19 +85,21 @@ export function render(url: string): { html: string; head: string } {
   const titleMatch = html.match(/<title[^>]*>([^<]*)<\/title>/);
   const metaMatches = html.match(/<meta[^>]*(?:name="description"|property="og:|name="twitter:|name="robots")[^>]*>/g) || [];
   const linkMatches = html.match(/<link[^>]*rel="(?:canonical|preload)"[^>]*>/g) || [];
-  const scriptMatches = html.match(/<script type="application\/ld\+json">[^<]*<\/script>/g) || [];
 
   const head = [
     titleMatch ? `<title>${titleMatch[1]}</title>` : '',
     ...metaMatches,
     ...linkMatches,
-    ...scriptMatches,
   ].filter(Boolean).join('\n');
 
-  // react-helmet-async leaves these tags inline in the rendered body. They are
-  // injected into <head> above, so strip them from the body to avoid duplicate
-  // title/description/canonical/og tags inside <div id="root"> (one copy only).
-  for (const tag of [...metaMatches, ...linkMatches, ...scriptMatches]) {
+  // react-helmet-async leaves these tags inline in the rendered body. Title,
+  // meta, and link are injected into <head> above and stripped from the body —
+  // React 19 hoists those element types on the client, so hydration tolerates
+  // their absence. JSON-LD <script> tags must STAY in the body: React does not
+  // hoist inline scripts, so stripping them makes the client render an element
+  // the server HTML lacks (hydration error #418). JSON-LD is valid for
+  // crawlers anywhere in the document.
+  for (const tag of [...metaMatches, ...linkMatches]) {
     html = html.replace(tag, '');
   }
   if (titleMatch) html = html.replace(titleMatch[0], '');

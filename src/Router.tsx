@@ -3,6 +3,8 @@ import { lazy, Suspense, useEffect, useState, useSyncExternalStore } from 'react
 import { Search } from 'lucide-react';
 import App from './App';
 import ScrollToTop from './components/ScrollToTop';
+import SiteHeader from './components/SiteHeader';
+import SiteFooter from './components/SiteFooter';
 
 const CommandPalette = lazy(() => import('./components/CommandPalette'));
 
@@ -99,6 +101,7 @@ export default function Router() {
     <BrowserRouter>
       <ScrollToTop />
       <SearchLauncher />
+      <SiteHeader />
       <Suspense fallback={<LoadingFallback />}>
         <Routes>
           <Route path="/" element={<App />} />
@@ -127,6 +130,7 @@ export default function Router() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
+      <SiteFooter />
     </BrowserRouter>
   );
 }

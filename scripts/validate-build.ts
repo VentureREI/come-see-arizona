@@ -40,9 +40,13 @@ check('TypeScript compilation', () => {
   run('npx tsc --noEmit');
 });
 
-// 2. Vite build
+// 2. Vite build — build into a throwaway directory. Building into dist/ here
+// would empty it and destroy the prerendered HTML that `npm run build` just
+// wrote (vite only emits client assets; the 475 page files come from
+// scripts/prerender.ts).
 check('Vite build', () => {
-  run('npx vite build');
+  run('npx vite build --outDir dist-validate --emptyOutDir');
+  run('rm -rf dist-validate');
 });
 
 // 3. Dynamic JSON files parse correctly

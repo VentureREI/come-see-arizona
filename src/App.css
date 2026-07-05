@@ -3240,3 +3240,30 @@ html, body {
   .article-card, .itinerary-card, .event-card, .neighborhood-card,
   .ta-chip, .ta-card, .ta-slot, .global-search-fab { transition: none; }
 }
+
+/* ── Interior page polish (global chrome era) ─────────────── */
+.explore-info-card,
+.explore-stat-card {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.explore-info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(26, 26, 26, 0.12);
+}
+.explore-stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(211, 47, 47, 0.12);
+  border-color: rgba(211, 47, 47, 0.25);
+}
+.explore-tab {
+  transition: all 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.explore-tab:hover:not(.active) {
+  transform: translateY(-1px);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .explore-info-card, .explore-stat-card, .explore-tab { transition: none; }
+}

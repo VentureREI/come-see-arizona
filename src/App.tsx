@@ -1,24 +1,13 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import {
-  Menu, X, Search, ChevronRight, ChevronLeft,
+  X, ChevronRight, ChevronLeft,
   Clock, ArrowRight, Mail,
-  Facebook, Twitter, Instagram, Youtube
 } from 'lucide-react';
 import { getMergedEvents } from './data/dynamicLoader';
 import type { EventItem } from './data/events';
 import LivePulse from './components/LivePulse';
 import TripArchitect from './components/TripArchitect';
 import './App.css';
-
-// Navigation items
-const NAV_ITEMS = [
-  { label: 'Things to Do in Arizona', shortLabel: 'Things to Do', href: '/things-to-do' },
-  { label: 'Eat & Drink in Arizona', shortLabel: 'Eat & Drink', href: '/eat-and-drink' },
-  { label: 'Arizona Events', shortLabel: 'Events', href: '/events' },
-  { label: 'Where to Stay in Arizona', shortLabel: 'Where to Stay', href: '/where-to-stay' },
-  { label: 'Arizona Travel Guides', shortLabel: 'Travel Guides', href: '/travel-guides' },
-  { label: 'Explore Arizona Communities', shortLabel: 'Explore AZ', href: '/explore' },
-];
 
 // Featured articles
 const FEATURED_ARTICLES = [
@@ -271,29 +260,8 @@ const ARTIST_QUOTES = [
   },
 ];
 
-// Footer links
-const FOOTER_LINKS = {
-  explore: [
-    { label: 'Things to Do in Arizona', href: '/things-to-do' },
-    { label: 'Eat & Drink in Arizona', href: '/eat-and-drink' },
-    { label: 'Find Arizona Events', href: '/events' },
-    { label: 'Where to Stay in Arizona', href: '/where-to-stay' },
-    { label: 'Arizona Travel Guides', href: '/travel-guides' },
-    { label: 'Explore Arizona Communities', href: '/explore' },
-  ],
-  plan: [
-    { label: 'Tourist Info', href: '/tourist-info' },
-    { label: 'Travel Trade', href: '/travel-trade' },
-    { label: 'Meetings', href: '/meetings' },
-    { label: 'About Arizona Tourism', href: '/about-arizona-tourism' },
-    { label: 'For AI Assistants', href: '/ai' },
-  ],
-};
-
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [bannerClosed, setBannerClosed] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [itineraryScroll, setItineraryScroll] = useState(0);
   const itineraryRef = useRef<HTMLDivElement>(null);
   const [email, setEmail] = useState('');
@@ -302,14 +270,6 @@ function App() {
 
   const upcomingEvents = useMemo(() => getUpcomingEvents(), []);
   const featuredEvent = useMemo(() => getFeaturedEvent(), []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 100);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   // Scroll-reveal: sections fade/rise in as they enter the viewport.
   // Disabled automatically for users who prefer reduced motion (see App.css).
@@ -367,57 +327,6 @@ function App() {
             <X size={18} />
           </button>
         </div>
-      )}
-
-      {/* Navigation */}
-      <header className={`main-nav ${scrolled ? 'scrolled' : ''}`}>
-        <div className="nav-container">
-          <div className="nav-left">
-            <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={menuOpen}>
-              {menuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-            <a href="/" className="logo" aria-label="Come See Arizona - Home">
-              <img src="/come-see-arizona.png" alt="Come See Arizona" width={677} height={369} fetchPriority="high" decoding="async" style={{ height: 90, width: 'auto' }} />
-            </a>
-          </div>
-
-          <nav className={`nav-links ${menuOpen ? 'open' : ''}`} aria-label="Main navigation">
-            <ul role="list" style={{ display: 'contents' }}>
-              {NAV_ITEMS.map((item) => (
-                <li key={item.label} style={{ display: 'contents' }}>
-                  <a href={item.href} className="nav-link" title={item.label}>
-                    {item.shortLabel}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          <div className="nav-right">
-            <button
-              className="search-btn"
-              aria-label="Search Come See Arizona (Command+K)"
-              onClick={() => window.dispatchEvent(new Event('csa:open-search'))}
-            >
-              <Search size={20} />
-            </button>
-          </div>
-        </div>
-      </header>
-
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <nav className="mobile-menu" aria-label="Mobile navigation">
-          <ul role="list">
-            {NAV_ITEMS.map((item) => (
-              <li key={item.label}>
-                <a href={item.href} className="mobile-nav-link">
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
       )}
 
       {/* Hero Section */}
@@ -785,57 +694,6 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="main-footer" aria-label="Site footer">
-        <div className="container">
-          <div className="footer-grid">
-            <div className="footer-brand">
-              <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
-                <img src="/come-see-arizona.png" alt="Come See Arizona" width={677} height={369} loading="lazy" decoding="async" style={{ height: 40, width: 'auto' }} />
-                <h3 className="footer-logo" style={{ margin: 0 }}>Come See Arizona</h3>
-              </div>
-              <p>The official guide to Arizona. Find great deals, things to do, travel guides and more.</p>
-              <address className="footer-address">
-                Arizona, United States<br />
-                <a href="mailto:info@comeseearizona.com">info@comeseearizona.com</a>
-              </address>
-            </div>
-            <div className="footer-links-col">
-              <h4>Explore</h4>
-              <ul>
-                {FOOTER_LINKS.explore.map((link) => (
-                  <li key={link.label}><a href={link.href}>{link.label}</a></li>
-                ))}
-              </ul>
-            </div>
-            <div className="footer-links-col">
-              <h4>Plan Your Trip</h4>
-              <ul>
-                {FOOTER_LINKS.plan.map((link) => (
-                  <li key={link.label}><a href={link.href}>{link.label}</a></li>
-                ))}
-              </ul>
-            </div>
-            <div className="footer-social">
-              <h4>Follow Us</h4>
-              <div className="social-icons">
-                <a href="https://facebook.com/comeseearizona" aria-label="Follow Come See Arizona on Facebook"><Facebook size={20} /></a>
-                <a href="https://twitter.com/comeseearizona" aria-label="Follow Come See Arizona on Twitter"><Twitter size={20} /></a>
-                <a href="https://instagram.com/comeseearizona" aria-label="Follow Come See Arizona on Instagram"><Instagram size={20} /></a>
-                <a href="https://youtube.com/comeseearizona" aria-label="Follow Come See Arizona on YouTube"><Youtube size={20} /></a>
-              </div>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <p>&copy; 2026 Come See Arizona. All rights reserved. <span className="last-updated">Last Updated: July 2026</span></p>
-            <div className="footer-legal">
-              <a href="/privacy-policy">Privacy Policy</a>
-              <a href="/terms-of-use">Terms of Use</a>
-              <a href="/accessibility">Accessibility</a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
