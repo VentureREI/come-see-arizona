@@ -377,7 +377,7 @@ export default function TravelGuidesPage() {
         </div>
       </div>
 
-      {/* Venture REI */}
+      {/* Incyte Realty */}
       <div style={{ background: '#FAF5F0', padding: '64px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#1A1A1A', marginBottom: 16 }}>Planning to Visit Arizona?</h2>

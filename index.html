@@ -270,110 +270,114 @@
     }
     </script>
 
-    <!-- Event Schema -->
+    <!-- Event Schema (flagship upcoming events; full calendar at /events) -->
     <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": "Cactus League Spring Training",
-        "startDate": "2026-02-21",
-        "endDate": "2026-03-29",
-        "description": "MLB Cactus League Spring Training featuring 15 Major League Baseball teams playing across 10 stadiums in the Phoenix metropolitan area. One of Arizona's biggest annual sporting events.",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "location": {
-          "@type": "Place",
-          "name": "Various Cactus League Stadiums",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Phoenix Metro Area",
-            "addressRegion": "AZ",
-            "addressCountry": "US"
-          }
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": "Scottsdale Culinary Festival",
-        "startDate": "2026-04-04",
-        "endDate": "2026-04-05",
-        "description": "Annual food and wine festival showcasing Scottsdale and Arizona's best chefs, restaurants, and culinary experiences. Features tastings, cooking demonstrations, and craft cocktails.",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "location": {
-          "@type": "Place",
-          "name": "Scottsdale Civic Center Mall",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Scottsdale",
-            "addressRegion": "AZ",
-            "addressCountry": "US"
-          }
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": "Arizona Renaissance Festival",
-        "startDate": "2026-02-07",
-        "endDate": "2026-03-29",
-        "description": "Weekends-only Renaissance fair in Gold Canyon featuring jousting, artisan crafts, turkey legs, and costumed performers on a 30-acre village set in the Arizona desert.",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "location": {
-          "@type": "Place",
-          "name": "Arizona Renaissance Festival Grounds",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Gold Canyon",
-            "addressRegion": "AZ",
-            "addressCountry": "US"
-          }
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": "Sedona International Film Festival",
-        "startDate": "2026-02-21",
-        "endDate": "2026-02-28",
-        "description": "Week-long independent film festival in Sedona, Arizona featuring screenings of independent films, documentaries, shorts, and foreign films alongside filmmaker Q&A sessions and workshops.",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "location": {
-          "@type": "Place",
-          "name": "Mary D. Fisher Theatre & Sedona Performing Arts Center",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Sedona",
-            "addressRegion": "AZ",
-            "addressCountry": "US"
-          }
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": "WM Phoenix Open Golf Tournament",
-        "startDate": "2026-02-05",
-        "endDate": "2026-02-08",
-        "description": "The WM Phoenix Open at TPC Scottsdale is the best-attended golf tournament in the world, known for the electrifying stadium-style 16th hole. A PGA Tour signature event in Arizona.",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "location": {
-          "@type": "Place",
-          "name": "TPC Scottsdale",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Scottsdale",
-            "addressRegion": "AZ",
-            "addressCountry": "US"
-          }
-        }
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Arizona State Fair",
+    "startDate": "2026-10-01",
+    "endDate": "2026-11-01",
+    "description": "The Arizona State Fair returns with the theme A State of Wonder, featuring carnival rides, concerts, fair food, livestock exhibits and midway games at the Arizona State Fairgrounds, Thursdays through Sundays.",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "Arizona State Fairgrounds",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Phoenix",
+        "addressRegion": "AZ",
+        "addressCountry": "US"
       }
-    ]
+    },
+    "url": "https://azstatefair.com/events/arizona-state-fair/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Vrbo Fiesta Bowl - College Football Playoff Quarterfinal",
+    "startDate": "2026-12-30",
+    "description": "The Vrbo Fiesta Bowl hosts a College Football Playoff quarterfinal at State Farm Stadium in Glendale, the only CFP game played that day.",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "State Farm Stadium",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Glendale",
+        "addressRegion": "AZ",
+        "addressCountry": "US"
+      }
+    },
+    "url": "https://www.fiestabowl.org/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Barrett-Jackson Scottsdale Collector Car Auction",
+    "startDate": "2027-01-23",
+    "endDate": "2027-01-31",
+    "description": "The World's Greatest Collector Car Auction returns to WestWorld of Scottsdale with more than a thousand collector cars crossing the block plus exhibits and automotive lifestyle displays.",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "WestWorld of Scottsdale",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Scottsdale",
+        "addressRegion": "AZ",
+        "addressCountry": "US"
+      }
+    },
+    "url": "https://www.barrett-jackson.com/2027-scottsdale"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "WM Phoenix Open",
+    "startDate": "2027-02-08",
+    "endDate": "2027-02-14",
+    "description": "The Greatest Show on Grass brings the PGA TOUR and the stadium-seated 16th hole to TPC Scottsdale, the best-attended golf tournament in the world.",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "TPC Scottsdale, Stadium Course",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Scottsdale",
+        "addressRegion": "AZ",
+        "addressCountry": "US"
+      }
+    },
+    "url": "https://wmphoenixopen.com/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Cactus League Spring Training",
+    "startDate": "2027-02-20",
+    "endDate": "2027-03-21",
+    "description": "Fifteen MLB teams play spring training baseball at ten ballparks across the Phoenix metropolitan area, one of Arizona's biggest annual sporting traditions.",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "10 stadiums across metro Phoenix",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Phoenix",
+        "addressRegion": "AZ",
+        "addressCountry": "US"
+      }
+    },
+    "url": "https://cactusleague.com/"
+  }
+]
     </script>
 
     <!-- Article Schema for Featured Articles -->

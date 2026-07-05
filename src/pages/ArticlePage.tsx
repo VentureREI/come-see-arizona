@@ -226,11 +226,11 @@ export default function ArticlePage() {
         </div>
       </div>
 
-      {/* Venture REI Footer */}
+      {/* Incyte Realty Footer */}
       <div style={{ background: '#FAF5F0', padding: '48px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
-            Real estate market data and community insights powered by Venture REI. Frank Vazquez and team provide honest, no-pressure guidance for buyers and sellers across the Valley.
+            Real estate market data and community insights powered by Incyte Realty. Frank Vazquez and team provide honest, no-pressure guidance for buyers and sellers across the Valley.
           </p>
           <Link to="/explore" style={{ display: 'inline-block', marginTop: 16, background: '#D32F2F', color: '#fff', padding: '12px 28px', borderRadius: 28, fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 600, textDecoration: 'none' }}>
             Explore Arizona Communities

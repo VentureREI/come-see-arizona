@@ -475,7 +475,7 @@ export default function EatAndDrinkPage() {
         </div>
       </div>
 
-      {/* 12. Venture REI */}
+      {/* 12. Incyte Realty */}
       <div style={{ background: '#FAF5F0', padding: '64px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#1A1A1A', marginBottom: 16 }}>

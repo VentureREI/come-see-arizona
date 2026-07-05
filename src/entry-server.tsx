@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter, Routes, Route } from 'react-router-dom';
 import { HelmetProvider, HelmetData } from 'react-helmet-async';
@@ -24,10 +25,17 @@ import TouristInfoPage from './pages/TouristInfoPage';
 import TravelTradePage from './pages/TravelTradePage';
 import MeetingsPage from './pages/MeetingsPage';
 import AboutArizonaTourismPage from './pages/AboutArizonaTourismPage';
+import AIHubPage from './pages/AIHubPage';
 
 function ServerApp({ location }: { location: string }) {
+  // The Suspense boundary must mirror the client Router's structure: without
+  // it the prerendered HTML lacks the <!--$--> boundary markers hydrateRoot
+  // expects, so every page hydration fails (React #418) and re-renders
+  // client-side. Pages are imported statically here, so nothing suspends and
+  // the fallback never renders on the server.
   return (
     <StaticRouter location={location}>
+      <Suspense fallback={null}>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/things-to-do" element={<ThingsToDoPage />} />
@@ -45,6 +53,7 @@ function ServerApp({ location }: { location: string }) {
         <Route path="/travel-trade" element={<TravelTradePage />} />
         <Route path="/meetings" element={<MeetingsPage />} />
         <Route path="/about-arizona-tourism" element={<AboutArizonaTourismPage />} />
+        <Route path="/ai" element={<AIHubPage />} />
         <Route path="/explore" element={<ExplorePage />} />
         <Route path="/explore/county/:countySlug" element={<CountyPage />} />
         <Route path="/explore/city/:citySlug" element={<CityPage />} />
@@ -52,6 +61,7 @@ function ServerApp({ location }: { location: string }) {
         <Route path="/explore/zip/:zipCode" element={<ZipCodePage />} />
         <Route path="/explore/school-district/:districtSlug" element={<SchoolDistrictPage />} />
       </Routes>
+      </Suspense>
     </StaticRouter>
   );
 }
@@ -63,10 +73,13 @@ export function render(url: string): { html: string; head: string } {
     </HelmetProvider>
   );
 
-  // Extract Helmet-rendered tags from the HTML body to inject into <head>
+  // Extract Helmet-rendered tags from the HTML body to inject into <head>.
+  // Also hoist React 19's inline <link rel="preload"> resource hints (emitted
+  // by renderToString for fetchPriority="high" images): left inside #root they
+  // break hydration matching (error #418) and in <head> they start earlier.
   const titleMatch = html.match(/<title[^>]*>([^<]*)<\/title>/);
   const metaMatches = html.match(/<meta[^>]*(?:name="description"|property="og:|name="twitter:|name="robots")[^>]*>/g) || [];
-  const linkMatches = html.match(/<link[^>]*rel="canonical"[^>]*>/g) || [];
+  const linkMatches = html.match(/<link[^>]*rel="(?:canonical|preload)"[^>]*>/g) || [];
   const scriptMatches = html.match(/<script type="application\/ld\+json">[^<]*<\/script>/g) || [];
 
   const head = [

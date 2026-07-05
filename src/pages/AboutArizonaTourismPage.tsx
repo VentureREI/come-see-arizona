@@ -68,9 +68,9 @@ const CONTACT_CARDS = [
   },
   {
     icon: '🏠',
-    title: 'Venture REI Real Estate',
+    title: 'Incyte Realty',
     text: 'Buying, selling, or relocating to Arizona',
-    detail: 'venture-rei.com',
+    detail: 'www.incyterealty.com',
   },
   {
     icon: '📝',
@@ -126,7 +126,7 @@ export default function AboutArizonaTourismPage() {
         </div>
       </div>
 
-      <AnswerBlock answer="Come See Arizona is an independent destination and community resource covering the entire state. Content is researched by local experts and updated multiple times per week. Real estate market analysis is provided by Venture REI, founded by Frank Vazquez with over 2,400 homes personally sold across the Phoenix metropolitan area." />
+      <AnswerBlock answer="Come See Arizona is an independent destination and community resource covering the entire state. Content is researched by local experts and updated multiple times per week. Real estate market analysis is provided by Incyte Realty, founded by Frank Vazquez with over 2,400 homes personally sold across the Phoenix metropolitan area." />
 
       {/* Section 1: About Come See Arizona */}
       <div style={{ background: '#fff', padding: '48px 24px' }}>
@@ -335,7 +335,7 @@ export default function AboutArizonaTourismPage() {
         </div>
       </div>
 
-      {/* Section 8: Venture REI */}
+      {/* Section 8: Incyte Realty */}
       <div style={{ background: '#FAF5F0', padding: '48px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <SectionHeading>About This Guide</SectionHeading>

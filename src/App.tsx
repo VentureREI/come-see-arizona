@@ -6,6 +6,8 @@ import {
 } from 'lucide-react';
 import { getMergedEvents } from './data/dynamicLoader';
 import type { EventItem } from './data/events';
+import LivePulse from './components/LivePulse';
+import TripArchitect from './components/TripArchitect';
 import './App.css';
 
 // Navigation items
@@ -100,8 +102,11 @@ function getUpcomingEvents(): Array<{ id: string; month: string; day: string; ye
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   const allEvents: EventItem[] = getMergedEvents();
-  return allEvents
-    .filter(ev => new Date(ev.startDate + 'T12:00:00') >= today)
+  const upcoming = allEvents.filter(ev => new Date(ev.startDate + 'T12:00:00') >= today);
+  // If the data has gone stale, fall back to the annual calendar so the
+  // homepage section never renders empty.
+  const base = upcoming.length > 0 ? upcoming : allEvents;
+  return base
     .sort((a, b) => a.startDate.localeCompare(b.startDate))
     .slice(0, 5)
     .map(ev => {
@@ -127,9 +132,11 @@ function getFeaturedEvent(): EventItem | null {
   today.setHours(0, 0, 0, 0);
   const allEvents: EventItem[] = getMergedEvents();
   const majorCategories = ['Festival', 'Music', 'Sports'];
+  const anyUpcoming = allEvents.some(ev => new Date(ev.startDate + 'T12:00:00') >= today);
   const major = allEvents
     .filter(ev => {
-      if (new Date(ev.startDate + 'T12:00:00') < today) return false;
+      // Skip the date filter entirely when data is stale so the banner still features something.
+      if (anyUpcoming && new Date(ev.startDate + 'T12:00:00') < today) return false;
       if (!majorCategories.includes(ev.category)) return false;
       // Prefer multi-day or well-known events
       if (ev.endDate && ev.endDate !== ev.startDate) return true;
@@ -279,6 +286,7 @@ const FOOTER_LINKS = {
     { label: 'Travel Trade', href: '/travel-trade' },
     { label: 'Meetings', href: '/meetings' },
     { label: 'About Arizona Tourism', href: '/about-arizona-tourism' },
+    { label: 'For AI Assistants', href: '/ai' },
   ],
 };
 
@@ -301,6 +309,32 @@ function App() {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Scroll-reveal: sections fade/rise in as they enter the viewport.
+  // Disabled automatically for users who prefer reduced motion (see App.css).
+  useEffect(() => {
+    const sections = document.querySelectorAll<HTMLElement>('.app > section');
+    if (!('IntersectionObserver' in window)) {
+      sections.forEach(s => s.classList.add('is-revealed'));
+      return;
+    }
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { rootMargin: '0px 0px -8% 0px', threshold: 0.05 },
+    );
+    sections.forEach(s => {
+      s.classList.add('reveal-on-scroll');
+      observer.observe(s);
+    });
+    return () => observer.disconnect();
   }, []);
 
   const scrollItinerary = (direction: 'left' | 'right') => {
@@ -360,7 +394,11 @@ function App() {
           </nav>
 
           <div className="nav-right">
-            <button className="search-btn" aria-label="Search Come See Arizona">
+            <button
+              className="search-btn"
+              aria-label="Search Come See Arizona (Command+K)"
+              onClick={() => window.dispatchEvent(new Event('csa:open-search'))}
+            >
               <Search size={20} />
             </button>
           </div>
@@ -396,6 +434,16 @@ function App() {
           </blockquote>
           <cite>- Local Resident</cite>
           <span className="quote-mark closing">"</span>
+        </div>
+      </section>
+
+      {/* Arizona Live conditions strip */}
+      <LivePulse />
+
+      {/* AI Trip Architect */}
+      <section className="trip-architect-section" aria-label="AI Trip Architect - build a personalized Arizona itinerary">
+        <div className="container">
+          <TripArchitect />
         </div>
       </section>
 
@@ -779,7 +827,7 @@ function App() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2026 Come See Arizona. All rights reserved. <span className="last-updated">Last Updated: March 2026</span></p>
+            <p>&copy; 2026 Come See Arizona. All rights reserved. <span className="last-updated">Last Updated: July 2026</span></p>
             <div className="footer-legal">
               <a href="/privacy-policy">Privacy Policy</a>
               <a href="/terms-of-use">Terms of Use</a>

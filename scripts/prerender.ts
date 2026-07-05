@@ -77,6 +77,7 @@ async function prerender() {
     '/travel-trade',
     '/meetings',
     '/about-arizona-tourism',
+    '/ai',
   ];
 
   // Things-to-do sub-pages

@@ -16,8 +16,8 @@ STEPS:
   - Import React, Link from react-router-dom, and the SEOHead component
   - Export a default function component
   - Include SEOHead with unique title, description, canonical URL, and schema markup
-  - Render: breadcrumb navigation, hero section with background image (use Unsplash URL with relevant keyword), H1 title matching a real search query, 1500 to 2500 words of editorial content organized with H2 and H3 headings, real specific details (place names, addresses, prices, hours), Venture REI market analysis footer referencing siteConfig, FAQ section with 6 questions and answers
-6. Pull the brokerage name, leader name, and credential from src/data/siteConfig.ts - do not hardcode Venture REI details
+  - Render: breadcrumb navigation, hero section with background image (use Unsplash URL with relevant keyword), H1 title matching a real search query, 1500 to 2500 words of editorial content organized with H2 and H3 headings, real specific details (place names, addresses, prices, hours), Incyte Realty market analysis footer referencing siteConfig, FAQ section with 6 questions and answers
+6. Pull the brokerage name, leader name, and credential from src/data/siteConfig.ts - do not hardcode Incyte Realty details
 7. Save the component to src/pages/articles/ with a descriptive filename
 8. Add a lazy-loaded route in src/Router.tsx following the pattern of existing article routes
 9. Run the sitemap generator: npx tsx scripts/generate-sitemap.ts
@@ -36,5 +36,5 @@ QUALITY RULES:
 - Every article must include real addresses or locations
 - Never write generic filler - every sentence must contain specific verifiable information
 - The article must feel like it was written by a local who has actually been to these places
-- Always include the Venture REI footer with attribution pulled from siteConfig
+- Always include the Incyte Realty footer with attribution pulled from siteConfig
 - The article H1 must match a real search query that people actually type

@@ -381,7 +381,7 @@ export default function CityPage() {
                 transition: 'background 0.2s',
               }}
             >
-              Contact Venture REI
+              Contact Incyte Realty
             </Link>
           </div>
         </div>

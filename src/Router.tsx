@@ -1,7 +1,63 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useEffect, useState, useSyncExternalStore } from 'react';
+import { Search } from 'lucide-react';
 import App from './App';
 import ScrollToTop from './components/ScrollToTop';
+
+const CommandPalette = lazy(() => import('./components/CommandPalette'));
+
+/**
+ * Global search launcher: mounts after hydration (no SSR mismatch), opens the
+ * command palette via ⌘K / Ctrl+K, the floating button, or a
+ * `csa:open-search` custom event (dispatched by nav search buttons).
+ */
+const emptySubscribe = () => () => {};
+
+function SearchLauncher() {
+  // true after hydration on the client, false during SSR/hydration render —
+  // keeps server and first client render identical.
+  const mounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
+  const [open, setOpen] = useState(false);
+  const [everOpened, setEverOpened] = useState(false);
+
+  useEffect(() => {
+    const openPalette = () => { setEverOpened(true); setOpen(true); };
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setEverOpened(true);
+        setOpen(prev => !prev);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    window.addEventListener('csa:open-search', openPalette);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      window.removeEventListener('csa:open-search', openPalette);
+    };
+  }, []);
+
+  if (!mounted) return null;
+
+  return (
+    <>
+      <button
+        className="global-search-fab"
+        onClick={() => { setEverOpened(true); setOpen(true); }}
+        aria-label="Search Come See Arizona (Command+K)"
+      >
+        <Search size={18} aria-hidden="true" />
+        <span className="global-search-fab-label">Search</span>
+        <kbd className="global-search-fab-kbd">⌘K</kbd>
+      </button>
+      {everOpened && (
+        <Suspense fallback={null}>
+          <CommandPalette open={open} onOpenChange={setOpen} />
+        </Suspense>
+      )}
+    </>
+  );
+}
 
 const EventsPage = lazy(() => import('./pages/EventsPage'));
 const EatAndDrinkPage = lazy(() => import('./pages/EatAndDrinkPage'));
@@ -24,6 +80,7 @@ const TouristInfoPage = lazy(() => import('./pages/TouristInfoPage'));
 const TravelTradePage = lazy(() => import('./pages/TravelTradePage'));
 const MeetingsPage = lazy(() => import('./pages/MeetingsPage'));
 const AboutArizonaTourismPage = lazy(() => import('./pages/AboutArizonaTourismPage'));
+const AIHubPage = lazy(() => import('./pages/AIHubPage'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 function LoadingFallback() {
@@ -41,6 +98,7 @@ export default function Router() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <SearchLauncher />
       <Suspense fallback={<LoadingFallback />}>
         <Routes>
           <Route path="/" element={<App />} />
@@ -59,6 +117,7 @@ export default function Router() {
           <Route path="/travel-trade" element={<TravelTradePage />} />
           <Route path="/meetings" element={<MeetingsPage />} />
           <Route path="/about-arizona-tourism" element={<AboutArizonaTourismPage />} />
+          <Route path="/ai" element={<AIHubPage />} />
           <Route path="/explore" element={<ExplorePage />} />
           <Route path="/explore/county/:countySlug" element={<CountyPage />} />
           <Route path="/explore/city/:citySlug" element={<CityPage />} />

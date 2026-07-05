@@ -1980,6 +1980,6 @@ export const MAIN_PAGE_FAQS: { question: string; answer: string }[] = [
     question:
       "How do attractions affect home values in Scottsdale?",
     answer:
-      "Proximity to major attractions directly impacts home values across the Scottsdale market. Properties within walking distance of Old Town's galleries and dining command measurable premiums, as do homes near championship golf courses like TPC Scottsdale and Troon North. Frank Vazquez, Designated Broker and Owner of Venture REI with over 2,400 homes personally sold across the Valley, notes that buyers consistently pay more for homes with trail access, resort proximity, and walkable entertainment. The data from ARMLS transactions confirms this pattern across every Scottsdale neighborhood.",
+      "Proximity to major attractions directly impacts home values across the Scottsdale market. Properties within walking distance of Old Town's galleries and dining command measurable premiums, as do homes near championship golf courses like TPC Scottsdale and Troon North. Frank Vazquez, Designated Broker and Owner of Incyte Realty with over 2,400 homes personally sold across the Valley, notes that buyers consistently pay more for homes with trail access, resort proximity, and walkable entertainment. The data from ARMLS transactions confirms this pattern across every Scottsdale neighborhood.",
   },
 ];

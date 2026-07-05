@@ -80,7 +80,7 @@ Schemas ship two ways: static blocks in `index.html` (home) and per-page objects
 
 New centralized `src/components/seo/schema.ts` (`organizationSchema` with `@id`, `buildArticleSchema`, `buildItinerarySchema`) derives host from `siteConfig`, so one edit governs host + author/publisher across all article/itinerary URLs. **No fabricated ratings/reviews exist** anywhere (verified). All emitted `@id`/`mainEntityOfPage` now resolve to real, single-host URLs. Verifier confirmed every ld+json block parses and TrailPage FAQ schema matches the visible `<details>`.
 
-**Flagged:** real per-article `datePublished` (placeholder used); optional Venture REI `RealEstateAgent`/Person entity (needs verified NAP); confirm-or-restore social `sameAs`.
+**Flagged:** real per-article `datePublished` (placeholder used); optional Incyte Realty `RealEstateAgent`/Person entity (needs verified NAP); confirm-or-restore social `sameAs`.
 
 ## 3. AEO (Answer Engine Optimization)
 
@@ -94,7 +94,7 @@ Already strong: `AnswerBlock` (answer-first lead) on every content page; FAQPage
 
 **Resolved the critical NAP/host split** (apex everywhere; `siteConfig` is now the single source). Organization logo corrected from non-existent `/logo.png` to the real `/come-see-arizona.png`; fabricated social `sameAs` removed (negative E-E-A-T signal). `siteConfig` extended with `leaderJobTitle`/`leaderKnowsAbout`/`socialProfiles` to support a future Person/RealEstateAgent entity. **Coordinate checks:** all 42 cities + 3 counties carry plausible in-state coords (Phoenix 33.4484/-112.074, Tucson 32.2226/-110.9747, Sedona/Flagstaff present in home TouristDestination); neighborhoods/ZIPs intentionally carry no coords. Location-hub coverage (county/city/neighborhood/zip/school-district across Maricopa/Pinal/Pima) is complete; no low-risk hub gap.
 
-**Flagged:** real Venture REI address/phone (none in repo — do **not** invent) before any LocalBusiness/RealEstateAgent node; verify-or-drop social profiles; add a visible Person entity for Frank Vazquez once profiles confirmed; bind the stale footer "Last Updated: March 2026" to `siteConfig.lastUpdated`.
+**Flagged:** real Incyte Realty address/phone (none in repo — do **not** invent) before any LocalBusiness/RealEstateAgent node; verify-or-drop social profiles; add a visible Person entity for Frank Vazquez once profiles confirmed; bind the stale footer "Last Updated: March 2026" to `siteConfig.lastUpdated`.
 
 ## 5. On-Page SEO
 
@@ -136,7 +136,7 @@ Re-validated the full sweep against a fresh production build (runs last, alone).
 **P2 — identity / E-E-A-T (need owner-supplied facts; do NOT invent)**
 4. **Confirm canonical host = apex** `https://comeseearizona.com` and set a 301 from `www` → apex at the DNS/Vercel domain level (code is now all-apex).
 5. **Social `sameAs`:** restore only real, owned profile URLs (removed as unverified) or leave omitted.
-6. **Venture REI NAP:** supply a real address + phone to add a `RealEstateAgent`/`LocalBusiness` + visible Person entity for Frank Vazquez (backs the 2,400-homes authority claim). No fabricated NAP.
+6. **Incyte Realty NAP:** supply a real address + phone to add a `RealEstateAgent`/`LocalBusiness` + visible Person entity for Frank Vazquez (backs the 2,400-homes authority claim). No fabricated NAP.
 7. **Bind footer "Last Updated"** to `siteConfig.lastUpdated` (currently hardcoded "March 2026").
 
 **P3 — performance (larger/riskier)**

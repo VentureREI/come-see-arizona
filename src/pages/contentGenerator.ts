@@ -12,28 +12,28 @@ import { formatPrice, formatNumber } from '../data/lookups';
 export function getAboutFooter(locationName: string): { bio: string; cta: string } {
   const variants = [
     {
-      bio: `Market data sourced from ARMLS and analyzed by Venture REI, a Phoenix-area brokerage founded by Frank Vazquez. Questions about ${locationName}? Frank Vazquez at Venture REI offer straightforward market guidance with no pressure or obligation.`,
-      cta: `Venture REI provides honest, data-driven real estate guidance for ${locationName}. Traditional listings and cash offer options available.`,
+      bio: `Market data sourced from ARMLS and analyzed by Incyte Realty, a Phoenix-area brokerage founded by Frank Vazquez. Questions about ${locationName}? Frank Vazquez at Incyte Realty offer straightforward market guidance with no pressure or obligation.`,
+      cta: `Incyte Realty provides honest, data-driven real estate guidance for ${locationName}. Traditional listings and cash offer options available.`,
     },
     {
-      bio: `This guide draws on ARMLS market data, local reporting, and Venture REI's direct experience across ${locationName}. Frank Vazquez has personally closed over 2,400 transactions in the Valley and is available for honest conversations about the market here.`,
-      cta: `Questions about buying or selling in ${locationName}? Frank Vazquez at Venture REI: straightforward answers, no strings attached.`,
+      bio: `This guide draws on ARMLS market data, local reporting, and Incyte Realty's direct experience across ${locationName}. Frank Vazquez has personally closed over 2,400 transactions in the Valley and is available for honest conversations about the market here.`,
+      cta: `Questions about buying or selling in ${locationName}? Frank Vazquez at Incyte Realty: straightforward answers, no strings attached.`,
     },
     {
-      bio: `Venture REI monitors real estate conditions across the Phoenix metropolitan area, including ${locationName}. The market insights in this guide reflect current ARMLS data combined with on-the-ground experience from a team that has been active in this market for over a decade.`,
-      cta: `For a candid look at what is available in ${locationName} right now, contact Venture REI.`,
+      bio: `Incyte Realty monitors real estate conditions across the Phoenix metropolitan area, including ${locationName}. The market insights in this guide reflect current ARMLS data combined with on-the-ground experience from a team that has been active in this market for over a decade.`,
+      cta: `For a candid look at what is available in ${locationName} right now, contact Incyte Realty.`,
     },
     {
-      bio: `The pricing and market analysis for ${locationName} comes from current ARMLS records analyzed by Venture REI. Frank Vazquez and team provide no-pressure consultations for buyers and sellers navigating this market.`,
-      cta: `Venture REI works with buyers and sellers in ${locationName}. Call or text anytime for honest market guidance.`,
+      bio: `The pricing and market analysis for ${locationName} comes from current ARMLS records analyzed by Incyte Realty. Frank Vazquez and team provide no-pressure consultations for buyers and sellers navigating this market.`,
+      cta: `Incyte Realty works with buyers and sellers in ${locationName}. Call or text anytime for honest market guidance.`,
     },
     {
-      bio: `Real estate data for ${locationName} is sourced from the Arizona Regional MLS and analyzed by Venture REI, founded by Frank Vazquez. With over 2,400 Valley transactions closed, Venture REI offers perspective that comes from genuine experience rather than marketing.`,
-      cta: `Considering ${locationName}? Venture REI provides transparent, no-obligation market analysis.`,
+      bio: `Real estate data for ${locationName} is sourced from the Arizona Regional MLS and analyzed by Incyte Realty, founded by Frank Vazquez. With over 2,400 Valley transactions closed, Incyte Realty offers perspective that comes from genuine experience rather than marketing.`,
+      cta: `Considering ${locationName}? Incyte Realty provides transparent, no-obligation market analysis.`,
     },
     {
-      bio: `Venture REI tracks market conditions across every neighborhood and zip code in the Valley, including ${locationName}. This guide reflects that ongoing analysis, updated regularly with current ARMLS data.`,
-      cta: `Frank Vazquez at Venture REI is available for straightforward conversations about ${locationName} real estate.`,
+      bio: `Incyte Realty tracks market conditions across every neighborhood and zip code in the Valley, including ${locationName}. This guide reflects that ongoing analysis, updated regularly with current ARMLS data.`,
+      cta: `Frank Vazquez at Incyte Realty is available for straightforward conversations about ${locationName} real estate.`,
     },
   ];
   const idx = Math.abs(locationName.split('').reduce((h, c) => ((h << 5) - h) + c.charCodeAt(0), 0)) % variants.length;
@@ -153,7 +153,7 @@ export function generateCountyMarketAnalysis(county: County, cities: City[]): st
   return [
     `${county.name}'s ${formatPrice(county.medianHomePrice)} median tells you almost nothing useful by itself because it averages ${highCity.name}'s ${formatPrice(highCity.medianHomePrice)} premium market with ${lowCity.name}'s ${formatPrice(lowCity.medianHomePrice)} entry-level inventory - a spread of ${formatPrice(spread)} between the county's most and least expensive cities. The price per square foot ranges from roughly $${pricePerSqFt(lowCity.medianHomePrice)} in the most affordable areas to $${pricePerSqFt(highCity.medianHomePrice)} in the luxury corridors. That kind of range within a single county is unusual nationally and creates genuine opportunity for buyers who know where to look.`,
     `The real story in ${county.name} right now is the migration pattern within the county itself. Buyers priced out of ${sorted.slice(0, 2).map(c => c.name).join(' and ')} are pushing into ${growthCities.length > 0 ? growthCities.map(c => c.name).join(', ') : midCities.slice(0, 3).map(c => c.name).join(', ')}, compressing the price gap between established and emerging cities. ${midCities.length > 0 ? `Cities clustered around the county median - ${midCities.slice(0, 3).map(c => `${c.name} at ${formatPrice(c.medianHomePrice)}`).join(', ')} - represent the most competitive segment, where move-in-ready homes in good school districts can attract multiple offers within a week.` : `The most active segment sits between $350,000 and $550,000, where buyer demand consistently outpaces supply.`}`,
-    `Frank Vazquez, who tracks conditions across ${cities.length} cities in ${county.name} through Venture REI, notes that the smartest buyers right now are looking one city ahead of the migration wave. Five years ago a $500K budget stretched far in the east Valley. Today it barely covers a mid-range home in the core suburbs, and the next tier of cities - the ones trading at $${ppsf - 40} to $${ppsf - 20} per square foot versus the county's $${ppsf} average - is where value remains before the gap closes further.`,
+    `Frank Vazquez, who tracks conditions across ${cities.length} cities in ${county.name} through Incyte Realty, notes that the smartest buyers right now are looking one city ahead of the migration wave. Five years ago a $500K budget stretched far in the east Valley. Today it barely covers a mid-range home in the core suburbs, and the next tier of cities - the ones trading at $${ppsf - 40} to $${ppsf - 20} per square foot versus the county's $${ppsf} average - is where value remains before the gap closes further.`,
   ];
 }
 
@@ -335,7 +335,7 @@ export function generateNeighborhoodMarketAnalysis(neighborhood: Neighborhood, c
 
   return [
     `${neighborhood.name}'s ${formatPrice(neighborhood.medianHomePrice)} median represents a ${premiumLabel} the broader ${city.name} market (${formatPrice(city.medianHomePrice)}). At $${ppsf} per square foot versus ${city.name}'s $${cityPpsf} average, ${isAboveCity ? `that premium tells you exactly what this location commands - buyers are paying for ${neighborhood.walkScore > 50 ? 'walkability, ' : ''}${neighborhood.highlights.length > 0 ? neighborhood.highlights[0].toLowerCase().replace(/\.$/, '') : 'the neighborhood character'}, and the ${neighborhood.homeTypes.slice(0, 2).join('/').toLowerCase()} inventory that defines the area` : `${neighborhood.name} offers meaningfully more house per dollar than the city average, which is why it draws buyers who prioritize space and value over prestige addresses`}. Homes are moving in ${dom} days, ${dom < 30 ? 'fast enough that properties priced correctly rarely survive a full weekend on market' : dom < 45 ? 'a pace that gives buyers room to think but not enough to be indecisive' : 'which actually works in buyers\' favor here - the deliberate pace means room to negotiate and conduct thorough inspections'}.`,
-    `Frank Vazquez, whose Venture REI has closed transactions in ${neighborhood.name} and across ${city.name}'s ${city.neighborhoodSlugs.length} neighborhoods, sees a pattern here that raw median numbers miss: ${neighborhood.medianHomePrice >= 700000 ? `the spread between original-condition homes and fully renovated properties in ${neighborhood.name} can exceed $300K on the same street. Smart buyers target the unrenovated side of that spread and invest in updates, capturing instant equity that the market readily recognizes at resale` : neighborhood.medianHomePrice >= 450000 ? `${neighborhood.name} consistently outperforms the city average in resale value because it has something most competing neighborhoods lack - a combination of school access, community amenities, and location that families will pay to secure. The homes that sell fastest here are not the cheapest or the most expensive; they are the well-maintained, move-in-ready properties in the ${formatPrice(Math.round(neighborhood.medianHomePrice * 0.9))} to ${formatPrice(Math.round(neighborhood.medianHomePrice * 1.1))} sweet spot` : `at this price point, ${neighborhood.name} competes for the same buyer pool as three or four nearby neighborhoods. The differentiator is usually condition and community feel - homes with updated kitchens and low-maintenance yards in ${neighborhood.name} move weeks faster than comparable properties that need work`}.`,
+    `Frank Vazquez, whose Incyte Realty has closed transactions in ${neighborhood.name} and across ${city.name}'s ${city.neighborhoodSlugs.length} neighborhoods, sees a pattern here that raw median numbers miss: ${neighborhood.medianHomePrice >= 700000 ? `the spread between original-condition homes and fully renovated properties in ${neighborhood.name} can exceed $300K on the same street. Smart buyers target the unrenovated side of that spread and invest in updates, capturing instant equity that the market readily recognizes at resale` : neighborhood.medianHomePrice >= 450000 ? `${neighborhood.name} consistently outperforms the city average in resale value because it has something most competing neighborhoods lack - a combination of school access, community amenities, and location that families will pay to secure. The homes that sell fastest here are not the cheapest or the most expensive; they are the well-maintained, move-in-ready properties in the ${formatPrice(Math.round(neighborhood.medianHomePrice * 0.9))} to ${formatPrice(Math.round(neighborhood.medianHomePrice * 1.1))} sweet spot` : `at this price point, ${neighborhood.name} competes for the same buyer pool as three or four nearby neighborhoods. The differentiator is usually condition and community feel - homes with updated kitchens and low-maintenance yards in ${neighborhood.name} move weeks faster than comparable properties that need work`}.`,
   ];
 }
 
@@ -492,7 +492,7 @@ export function generateCountyFaqs(county: County, cities: City[], districts: Sc
     },
     {
       question: `What should I know before buying a home in ${county.name}?`,
-      answer: `Buyers entering ${county.name} should get pre-approved for financing, understand that conditions vary dramatically by sub-market, and research specific neighborhoods rather than relying on county-wide averages. The median of ${formatPrice(county.medianHomePrice)} masks a range from ${formatPrice(lowCity.medianHomePrice)} in ${lowCity.name} to ${formatPrice(highCity.medianHomePrice)} in ${highCity.name}. Working with an agent who tracks micro-market conditions, like Venture REI, helps identify opportunities that broad market statistics miss.`,
+      answer: `Buyers entering ${county.name} should get pre-approved for financing, understand that conditions vary dramatically by sub-market, and research specific neighborhoods rather than relying on county-wide averages. The median of ${formatPrice(county.medianHomePrice)} masks a range from ${formatPrice(lowCity.medianHomePrice)} in ${lowCity.name} to ${formatPrice(highCity.medianHomePrice)} in ${highCity.name}. Working with an agent who tracks micro-market conditions, like Incyte Realty, helps identify opportunities that broad market statistics miss.`,
     },
     {
       question: `What is the population of ${county.name}?`,

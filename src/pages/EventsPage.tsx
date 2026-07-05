@@ -2,7 +2,6 @@ import { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import type { EventItem } from '../data/events';
 import { lastUpdated, MANUAL_EVENTS } from '../data/events';
-import { getMergedEvents, getEventsLastUpdated } from '../data/dynamicLoader';
 import { getEvents } from '../utils/eventsFetcher';
 import SEOHead from '../components/seo/SEOHead';
 import AnswerBlock from '../components/AnswerBlock';
@@ -46,26 +45,30 @@ export default function EventsPage() {
   const [events, setEvents] = useState<EventItem[]>(MANUAL_EVENTS);
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
-  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
     getEvents().then(result => {
       if (!cancelled) {
         setEvents(result.length > 0 ? result : MANUAL_EVENTS);
-        setLoaded(true);
       }
     });
     return () => { cancelled = true; };
   }, []);
 
-  const filtered = useMemo(() => {
+  // Upcoming events; if the data has gone stale (zero upcoming), fall back to
+  // the full annual calendar so the page never renders empty.
+  const { filtered, isFallback } = useMemo(() => {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-    return events
-      .filter(ev => new Date(ev.startDate + 'T12:00:00') >= today)
-      .filter(ev => activeCategory === 'All' || ev.category === activeCategory)
-      .sort((a, b) => a.startDate.localeCompare(b.startDate));
+    const upcoming = events.filter(ev => new Date(ev.startDate + 'T12:00:00') >= today);
+    const base = upcoming.length > 0 ? upcoming : events;
+    return {
+      filtered: base
+        .filter(ev => activeCategory === 'All' || ev.category === activeCategory)
+        .sort((a, b) => a.startDate.localeCompare(b.startDate)),
+      isFallback: upcoming.length === 0,
+    };
   }, [events, activeCategory]);
 
   const visible = filtered.slice(0, visibleCount);
@@ -129,6 +132,21 @@ export default function EventsPage() {
       {/* Events Grid */}
       <section className="explore-section">
         <div className="explore-container">
+          {isFallback && (
+            <p style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: 14,
+              color: 'var(--color-text-secondary)',
+              background: '#FFF8E1',
+              border: '1px solid #FFE082',
+              borderRadius: 8,
+              padding: '12px 16px',
+              marginBottom: 16,
+            }}>
+              These are Arizona's signature annual events from the most recent season. Exact dates
+              for the next edition may shift — check each event's official site for current details.
+            </p>
+          )}
           <p style={{
             fontFamily: 'var(--font-body)',
             fontSize: 14,
@@ -297,8 +315,8 @@ export default function EventsPage() {
       }}>
         <p>Events last updated: {lastUpdated}</p>
         <p style={{ marginTop: 4 }}>
-          Events sourced from Eventbrite and PredictHQ. Some events are manually curated by the Come See Arizona editorial team.
-          {!loaded && ' Currently showing curated events. API sources will load when configured.'}
+          Every event is verified against its official event or venue website and links directly to the authoritative source.
+          Curated by the Come See Arizona editorial team.
         </p>
       </div>
     </>

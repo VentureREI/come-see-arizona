@@ -347,13 +347,13 @@ export default function NeighborhoodPage() {
           <p className="explore-description" style={{ fontWeight: 600 }}>{aboutFooter.cta}</p>
           <div style={{ marginTop: 24 }}>
             <a
-              href="https://www.venturerei.com/contact"
+              href="https://www.incyterealty.com/contact"
               target="_blank"
               rel="noopener noreferrer"
               className="explore-pill active"
               style={{ fontSize: 16, padding: '14px 36px', display: 'inline-block', textAlign: 'center' }}
             >
-              Contact Venture REI
+              Contact Incyte Realty
             </a>
           </div>
         </div>

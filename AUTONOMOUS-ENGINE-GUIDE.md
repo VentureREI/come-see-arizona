@@ -47,7 +47,7 @@ This site runs on an autonomous content pipeline powered by 6 AI agents that res
 
 ## MLS API INTEGRATION
 
-Venture REI is building a direct MLS API interface. When ready:
+Incyte Realty is building a direct MLS API interface. When ready:
 1. Set the MLS_API_ENDPOINT environment variable in each Claude Code scheduled task that needs market data
 2. The Market Analyst agent will automatically detect the API and use it as the primary data source
 3. This eliminates the need for web research entirely for pricing data

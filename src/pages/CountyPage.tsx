@@ -346,9 +346,9 @@ export default function CountyPage() {
             <p className="explore-description">{aboutFooter.bio}</p>
             <p className="explore-description">{aboutFooter.cta}</p>
             <div style={{ maxWidth: 800, margin: '24px auto 0', textAlign: 'center' }}>
-              <a href="https://venturerei.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.incyterealty.com" target="_blank" rel="noopener noreferrer"
                  style={{ display: 'inline-block', background: 'var(--color-primary)', color: 'white', fontFamily: 'var(--font-body)', fontWeight: 600, fontSize: 15, padding: '14px 36px', borderRadius: 28 }}>
-                Contact Venture REI
+                Contact Incyte Realty
               </a>
             </div>
           </div>

@@ -61,7 +61,7 @@ function generateSitemap(): void {
   entries.push({ url: '/', lastmod: TODAY, priority: 1.0, changefreq: 'daily' });
 
   // Main section pages
-  const mainSections = ['/things-to-do', '/eat-and-drink', '/events', '/where-to-stay', '/travel-guides', '/explore', '/trails', '/tourist-info', '/travel-trade', '/meetings', '/about-arizona-tourism'];
+  const mainSections = ['/things-to-do', '/eat-and-drink', '/events', '/where-to-stay', '/travel-guides', '/explore', '/trails', '/tourist-info', '/travel-trade', '/meetings', '/about-arizona-tourism', '/ai'];
   for (const section of mainSections) {
     entries.push({ url: section, lastmod: TODAY, priority: 0.9, changefreq: 'daily' });
   }
