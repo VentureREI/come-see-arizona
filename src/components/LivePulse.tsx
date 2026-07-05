@@ -38,13 +38,16 @@ export default function LivePulse() {
   const [readings, setReadings] = useState<Reading[] | null>(null);
 
   useEffect(() => {
+    // Defer the fetch so it never competes with first paint or the LCP request.
+    let idleId: number | undefined;
+    let timerId: ReturnType<typeof setTimeout> | undefined;
     const lats = SPOTS.map(s => s.lat).join(',');
     const lngs = SPOTS.map(s => s.lng).join(',');
     const url = `https://api.open-meteo.com/v1/forecast?latitude=${lats}&longitude=${lngs}`
       + `&current=temperature_2m,weather_code,is_day&temperature_unit=fahrenheit&timezone=America%2FPhoenix`;
 
     const controller = new AbortController();
-    fetch(url, { signal: controller.signal })
+    const load = () => fetch(url, { signal: controller.signal })
       .then(res => (res.ok ? res.json() : Promise.reject(new Error(`HTTP ${res.status}`))))
       .then((data: unknown) => {
         const list = Array.isArray(data) ? data : [data];
@@ -57,7 +60,16 @@ export default function LivePulse() {
         setReadings(parsed);
       })
       .catch(() => { /* stay hidden */ });
-    return () => controller.abort();
+    if ('requestIdleCallback' in window) {
+      idleId = requestIdleCallback(load, { timeout: 3000 });
+    } else {
+      timerId = setTimeout(load, 1200);
+    }
+    return () => {
+      controller.abort();
+      if (idleId !== undefined) cancelIdleCallback(idleId);
+      if (timerId !== undefined) clearTimeout(timerId);
+    };
   }, []);
 
   if (!readings) return null;

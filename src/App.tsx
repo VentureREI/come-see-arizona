@@ -384,8 +384,11 @@ function App() {
         </div>
       </section>
 
-      {/* Arizona Live conditions strip */}
-      <LivePulse />
+      {/* Arizona Live conditions strip. The wrapper reserves the strip's height
+          before data arrives so content below never shifts (CLS). */}
+      <div className="live-pulse-slot">
+        <LivePulse />
+      </div>
 
       {/* AI Trip Architect */}
       <section className="trip-architect-section" aria-label="AI Trip Architect - build a personalized Arizona itinerary">

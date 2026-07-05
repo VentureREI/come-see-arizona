@@ -3336,3 +3336,9 @@ html, body {
   letter-spacing: 1px;
   color: var(--color-text-light);
 }
+
+/* Reserve the Arizona Live strip's height before its data arrives (CLS). */
+.live-pulse-slot {
+  min-height: 47px;
+  background: linear-gradient(90deg, #1C1428 0%, #2E1B33 50%, #1C1428 100%);
+}
