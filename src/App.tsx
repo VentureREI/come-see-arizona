@@ -277,12 +277,17 @@ function App() {
     const video = heroVideoRef.current;
     if (!video) return;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      video.removeAttribute('autoplay');
       video.pause();
       return;
     }
     video.muted = true;
-    video.play().catch(() => { /* poster frame remains — acceptable fallback */ });
+    // Wait for first paint to settle before pulling the stream.
+    const start = () => video.play().catch(() => { /* poster frame remains as fallback */ });
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(start, { timeout: 2500 });
+    } else {
+      setTimeout(start, 800);
+    }
   }, []);
 
   const upcomingEvents = useMemo(() => getUpcomingEvents(), []);
@@ -349,14 +354,15 @@ function App() {
       {/* Hero Section */}
       <section className="hero-section" aria-label="Welcome to Arizona">
         <div className="hero-video">
+          {/* No autoplay/preload attributes: the 9.5MB stream must not compete
+              with first paint on mobile. Playback starts from the mount effect. */}
           <video
             ref={heroVideoRef}
             className="hero-image"
-            autoPlay
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="none"
             poster="/hero-poster.jpg"
             width={1280}
             height={720}
