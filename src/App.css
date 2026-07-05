@@ -2692,12 +2692,20 @@ html, body {
 .live-pulse {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 18px;
   padding: 12px 24px;
   background: linear-gradient(90deg, #1C1428 0%, #2E1B33 50%, #1C1428 100%);
   color: #fff;
   overflow-x: auto;
   scrollbar-width: none;
+}
+/* When the strip overflows (narrow screens), centering would clip its left
+   edge; fall back to start-aligned scrolling. */
+@media (max-width: 960px) {
+  .live-pulse {
+    justify-content: flex-start;
+  }
 }
 .live-pulse::-webkit-scrollbar { display: none; }
 .live-pulse-badge {
