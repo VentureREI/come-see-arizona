@@ -56,7 +56,7 @@ const ITINERARY_LINKS: Partial<Record<InterestKey, { href: string; label: string
 const POOL: Record<RegionKey, Partial<Record<InterestKey, Activity[]>>> = {
   phoenix: {
     outdoors: [
-      { title: 'Summit Camelback Mountain via Echo Canyon', note: 'Phoenix\'s iconic climb — 1,264 ft of gain in 1.25 miles', href: '/trails/camelback-echo-canyon' },
+      { title: 'Summit Camelback Mountain via Echo Canyon', note: 'Phoenix\'s iconic climb: 1,264 ft of gain in 1.25 miles', href: '/trails/camelback-echo-canyon' },
       { title: 'Hike Piestewa Peak', note: 'Sweeping Valley views from the second-highest summit in the Phoenix Mountains', href: '/trails/piestewa-peak' },
       { title: "Tom's Thumb Trail, McDowell Sonoran Preserve", note: 'Granite spires above north Scottsdale', href: '/trails/toms-thumb' },
       { title: 'Hole-in-the-Rock at Papago Park', note: 'An easy sunset scramble with skyline views', href: '/trails/papago-hole-in-rock' },
@@ -91,7 +91,7 @@ const POOL: Record<RegionKey, Partial<Record<InterestKey, Activity[]>>> = {
   },
   sedona: {
     outdoors: [
-      { title: 'Cathedral Rock scramble', note: 'Sedona\'s most photographed summit — go at first light', href: '/trails/cathedral-rock' },
+      { title: 'Cathedral Rock scramble', note: 'Sedona\'s most photographed summit. Go at first light', href: '/trails/cathedral-rock' },
       { title: "Devil's Bridge", note: 'The largest natural sandstone arch in the area', href: '/trails/devils-bridge' },
       { title: 'West Fork of Oak Creek', note: 'A shaded canyon walk with 13 creek crossings', href: '/trails/west-fork-oak-creek' },
       { title: 'Summit Humphreys Peak', note: 'Arizona\'s rooftop at 12,633 ft, above Flagstaff', href: '/trails/humphreys-peak' },
@@ -107,7 +107,7 @@ const POOL: Record<RegionKey, Partial<Record<InterestKey, Activity[]>>> = {
     ],
     family: [
       { title: 'Slide Rock State Park', note: 'A natural sandstone waterslide in Oak Creek', href: '/things-to-do/family-fun' },
-      { title: 'Lowell Observatory, Flagstaff', note: 'Where Pluto was discovered — stargaze through historic telescopes', href: '/things-to-do/family-fun' },
+      { title: 'Lowell Observatory, Flagstaff', note: 'Where Pluto was discovered. Stargaze through historic telescopes', href: '/things-to-do/family-fun' },
       { title: 'Lava River Cave', note: 'Walk a mile-long lava tube (bring two flashlights!)', href: '/trails/lava-river-cave' },
     ],
     golf: [
@@ -133,7 +133,7 @@ const POOL: Record<RegionKey, Partial<Record<InterestKey, Activity[]>>> = {
       { title: 'Barrio Viejo adobe streets', note: 'Colorful 1800s adobes and El Tiradito shrine', href: '/explore/city/tucson' },
     ],
     food: [
-      { title: 'Eat in a UNESCO City of Gastronomy', note: '4,000 years of continuous food heritage — Sonoran hot dogs to James Beard chefs', href: '/itineraries/arizona-dining' },
+      { title: 'Eat in a UNESCO City of Gastronomy', note: '4,000 years of continuous food heritage, from Sonoran hot dogs to James Beard chefs', href: '/itineraries/arizona-dining' },
       { title: '23 miles of Mexican food on 12th Avenue', note: 'The best tortillas north of the border', href: '/eat-and-drink' },
     ],
     family: [
@@ -144,7 +144,7 @@ const POOL: Record<RegionKey, Partial<Record<InterestKey, Activity[]>>> = {
       { title: 'Golf at Ventana Canyon or Dove Mountain', note: 'Desert golf beneath the Catalinas', href: '/things-to-do/golf' },
     ],
     west: [
-      { title: 'Tombstone — The Town Too Tough to Die', note: 'Walk Allen Street and the O.K. Corral', href: '/itineraries/old-west-history' },
+      { title: 'Tombstone, The Town Too Tough to Die', note: 'Walk Allen Street and the O.K. Corral', href: '/itineraries/old-west-history' },
       { title: 'Bisbee\'s Victorian hillsides', note: 'Arizona\'s quirkiest former mining town', href: '/articles/bisbee-artistic-colony' },
     ],
     scenic: [
@@ -155,7 +155,7 @@ const POOL: Record<RegionKey, Partial<Record<InterestKey, Activity[]>>> = {
   roadtrip: {
     outdoors: [
       { title: 'Grand Canyon: South Kaibab to Ooh Aah Point', note: 'The canyon\'s best short descent', href: '/trails/south-kaibab-ooh-aah' },
-      { title: 'Bright Angel Trail to Havasupai Gardens', note: 'The classic corridor descent — start pre-dawn', href: '/trails/bright-angel-indian-garden' },
+      { title: 'Bright Angel Trail to Havasupai Gardens', note: 'The classic corridor descent. Start pre-dawn', href: '/trails/bright-angel-indian-garden' },
       { title: 'Fossil Springs wilderness', note: 'Turquoise water in the pines below the Mogollon Rim', href: '/trails/fossil-springs' },
     ],
     culture: [
@@ -189,11 +189,11 @@ const EVENINGS: Record<RegionKey, Activity[]> = {
     { title: 'Dinner + rooftop nightcap downtown', note: 'The Valley\'s skyline scene', href: '/articles/phoenix-best-rooftop-bars' },
     { title: 'Old Town Scottsdale after dark', note: 'Wine rooms, galleries, and live music', href: '/things-to-do/nightlife' },
     { title: 'Resort dinner under the stars', note: 'Desert patios and firepits', href: '/articles/best-desert-resorts-spas' },
-    { title: 'Catch a game or a show', note: 'Suns, D-backs, or a concert — check the calendar', href: '/events' },
+    { title: 'Catch a game or a show', note: 'Suns, D-backs, or a concert. Check the calendar', href: '/events' },
     { title: 'Roosevelt Row food trucks & galleries', note: 'Especially on First Fridays', href: '/explore/neighborhood/roosevelt-row' },
   ],
   sedona: [
-    { title: 'Stargazing in a Dark Sky City', note: 'Sedona and Flagstaff are both certified — the Milky Way is the show', href: '/things-to-do/outdoor-adventures' },
+    { title: 'Stargazing in a Dark Sky City', note: 'Sedona and Flagstaff are both certified, and the Milky Way is the show', href: '/things-to-do/outdoor-adventures' },
     { title: 'Sunset dinner with red rock views', note: 'Book a west-facing patio', href: '/eat-and-drink' },
     { title: 'Flagstaff brewpub evening', note: 'Mountain air and local pints', href: '/articles/flagstaff-mountain-town' },
   ],
@@ -214,17 +214,17 @@ function seasonTip(regionKey: RegionKey): string {
   if (month >= 5 && month <= 8) {
     // Jun–Sep: summer heat
     if (regionKey === 'sedona') {
-      return 'Summer tip: Flagstaff runs 20–25°F cooler than Phoenix — start red-rock hikes by 7 AM, then climb to the pines for the afternoon.';
+      return 'Summer tip: Flagstaff runs 20 to 25 degrees cooler than Phoenix. Start red-rock hikes by 7 AM, then climb to the pines for the afternoon.';
     }
-    return 'Summer tip: start hikes at sunrise and be off the trail by 10 AM. Save afternoons for museums, resort pools, and air-conditioned dining — desert evenings are glorious.';
+    return 'Summer tip: start hikes at sunrise and be off the trail by 10 AM. Save afternoons for museums, resort pools, and air-conditioned dining. Desert evenings are glorious.';
   }
   if (month >= 9 && month <= 10) {
-    return 'Fall tip: this is prime desert season — perfect trail weather, festival calendars in full swing, and warm evenings for patio dining.';
+    return 'Fall tip: this is prime desert season, with perfect trail weather, festival calendars in full swing, and warm evenings for patio dining.';
   }
   if (month === 11 || month <= 1) {
-    return 'Winter tip: Valley days are 65–75°F perfection, but pack layers — Sedona and Flagstaff can see snow, which makes the red rocks unforgettable.';
+    return 'Winter tip: Valley days are 65 to 75 degrees of perfection, but pack layers. Sedona and Flagstaff can see snow, which makes the red rocks unforgettable.';
   }
-  return 'Spring tip: wildflowers peak March–April and Cactus League baseball fills the Valley — book lodging early.';
+  return 'Spring tip: wildflowers peak from March to April and Cactus League baseball fills the Valley, so book lodging early.';
 }
 
 interface DayPlan {
@@ -300,7 +300,7 @@ export default function TripArchitect() {
   const copyPlan = async () => {
     const regionLabel = REGIONS.find(r => r.key === region)?.label ?? '';
     const lines = [
-      `My ${days}-day ${regionLabel} itinerary — built with the Come See Arizona Trip Architect`,
+      `My ${days}-day ${regionLabel} itinerary, built with the Come See Arizona Trip Architect`,
       '',
       ...plan.flatMap(d => [
         `Day ${d.day}:`,
@@ -328,7 +328,7 @@ export default function TripArchitect() {
       <div className="ta-header">
         <span className="ta-badge"><Sparkles size={14} aria-hidden="true" /> AI Trip Architect</span>
         <h2>Design Your Perfect Arizona Trip</h2>
-        <p>Answer three questions and get a personalized, day-by-day itinerary — built from local expertise, instantly.</p>
+        <p>Answer three questions and get a personalized, day-by-day itinerary built from local expertise, instantly.</p>
       </div>
 
       {/* Step indicators */}

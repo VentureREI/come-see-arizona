@@ -144,7 +144,7 @@ export default function EventsPage() {
               marginBottom: 16,
             }}>
               These are Arizona's signature annual events from the most recent season. Exact dates
-              for the next edition may shift — check each event's official site for current details.
+              for the next edition may shift, so check each event's official site for current details.
             </p>
           )}
           <p style={{

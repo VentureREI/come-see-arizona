@@ -43,6 +43,8 @@ interface DynamicCountyPrice {
   citations?: string[];
   narrative?: string;
   narrativeCitations?: string[];
+  history?: Array<{ month: string; medianHomePrice: number }>;
+  historyCitations?: string[];
 }
 
 interface DynamicNeighborhoodPrice {

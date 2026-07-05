@@ -4,7 +4,8 @@ import { getCity, getCounty, getNeighborhoodsByCity, getZipCodesByCity, getDistr
 import { getCityImage, getHeroImage } from './exploreImages';
 import { generateCityGuide, generateCityMarketAnalysis, generateCityFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
-import { getMarketAttribution } from '../data/dynamicLoader';
+import { getMarketAttribution, getCityMarket, getCountyMarket } from '../data/dynamicLoader';
+import { ComparisonChart, MedianBarsChart } from '../components/MarketCharts';
 
 function getRatingClass(rating: string): string {
   const letter = rating.charAt(0).toUpperCase();
@@ -168,6 +169,21 @@ export default function CityPage() {
           {marketParagraphs.map((p, i) => (
             <p key={i} className="explore-description">{p}</p>
           ))}
+          <div className="market-charts-grid">
+            <ComparisonChart
+              title={`${city.name} vs. ${county.name}`}
+              note="Median home price. Verified figures where available; see the update date below."
+              entity={{ name: city.name, value: getCityMarket(city.slug)?.medianHomePrice ?? city.medianHomePrice }}
+              benchmark={{ name: `${county.name} median`, value: getCountyMarket(county.slug)?.medianHomePrice ?? county.medianHomePrice }}
+            />
+            {neighborhoods.length >= 3 && (
+              <MedianBarsChart
+                title={`Median home price by ${city.name} neighborhood`}
+                note="Top neighborhoods, highest to lowest."
+                items={neighborhoods.map(n => ({ name: n.name, value: n.medianHomePrice }))}
+              />
+            )}
+          </div>
         </div>
       </section>
 

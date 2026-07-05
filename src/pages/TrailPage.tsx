@@ -269,7 +269,7 @@ export default function TrailPage() {
       </div>
 
       {/* Answer Block */}
-      <AnswerBlock answer={`The ${trail.name} is a ${trail.difficulty.toLowerCase()} hike in ${trail.region}, Arizona — ${trail.distance} with ${trail.elevationGain} of elevation gain, typically completed in ${trail.estimatedTime}. ${trail.dogFriendly ? 'Dogs are allowed.' : 'No dogs allowed.'} ${trail.feeRequired ? `Fee: ${trail.feeAmount ?? 'required'}.` : 'No entry fee.'} Best hiked ${trail.bestSeason}.`} />
+      <AnswerBlock answer={`The ${trail.name} is a ${trail.difficulty.toLowerCase()} hike in ${trail.region}, Arizona: ${trail.distance} with ${trail.elevationGain} of elevation gain, typically completed in ${trail.estimatedTime}. ${trail.dogFriendly ? 'Dogs are allowed.' : 'No dogs allowed.'} ${trail.feeRequired ? `Fee: ${trail.feeAmount ?? 'required'}.` : 'No entry fee.'} Best hiked ${trail.bestSeason}.`} />
 
       {/* C) Trail Description */}
       <section className="explore-section">

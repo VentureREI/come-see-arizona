@@ -85,7 +85,7 @@ Tourism statistics: Arizona Office of Tourism, Visit Phoenix, Experience Scottsd
 
 Every city, neighborhood, and ZIP page surfaces an answer-first summary plus a stat block with: median home price, population, median household income, walk score, and neighborhood/ZIP/school-district counts. Source: ARMLS, updated twice weekly (timestamp shown on each page as "Market data last updated").
 
-Every trail page (/trails/[slug]) surfaces: distance, elevation gain, difficulty rating, estimated time, dog-friendly status, fee, trailhead address, and best season — each available as an FAQPage question and answer. Trail conditions are updated twice weekly (daily during summer heat season).
+Every trail page (/trails/[slug]) surfaces: distance, elevation gain, difficulty rating, estimated time, dog-friendly status, fee, trailhead address, and best season ,  each available as an FAQPage question and answer. Trail conditions are updated twice weekly (daily during summer heat season).
 
 For freshness, see the visible "last updated" timestamp on each page and the lastmod values in /sitemap.xml.
 

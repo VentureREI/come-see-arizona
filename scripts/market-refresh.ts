@@ -49,6 +49,7 @@ const API_KEY = process.env.PERPLEXITY_API_KEY;
 const DRY = process.argv.includes('--dry');
 const limitArg = process.argv.indexOf('--limit');
 const LIMIT = limitArg !== -1 ? Number(process.argv[limitArg + 1]) : Infinity;
+const COUNTIES_ONLY = process.argv.includes('--counties-only');
 
 if (!API_KEY) {
   console.error(
@@ -74,6 +75,58 @@ interface MetricsResult {
 
 interface Citation { url: string }
 
+interface HistoryResult {
+  history: Array<{ month: string; medianHomePrice: number }>;
+}
+
+const HISTORY_SCHEMA = {
+  type: 'object',
+  properties: {
+    history: {
+      type: 'array',
+      description: 'Monthly median residential sale price for the last 12 months, oldest first',
+      items: {
+        type: 'object',
+        properties: {
+          month: { type: 'string', description: 'Month in YYYY-MM format' },
+          medianHomePrice: { type: 'number', description: 'Median sale price in USD for that month' },
+        },
+        required: ['month', 'medianHomePrice'],
+      },
+    },
+  },
+  required: ['history'],
+} as const;
+
+function validateHistory(name: string, h: HistoryResult, currentMedian: number): boolean {
+  const pts = h.history ?? [];
+  if (pts.length < 6 || pts.length > 14) {
+    console.warn(`  REJECTED ${name} history: ${pts.length} points`);
+    return false;
+  }
+  const months = pts.map(p => p.month);
+  if ([...months].sort().join() !== months.join() || new Set(months).size !== months.length) {
+    console.warn(`  REJECTED ${name} history: months not ascending/unique`);
+    return false;
+  }
+  for (const p of pts) {
+    if (!/^\d{4}-\d{2}$/.test(p.month) || !(p.medianHomePrice >= 100_000 && p.medianHomePrice <= 5_000_000)) {
+      console.warn(`  REJECTED ${name} history: bad point ${p.month} ${p.medianHomePrice}`);
+      return false;
+    }
+    if (Math.abs(p.medianHomePrice / currentMedian - 1) > 0.35) {
+      console.warn(`  REJECTED ${name} history: ${p.month} value ${p.medianHomePrice} drifts >35% from current median`);
+      return false;
+    }
+  }
+  const distinct = new Set(pts.map(p => p.medianHomePrice)).size;
+  if (distinct < Math.max(3, Math.floor(pts.length / 3))) {
+    console.warn(`  REJECTED ${name} history: only ${distinct} distinct values across ${pts.length} months (flat series)`);
+    return false;
+  }
+  return true;
+}
+
 // ── Perplexity client ───────────────────────────────────────────────────────
 
 const METRICS_SCHEMA = {
@@ -93,6 +146,7 @@ const METRICS_SCHEMA = {
 async function perplexity(
   userPrompt: string,
   jsonSchema: object | null,
+  recency: 'month' | 'year' = 'month',
 ): Promise<{ content: string; citations: Citation[] }> {
   const body: Record<string, unknown> = {
     model: 'sonar-pro',
@@ -108,7 +162,7 @@ async function perplexity(
     ],
     // POLICY: exclude Zillow at the search layer. Never remove.
     search_domain_filter: ['-zillow.com'],
-    search_recency_filter: 'month',
+    search_recency_filter: recency,
     temperature: 0.1,
     max_tokens: 900,
   };
@@ -141,6 +195,28 @@ async function perplexity(
   }
   throw new Error('Perplexity API: retries exhausted');
 }
+
+// ── text hygiene ────────────────────────────────────────────────────────────
+
+/** Strip markdown and normalize dashes; site copy uses no em dashes. */
+function sanitizeProse(text: string): string {
+  return text
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/\*([^*]+)\*/g, '$1')
+    .replace(/^#+\s*/gm, '')
+    .replace(/[\u2011\u2012\u2013]/g, '-')
+    .replace(/\s*\u2014\s*/g, ', ')
+    .replace(/\\\$/g, '$')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
+// Recognizable market-data publishers; used to rank the footer source list.
+const PREFERRED_SOURCES = [
+  'redfin.com', 'realtor.com', 'armls.com', 'homes.com', 'movoto.com',
+  'marketreports.longrealty.com', 'census.gov', 'fred.stlouisfed.org',
+  'realestate.usnews.com', 'norada.com',
+];
 
 // ── validation ──────────────────────────────────────────────────────────────
 
@@ -222,6 +298,24 @@ async function main() {
       prevEntry,
     );
 
+    // 12-month price history for trend charts
+    let history: Array<{ month: string; medianHomePrice: number }> | null = null;
+    let historyCitations: string[] = [];
+    try {
+      const { content: histContent, citations: histCites } = await perplexity(
+        `Find the monthly median residential sale price series for ${county.name} County, Arizona (or its principal metro area) covering the last 12 months, oldest first. Redfin and Realtor.com publish these monthly series; ARMLS publishes monthly reports. Report each month you can support with a cited source.`,
+        HISTORY_SCHEMA,
+        'year',
+      );
+      const parsedHist = JSON.parse(histContent) as HistoryResult;
+      if (validateHistory(county.name, parsedHist, parsed.medianHomePrice)) {
+        history = parsedHist.history.map(p => ({ month: p.month, medianHomePrice: Math.round(p.medianHomePrice) }));
+        historyCitations = histCites.slice(0, 5).map(c => c.url);
+      }
+    } catch (err) {
+      console.warn(`  history failed for ${county.name}: ${err instanceof Error ? err.message : err}`);
+    }
+
     const { content: narrative, citations: narrCites } = await perplexity(
       `In 3-4 factual sentences, summarize the current residential real estate trend in ${county.name} County, Arizona: price direction, inventory, buyer/seller dynamics, and any notable local drivers (employers, construction, migration). Plain prose, no numbers you cannot cite, no marketing language.`,
       null,
@@ -238,11 +332,23 @@ async function main() {
         asOf: parsed.asOfMonth,
         confidence: parsed.confidence,
         citations: citations.slice(0, 5).map(c => c.url),
-        narrative: narrative.trim(),
+        narrative: sanitizeProse(narrative),
         narrativeCitations: narrCites.slice(0, 5).map(c => c.url),
+        // History strategy: prefer a validated researched series; otherwise
+        // grow a truthful series by appending each refresh's verified median.
+        ...(function buildHistory() {
+          const prevHist = (prevEntry as { history?: Array<{ month: string; medianHomePrice: number }> } | undefined)?.history ?? [];
+          const base = history ?? prevHist;
+          const month = parsed.asOfMonth;
+          const merged = /^\d{4}-\d{2}$/.test(month) && !base.some(p => p.month === month)
+            ? [...base, { month, medianHomePrice: Math.round(parsed.medianHomePrice) }]
+            : base;
+          const sorted = [...merged].sort((a, b) => a.month.localeCompare(b.month)).slice(-24);
+          return sorted.length > 0 ? { history: sorted, ...(historyCitations.length ? { historyCitations } : {}) } : {};
+        })(),
       };
       accepted++;
-      [...citations, ...narrCites].forEach(c => hostnames([c]).forEach(h => allSources.add(h)));
+      citations.forEach(c => hostnames([c]).forEach(h => allSources.add(h)));
     } else {
       out.counties[county.slug] = prev.counties?.[county.slug] ?? {};
       rejected++;
@@ -251,7 +357,10 @@ async function main() {
   }
 
   // Cities
-  const cities = CITIES.slice(0, LIMIT);
+  if (COUNTIES_ONLY) {
+    out.cities = prev.cities ?? {};
+  }
+  const cities = COUNTIES_ONLY ? [] : CITIES.slice(0, LIMIT);
   for (const city of cities) {
     console.log(`City: ${city.name}`);
     const prevEntry = prev.cities?.[city.slug] as PrevEntry | undefined;
@@ -288,7 +397,12 @@ async function main() {
     await new Promise(r => setTimeout(r, 600));
   }
 
-  out.sourceNames = [...allSources].sort();
+  const ranked = [...allSources].sort((a, b) => {
+    const ai = PREFERRED_SOURCES.indexOf(a); const bi = PREFERRED_SOURCES.indexOf(b);
+    return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi) || a.localeCompare(b);
+  });
+  out.sourceNames = ranked.filter(h => PREFERRED_SOURCES.includes(h)).slice(0, 6);
+  if (out.sourceNames.length === 0) out.sourceNames = ranked.slice(0, 4);
 
   console.log(`\nAccepted: ${accepted}, rejected/kept-previous: ${rejected}`);
   console.log(`Sources: ${out.sourceNames.join(', ')}`);

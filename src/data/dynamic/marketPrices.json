@@ -1,204 +1,996 @@
 {
-  "lastUpdated": "2026-04-11",
+  "lastUpdated": "2026-07-05",
+  "method": "Perplexity Sonar web research with citation validation (scripts/market-refresh.ts). Zillow excluded by policy.",
+  "sourceNames": [
+    "redfin.com",
+    "fred.stlouisfed.org"
+  ],
   "counties": {
     "maricopa": {
-      "medianHomePrice": 450000,
-      "pricePerSqFt": 275,
-      "avgDaysOnMarket": 28,
+      "medianHomePrice": 484000,
+      "pricePerSqFt": 266,
+      "avgDaysOnMarket": 59,
       "inventoryLevel": "low",
-      "marketTrend": "appreciating",
-      "yearOverYearChange": "+4.2%"
+      "marketTrend": "stable",
+      "yearOverYearChange": "-0.81%",
+      "asOf": "2026-05",
+      "confidence": "high",
+      "citations": [
+        "https://www.redfin.com/county/220/AZ/Maricopa-County/housing-market",
+        "https://fred.stlouisfed.org/series/ATNHPIUS04013A",
+        "https://www.instagram.com/p/DZaiVYSjioU/",
+        "https://unbiasedoptions.com/market-statistics/",
+        "https://www.facebook.com/InMaricopa/posts/by-the-numbers-maricopa-real-estate-in-2026/1500196732120645/"
+      ],
+      "narrative": "Maricopa County\u2019s residential market is flat to slightly down on prices, with the median sale price over the three months ending May 2026 at about $484,000, down 0.81% year over year.[2] Inventory is near balanced: county-wide single-family homes had about 4.0 months of supply in May 2026 and a 98.2% list-price-received ratio, indicating homes generally sell close to asking but not in a frenzy.[6] Overall dynamics are tilted toward buyers at the metro level, with a Cromford-style Overall Market Index around 81 pointing to buyer-favorable conditions driven more by soft demand than by excess inventory, and with concessions and rate buydowns common.[3] A key driver is continued population and migration growth: Maricopa County added roughly 57,000 residents last year, one of the largest gains of any U.S. county, while domestic in-migration into Greater Phoenix has remained strong despite weaker international migration.[3]",
+      "narrativeCitations": [
+        "https://unbiasedoptions.com/market-statistics/",
+        "https://www.redfin.com/county/220/AZ/Maricopa-County/housing-market",
+        "https://theravenscroftgroup.com/blog/greater-phoenix-housing-market-update-june-2026",
+        "https://fred.stlouisfed.org/series/ATNHPIUS04013A",
+        "https://www.instagram.com/reel/DaVW7lhsg1w/"
+      ],
+      "history": [
+        {
+          "month": "2026-05",
+          "medianHomePrice": 484000
+        }
+      ]
     },
     "pinal": {
-      "medianHomePrice": 360000,
-      "pricePerSqFt": 210,
-      "avgDaysOnMarket": 35,
+      "medianHomePrice": 385000,
+      "pricePerSqFt": 205,
+      "avgDaysOnMarket": 87,
       "inventoryLevel": "balanced",
-      "marketTrend": "stable",
-      "yearOverYearChange": "+2.8%"
+      "marketTrend": "softening",
+      "yearOverYearChange": "+1.3%",
+      "asOf": "2026-01",
+      "confidence": "high",
+      "citations": [
+        "https://www.redfin.com/county/224/AZ/Pinal-County/housing-market",
+        "https://unbiasedoptions.com/market-statistics/",
+        "https://www.facebook.com/jennyapodacarealtor/posts/-tuesday-market-updatefrom-the-growing-communities-of-pinal-county-to-the-thrivi/1477702161035913/",
+        "https://www.redfin.com/county/220/AZ/Maricopa-County/housing-market",
+        "https://www.instagram.com/p/DZU3EEMlt8u/"
+      ],
+      "narrative": "Pinal County\u2019s residential market shows modestly rising prices, with the median sale price up 1.3% year over year in January 2026 and homes selling for about 98% of list on average.[1] Inventory is sufficient to keep the market from being highly competitive, as homes now take about 87 days to sell, slightly longer than a year ago.[1] Conditions are relatively balanced between buyers and sellers, with sales volume down year over year but no sign of severe distress.[1] Local demand is supported by ongoing growth in communities such as Casa Grande, which is highlighted for affordability and expansion within one of Arizona\u2019s fastest-growing regions.[4]",
+      "narrativeCitations": [
+        "https://www.redfin.com/county/224/AZ/Pinal-County/housing-market",
+        "https://www.redfin.com/county/220/AZ/Maricopa-County/housing-market",
+        "https://www.redfin.com/city/21793/AZ/Catalina/housing-market",
+        "https://www.facebook.com/jennyapodacarealtor/posts/-tuesday-market-updatefrom-the-growing-communities-of-pinal-county-to-the-thrivi/1477702161035913/",
+        "https://www.redfin.com/neighborhood/555090/AZ/Maricopa/Province/housing-market"
+      ],
+      "history": [
+        {
+          "month": "2026-01",
+          "medianHomePrice": 385000
+        }
+      ]
     },
     "pima": {
-      "medianHomePrice": 365000,
-      "pricePerSqFt": 220,
-      "avgDaysOnMarket": 32,
+      "medianHomePrice": 349900,
+      "pricePerSqFt": 231,
+      "avgDaysOnMarket": 57,
       "inventoryLevel": "balanced",
-      "marketTrend": "appreciating",
-      "yearOverYearChange": "+3.5%"
+      "marketTrend": "softening",
+      "yearOverYearChange": "-2.0%",
+      "asOf": "2026-05",
+      "confidence": "medium",
+      "citations": [
+        "https://www.loangraphs.com/market/arizona/pima-county/85611",
+        "https://www.redfin.com/county/224/AZ/Pinal-County/housing-market",
+        "https://www.redfin.com/county/220/AZ/Maricopa-County/housing-market",
+        "https://www.instagram.com/reel/DZyWhg7JJS2/",
+        "https://www.youtube.com/watch?v=rhkK0WEO200"
+      ],
+      "narrative": "Pima County\u2019s residential market in mid-2026 is characterized by steady demand, limited inventory, and mostly stable pricing, with median list prices holding rather than surging.[1][5] Inventory remains relatively tight and days on market are elevated, indicating that buyers have more time to choose but not an excess of homes; one recent local snapshot cited 283 active homes and an average 74 days on market alongside a median rent of $2,138 per month.[5] This balance has produced a more cautious, negotiated environment, where sellers cannot assume rapid, above-list sales but buyers are not yet in a deeply discounted, oversupplied market.[1][3] Local dynamics are influenced by broader Tucson-area employers and ongoing housing-affordability discussions, reflected in the county\u2019s Regional Affordable Housing Commission work on gap analyses and policy responses.[7]",
+      "narrativeCitations": [
+        "https://www.facebook.com/AzJesseRealtor/photos/-pima-county-market-update-june-22-2026as-we-move-deeper-into-summer-the-pima-co/1645721344224708/",
+        "https://www.youtube.com/watch?v=rhkK0WEO200",
+        "https://www.realtor.com/news/local/tucson-az/real-estate-market-tucson-az-may-2026/",
+        "https://www.luxuryhomemarketing.com/assets/LMR_NorthAmerica.pdf",
+        "https://www.instagram.com/p/DZX2RJ2H_P1/"
+      ],
+      "history": [
+        {
+          "month": "2026-05",
+          "medianHomePrice": 349900
+        }
+      ]
     }
   },
   "cities": {
-    "phoenix": { "medianHomePrice": 420000, "pricePerSqFt": 260, "avgDaysOnMarket": 26, "marketType": "seller" },
-    "scottsdale": { "medianHomePrice": 750000, "pricePerSqFt": 380, "avgDaysOnMarket": 32, "marketType": "balanced" },
-    "mesa": { "medianHomePrice": 430000, "pricePerSqFt": 255, "avgDaysOnMarket": 28, "marketType": "seller" },
-    "chandler": { "medianHomePrice": 500000, "pricePerSqFt": 270, "avgDaysOnMarket": 25, "marketType": "seller" },
-    "gilbert": { "medianHomePrice": 540000, "pricePerSqFt": 275, "avgDaysOnMarket": 22, "marketType": "seller" },
-    "tempe": { "medianHomePrice": 440000, "pricePerSqFt": 290, "avgDaysOnMarket": 24, "marketType": "seller" },
-    "glendale": { "medianHomePrice": 380000, "pricePerSqFt": 235, "avgDaysOnMarket": 30, "marketType": "balanced" },
-    "peoria": { "medianHomePrice": 450000, "pricePerSqFt": 250, "avgDaysOnMarket": 27, "marketType": "seller" },
-    "surprise": { "medianHomePrice": 420000, "pricePerSqFt": 240, "avgDaysOnMarket": 29, "marketType": "balanced" },
-    "goodyear": { "medianHomePrice": 460000, "pricePerSqFt": 245, "avgDaysOnMarket": 26, "marketType": "seller" },
-    "avondale": { "medianHomePrice": 370000, "pricePerSqFt": 225, "avgDaysOnMarket": 32, "marketType": "balanced" },
-    "buckeye": { "medianHomePrice": 400000, "pricePerSqFt": 220, "avgDaysOnMarket": 34, "marketType": "balanced" },
-    "queen-creek": { "medianHomePrice": 550000, "pricePerSqFt": 265, "avgDaysOnMarket": 24, "marketType": "seller" },
-    "paradise-valley": { "medianHomePrice": 3200000, "pricePerSqFt": 650, "avgDaysOnMarket": 55, "marketType": "buyer" },
-    "fountain-hills": { "medianHomePrice": 620000, "pricePerSqFt": 310, "avgDaysOnMarket": 38, "marketType": "balanced" },
-    "cave-creek": { "medianHomePrice": 850000, "pricePerSqFt": 350, "avgDaysOnMarket": 42, "marketType": "balanced" },
-    "carefree": { "medianHomePrice": 950000, "pricePerSqFt": 380, "avgDaysOnMarket": 48, "marketType": "buyer" },
-    "anthem": { "medianHomePrice": 480000, "pricePerSqFt": 255, "avgDaysOnMarket": 25, "marketType": "seller" },
-    "litchfield-park": { "medianHomePrice": 550000, "pricePerSqFt": 265, "avgDaysOnMarket": 30, "marketType": "balanced" },
-    "tolleson": { "medianHomePrice": 310000, "pricePerSqFt": 210, "avgDaysOnMarket": 28, "marketType": "seller" },
-    "el-mirage": { "medianHomePrice": 330000, "pricePerSqFt": 205, "avgDaysOnMarket": 30, "marketType": "balanced" },
-    "youngtown": { "medianHomePrice": 280000, "pricePerSqFt": 195, "avgDaysOnMarket": 35, "marketType": "balanced" },
-    "sun-city": { "medianHomePrice": 290000, "pricePerSqFt": 200, "avgDaysOnMarket": 32, "marketType": "balanced" },
-    "sun-city-west": { "medianHomePrice": 350000, "pricePerSqFt": 215, "avgDaysOnMarket": 30, "marketType": "balanced" },
-    "wickenburg": { "medianHomePrice": 380000, "pricePerSqFt": 230, "avgDaysOnMarket": 40, "marketType": "balanced" },
-    "apache-junction": { "medianHomePrice": 330000, "pricePerSqFt": 210, "avgDaysOnMarket": 35, "marketType": "balanced" },
-    "gold-canyon": { "medianHomePrice": 420000, "pricePerSqFt": 240, "avgDaysOnMarket": 33, "marketType": "balanced" },
-    "san-tan-valley": { "medianHomePrice": 400000, "pricePerSqFt": 220, "avgDaysOnMarket": 28, "marketType": "seller" },
-    "florence": { "medianHomePrice": 320000, "pricePerSqFt": 195, "avgDaysOnMarket": 38, "marketType": "balanced" },
-    "maricopa-city": { "medianHomePrice": 350000, "pricePerSqFt": 205, "avgDaysOnMarket": 30, "marketType": "balanced" },
-    "casa-grande": { "medianHomePrice": 310000, "pricePerSqFt": 195, "avgDaysOnMarket": 36, "marketType": "balanced" },
-    "coolidge": { "medianHomePrice": 260000, "pricePerSqFt": 175, "avgDaysOnMarket": 42, "marketType": "balanced" },
-    "eloy": { "medianHomePrice": 220000, "pricePerSqFt": 155, "avgDaysOnMarket": 48, "marketType": "buyer" },
-    "arizona-city": { "medianHomePrice": 200000, "pricePerSqFt": 145, "avgDaysOnMarket": 50, "marketType": "buyer" },
-    "tucson": { "medianHomePrice": 320000, "pricePerSqFt": 210, "avgDaysOnMarket": 30, "marketType": "balanced" },
-    "oro-valley": { "medianHomePrice": 480000, "pricePerSqFt": 260, "avgDaysOnMarket": 28, "marketType": "seller" },
-    "marana": { "medianHomePrice": 420000, "pricePerSqFt": 235, "avgDaysOnMarket": 26, "marketType": "seller" },
-    "sahuarita": { "medianHomePrice": 350000, "pricePerSqFt": 210, "avgDaysOnMarket": 28, "marketType": "seller" },
-    "green-valley": { "medianHomePrice": 280000, "pricePerSqFt": 190, "avgDaysOnMarket": 38, "marketType": "balanced" },
-    "south-tucson": { "medianHomePrice": 150000, "pricePerSqFt": 130, "avgDaysOnMarket": 45, "marketType": "buyer" },
-    "catalina": { "medianHomePrice": 300000, "pricePerSqFt": 200, "avgDaysOnMarket": 35, "marketType": "balanced" },
-    "vail": { "medianHomePrice": 380000, "pricePerSqFt": 220, "avgDaysOnMarket": 27, "marketType": "seller" }
+    "phoenix": {
+      "medianHomePrice": 461457,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 70,
+      "marketType": "balanced",
+      "yearOverYearChange": null,
+      "asOf": "2026-05",
+      "confidence": "medium",
+      "citations": [
+        "https://thecanigliagroup.com/blog/planning-a-sell-and-buy-move-in-north-central-phoenix",
+        "https://www.redfin.com/neighborhood/98730/AZ/Phoenix/West-Phoenix/housing-market",
+        "https://listwithclever.com/discount-real-estate-brokers/arizona/phoenix/",
+        "https://www.redfin.com/neighborhood/100404/AZ/Phoenix/Downtown-Phoenix/housing-market",
+        "https://www.redfin.com/zipcode/85008/housing-market"
+      ]
+    },
+    "scottsdale": {
+      "medianHomePrice": 750000,
+      "pricePerSqFt": 380,
+      "avgDaysOnMarket": 32,
+      "marketType": "balanced"
+    },
+    "mesa": {
+      "medianHomePrice": 484000,
+      "pricePerSqFt": 266,
+      "avgDaysOnMarket": 59,
+      "marketType": "buyer",
+      "yearOverYearChange": "-0.81%",
+      "asOf": "2026-05",
+      "confidence": "medium",
+      "citations": [
+        "https://www.homie.com/mesa-arizona-housing-market-2026-what-450k-buys-in-the-east-valley/",
+        "https://www.instagram.com/p/DaS443kkkxw/",
+        "https://themelissabailey.com/blog/why-mesa-arizona-is-one-of-the-smartest-cities-to-move-to-right-now",
+        "https://www.redfin.com/county/220/AZ/Maricopa-County/housing-market",
+        "https://www.bhhsaz.com/neighborhood/122/leisure-world"
+      ]
+    },
+    "chandler": {
+      "medianHomePrice": 550000,
+      "pricePerSqFt": 296,
+      "avgDaysOnMarket": 79,
+      "marketType": "balanced",
+      "yearOverYearChange": null,
+      "asOf": "2026-05",
+      "confidence": "medium",
+      "citations": [
+        "https://www.homie.com/chandler-arizona-housing-market-2026-tech-jobs-schools-and-where-prices-are-heading/",
+        "https://www.instagram.com/p/DaYcYnllXcd/",
+        "https://www.facebook.com/longlerealtor/posts/-housing-experts-are-becoming-more-cautiousthe-forecast-for-total-home-sales-in-/1518113003660817/",
+        "https://www.redfin.com/zipcode/85248/housing-market",
+        "https://www.redfin.com/zipcode/85286/housing-market"
+      ]
+    },
+    "gilbert": {
+      "medianHomePrice": 576655,
+      "pricePerSqFt": 283,
+      "avgDaysOnMarket": 45,
+      "marketType": "balanced",
+      "yearOverYearChange": "-1.4%",
+      "asOf": "2026-05",
+      "confidence": "high",
+      "citations": [
+        "https://www.redfin.com/city/6998/AZ/Gilbert/housing-market",
+        "https://www.linkedin.com/posts/carolyn-herrera-1492b538_carolynherrerarealty-valleyrealestate-gilbertliving-activity-7471910396426301440-2yBE",
+        "https://www.facebook.com/AZLuxuryLivingToday/posts/-gilbert-real-estate-market-update-may-2026-exciting-insights-for-buyers-and-sel/1394325569385387/",
+        "https://www.facebook.com/gilbertsunnews/posts/gilbert-homes-for-sale-moved-faster-off-the-market-into-the-hands-of-new-owners-/1655045683291622/",
+        "https://www.youtube.com/shorts/KxDVIcHm6ZA"
+      ]
+    },
+    "tempe": {
+      "medianHomePrice": 487500,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 81,
+      "marketType": "buyer",
+      "yearOverYearChange": null,
+      "asOf": "2026-06",
+      "confidence": "medium",
+      "citations": [
+        "https://www.kennethjamesrealty.com/tempe-arizona/tempe-arizona-homes-for-sale/",
+        "https://www.redfin.com/county/220/AZ/Maricopa-County/housing-market",
+        "https://www.instagram.com/p/DaQ6JJSFmrJ/",
+        "https://www.facebook.com/lovesyrealestate/posts/median-days-on-market-gives-us-an-idea-of-how-quickly-listings-are-selling-in-te/1505565548252920/",
+        "https://www.instagram.com/reel/DaOWdjySivF/"
+      ]
+    },
+    "glendale": {
+      "medianHomePrice": 470000,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 87,
+      "marketType": "buyer",
+      "yearOverYearChange": null,
+      "asOf": "2026-06",
+      "confidence": "medium",
+      "citations": [
+        "https://www.redfin.com/city/6983/MO/Glendale/housing-market",
+        "https://www.instagram.com/p/DZdT--xgUj8/",
+        "https://www.facebook.com/groups/127592767962051/posts/2011349266253049/",
+        "https://www.realtor.com/realestateandhomes-search/85035/price-na-100000",
+        "https://www.facebook.com/juliecansellit/posts/-phoenix-metro-median-home-prices-april-2026the-numbers-are-in-here-is-where-the/1613273697465338/"
+      ]
+    },
+    "peoria": {
+      "medianHomePrice": 500000,
+      "pricePerSqFt": 266,
+      "avgDaysOnMarket": 85,
+      "marketType": "balanced",
+      "yearOverYearChange": null,
+      "asOf": "2026-05",
+      "confidence": "medium",
+      "citations": [
+        "https://www.instagram.com/p/DZq7f7rDL7y/?__d=1Kali%E7%A4%BE%E5%B7%A5%E5%BA%93%E2%9C%94%EF%B8%8F%2Btianchacha.com%2B8e%E7%A4%BE%E5%B7%A5%E5%BA%93%E6%9F%A5%E8%AF%A2%E9%AB%98%E9%93%81%E9%A3%9E%E6%9C%BA%E5%8F%8A%E6%89%93%E8%BD%A6%E8%AE%B0%E5%BD%95%E5%85%A8%E7%BD%91%E7%B3%BB%E7%BB%9F",
+        "https://www.redfin.com/city/15268/IL/Peoria/housing-market",
+        "https://www.instagram.com/p/DZqgNc7hJiG/",
+        "https://www.gomret.com/homes-for-sale-in-peoria-az",
+        "https://www.facebook.com/yelena.kushmakova/posts/-quick-market-snapshot-peorias-median-list-price-is-575k-glendales-is-489k-both-/10164149101959827/"
+      ]
+    },
+    "surprise": {
+      "medianHomePrice": 420000,
+      "pricePerSqFt": 234,
+      "avgDaysOnMarket": 46,
+      "marketType": "balanced",
+      "yearOverYearChange": null,
+      "asOf": "2026-06",
+      "confidence": "medium",
+      "citations": [
+        "https://admortgage.com/blog/surprise-arizona-top-neighborhoods/",
+        "https://www.firstcommercefinancial.com/mortgage-broker-surprise-arizona/",
+        "https://www.facebook.com/DesertSageSeminars/posts/realtors-agents-what-are-your-thoughtssurprise-is-the-3-most-affordable-city-in-/1607412591392632/",
+        "https://www.instagram.com/p/DaQ6JJSFmrJ/",
+        "https://www.census.gov/construction/nrs/current/index.html"
+      ]
+    },
+    "goodyear": {
+      "medianHomePrice": 490767,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 129,
+      "marketType": "buyer",
+      "yearOverYearChange": null,
+      "asOf": "2026-06",
+      "confidence": "medium",
+      "citations": [
+        "https://www.omnihomesinternational.com/horse-and-equestrian-properties-for-sale-in-goodyear-az",
+        "https://www.redfin.com/county/220/AZ/Maricopa-County/housing-market",
+        "https://www.instagram.com/p/DZdMm8TPVxM/",
+        "https://www.facebook.com/TheGarciaGroupAZ/posts/another-month-in-the-books-swipe-through-for-a-look-at-the-latest-real-estate-nu/1797423861660609/",
+        "https://www.rutkowskihomes.com/luxury-homes-for-sale-in-goodyear-az"
+      ]
+    },
+    "avondale": {
+      "medianHomePrice": 415000,
+      "pricePerSqFt": 214,
+      "avgDaysOnMarket": 60,
+      "marketType": "balanced",
+      "yearOverYearChange": "-0.66%",
+      "asOf": "2026-05",
+      "confidence": "high",
+      "citations": [
+        "https://www.redfin.com/city/1249/AZ/Avondale/housing-market",
+        "https://www.facebook.com/groups/170331996664857/posts/2789300004768030/",
+        "https://www.homesnacks.com/az/avondale/",
+        "https://www.homes.com/new-homes/community/alamar-alamar-discovery/4kd7v0dyjp6td/",
+        "https://www.instagram.com/p/DaEstyZDOot/"
+      ]
+    },
+    "buckeye": {
+      "medianHomePrice": 390000,
+      "pricePerSqFt": 218,
+      "avgDaysOnMarket": 61,
+      "marketType": "balanced",
+      "yearOverYearChange": "+1.5%",
+      "asOf": "2026-06",
+      "confidence": "high",
+      "citations": [
+        "https://www.koernerteamaz.com/buckeye-homes",
+        "https://www.facebook.com/willmcrorierealtor/videos/-buckeye-real-estate-market-insights-may-2026-hello-buckeye-community-heres-a-sn/1526403922268278/",
+        "https://www.realtor.com/realestateandhomes-detail/21658-W-Pierson-St_Buckeye_AZ_85396_M90323-69581",
+        "https://www.redfin.com/zipcode/85326/housing-market",
+        "https://www.facebook.com/juliecansellit/posts/-phoenix-metro-median-home-prices-april-2026the-numbers-are-in-here-is-where-the/1613273697465338/"
+      ]
+    },
+    "queen-creek": {
+      "medianHomePrice": 550000,
+      "pricePerSqFt": 265,
+      "avgDaysOnMarket": 24,
+      "marketType": "seller"
+    },
+    "paradise-valley": {
+      "medianHomePrice": 3200000,
+      "pricePerSqFt": 650,
+      "avgDaysOnMarket": 55,
+      "marketType": "buyer"
+    },
+    "fountain-hills": {
+      "medianHomePrice": 768000,
+      "pricePerSqFt": 363,
+      "avgDaysOnMarket": null,
+      "marketType": "seller",
+      "yearOverYearChange": "+13.0%",
+      "asOf": "2026-06",
+      "confidence": "medium",
+      "citations": [
+        "https://sonoranlifestyle.com/fountain-hills-az-real-estate",
+        "https://www.allphoenixhomesearch.com/guides/city/az/fountain%20hills/",
+        "https://www.instagram.com/p/DZiFwH1lA_t/",
+        "https://en.wikipedia.org/wiki/Fountain_Hills,_Arizona",
+        "https://www.instagram.com/reel/DaTAUNwOrgc/"
+      ]
+    },
+    "cave-creek": {
+      "medianHomePrice": 850000,
+      "pricePerSqFt": 350,
+      "avgDaysOnMarket": 42,
+      "marketType": "balanced"
+    },
+    "carefree": {
+      "medianHomePrice": 950000,
+      "pricePerSqFt": 380,
+      "avgDaysOnMarket": 48,
+      "marketType": "buyer"
+    },
+    "anthem": {
+      "medianHomePrice": 480000,
+      "pricePerSqFt": 255,
+      "avgDaysOnMarket": 25,
+      "marketType": "seller"
+    },
+    "litchfield-park": {
+      "medianHomePrice": 550000,
+      "pricePerSqFt": 265,
+      "avgDaysOnMarket": 30,
+      "marketType": "balanced"
+    },
+    "tolleson": {
+      "medianHomePrice": 310000,
+      "pricePerSqFt": 210,
+      "avgDaysOnMarket": 28,
+      "marketType": "seller"
+    },
+    "el-mirage": {
+      "medianHomePrice": 340000,
+      "pricePerSqFt": 244,
+      "avgDaysOnMarket": 60,
+      "marketType": "seller",
+      "yearOverYearChange": "-2.9%",
+      "asOf": "2026-03",
+      "confidence": "high",
+      "citations": [
+        "https://www.redfin.com/city/5724/AZ/El-Mirage/housing-market",
+        "https://www.findallphoenixareahomes.com/guides/city/az/el%20mirage/",
+        "https://www.realtor.com/realestateandhomes-detail/12417-N-El-Frio-St_El-Mirage_AZ_85335_M29355-77132",
+        "https://www.leaseaz.com/el-mirage-property-management",
+        "https://www.fultongrace.com/home-details/10706694/12910-w-corrine-drive-el-mirage-85335-az/"
+      ]
+    },
+    "youngtown": {
+      "medianHomePrice": 340000,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 54,
+      "marketType": "seller",
+      "yearOverYearChange": null,
+      "asOf": "2026-06",
+      "confidence": "medium",
+      "citations": [
+        "https://www.findallphoenixareahomes.com/guides/city/az/youngtown/",
+        "https://www.realtor.com/realestateandhomes-detail/11584-W-Oglesby-Ave_Youngtown_AZ_85363_M14363-38520",
+        "https://www.apartmentlist.com/az/youngtown/acacia-at-youngtown-affordable-housing",
+        "https://www.facebook.com/TinaCampbellRealtor/posts/cities-with-the-fastest-growing-home-prices-in-arizonadid-you-know-arizona-home-/1599823255478005/",
+        "https://www.facebook.com/juliecansellit/posts/-phoenix-metro-median-home-prices-april-2026the-numbers-are-in-here-is-where-the/1613273697465338/"
+      ]
+    },
+    "sun-city": {
+      "medianHomePrice": 265000,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 72,
+      "marketType": "balanced",
+      "yearOverYearChange": "-7%",
+      "asOf": "2026-05",
+      "confidence": "medium",
+      "citations": [
+        "https://www.instagram.com/p/DZp3HutjpXP/",
+        "https://www.homes.com/sun-city-az/multi-family-homes-for-sale/under-200k/",
+        "https://www.redfin.com/neighborhood/405792/AZ/Oro-Valley/Sun-City/recently-sold",
+        "https://www.searcharizonahomesforsale.com/sun-city-az/phase-1-homes/",
+        "https://www.instagram.com/reel/DaTAUNwOrgc/"
+      ]
+    },
+    "sun-city-west": {
+      "medianHomePrice": 409500,
+      "pricePerSqFt": 230,
+      "avgDaysOnMarket": 95,
+      "marketType": "seller",
+      "yearOverYearChange": null,
+      "asOf": "2026-02",
+      "confidence": "medium",
+      "citations": [
+        "https://altos.re/r/3298ba81-6227-4410-9929-040ab3b25590",
+        "https://www.55places.com/arizona/communities/sun-city-west",
+        "https://www.realtor.com/realestateandhomes-detail/13047-W-Peach-Blossom-Dr_Sun-City-West_AZ_85375_M17313-55348",
+        "https://www.instagram.com/p/DZp3HutjpXP/",
+        "https://www.homes.com/sun-city-az/multi-family-homes-for-sale/under-200k/"
+      ]
+    },
+    "wickenburg": {
+      "medianHomePrice": 432000,
+      "pricePerSqFt": 223,
+      "avgDaysOnMarket": 67,
+      "marketType": "balanced",
+      "yearOverYearChange": "+0.5%",
+      "asOf": "2025-12",
+      "confidence": "medium",
+      "citations": [
+        "https://www.instagram.com/p/DZVnlgpiZZ7/",
+        "https://www.facebook.com/groups/749840048750667/posts/2744744112593574/",
+        "https://www.facebook.com/laura.b.coughanour/posts/-wickenburg-weekly-market-update-june-15-2026the-latest-market-data-is-in-and-we/10242183475873867/",
+        "https://www.realtor.com/realestateandhomes-detail/1865-Hillside-Dr_Wickenburg_AZ_85390_M26953-23601",
+        "https://www.apartments.com/rent-market-trends/wickenburg-az/"
+      ]
+    },
+    "apache-junction": {
+      "medianHomePrice": 330000,
+      "pricePerSqFt": 210,
+      "avgDaysOnMarket": 35,
+      "marketType": "balanced"
+    },
+    "gold-canyon": {
+      "medianHomePrice": 420000,
+      "pricePerSqFt": 240,
+      "avgDaysOnMarket": 33,
+      "marketType": "balanced"
+    },
+    "san-tan-valley": {
+      "medianHomePrice": 424746,
+      "pricePerSqFt": 214,
+      "avgDaysOnMarket": 66,
+      "marketType": "balanced",
+      "yearOverYearChange": "+1.1%",
+      "asOf": "2026-05",
+      "confidence": "high",
+      "citations": [
+        "https://www.redfin.com/city/34610/AZ/San-Tan-Valley/housing-market",
+        "https://www.instagram.com/reel/DZ5KxMYFZi9/",
+        "https://thecollectiveaz.com/blog/queen-creek-or-san-tan-valley-which-fits-your-life",
+        "https://www.apartments.com/local-guide/san-tan-valley-az/",
+        "https://www.facebook.com/AngeliqueMcCoyRealtor/posts/san-tan-valley-market-check-may-2026-numbers-show-976-total-listings-an-average-/122181439082937378/"
+      ]
+    },
+    "florence": {
+      "medianHomePrice": 385000,
+      "pricePerSqFt": 205,
+      "avgDaysOnMarket": 87,
+      "marketType": "balanced",
+      "yearOverYearChange": "+1.3%",
+      "asOf": "2026-01",
+      "confidence": "medium",
+      "citations": [
+        "https://www.realtor.com/realestateandhomes-detail/2528-N-Comiskey-Dr_Florence_AZ_85132_M94949-93335",
+        "https://www.apartments.com/rent-market-trends/florence-az/",
+        "https://www.homes.com/property/8071-w-valor-way-florence-az/vqn5mmwlhs6np/",
+        "https://www.redfin.com/county/224/AZ/Pinal-County/housing-market",
+        "https://www.facebook.com/groups/wucmc/posts/2478944085879371/"
+      ]
+    },
+    "maricopa-city": {
+      "medianHomePrice": 350000,
+      "pricePerSqFt": 205,
+      "avgDaysOnMarket": 30,
+      "marketType": "balanced"
+    },
+    "casa-grande": {
+      "medianHomePrice": 333000,
+      "pricePerSqFt": 213,
+      "avgDaysOnMarket": 56,
+      "marketType": "balanced",
+      "yearOverYearChange": "+2.0%",
+      "asOf": "2026-05",
+      "confidence": "medium",
+      "citations": [
+        "https://bravoteamarizona.com/blog/what-are-current-home-prices-in-casa-grande-az-what-buyers-should-know-right-now",
+        "https://www.homesbymarco.com/cities/casa-grande-az/top-subdivisions",
+        "https://www.apartments.com/rent-market-trends/casa-grande-az/",
+        "https://www.realtor.com/realestateandhomes-detail/1915-N-Maria-Ave_Casa-Grande_AZ_85122_M15109-48086",
+        "https://www.instagram.com/p/DZq7f7rDL7y/?__d=1Kali%E7%A4%BE%E5%B7%A5%E5%BA%93%E2%9C%94%EF%B8%8F%2Btianchacha.com%2B8e%E7%A4%BE%E5%B7%A5%E5%BA%93%E6%9F%A5%E8%AF%A2%E9%AB%98%E9%93%81%E9%A3%9E%E6%9C%BA%E5%8F%8A%E6%89%93%E8%BD%A6%E8%AE%B0%E5%BD%95%E5%85%A8%E7%BD%91%E7%B3%BB%E7%BB%9F"
+      ]
+    },
+    "coolidge": {
+      "medianHomePrice": 295990,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 132,
+      "marketType": "balanced",
+      "yearOverYearChange": null,
+      "asOf": "2026-06",
+      "confidence": "medium",
+      "citations": [
+        "https://www.movoto.com/coolidge-az/market-trends/",
+        "https://www.apartments.com/rent-market-trends/coolidge-az/",
+        "https://www.fultongrace.com/home-details/10840936/1108-n-4th-street-coolidge-85128-az/",
+        "https://www.facebook.com/groups/1190463400968019/posts/28494548840132773/",
+        "https://www.redfin.com/city/34610/AZ/San-Tan-Valley/housing-market"
+      ]
+    },
+    "eloy": {
+      "medianHomePrice": 220000,
+      "pricePerSqFt": 155,
+      "avgDaysOnMarket": 48,
+      "marketType": "buyer"
+    },
+    "arizona-city": {
+      "medianHomePrice": 200000,
+      "pricePerSqFt": 145,
+      "avgDaysOnMarket": 50,
+      "marketType": "buyer"
+    },
+    "tucson": {
+      "medianHomePrice": 369920,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 75,
+      "marketType": "balanced",
+      "yearOverYearChange": null,
+      "asOf": "2026-06",
+      "confidence": "medium",
+      "citations": [
+        "https://www.facebook.com/ArizonaDailyStar/posts/browse-through-recently-listed-homes-in-the-tucson-az-real-estate-market-and-fin/1561095122729366/",
+        "https://www.facebook.com/ArizonaDailyStar/posts/browse-through-recently-listed-homes-in-the-tucson-az-real-estate-market-and-fin/1554484556723756/",
+        "https://www.redfin.com/city/26014/AZ/Tanque-Verde/housing-market",
+        "https://www.aol.com/news/long-does-buy-house-tucson-194257725.html",
+        "https://listwithclever.com/discount-real-estate-brokers/arizona/tucson/"
+      ]
+    },
+    "oro-valley": {
+      "medianHomePrice": 494204,
+      "pricePerSqFt": 252,
+      "avgDaysOnMarket": 70,
+      "marketType": "buyer",
+      "yearOverYearChange": "-6.2%",
+      "asOf": "2026-05",
+      "confidence": "high",
+      "citations": [
+        "https://www.redfin.com/city/13300/AZ/Oro-Valley/housing-market",
+        "https://www.facebook.com/ArizonaDailyStar/posts/a-look-at-the-newest-homes-for-sale-near-oro-valley-az-browse-the-newest-listing/1546927877479424/",
+        "https://theemilyandericteam.com/blog/how-we-professionally-market-oro-valley-homes-for-sale",
+        "https://www.redfin.com/neighborhood/102109/AZ/Oro-Valley/Copper-Creek-Estates/housing-market",
+        "https://realestate.usnews.com/places/arizona/oro-valley"
+      ]
+    },
+    "marana": {
+      "medianHomePrice": 420000,
+      "pricePerSqFt": 235,
+      "avgDaysOnMarket": 26,
+      "marketType": "seller"
+    },
+    "sahuarita": {
+      "medianHomePrice": 350000,
+      "pricePerSqFt": 210,
+      "avgDaysOnMarket": 28,
+      "marketType": "seller"
+    },
+    "green-valley": {
+      "medianHomePrice": 319000,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 78,
+      "marketType": "balanced",
+      "yearOverYearChange": null,
+      "asOf": "2026-06",
+      "confidence": "high",
+      "citations": [
+        "https://www.nevadarealestategroup.com/henderson/green-valley/",
+        "https://www.55places.com/arizona/city/green-valley",
+        "https://www.tomfreeland.com/blog/summer-buying-strategy-green-valley-market-report",
+        "https://www.homesnacks.com/az/green-valley/",
+        "https://www.realtor.com/realestateandhomes-detail/432-E-Los-Rincones_Green-Valley_AZ_85614_M21443-56088"
+      ]
+    },
+    "south-tucson": {
+      "medianHomePrice": 150000,
+      "pricePerSqFt": 130,
+      "avgDaysOnMarket": 45,
+      "marketType": "buyer"
+    },
+    "catalina": {
+      "medianHomePrice": 300000,
+      "pricePerSqFt": 200,
+      "avgDaysOnMarket": 35,
+      "marketType": "balanced"
+    },
+    "vail": {
+      "medianHomePrice": 417663,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 103,
+      "marketType": "balanced",
+      "yearOverYearChange": null,
+      "asOf": "2026-06",
+      "confidence": "medium",
+      "citations": [
+        "https://www.redfin.com/city/20103/CO/Vail/housing-market",
+        "https://www.movoto.com/az/85641/market-trends/",
+        "https://www.apartments.com/rent-market-trends/vail-az/",
+        "https://www.instagram.com/reel/DZyWhg7JJS2/",
+        "https://www.facebook.com/ArizonaDailyStar/posts/browse-through-recently-listed-homes-in-the-tucson-real-estate-market-and-find-y/1561160432722835/"
+      ]
+    }
   },
   "neighborhoods": {
-    "arcadia": { "medianHomePrice": 1200000 },
-    "biltmore": { "medianHomePrice": 850000 },
-    "north-central": { "medianHomePrice": 650000 },
-    "camelback-east": { "medianHomePrice": 750000 },
-    "desert-ridge": { "medianHomePrice": 550000 },
-    "ahwatukee": { "medianHomePrice": 480000 },
-    "encanto": { "medianHomePrice": 600000 },
-    "willo": { "medianHomePrice": 550000 },
-    "roosevelt-row": { "medianHomePrice": 400000 },
-    "downtown-phoenix": { "medianHomePrice": 380000 },
-    "midtown-phoenix": { "medianHomePrice": 500000 },
-    "moon-valley": { "medianHomePrice": 480000 },
-    "deer-valley": { "medianHomePrice": 420000 },
-    "norterra": { "medianHomePrice": 520000 },
-    "laveen": { "medianHomePrice": 380000 },
-    "maryvale": { "medianHomePrice": 300000 },
-    "south-mountain": { "medianHomePrice": 350000 },
-    "north-gateway": { "medianHomePrice": 470000 },
-    "desert-view": { "medianHomePrice": 500000 },
-    "tramonto": { "medianHomePrice": 450000 },
-    "dc-ranch": { "medianHomePrice": 1500000 },
-    "grayhawk": { "medianHomePrice": 850000 },
-    "gainey-ranch": { "medianHomePrice": 1200000 },
-    "mccormick-ranch": { "medianHomePrice": 700000 },
-    "old-town-scottsdale": { "medianHomePrice": 550000 },
-    "north-scottsdale": { "medianHomePrice": 1100000 },
-    "troon": { "medianHomePrice": 1300000 },
-    "mcdowell-mountain-ranch": { "medianHomePrice": 750000 },
-    "scottsdale-ranch": { "medianHomePrice": 650000 },
-    "kierland": { "medianHomePrice": 680000 },
-    "las-sendas": { "medianHomePrice": 650000 },
-    "red-mountain": { "medianHomePrice": 480000 },
-    "dobson-ranch": { "medianHomePrice": 380000 },
-    "superstition-springs": { "medianHomePrice": 420000 },
-    "eastmark": { "medianHomePrice": 480000 },
-    "mesa-downtown": { "medianHomePrice": 320000 },
-    "ocotillo": { "medianHomePrice": 600000 },
-    "fulton-ranch": { "medianHomePrice": 480000 },
-    "sun-groves": { "medianHomePrice": 520000 },
-    "chandler-downtown": { "medianHomePrice": 400000 },
-    "power-ranch": { "medianHomePrice": 520000 },
-    "morrison-ranch": { "medianHomePrice": 550000 },
-    "val-vista-lakes": { "medianHomePrice": 500000 },
-    "agritopia": { "medianHomePrice": 650000 },
-    "gilbert-downtown": { "medianHomePrice": 420000 },
-    "tempe-downtown": { "medianHomePrice": 380000 },
-    "maple-ash": { "medianHomePrice": 520000 },
-    "university-heights": { "medianHomePrice": 400000 },
-    "arrowhead-ranch": { "medianHomePrice": 430000 },
-    "glendale-downtown": { "medianHomePrice": 300000 },
-    "vistancia": { "medianHomePrice": 520000 },
-    "peoria-downtown": { "medianHomePrice": 350000 },
-    "trilogy-at-vistancia": { "medianHomePrice": 480000 },
-    "marley-park": { "medianHomePrice": 450000 },
-    "surprise-farms": { "medianHomePrice": 400000 },
-    "estrella-mountain-ranch": { "medianHomePrice": 430000 },
-    "palm-valley": { "medianHomePrice": 450000 },
-    "canyon-trails": { "medianHomePrice": 400000 },
-    "pebblecreek": { "medianHomePrice": 400000 },
-    "cantamia": { "medianHomePrice": 380000 },
-    "verrado": { "medianHomePrice": 450000 },
-    "tartesso": { "medianHomePrice": 380000 },
-    "festival-ranch": { "medianHomePrice": 370000 },
-    "circle-g": { "medianHomePrice": 500000 },
-    "queen-creek-station": { "medianHomePrice": 480000 },
-    "paradise-valley-estates": { "medianHomePrice": 2500000 },
-    "clearwater-hills": { "medianHomePrice": 3000000 },
-    "firerock": { "medianHomePrice": 900000 },
-    "fountain-hills-downtown": { "medianHomePrice": 550000 },
-    "tatum-ranch": { "medianHomePrice": 650000 },
-    "cave-creek-downtown": { "medianHomePrice": 700000 },
-    "anthem-country-club": { "medianHomePrice": 550000 },
-    "anthem-parkside": { "medianHomePrice": 450000 },
-    "johnson-ranch": { "medianHomePrice": 380000 },
-    "pecan-creek": { "medianHomePrice": 350000 },
-    "circle-cross-ranch": { "medianHomePrice": 400000 },
-    "anthem-at-merrill-ranch": { "medianHomePrice": 380000 },
-    "florence-downtown": { "medianHomePrice": 280000 },
-    "province": { "medianHomePrice": 350000 },
-    "rancho-el-dorado": { "medianHomePrice": 340000 },
-    "the-villages-at-rancho-el-dorado": { "medianHomePrice": 320000 },
-    "cobblestone-farms": { "medianHomePrice": 360000 },
-    "glennwilde": { "medianHomePrice": 330000 },
-    "mission-royale": { "medianHomePrice": 320000 },
-    "casa-grande-downtown": { "medianHomePrice": 240000 },
-    "catalina-foothills": { "medianHomePrice": 650000 },
-    "sam-hughes": { "medianHomePrice": 450000 },
-    "armory-park": { "medianHomePrice": 380000 },
-    "barrio-viejo": { "medianHomePrice": 350000 },
-    "tucson-downtown": { "medianHomePrice": 300000 },
-    "civano": { "medianHomePrice": 380000 },
-    "rita-ranch": { "medianHomePrice": 350000 },
-    "tanque-verde-valley": { "medianHomePrice": 550000 },
-    "broadmoor-broadway": { "medianHomePrice": 320000 },
-    "midvale-park": { "medianHomePrice": 280000 },
-    "iron-horse": { "medianHomePrice": 380000 },
-    "dove-mountain-tucson": { "medianHomePrice": 300000 },
-    "starr-pass": { "medianHomePrice": 420000 },
-    "rancho-vistoso": { "medianHomePrice": 450000 },
-    "oro-valley-marketplace": { "medianHomePrice": 420000 },
-    "dove-mountain": { "medianHomePrice": 550000 },
-    "gladden-farms": { "medianHomePrice": 380000 },
-    "continental-ranch": { "medianHomePrice": 350000 },
-    "rancho-sahuarita": { "medianHomePrice": 360000 },
-    "quail-creek": { "medianHomePrice": 350000 },
-    "green-valley-downtown": { "medianHomePrice": 220000 },
-    "superstition-foothills": { "medianHomePrice": 380000 },
-    "apache-junction-downtown": { "medianHomePrice": 280000 },
-    "litchfield-park-historic": { "medianHomePrice": 550000 },
-    "wigwam-area": { "medianHomePrice": 500000 },
-    "sun-city-center": { "medianHomePrice": 280000 },
-    "sun-city-south": { "medianHomePrice": 300000 },
-    "sun-city-west-core": { "medianHomePrice": 350000 },
-    "gold-canyon-east": { "medianHomePrice": 450000 },
-    "mountainbrook-village": { "medianHomePrice": 400000 },
-    "wickenburg-ranch": { "medianHomePrice": 420000 },
-    "wickenburg-downtown": { "medianHomePrice": 320000 },
-    "tolleson-center": { "medianHomePrice": 310000 },
-    "el-mirage-center": { "medianHomePrice": 330000 },
-    "youngtown-center": { "medianHomePrice": 280000 },
-    "coolidge-center": { "medianHomePrice": 260000 },
-    "vail-center": { "medianHomePrice": 380000 },
-    "carefree-center": { "medianHomePrice": 950000 },
-    "south-tucson-center": { "medianHomePrice": 150000 },
-    "saddlebrooke": { "medianHomePrice": 400000 },
-    "sun-lakes": { "medianHomePrice": 400000 },
-    "the-groves": { "medianHomePrice": 500000 },
-    "cadence-at-gateway": { "medianHomePrice": 460000 },
-    "robson-ranch": { "medianHomePrice": 320000 }
+    "arcadia": {
+      "medianHomePrice": 1200000
+    },
+    "biltmore": {
+      "medianHomePrice": 850000
+    },
+    "north-central": {
+      "medianHomePrice": 650000
+    },
+    "camelback-east": {
+      "medianHomePrice": 750000
+    },
+    "desert-ridge": {
+      "medianHomePrice": 550000
+    },
+    "ahwatukee": {
+      "medianHomePrice": 480000
+    },
+    "encanto": {
+      "medianHomePrice": 600000
+    },
+    "willo": {
+      "medianHomePrice": 550000
+    },
+    "roosevelt-row": {
+      "medianHomePrice": 400000
+    },
+    "downtown-phoenix": {
+      "medianHomePrice": 380000
+    },
+    "midtown-phoenix": {
+      "medianHomePrice": 500000
+    },
+    "moon-valley": {
+      "medianHomePrice": 480000
+    },
+    "deer-valley": {
+      "medianHomePrice": 420000
+    },
+    "norterra": {
+      "medianHomePrice": 520000
+    },
+    "laveen": {
+      "medianHomePrice": 380000
+    },
+    "maryvale": {
+      "medianHomePrice": 300000
+    },
+    "south-mountain": {
+      "medianHomePrice": 350000
+    },
+    "north-gateway": {
+      "medianHomePrice": 470000
+    },
+    "desert-view": {
+      "medianHomePrice": 500000
+    },
+    "tramonto": {
+      "medianHomePrice": 450000
+    },
+    "dc-ranch": {
+      "medianHomePrice": 1500000
+    },
+    "grayhawk": {
+      "medianHomePrice": 850000
+    },
+    "gainey-ranch": {
+      "medianHomePrice": 1200000
+    },
+    "mccormick-ranch": {
+      "medianHomePrice": 700000
+    },
+    "old-town-scottsdale": {
+      "medianHomePrice": 550000
+    },
+    "north-scottsdale": {
+      "medianHomePrice": 1100000
+    },
+    "troon": {
+      "medianHomePrice": 1300000
+    },
+    "mcdowell-mountain-ranch": {
+      "medianHomePrice": 750000
+    },
+    "scottsdale-ranch": {
+      "medianHomePrice": 650000
+    },
+    "kierland": {
+      "medianHomePrice": 680000
+    },
+    "las-sendas": {
+      "medianHomePrice": 650000
+    },
+    "red-mountain": {
+      "medianHomePrice": 480000
+    },
+    "dobson-ranch": {
+      "medianHomePrice": 380000
+    },
+    "superstition-springs": {
+      "medianHomePrice": 420000
+    },
+    "eastmark": {
+      "medianHomePrice": 480000
+    },
+    "mesa-downtown": {
+      "medianHomePrice": 320000
+    },
+    "ocotillo": {
+      "medianHomePrice": 600000
+    },
+    "fulton-ranch": {
+      "medianHomePrice": 480000
+    },
+    "sun-groves": {
+      "medianHomePrice": 520000
+    },
+    "chandler-downtown": {
+      "medianHomePrice": 400000
+    },
+    "power-ranch": {
+      "medianHomePrice": 520000
+    },
+    "morrison-ranch": {
+      "medianHomePrice": 550000
+    },
+    "val-vista-lakes": {
+      "medianHomePrice": 500000
+    },
+    "agritopia": {
+      "medianHomePrice": 650000
+    },
+    "gilbert-downtown": {
+      "medianHomePrice": 420000
+    },
+    "tempe-downtown": {
+      "medianHomePrice": 380000
+    },
+    "maple-ash": {
+      "medianHomePrice": 520000
+    },
+    "university-heights": {
+      "medianHomePrice": 400000
+    },
+    "arrowhead-ranch": {
+      "medianHomePrice": 430000
+    },
+    "glendale-downtown": {
+      "medianHomePrice": 300000
+    },
+    "vistancia": {
+      "medianHomePrice": 520000
+    },
+    "peoria-downtown": {
+      "medianHomePrice": 350000
+    },
+    "trilogy-at-vistancia": {
+      "medianHomePrice": 480000
+    },
+    "marley-park": {
+      "medianHomePrice": 450000
+    },
+    "surprise-farms": {
+      "medianHomePrice": 400000
+    },
+    "estrella-mountain-ranch": {
+      "medianHomePrice": 430000
+    },
+    "palm-valley": {
+      "medianHomePrice": 450000
+    },
+    "canyon-trails": {
+      "medianHomePrice": 400000
+    },
+    "pebblecreek": {
+      "medianHomePrice": 400000
+    },
+    "cantamia": {
+      "medianHomePrice": 380000
+    },
+    "verrado": {
+      "medianHomePrice": 450000
+    },
+    "tartesso": {
+      "medianHomePrice": 380000
+    },
+    "festival-ranch": {
+      "medianHomePrice": 370000
+    },
+    "circle-g": {
+      "medianHomePrice": 500000
+    },
+    "queen-creek-station": {
+      "medianHomePrice": 480000
+    },
+    "paradise-valley-estates": {
+      "medianHomePrice": 2500000
+    },
+    "clearwater-hills": {
+      "medianHomePrice": 3000000
+    },
+    "firerock": {
+      "medianHomePrice": 900000
+    },
+    "fountain-hills-downtown": {
+      "medianHomePrice": 550000
+    },
+    "tatum-ranch": {
+      "medianHomePrice": 650000
+    },
+    "cave-creek-downtown": {
+      "medianHomePrice": 700000
+    },
+    "anthem-country-club": {
+      "medianHomePrice": 550000
+    },
+    "anthem-parkside": {
+      "medianHomePrice": 450000
+    },
+    "johnson-ranch": {
+      "medianHomePrice": 380000
+    },
+    "pecan-creek": {
+      "medianHomePrice": 350000
+    },
+    "circle-cross-ranch": {
+      "medianHomePrice": 400000
+    },
+    "anthem-at-merrill-ranch": {
+      "medianHomePrice": 380000
+    },
+    "florence-downtown": {
+      "medianHomePrice": 280000
+    },
+    "province": {
+      "medianHomePrice": 350000
+    },
+    "rancho-el-dorado": {
+      "medianHomePrice": 340000
+    },
+    "the-villages-at-rancho-el-dorado": {
+      "medianHomePrice": 320000
+    },
+    "cobblestone-farms": {
+      "medianHomePrice": 360000
+    },
+    "glennwilde": {
+      "medianHomePrice": 330000
+    },
+    "mission-royale": {
+      "medianHomePrice": 320000
+    },
+    "casa-grande-downtown": {
+      "medianHomePrice": 240000
+    },
+    "catalina-foothills": {
+      "medianHomePrice": 650000
+    },
+    "sam-hughes": {
+      "medianHomePrice": 450000
+    },
+    "armory-park": {
+      "medianHomePrice": 380000
+    },
+    "barrio-viejo": {
+      "medianHomePrice": 350000
+    },
+    "tucson-downtown": {
+      "medianHomePrice": 300000
+    },
+    "civano": {
+      "medianHomePrice": 380000
+    },
+    "rita-ranch": {
+      "medianHomePrice": 350000
+    },
+    "tanque-verde-valley": {
+      "medianHomePrice": 550000
+    },
+    "broadmoor-broadway": {
+      "medianHomePrice": 320000
+    },
+    "midvale-park": {
+      "medianHomePrice": 280000
+    },
+    "iron-horse": {
+      "medianHomePrice": 380000
+    },
+    "dove-mountain-tucson": {
+      "medianHomePrice": 300000
+    },
+    "starr-pass": {
+      "medianHomePrice": 420000
+    },
+    "rancho-vistoso": {
+      "medianHomePrice": 450000
+    },
+    "oro-valley-marketplace": {
+      "medianHomePrice": 420000
+    },
+    "dove-mountain": {
+      "medianHomePrice": 550000
+    },
+    "gladden-farms": {
+      "medianHomePrice": 380000
+    },
+    "continental-ranch": {
+      "medianHomePrice": 350000
+    },
+    "rancho-sahuarita": {
+      "medianHomePrice": 360000
+    },
+    "quail-creek": {
+      "medianHomePrice": 350000
+    },
+    "green-valley-downtown": {
+      "medianHomePrice": 220000
+    },
+    "superstition-foothills": {
+      "medianHomePrice": 380000
+    },
+    "apache-junction-downtown": {
+      "medianHomePrice": 280000
+    },
+    "litchfield-park-historic": {
+      "medianHomePrice": 550000
+    },
+    "wigwam-area": {
+      "medianHomePrice": 500000
+    },
+    "sun-city-center": {
+      "medianHomePrice": 280000
+    },
+    "sun-city-south": {
+      "medianHomePrice": 300000
+    },
+    "sun-city-west-core": {
+      "medianHomePrice": 350000
+    },
+    "gold-canyon-east": {
+      "medianHomePrice": 450000
+    },
+    "mountainbrook-village": {
+      "medianHomePrice": 400000
+    },
+    "wickenburg-ranch": {
+      "medianHomePrice": 420000
+    },
+    "wickenburg-downtown": {
+      "medianHomePrice": 320000
+    },
+    "tolleson-center": {
+      "medianHomePrice": 310000
+    },
+    "el-mirage-center": {
+      "medianHomePrice": 330000
+    },
+    "youngtown-center": {
+      "medianHomePrice": 280000
+    },
+    "coolidge-center": {
+      "medianHomePrice": 260000
+    },
+    "vail-center": {
+      "medianHomePrice": 380000
+    },
+    "carefree-center": {
+      "medianHomePrice": 950000
+    },
+    "south-tucson-center": {
+      "medianHomePrice": 150000
+    },
+    "saddlebrooke": {
+      "medianHomePrice": 400000
+    },
+    "sun-lakes": {
+      "medianHomePrice": 400000
+    },
+    "the-groves": {
+      "medianHomePrice": 500000
+    },
+    "cadence-at-gateway": {
+      "medianHomePrice": 460000
+    },
+    "robson-ranch": {
+      "medianHomePrice": 320000
+    }
   }
 }

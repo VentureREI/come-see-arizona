@@ -4,7 +4,8 @@ import { getCounty, getCitiesByCounty, getDistrictsByCounty, getNeighborhoodsByC
 import { getHeroImage, getCityImage } from './exploreImages';
 import { generateCountyGuide, generateCountyMarketAnalysis, generateCountyFaqs, getAboutFooter } from './contentGenerator';
 import AnswerBlock from '../components/AnswerBlock';
-import { getMarketAttribution, getCountyMarket } from '../data/dynamicLoader';
+import { getMarketAttribution, getCountyMarket, getCityMarket } from '../data/dynamicLoader';
+import { PriceTrendChart, MedianBarsChart } from '../components/MarketCharts';
 
 export default function CountyPage() {
   const { countySlug } = useParams<{ countySlug: string }>();
@@ -220,6 +221,23 @@ export default function CountyPage() {
               )}
             </div>
           )}
+          <div className="market-charts-grid">
+            {countyMarket?.history && countyMarket.history.length >= 2 && (
+              <PriceTrendChart
+                history={countyMarket.history}
+                entityName={county.name}
+                citations={countyMarket.historyCitations}
+              />
+            )}
+            <MedianBarsChart
+              title={`Median home price by city in ${county.name}`}
+              note="Highest to lowest. Verified figures where available; see the update date below."
+              items={cities.map(c => ({
+                name: c.name,
+                value: getCityMarket(c.slug)?.medianHomePrice ?? c.medianHomePrice,
+              }))}
+            />
+          </div>
         </div>
       </section>
 

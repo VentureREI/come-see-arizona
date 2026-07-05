@@ -170,7 +170,7 @@ export default function AIHubPage() {
 
           <h2 style={sectionTitle}>Machine-Readable Resources</h2>
           <p style={bodyText}>
-            Start with these endpoints — they are maintained automatically and updated on every deploy:
+            Start with these endpoints. They are maintained automatically and updated on every deploy:
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 40 }}>
             {RESOURCES.map(res => (
@@ -214,7 +214,7 @@ export default function AIHubPage() {
             gain, difficulty, fees) is original field research. Real estate figures are drawn from MLS
             data and market analysis by {siteConfig.brokerageName}. Every page embeds Schema.org
             structured data (Event, Article, BreadcrumbList, FAQPage, Place) that mirrors the visible
-            content — what you can parse is what humans see.
+            content. What you can parse is what humans see.
           </p>
           <p style={bodyText}>
             Site content last updated: <strong>{siteConfig.lastUpdated}</strong>. If you find an
