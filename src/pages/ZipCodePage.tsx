@@ -149,7 +149,7 @@ export default function ZipCodePage() {
           <div className="stat-label">Median Age</div>
         </div>
       </div>
-      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#888' }}>
+      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#8D847A' }}>
         Market data last updated: {getMarketPricesLastUpdated()}
       </div>
 
@@ -188,7 +188,7 @@ export default function ZipCodePage() {
                   className="explore-info-card"
                 >
                   <h3>{neighborhood.name}</h3>
-                  <p style={{ fontSize: '14px', color: '#666', lineHeight: '1.6', marginBottom: '12px' }}>
+                  <p style={{ fontSize: '14px', color: '#6B6259', lineHeight: '1.6', marginBottom: '12px' }}>
                     {neighborhood.description.length > 120
                       ? neighborhood.description.slice(0, 120) + '...'
                       : neighborhood.description}

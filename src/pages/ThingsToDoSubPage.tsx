@@ -105,8 +105,8 @@ export default function ThingsToDoSubPage() {
               key={i}
               style={
                 i === 0
-                  ? { fontSize: '18px', lineHeight: 1.8, color: '#333' }
-                  : { fontSize: '16px', lineHeight: 1.7, color: '#444' }
+                  ? { fontSize: '18px', lineHeight: 1.8, color: '#39322C' }
+                  : { fontSize: '16px', lineHeight: 1.7, color: '#4A4239' }
               }
             >
               {text}

@@ -128,9 +128,9 @@ function PlaceCard({ name, location, description, image }: { name: string; locat
         <img src={image} alt={name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
       </div>
       <div style={{ padding: 20 }}>
-        <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 600, color: '#1A1A1A', marginBottom: 4 }}>{name}</h3>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: '#888', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 8 }}>{location}</p>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: '#555', lineHeight: 1.6 }}>{description}</p>
+        <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 600, color: '#211B24', marginBottom: 4 }}>{name}</h3>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: '#8D847A', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 8 }}>{location}</p>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: '#5C5348', lineHeight: 1.6 }}>{description}</p>
       </div>
     </div>
   );
@@ -139,8 +139,8 @@ function PlaceCard({ name, location, description, image }: { name: string; locat
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div style={{ marginBottom: 32 }}>
-      <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#1A1A1A', marginBottom: 12 }}>{children}</h2>
-      <div style={{ width: 40, height: 3, background: '#D32F2F' }} />
+      <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#211B24', marginBottom: 12 }}>{children}</h2>
+      <div style={{ width: 40, height: 3, background: '#C1502E' }} />
     </div>
   );
 }
@@ -188,7 +188,7 @@ export default function WhereToStayPage() {
       {/* ─── 1. Intro ─── */}
       <div style={{ background: '#fff' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '48px 24px' }}>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 18, lineHeight: 1.8, color: '#333' }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 18, lineHeight: 1.8, color: '#39322C' }}>
             Arizona offers one of the most diverse and exciting accommodation landscapes in the
             American West. Whether you are planning a luxurious spa getaway in Scottsdale, a
             nature-focused retreat in Sedona, a budget-friendly family vacation in the Phoenix
@@ -200,10 +200,10 @@ export default function WhereToStayPage() {
       </div>
 
       {/* ─── 2. Luxury Resorts ─── */}
-      <div style={{ background: '#FAFAFA', padding: '64px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Luxury Resorts</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32, maxWidth: 800 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32, maxWidth: 800 }}>
             Arizona is home to some of the finest resort properties in North America. The Scottsdale
             and Paradise Valley corridor alone contains a concentration of five-star resorts that
             rivals any destination in the country. Here are the standout properties:
@@ -220,7 +220,7 @@ export default function WhereToStayPage() {
       <div style={{ background: '#fff', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Boutique Hotels</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32, maxWidth: 800 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32, maxWidth: 800 }}>
             Arizona's boutique hotel scene has grown significantly in recent years, offering
             travelers distinctive design, personalized service, and a sense of place that larger
             resorts cannot always replicate.
@@ -234,18 +234,18 @@ export default function WhereToStayPage() {
       </div>
 
       {/* ─── 4. Budget-Friendly Options ─── */}
-      <div style={{ background: '#FAFAFA', padding: '64px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Budget-Friendly Options</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32, maxWidth: 800 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32, maxWidth: 800 }}>
             Arizona offers plenty of affordable accommodation options for travelers watching their
             budget. Knowing where to look can save you hundreds of dollars without sacrificing
             convenience or comfort.
           </p>
 
-          <div style={{ borderLeft: '4px solid #D32F2F', background: '#FFF8F6', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
-            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#1A1A1A', marginBottom: 8 }}>Best Areas for Value Stays</h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#555' }}>
+          <div style={{ borderLeft: '4px solid #C1502E', background: '#FAF3EB', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
+            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#211B24', marginBottom: 8 }}>Best Areas for Value Stays</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#5C5348' }}>
               The Tempe and Mesa corridor consistently offers some of the best hotel values in the
               Phoenix metro area. Both cities are connected by the Valley Metro Light Rail, giving you
               easy access to downtown Phoenix, ASU, and major attractions without the higher price
@@ -254,9 +254,9 @@ export default function WhereToStayPage() {
             </p>
           </div>
 
-          <div style={{ borderLeft: '4px solid #D32F2F', background: '#FFF8F6', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
-            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#1A1A1A', marginBottom: 8 }}>Chain Hotel Clusters</h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#555' }}>
+          <div style={{ borderLeft: '4px solid #C1502E', background: '#FAF3EB', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
+            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#211B24', marginBottom: 8 }}>Chain Hotel Clusters</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#5C5348' }}>
               Major hotel chains cluster near the I-17 and I-10 freeway corridors, particularly
               around interchanges with major cross-streets like Dunlap, Camelback, and Baseline. These
               locations offer rates that are often 30-50% lower than comparable properties in
@@ -265,9 +265,9 @@ export default function WhereToStayPage() {
             </p>
           </div>
 
-          <div style={{ borderLeft: '4px solid #D32F2F', background: '#FFF8F6', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
-            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#1A1A1A', marginBottom: 8 }}>Short-Term Rentals for Budget Travelers</h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#555' }}>
+          <div style={{ borderLeft: '4px solid #C1502E', background: '#FAF3EB', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
+            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#211B24', marginBottom: 8 }}>Short-Term Rentals for Budget Travelers</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#5C5348' }}>
               Airbnb and VRBO listings in neighborhoods like Tempe, central Mesa, and south Scottsdale
               can offer excellent value, especially for groups or families who can split the cost of a
               multi-bedroom home. Many budget-friendly rentals include private pools, full kitchens,
@@ -281,7 +281,7 @@ export default function WhereToStayPage() {
       <div style={{ background: '#fff', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Where to Stay by Area</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32, maxWidth: 800 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32, maxWidth: 800 }}>
             The right area depends on your priorities. Here is a breakdown of the best places to
             base yourself depending on what you want from your Arizona trip.
           </p>
@@ -311,7 +311,7 @@ export default function WhereToStayPage() {
       </div>
 
       {/* ─── 6. Vacation Rentals ─── */}
-      <div style={{ background: '#FAFAFA', padding: '64px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Vacation Rentals and Airbnb</SectionHeading>
           <div style={{ display: 'flex', gap: 48, flexWrap: 'wrap' as const }}>
@@ -324,14 +324,14 @@ export default function WhereToStayPage() {
               />
             </div>
             <div style={{ flex: '1 1 400px', minWidth: 300 }}>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 16 }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 16 }}>
                 Short-term vacation rentals have become one of the most popular ways to stay in Arizona,
                 especially for families, groups, and extended-stay travelers. The market is robust across
                 the Phoenix metro area and beyond.
               </p>
 
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#222', marginTop: 24, marginBottom: 8 }}>Popular Areas for Rentals</h3>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 16 }}>
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#26202A', marginTop: 24, marginBottom: 8 }}>Popular Areas for Rentals</h3>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 16 }}>
                 Scottsdale is the most popular market for vacation rentals in Arizona, particularly in
                 the Old Town and south Scottsdale corridors. The Arcadia neighborhood in Phoenix - known
                 for its tree-lined streets and proximity to Camelback Mountain - is another top market
@@ -339,8 +339,8 @@ export default function WhereToStayPage() {
                 inventory near ASU and Tempe Town Lake.
               </p>
 
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#222', marginTop: 24, marginBottom: 8 }}>What to Expect Price-Wise</h3>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 16 }}>
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#26202A', marginTop: 24, marginBottom: 8 }}>What to Expect Price-Wise</h3>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 16 }}>
                 Vacation rental pricing in Arizona varies significantly by season, location, and
                 property type. A three-bedroom home with a pool in south Scottsdale might rent for
                 $150-$250 per night in summer and $300-$500 per night during peak season (January
@@ -349,8 +349,8 @@ export default function WhereToStayPage() {
                 spring training.
               </p>
 
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#222', marginTop: 24, marginBottom: 8 }}>Short-Term Rental Regulations</h3>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 16 }}>
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#26202A', marginTop: 24, marginBottom: 8 }}>Short-Term Rental Regulations</h3>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 16 }}>
                 Arizona's SB 1350 law prevents cities from banning short-term rentals, but
                 municipalities can regulate noise, parking, occupancy, and nuisance issues. Both
                 Phoenix and Scottsdale require hosts to register with the city, maintain a local contact
@@ -359,8 +359,8 @@ export default function WhereToStayPage() {
                 violations and a three-strikes policy for problem properties.
               </p>
 
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#222', marginTop: 24, marginBottom: 8 }}>Benefits of Renting a House with a Private Pool</h3>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 16 }}>
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#26202A', marginTop: 24, marginBottom: 8 }}>Benefits of Renting a House with a Private Pool</h3>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 16 }}>
                 A private pool is one of the top reasons travelers choose a vacation rental over a hotel
                 in Arizona. From April through October, daily highs regularly exceed 100°F, and having a
                 pool steps from your door is a game-changer - especially for families with kids. Many
@@ -377,7 +377,7 @@ export default function WhereToStayPage() {
       <div style={{ background: '#fff', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>RV Parks and Camping</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32, maxWidth: 800 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32, maxWidth: 800 }}>
             Arizona is one of the most popular RV and camping destinations in the country, drawing
             snowbirds, road trippers, and outdoor enthusiasts year-round. The state offers
             everything from full-service RV resorts with resort-style amenities to primitive
@@ -394,10 +394,10 @@ export default function WhereToStayPage() {
       {/* ─── 8. Incyte Realty ─── */}
       <div style={{ background: '#FAF5F0', padding: '64px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#1A1A1A', marginBottom: 16 }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#211B24', marginBottom: 16 }}>
             From Vacation to Home - {siteConfig.brokerageName}
           </h2>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239' }}>
             Many visitors who fall in love with Arizona's lifestyle choose to make it permanent.{' '}
             {siteConfig.brokerageName} helps clients transition from vacation to homeownership,
             with expertise across every Valley community. {siteConfig.leaderName}, with{' '}
@@ -408,7 +408,7 @@ export default function WhereToStayPage() {
             to="/explore"
             style={{
               display: 'inline-block',
-              background: '#D32F2F',
+              background: '#C1502E',
               color: 'white',
               padding: '14px 32px',
               borderRadius: 28,

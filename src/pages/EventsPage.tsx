@@ -113,7 +113,7 @@ export default function EventsPage() {
       <AnswerBlock answer="Arizona hosts hundreds of events year-round, from Cactus League spring training across 10 Valley stadiums to Country Thunder music festival in Florence, First Friday art walks in downtown Phoenix, and the Scottsdale Culinary Festival. Events are updated weekly and filtered to show only upcoming dates." />
 
       {/* Category Filters */}
-      <div style={{ background: '#FAFAFA', borderBottom: '1px solid #EEE' }}>
+      <div style={{ background: '#F7F1E8', borderBottom: '1px solid #E9E2D6' }}>
         <div className="explore-container" style={{ padding: '20px 24px' }}>
           <div className="explore-tabs" style={{ justifyContent: 'center' }}>
             {CATEGORIES.map(cat => (
@@ -137,8 +137,8 @@ export default function EventsPage() {
               fontFamily: 'var(--font-body)',
               fontSize: 14,
               color: 'var(--color-text-secondary)',
-              background: '#FFF8E1',
-              border: '1px solid #FFE082',
+              background: '#FBF3E2',
+              border: '1px solid #EFD9A7',
               borderRadius: 8,
               padding: '12px 16px',
               marginBottom: 16,
@@ -218,7 +218,7 @@ export default function EventsPage() {
                       textTransform: 'uppercase',
                       letterSpacing: 1.2,
                       color: 'var(--color-primary)',
-                      background: '#FFEBEE',
+                      background: '#F6E3D7',
                       padding: '3px 8px',
                       borderRadius: 4,
                       marginBottom: 8,
@@ -306,7 +306,7 @@ export default function EventsPage() {
 
       {/* Attribution Footer */}
       <div style={{
-        borderTop: '1px solid #EEE',
+        borderTop: '1px solid #E9E2D6',
         padding: '24px',
         textAlign: 'center',
         fontFamily: 'var(--font-body)',

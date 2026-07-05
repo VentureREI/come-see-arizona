@@ -264,9 +264,26 @@ function App() {
   const [bannerClosed, setBannerClosed] = useState(false);
   const [itineraryScroll, setItineraryScroll] = useState(0);
   const itineraryRef = useRef<HTMLDivElement>(null);
+  const heroVideoRef = useRef<HTMLVideoElement>(null);
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
   const [activeQuote, setActiveQuote] = useState(0);
+
+  // Hero video: honor prefers-reduced-motion (freeze on the poster frame),
+  // and force playback after hydration — React omits the `muted` attribute
+  // from server-rendered HTML, which can make browsers block the initial
+  // autoplay attempt before hydration completes.
+  useEffect(() => {
+    const video = heroVideoRef.current;
+    if (!video) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      video.removeAttribute('autoplay');
+      video.pause();
+      return;
+    }
+    video.muted = true;
+    video.play().catch(() => { /* poster frame remains — acceptable fallback */ });
+  }, []);
 
   const upcomingEvents = useMemo(() => getUpcomingEvents(), []);
   const featuredEvent = useMemo(() => getFeaturedEvent(), []);
@@ -332,7 +349,22 @@ function App() {
       {/* Hero Section */}
       <section className="hero-section" aria-label="Welcome to Arizona">
         <div className="hero-video">
-          <img src="/hero-desert.jpg" alt="Aerial view of Arizona's Sonoran Desert landscape at golden hour with dramatic canyon formations" className="hero-image" fetchPriority="high" decoding="async" width={1600} height={900} />
+          <video
+            ref={heroVideoRef}
+            className="hero-image"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/hero-poster.jpg"
+            width={1280}
+            height={720}
+            aria-label="Cinematic aerial footage of Arizona's desert landscapes"
+          >
+            <source src="/hero-video.mp4" type="video/mp4" />
+            <img src="/hero-poster.jpg" alt="Aerial view of Arizona's Sonoran Desert landscape at golden hour with dramatic canyon formations" className="hero-image" />
+          </video>
           <div className="hero-overlay" />
         </div>
         <div className="hero-content">

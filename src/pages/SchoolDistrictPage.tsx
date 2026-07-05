@@ -146,7 +146,7 @@ export default function SchoolDistrictPage() {
           <div className="stat-label">Zip Codes Served</div>
         </div>
       </div>
-      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#888' }}>
+      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#8D847A' }}>
         Market data last updated: {getMarketPricesLastUpdated()}
       </div>
 

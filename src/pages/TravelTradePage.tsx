@@ -8,8 +8,8 @@ import AnswerBlock from '../components/AnswerBlock';
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div style={{ marginBottom: 32 }}>
-      <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#1A1A1A', marginBottom: 12 }}>{children}</h2>
-      <div style={{ width: 40, height: 3, background: '#D32F2F' }} />
+      <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#211B24', marginBottom: 12 }}>{children}</h2>
+      <div style={{ width: 40, height: 3, background: '#C1502E' }} />
     </div>
   );
 }
@@ -128,7 +128,7 @@ const bodyText: React.CSSProperties = {
   fontFamily: 'var(--font-body)',
   fontSize: 16,
   lineHeight: 1.8,
-  color: '#444',
+  color: '#4A4239',
 };
 
 const wideContainer: React.CSSProperties = {
@@ -148,8 +148,8 @@ const cardGrid: React.CSSProperties = {
 };
 
 const calloutBox: React.CSSProperties = {
-  borderLeft: '4px solid #D32F2F',
-  background: '#FFF8F6',
+  borderLeft: '4px solid #C1502E',
+  background: '#FAF3EB',
   padding: '24px 28px',
   borderRadius: '0 12px 12px 0',
 };
@@ -220,7 +220,7 @@ export default function TravelTradePage() {
       </div>
 
       {/* ─── 2. Key Tourism Statistics ─── */}
-      <div style={{ background: '#FAFAFA', padding: '48px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '48px 24px' }}>
         <div style={wideContainer}>
           <SectionHeading>Key Tourism Statistics</SectionHeading>
           <div style={cardGrid}>
@@ -240,7 +240,7 @@ export default function TravelTradePage() {
                     fontFamily: 'var(--font-heading)',
                     fontSize: 32,
                     fontWeight: 800,
-                    color: '#D32F2F',
+                    color: '#C1502E',
                     marginBottom: 8,
                   }}
                 >
@@ -251,7 +251,7 @@ export default function TravelTradePage() {
                     fontFamily: 'var(--font-body)',
                     fontSize: 14,
                     fontWeight: 600,
-                    color: '#666',
+                    color: '#6B6259',
                     textTransform: 'uppercase',
                     letterSpacing: '0.5px',
                   }}
@@ -293,7 +293,7 @@ export default function TravelTradePage() {
                       fontFamily: 'var(--font-heading)',
                       fontSize: 18,
                       fontWeight: 700,
-                      color: '#1A1A1A',
+                      color: '#211B24',
                       marginBottom: 4,
                     }}
                   >
@@ -303,7 +303,7 @@ export default function TravelTradePage() {
                     style={{
                       fontFamily: 'var(--font-body)',
                       fontSize: 13,
-                      color: '#999',
+                      color: '#9A9188',
                       marginBottom: 12,
                       textTransform: 'uppercase',
                       letterSpacing: '0.3px',
@@ -322,7 +322,7 @@ export default function TravelTradePage() {
       </div>
 
       {/* ─── 4. Arizona Office of Tourism Resources ─── */}
-      <div style={{ background: '#FAFAFA', padding: '48px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '48px 24px' }}>
         <div style={narrowContainer}>
           <SectionHeading>Arizona Office of Tourism Resources</SectionHeading>
           <p style={{ ...bodyText, marginBottom: 24 }}>
@@ -330,7 +330,7 @@ export default function TravelTradePage() {
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
             <div style={calloutBox}>
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#1A1A1A', marginBottom: 8 }}>
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 Official Tourism Office
               </h3>
               <p style={{ ...bodyText, fontSize: 15, margin: 0 }}>
@@ -338,7 +338,7 @@ export default function TravelTradePage() {
               </p>
             </div>
             <div style={calloutBox}>
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#1A1A1A', marginBottom: 8 }}>
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 State Visitor Guide
               </h3>
               <p style={{ ...bodyText, fontSize: 15, margin: 0 }}>
@@ -346,7 +346,7 @@ export default function TravelTradePage() {
               </p>
             </div>
             <div style={calloutBox}>
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#1A1A1A', marginBottom: 8 }}>
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 Visit Arizona Consumer Site
               </h3>
               <p style={{ ...bodyText, fontSize: 15, margin: 0 }}>
@@ -354,7 +354,7 @@ export default function TravelTradePage() {
               </p>
             </div>
             <div style={calloutBox}>
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#1A1A1A', marginBottom: 8 }}>
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 Arizona Tourism University (ATU)
               </h3>
               <p style={{ ...bodyText, fontSize: 15, margin: 0 }}>
@@ -362,7 +362,7 @@ export default function TravelTradePage() {
               </p>
             </div>
             <div style={calloutBox}>
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#1A1A1A', marginBottom: 8 }}>
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 Trade Shows & Events
               </h3>
               <p style={{ ...bodyText, fontSize: 15, margin: 0 }}>
@@ -410,7 +410,7 @@ export default function TravelTradePage() {
                 to="/explore"
                 style={{
                   display: 'inline-block',
-                  background: '#D32F2F',
+                  background: '#C1502E',
                   color: 'white',
                   padding: '14px 36px',
                   borderRadius: 50,
@@ -429,7 +429,7 @@ export default function TravelTradePage() {
       </div>
 
       {/* ─── 7. FAQ ─── */}
-      <div style={{ background: '#FAFAFA', padding: '48px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '48px 24px' }}>
         <div style={narrowContainer}>
           <div className="explore-faq-section">
             <h2 className="explore-faq-title">Frequently Asked Questions</h2>

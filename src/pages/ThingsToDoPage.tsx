@@ -74,7 +74,7 @@ export default function ThingsToDoPage() {
       {/* Intro Section */}
       <div className="explore-section">
         <div className="explore-container-narrow">
-          <p style={{ fontSize: '18px', lineHeight: 1.8, color: '#333', marginBottom: 24 }}>
+          <p style={{ fontSize: '18px', lineHeight: 1.8, color: '#39322C', marginBottom: 24 }}>
             Arizona is one of the most dynamic destinations in the American Southwest, offering an extraordinary range of activities for residents and visitors alike. With more than 300 days of sunshine each year, the state provides a year-round playground for outdoor enthusiasts, culture seekers, and families. The Phoenix metropolitan area alone encompasses over 41,000 acres of desert parks and mountain preserves, making it one of the largest urban park systems in the country. Beyond the trails, Arizona is home to world-class golf with over 300 courses statewide, a thriving arts and cultural scene anchored by institutions like the Phoenix Art Museum, Scottsdale Museum of Contemporary Art, and Heard Museum, and a full lineup of professional sports teams spanning the NFL, NBA, NHL, and MLB. Outdoor recreation stretches from desert hiking and rock climbing in the Sonoran lowlands to skiing and snowboarding at Arizona Snowbowl in Flagstaff. Whether you are looking for a relaxing spa weekend in Scottsdale, an adrenaline-fueled off-road adventure in the Superstition Mountains, or a family-friendly day at one of the state's many water parks and botanical gardens, Arizona delivers experiences that are hard to match anywhere else in the country.
           </p>
         </div>

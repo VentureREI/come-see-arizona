@@ -184,9 +184,9 @@ function PlaceCard({ name, location, description, image }: { name: string; locat
         <img src={image} alt={name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
       </div>
       <div style={{ padding: 20 }}>
-        <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 600, color: '#1A1A1A', marginBottom: 4 }}>{name}</h3>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: '#888', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 8 }}>{location}</p>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: '#555', lineHeight: 1.6 }}>{description}</p>
+        <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 600, color: '#211B24', marginBottom: 4 }}>{name}</h3>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: '#8D847A', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 8 }}>{location}</p>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: '#5C5348', lineHeight: 1.6 }}>{description}</p>
       </div>
     </div>
   );
@@ -195,8 +195,8 @@ function PlaceCard({ name, location, description, image }: { name: string; locat
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div style={{ marginBottom: 32 }}>
-      <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#1A1A1A', marginBottom: 12 }}>{children}</h2>
-      <div style={{ width: 40, height: 3, background: '#D32F2F' }} />
+      <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#211B24', marginBottom: 12 }}>{children}</h2>
+      <div style={{ width: 40, height: 3, background: '#C1502E' }} />
     </div>
   );
 }
@@ -255,17 +255,17 @@ export default function EatAndDrinkPage() {
       {/* 1. Intro */}
       <div style={{ background: '#fff' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '48px 24px' }}>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 18, lineHeight: 1.8, color: '#333' }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 18, lineHeight: 1.8, color: '#39322C' }}>
             Arizona has evolved into one of the most exciting food destinations in the American Southwest. The state's culinary identity draws from its deep Mexican and Native American roots, its access to fresh Sonoran Desert ingredients, and a new generation of chefs who are redefining what Southwestern cuisine can be. Whether you are looking for a casual taco spot, a world-class fine dining experience, a craft brewery taproom, or a sun-drenched patio brunch, Arizona delivers. The Phoenix metropolitan area alone has seen an explosion of chef-driven restaurants, creative food halls, and nationally recognized dining experiences over the past decade. Beyond the Valley, Tucson holds a UNESCO City of Gastronomy designation - the first in the United States - and the Verde Valley wine trail has put Arizona on the map for wine lovers. This guide covers the best of what the state has to offer for food and drink.
           </p>
         </div>
       </div>
 
       {/* 2. Best Restaurants by City */}
-      <div style={{ background: '#FAFAFA', padding: '64px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Best Restaurants by City</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32 }}>
             Arizona's dining scene is spread across the entire Valley and beyond. Each city brings its own flavor, from the chef-driven restaurants of downtown Phoenix to the upscale steakhouses of Scottsdale and the heritage Mexican cuisine of Tucson. Here is a city-by-city breakdown of the restaurants worth seeking out.
           </p>
 
@@ -278,9 +278,9 @@ export default function EatAndDrinkPage() {
                 style={{
                   borderRadius: 24,
                   padding: '10px 24px',
-                  border: '2px solid #D32F2F',
-                  background: activeCity === tab.key ? '#D32F2F' : 'white',
-                  color: activeCity === tab.key ? 'white' : '#D32F2F',
+                  border: '2px solid #C1502E',
+                  background: activeCity === tab.key ? '#C1502E' : 'white',
+                  color: activeCity === tab.key ? 'white' : '#C1502E',
                   cursor: 'pointer',
                   fontFamily: 'var(--font-body)',
                   fontSize: 14,
@@ -308,10 +308,10 @@ export default function EatAndDrinkPage() {
           <SectionHeading>Mexican and Southwestern Cuisine</SectionHeading>
           <div style={{ display: 'flex', gap: 48, flexWrap: 'wrap' as const, alignItems: 'flex-start' }}>
             <div style={{ flex: '1 1 400px', minWidth: 300 }}>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 20 }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 20 }}>
                 Mexican and Southwestern cuisine is the beating heart of Arizona's food identity. The state sits at the crossroads of Sonoran, Chihuahuan, and broader Mexican culinary traditions, and its proximity to the border means ingredients and techniques flow freely. <strong>Barrio Cafe</strong>, led by Chef Silvana Salcido Esparza, has been a torchbearer for elevated Mexican cuisine in Phoenix for over two decades, earning a James Beard semifinalist nod and national recognition for dishes like the guacamole tableside and cochinita pibil. <strong>Cocina Madrigal</strong> on 16th Street is known for its bold, inventive Mexican fare and colorful atmosphere. <strong>Los Sombreros</strong> in Scottsdale serves refined Oaxacan and central Mexican cuisine in a warm, hacienda-style setting.
               </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 20 }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 20 }}>
                 <strong>Carolina's Mexican Food</strong> is a Phoenix institution beloved for its paper-thin flour tortillas and no-frills breakfast burritos. <strong>Tacos Chiwas</strong> brings the flavors of Chihuahua, Mexico to the Valley with handmade tortillas and perfectly seasoned meats. <strong>El Chorro</strong>, nestled against the base of Camelback Mountain, offers Southwestern-inspired fine dining in one of the most scenic settings in the Valley. In Tucson, <strong>El Guero Canelo</strong> earned a James Beard Award for its Sonoran hot dogs wrapped in bacon and topped with pinto beans, and <strong>Mi Nidito</strong> has served generations of Tucsonans with its hearty, traditional plates.
               </p>
             </div>
@@ -328,10 +328,10 @@ export default function EatAndDrinkPage() {
       </div>
 
       {/* 4. Fine Dining */}
-      <div style={{ background: '#FAFAFA', padding: '64px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Fine Dining</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32 }}>
             Arizona's fine dining scene has matured into one of the most impressive in the Southwest. From tasting menus in Cave Creek to Native American-inspired cuisine at Wild Horse Pass, the state offers world-class culinary experiences in stunning settings.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: 24 }}>
@@ -346,7 +346,7 @@ export default function EatAndDrinkPage() {
       <div style={{ background: '#fff', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Rooftop Bars and Lounges</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32 }}>
             Arizona's warm climate and stunning sunsets make it a natural fit for rooftop dining and drinking. The Valley's rooftop bar scene has grown significantly in recent years, with options ranging from laid-back brewery patios to upscale cocktail lounges.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: 24, marginBottom: 32 }}>
@@ -359,7 +359,7 @@ export default function EatAndDrinkPage() {
               to="/articles/phoenix-best-rooftop-bars"
               style={{
                 display: 'inline-block',
-                background: '#D32F2F',
+                background: '#C1502E',
                 color: 'white',
                 padding: '14px 32px',
                 borderRadius: 28,
@@ -376,10 +376,10 @@ export default function EatAndDrinkPage() {
       </div>
 
       {/* 6. Craft Breweries */}
-      <div style={{ background: '#FAFAFA', padding: '64px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Craft Breweries</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32 }}>
             Arizona's craft beer scene has exploded over the past decade, with dozens of independent breweries operating across the Valley and beyond. From locally foraged ingredients to historic creamery buildings, each brewery brings its own character.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: 24 }}>
@@ -404,10 +404,10 @@ export default function EatAndDrinkPage() {
               />
             </div>
             <div style={{ flex: '1 1 400px', minWidth: 300 }}>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 20 }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 20 }}>
                 Arizona's wine industry has grown remarkably, and the state now produces award-winning wines across several distinct regions. The <strong>Verde Valley wine trail</strong> near Sedona is the most popular destination for wine lovers, with tasting rooms clustered around the towns of Cornville, Page Springs, and Cottonwood. <strong>Page Springs Cellars</strong> is the largest and one of the most acclaimed, producing Rhone-style wines with grapes grown in the region's unique high-desert terroir. <strong>Javelina Leap Vineyard &amp; Winery</strong> offers a scenic tasting experience along Oak Creek. <strong>Oak Creek Vineyards &amp; Winery</strong> and <strong>Alcantara Vineyards</strong> round out the trail with beautiful grounds and well-crafted wines.
               </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 20 }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 20 }}>
                 In the Valley, <strong>Merkin Vineyards Tasting Room</strong> in Old Town Scottsdale - owned by musician Maynard James Keenan of Tool - brings Verde Valley wines to the city. <strong>LDV Winery</strong> has a Scottsdale tasting room showcasing wines from its estate vineyards in the Willcox AVA. The <strong>Willcox</strong> and <strong>Sonoita</strong> wine regions in southern Arizona are home to a growing number of vineyards, benefiting from high elevation, warm days, and cool nights that produce excellent varietals.
               </p>
             </div>
@@ -416,10 +416,10 @@ export default function EatAndDrinkPage() {
       </div>
 
       {/* 8. Coffee Culture */}
-      <div style={{ background: '#FAFAFA', padding: '64px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Coffee Culture</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32 }}>
             Arizona's specialty coffee scene is thriving, with locally owned roasters and cafes that rival the best on the West Coast. From third-wave pioneers to minimalist design-forward spaces, the Valley's coffee culture has come into its own.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: 24 }}>
@@ -434,7 +434,7 @@ export default function EatAndDrinkPage() {
       <div style={{ background: '#fff', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Food Halls and Markets</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32 }}>
             The food hall movement has taken hold in Arizona, giving local chefs and food entrepreneurs a platform to showcase their concepts in communal, vibrant spaces.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: 24 }}>
@@ -446,10 +446,10 @@ export default function EatAndDrinkPage() {
       </div>
 
       {/* 10. Best Brunch */}
-      <div style={{ background: '#FAFAFA', padding: '64px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Best Brunch Spots</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32 }}>
             Brunch is practically a religion in Arizona, fueled by the state's year-round patio weather and a deep bench of dedicated breakfast and brunch restaurants.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: 24 }}>
@@ -464,7 +464,7 @@ export default function EatAndDrinkPage() {
       <div style={{ background: '#fff', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Late Night Eats</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32 }}>
             When the sun goes down and the restaurants close, Arizona still has options for those craving a late-night meal.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: 24 }}>
@@ -478,17 +478,17 @@ export default function EatAndDrinkPage() {
       {/* 12. Incyte Realty */}
       <div style={{ background: '#FAF5F0', padding: '64px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#1A1A1A', marginBottom: 16 }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#211B24', marginBottom: 16 }}>
             Love Arizona's Food Scene? Make It Your Neighborhood.
           </h2>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 20 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 20 }}>
             Many people who visit Arizona fall in love with the food and decide to make the state home. Whether you want to live within walking distance of the restaurants in downtown Phoenix, near the craft breweries of Gilbert's Heritage District, or close to the brunch spots of Arcadia, <strong>{siteConfig.brokerageName}</strong> can help you find the right home in the right neighborhood. <strong>{siteConfig.leaderName}</strong>, with {siteConfig.leaderCredential}, specializes in matching buyers with communities that fit their lifestyle - including proximity to the dining, nightlife, and culinary experiences that make Arizona special.
           </p>
           <Link
             to="/explore"
             style={{
               display: 'inline-block',
-              background: '#D32F2F',
+              background: '#C1502E',
               color: 'white',
               padding: '14px 32px',
               borderRadius: 28,
@@ -505,7 +505,7 @@ export default function EatAndDrinkPage() {
       </div>
 
       {/* 13. FAQ */}
-      <div style={{ background: '#FAFAFA', padding: '64px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '64px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <div className="explore-faq-section">
             <h2 className="explore-faq-title">Frequently Asked Questions</h2>

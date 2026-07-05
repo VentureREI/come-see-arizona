@@ -166,7 +166,7 @@ export default function NeighborhoodPage() {
           <div className="stat-label">Home Types</div>
         </div>
       </div>
-      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#888' }}>
+      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#8D847A' }}>
         Market data last updated: {getMarketPricesLastUpdated()}
       </div>
 

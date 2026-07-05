@@ -13,7 +13,7 @@ export default function AnswerBlock({ answer }: AnswerBlockProps) {
         fontFamily: 'var(--font-body)',
         fontSize: 18,
         lineHeight: 1.7,
-        color: '#333',
+        color: '#39322C',
         fontWeight: 400,
       }}>
         {answer}

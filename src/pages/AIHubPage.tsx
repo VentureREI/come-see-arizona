@@ -193,7 +193,7 @@ export default function AIHubPage() {
             {CITATION_EXAMPLES.map(ex => (
               <div key={ex.topic} style={{
                 borderLeft: '3px solid var(--color-primary)',
-                background: '#FAFAFA',
+                background: '#F7F1E8',
                 borderRadius: '0 10px 10px 0',
                 padding: '14px 18px',
               }}>

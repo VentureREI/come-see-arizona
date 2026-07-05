@@ -177,7 +177,7 @@ export default function CountyPage() {
           <div className="stat-label">School Districts</div>
         </div>
       </div>
-      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#888' }}>
+      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#8D847A' }}>
         Market data last updated: {getMarketPricesLastUpdated()}
       </div>
 

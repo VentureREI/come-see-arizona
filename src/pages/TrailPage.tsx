@@ -25,8 +25,8 @@ function getDifficultyColor(difficulty: string): string {
   const d = difficulty.toLowerCase();
   if (d === 'easy') return '#2e7d32';
   if (d === 'moderate') return '#1565c0';
-  if (d === 'hard') return '#e65100';
-  if (d.includes('very hard') || d.includes('expert') || d.includes('strenuous')) return '#c62828';
+  if (d === 'hard') return '#9A3B26';
+  if (d.includes('very hard') || d.includes('expert') || d.includes('strenuous')) return '#A84428';
   return '#1565c0';
 }
 
@@ -251,20 +251,20 @@ export default function TrailPage() {
             <div className="stat-label">Estimated Time</div>
           </div>
           <div className="explore-stat-card">
-            <div className="stat-number" style={{ color: trail.dogFriendly ? '#2e7d32' : '#c62828' }}>
+            <div className="stat-number" style={{ color: trail.dogFriendly ? '#2e7d32' : '#A84428' }}>
               {trail.dogFriendly ? '\u2713 Yes' : '\u2717 No'}
             </div>
             <div className="stat-label">Dog Friendly</div>
           </div>
           <div className="explore-stat-card">
-            <div className="stat-number" style={{ color: trail.feeRequired ? '#e65100' : '#2e7d32' }}>
+            <div className="stat-number" style={{ color: trail.feeRequired ? '#9A3B26' : '#2e7d32' }}>
               {trail.feeAmount ? trail.feeAmount : 'Free'}
             </div>
             <div className="stat-label">Fee Required</div>
           </div>
         </div>
       </div>
-      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#888' }}>
+      <div style={{ textAlign: 'center', padding: '8px 24px', fontFamily: 'var(--font-body)', fontSize: 13, color: '#8D847A' }}>
         Trail conditions last checked: {getTrailConditionsLastUpdated()}
       </div>
 

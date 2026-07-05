@@ -6,8 +6,8 @@ import AnswerBlock from '../components/AnswerBlock';
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div style={{ marginBottom: 32 }}>
-      <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#1A1A1A', marginBottom: 12 }}>{children}</h2>
-      <div style={{ width: 40, height: 3, background: '#D32F2F' }} />
+      <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#211B24', marginBottom: 12 }}>{children}</h2>
+      <div style={{ width: 40, height: 3, background: '#C1502E' }} />
     </div>
   );
 }
@@ -133,7 +133,7 @@ export default function AboutArizonaTourismPage() {
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>About Come See Arizona</SectionHeading>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 40, alignItems: 'flex-start' }}>
-            <div style={{ flex: '1 1 400px', fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
+            <div style={{ flex: '1 1 400px', fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239' }}>
               <p>
                 Come See Arizona is the most comprehensive travel and relocation resource for the Grand Canyon State. Our mission is to help visitors, newcomers, and lifelong residents discover everything Arizona has to offer - from world-famous landmarks to hidden neighborhood gems.
               </p>
@@ -159,7 +159,7 @@ export default function AboutArizonaTourismPage() {
       </div>
 
       {/* Section 2: Arizona Tourism By The Numbers */}
-      <div style={{ background: '#FAFAFA', padding: '48px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '48px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Arizona Tourism By The Numbers</SectionHeading>
           <div
@@ -179,10 +179,10 @@ export default function AboutArizonaTourismPage() {
                   textAlign: 'center',
                 }}
               >
-                <div style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700, color: '#D32F2F' }}>
+                <div style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700, color: '#C1502E' }}>
                   {stat.value}
                 </div>
-                <div style={{ fontFamily: 'var(--font-body)', fontSize: 12, textTransform: 'uppercase', color: '#888', marginTop: 8 }}>
+                <div style={{ fontFamily: 'var(--font-body)', fontSize: 12, textTransform: 'uppercase', color: '#8D847A', marginTop: 8 }}>
                   {stat.label}
                 </div>
               </div>
@@ -218,14 +218,14 @@ export default function AboutArizonaTourismPage() {
                     width: 12,
                     height: 12,
                     borderRadius: '50%',
-                    background: '#D32F2F',
+                    background: '#C1502E',
                     flexShrink: 0,
                   }}
                 />
                 {/* Content */}
-                <div style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
-                  <strong style={{ color: '#1A1A1A', fontFamily: 'var(--font-heading)' }}>{event.year}</strong>
-                  <span style={{ margin: '0 8px', color: '#ccc' }}> -</span>
+                <div style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239' }}>
+                  <strong style={{ color: '#211B24', fontFamily: 'var(--font-heading)' }}>{event.year}</strong>
+                  <span style={{ margin: '0 8px', color: '#CFC7BC' }}> -</span>
                   {event.description}
                 </div>
               </div>
@@ -235,10 +235,10 @@ export default function AboutArizonaTourismPage() {
       </div>
 
       {/* Section 4: Arizona Office of Tourism */}
-      <div style={{ background: '#FAFAFA', padding: '48px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '48px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <SectionHeading>Arizona Office of Tourism</SectionHeading>
-          <div style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
+          <div style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239' }}>
             <p>
               The Arizona Office of Tourism (AOT) is the state agency responsible for marketing Arizona as a travel destination to domestic and international audiences. Operating under the Visit Arizona brand, AOT coordinates campaigns, research, and partnerships that support the state's $25 billion tourism economy.
             </p>
@@ -265,7 +265,7 @@ export default function AboutArizonaTourismPage() {
               fontFamily: 'var(--font-body)',
               fontSize: 16,
               lineHeight: 1.8,
-              color: '#444',
+              color: '#4A4239',
             }}
           >
             <p>
@@ -282,10 +282,10 @@ export default function AboutArizonaTourismPage() {
       </div>
 
       {/* Section 6: Our Editorial Standards */}
-      <div style={{ background: '#FAFAFA', padding: '48px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '48px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <SectionHeading>Our Editorial Standards</SectionHeading>
-          <div style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
+          <div style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239' }}>
             <p>
               Every page on Come See Arizona is built on real data, not guesswork. We pull from authoritative sources including MLS real estate listings, Eventbrite and PredictHQ for events, USFS trail databases for hiking information, and official school district records for education data.
             </p>
@@ -314,19 +314,19 @@ export default function AboutArizonaTourismPage() {
               <div
                 key={card.title}
                 style={{
-                  background: '#FAFAFA',
+                  background: '#F7F1E8',
                   borderRadius: 12,
                   padding: 24,
                 }}
               >
                 <div style={{ fontSize: 28, marginBottom: 12 }}>{card.icon}</div>
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 700, color: '#1A1A1A', marginBottom: 8 }}>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                   {card.title}
                 </h3>
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, lineHeight: 1.6, color: '#666', marginBottom: 8 }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, lineHeight: 1.6, color: '#6B6259', marginBottom: 8 }}>
                   {card.text}
                 </p>
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 600, color: '#D32F2F' }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 600, color: '#C1502E' }}>
                   {card.detail}
                 </p>
               </div>
@@ -339,7 +339,7 @@ export default function AboutArizonaTourismPage() {
       <div style={{ background: '#FAF5F0', padding: '48px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <SectionHeading>About This Guide</SectionHeading>
-          <div style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
+          <div style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239' }}>
             <p>
               Come See Arizona is published by <strong>{siteConfig.brokerageName}</strong>, one of Arizona's most experienced real estate teams. Led by <strong>{siteConfig.leaderName}</strong>, with {siteConfig.leaderCredential}, {siteConfig.brokerageName} combines deep local knowledge with cutting-edge technology to serve buyers, sellers, and investors across the Phoenix metro area and beyond.
             </p>
@@ -351,7 +351,7 @@ export default function AboutArizonaTourismPage() {
                 to="/explore"
                 style={{
                   display: 'inline-block',
-                  background: '#D32F2F',
+                  background: '#C1502E',
                   color: '#fff',
                   fontFamily: 'var(--font-heading)',
                   fontWeight: 700,
@@ -369,7 +369,7 @@ export default function AboutArizonaTourismPage() {
       </div>
 
       {/* Section 9: FAQ */}
-      <div style={{ background: '#FAFAFA', padding: '48px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '48px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <div className="explore-faq-section">
             <h2 className="explore-faq-title">Frequently Asked Questions</h2>

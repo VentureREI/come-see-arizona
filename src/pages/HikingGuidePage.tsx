@@ -52,10 +52,10 @@ function TrailCard({ trail }: { trail: Trail }) {
         <p style={{ fontSize: '14px', color: '#b45309', fontWeight: 600, margin: '4px 0 8px' }}>
           {trail.distance} · {trail.elevationGain} gain · {trail.difficulty}
         </p>
-        <p style={{ fontSize: '14px', color: '#666', margin: '0 0 8px', lineHeight: 1.6 }}>
+        <p style={{ fontSize: '14px', color: '#6B6259', margin: '0 0 8px', lineHeight: 1.6 }}>
           {trail.description.slice(0, 150)}...
         </p>
-        <span style={{ fontSize: '14px', color: '#c2410c', fontWeight: 600 }}>
+        <span style={{ fontSize: '14px', color: '#B04A2A', fontWeight: 600 }}>
           View Trail Guide &rarr;
         </span>
       </div>
@@ -125,7 +125,7 @@ export default function HikingGuidePage() {
       {/* B) Introduction */}
       <div className="explore-section">
         <div className="explore-container-narrow">
-          <p style={{ fontSize: '18px', lineHeight: 1.8, color: '#333', marginBottom: 24 }}>
+          <p style={{ fontSize: '18px', lineHeight: 1.8, color: '#39322C', marginBottom: 24 }}>
             Arizona offers more than 41,000 acres of desert parks and mountain preserves with over
             200 miles of trails in Phoenix alone, plus world-class hiking destinations in Sedona,
             Flagstaff, Tucson, and the Grand Canyon. From easy desert strolls through saguaro forests
@@ -134,7 +134,7 @@ export default function HikingGuidePage() {
             recommendations, and safety information based on local expertise.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#444', marginBottom: 16 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#4A4239', marginBottom: 16 }}>
             Whether you are a seasoned peak bagger chasing every summit in the Superstition Wilderness or a
             first-time visitor wondering where to catch your first desert sunrise from a ridgeline, this
             resource was written for you. We have hiked every trail listed here, some of them dozens of
@@ -145,7 +145,7 @@ export default function HikingGuidePage() {
             that only come from years of local experience.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#444', marginBottom: 32 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#4A4239', marginBottom: 32 }}>
             Arizona hiking is unlike anything else in the country. In a single weekend you can scramble
             across exposed granite slabs in the McDowell Mountains at sunrise, wander through red rock
             canyons in Sedona by midday, and finish the afternoon on a pine-shaded trail in the
@@ -156,18 +156,18 @@ export default function HikingGuidePage() {
 
           {/* Jump to Section Nav */}
           <nav style={{ background: '#faf5ee', borderRadius: 12, padding: '24px 32px', marginBottom: 16 }}>
-            <h3 style={{ fontSize: '16px', fontWeight: 700, marginBottom: 12, color: '#1a1a1a' }}>
+            <h3 style={{ fontSize: '16px', fontWeight: 700, marginBottom: 12, color: '#211B24' }}>
               Jump to Section
             </h3>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 8 }}>
-              <li><a href="#phoenix" style={{ color: '#c2410c', textDecoration: 'none', fontSize: '15px' }}>Phoenix Metro Trails</a></li>
-              <li><a href="#sedona" style={{ color: '#c2410c', textDecoration: 'none', fontSize: '15px' }}>Sedona Trails</a></li>
-              <li><a href="#tucson" style={{ color: '#c2410c', textDecoration: 'none', fontSize: '15px' }}>Tucson and Southern Arizona Trails</a></li>
-              <li><a href="#flagstaff" style={{ color: '#c2410c', textDecoration: 'none', fontSize: '15px' }}>Flagstaff and Northern Arizona Trails</a></li>
-              <li><a href="#grand-canyon" style={{ color: '#c2410c', textDecoration: 'none', fontSize: '15px' }}>Grand Canyon Trails</a></li>
-              <li><a href="#safety" style={{ color: '#c2410c', textDecoration: 'none', fontSize: '15px' }}>Desert Safety Guide</a></li>
-              <li><a href="#seasonal" style={{ color: '#c2410c', textDecoration: 'none', fontSize: '15px' }}>Seasonal Hiking Calendar</a></li>
-              <li><a href="#faq" style={{ color: '#c2410c', textDecoration: 'none', fontSize: '15px' }}>Frequently Asked Questions</a></li>
+              <li><a href="#phoenix" style={{ color: '#B04A2A', textDecoration: 'none', fontSize: '15px' }}>Phoenix Metro Trails</a></li>
+              <li><a href="#sedona" style={{ color: '#B04A2A', textDecoration: 'none', fontSize: '15px' }}>Sedona Trails</a></li>
+              <li><a href="#tucson" style={{ color: '#B04A2A', textDecoration: 'none', fontSize: '15px' }}>Tucson and Southern Arizona Trails</a></li>
+              <li><a href="#flagstaff" style={{ color: '#B04A2A', textDecoration: 'none', fontSize: '15px' }}>Flagstaff and Northern Arizona Trails</a></li>
+              <li><a href="#grand-canyon" style={{ color: '#B04A2A', textDecoration: 'none', fontSize: '15px' }}>Grand Canyon Trails</a></li>
+              <li><a href="#safety" style={{ color: '#B04A2A', textDecoration: 'none', fontSize: '15px' }}>Desert Safety Guide</a></li>
+              <li><a href="#seasonal" style={{ color: '#B04A2A', textDecoration: 'none', fontSize: '15px' }}>Seasonal Hiking Calendar</a></li>
+              <li><a href="#faq" style={{ color: '#B04A2A', textDecoration: 'none', fontSize: '15px' }}>Frequently Asked Questions</a></li>
             </ul>
           </nav>
         </div>
@@ -183,7 +183,7 @@ export default function HikingGuidePage() {
         trails={byRegion.phoenix}
         intro={
           <>
-            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#444', marginBottom: 16 }}>
+            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#4A4239', marginBottom: 16 }}>
               The Phoenix metropolitan area is home to one of the most extensive urban trail systems
               in the United States. The city of Phoenix alone maintains more than 200 miles of trails
               across its desert parks and mountain preserves, including iconic destinations like
@@ -193,7 +193,7 @@ export default function HikingGuidePage() {
               than 225 miles of trails, while the Superstition Mountains east of Mesa offer some of
               the most dramatic and challenging hiking in the entire state.
             </p>
-            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#444', marginBottom: 24 }}>
+            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#4A4239', marginBottom: 24 }}>
               Phoenix hiking is defined by its extremes. The desert floor sits around 1,100 feet in
               elevation, and summer temperatures regularly exceed 110 degrees Fahrenheit, making
               heat management the single most important factor in trail selection and timing. From
@@ -213,7 +213,7 @@ export default function HikingGuidePage() {
         trails={byRegion.sedona}
         intro={
           <>
-            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#444', marginBottom: 16 }}>
+            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#4A4239', marginBottom: 16 }}>
               Sedona sits at 4,350 feet in elevation at the southern edge of Oak Creek Canyon,
               surrounded by towering red rock formations that have made it one of the most
               photographed landscapes in the American West. The trail network here is exceptional,
@@ -222,7 +222,7 @@ export default function HikingGuidePage() {
               Devil's Bridge, and Bell Rock draw visitors from around the globe, but dozens of
               quieter routes offer solitude and equally stunning scenery just minutes from town.
             </p>
-            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#444', marginBottom: 24 }}>
+            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#4A4239', marginBottom: 24 }}>
               Sedona's moderate elevation means hiking is comfortable for a longer season than in
               Phoenix, though summer afternoons can still reach the low 100s. The red rock trails
               are best experienced in the golden light of early morning or late afternoon, when the
@@ -244,7 +244,7 @@ export default function HikingGuidePage() {
         trails={byRegion.tucson}
         intro={
           <>
-            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#444', marginBottom: 16 }}>
+            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#4A4239', marginBottom: 16 }}>
               Tucson is ringed by five mountain ranges that locals call the Sky Islands, and the
               hiking here spans an astonishing range of ecosystems within short distances. Saguaro
               National Park, split into two districts flanking the city on the east and west, protects
@@ -253,7 +253,7 @@ export default function HikingGuidePage() {
               climb from cactus-studded desert at 2,500 feet to mixed conifer forest at 9,157 feet
               on Mount Lemmon, passing through five distinct biome zones along the way.
             </p>
-            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#444', marginBottom: 24 }}>
+            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#4A4239', marginBottom: 24 }}>
               Southern Arizona also includes some of the state's most underrated hiking destinations.
               The Santa Rita Mountains south of Tucson are home to Madera Canyon, a world-renowned
               birding spot with excellent trails through oak woodland and grassland. Chiricahua
@@ -274,7 +274,7 @@ export default function HikingGuidePage() {
         trails={byRegion.flagstaff}
         intro={
           <>
-            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#444', marginBottom: 16 }}>
+            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#4A4239', marginBottom: 16 }}>
               Flagstaff sits at 7,000 feet in the largest contiguous ponderosa pine forest in the
               world, and the hiking here could not be more different from the desert trails below.
               Humphreys Peak, the highest point in Arizona at 12,637 feet, anchors the San Francisco
@@ -283,7 +283,7 @@ export default function HikingGuidePage() {
               of miles of trails through meadows, volcanic landscapes, and ancient ruins, while the
               Kachina Peaks Wilderness protects fragile alpine tundra found nowhere else in the state.
             </p>
-            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#444', marginBottom: 24 }}>
+            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#4A4239', marginBottom: 24 }}>
               Northern Arizona extends well beyond Flagstaff. The Vermilion Cliffs near the Utah
               border include the famous Wave formation (permits required, obtained through a lottery
               system) and Paria Canyon, one of the premier backpacking slot canyons in the Southwest.
@@ -305,7 +305,7 @@ export default function HikingGuidePage() {
         trails={byRegion.grandCanyon}
         intro={
           <>
-            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#444', marginBottom: 16 }}>
+            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#4A4239', marginBottom: 16 }}>
               The Grand Canyon needs no introduction, but it does demand respect. At 277 miles long,
               up to 18 miles wide, and over a mile deep, it is one of the most awe-inspiring
               geological features on the planet. The hiking ranges from easy rim walks with
@@ -314,7 +314,7 @@ export default function HikingGuidePage() {
               feet elevation, is the most accessible starting point, with well-maintained corridor
               trails like Bright Angel and South Kaibab that descend into the inner canyon.
             </p>
-            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#444', marginBottom: 24 }}>
+            <p style={{ fontSize: '16px', lineHeight: 1.7, color: '#4A4239', marginBottom: 24 }}>
               The most important thing to understand about Grand Canyon hiking is that it is the
               reverse of a typical mountain hike. You start at the top and descend into the canyon,
               meaning the hardest part of the hike (the uphill return) comes when you are already
@@ -334,7 +334,7 @@ export default function HikingGuidePage() {
         <div className="explore-container-narrow">
           <h2 className="explore-section-title">Desert Safety Guide</h2>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             Every year, Arizona's deserts claim lives that could have been saved with better
             preparation and a healthy respect for the environment. The Phoenix Fire Department
             responds to more than 200 heat-related hiking rescues annually, and multiple hikers
@@ -345,7 +345,7 @@ export default function HikingGuidePage() {
             before setting foot on any trail in Arizona.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             Heat is the number one danger on Arizona trails and deserves the most attention. When
             air temperatures reach 100 degrees Fahrenheit, the surface temperature of exposed rock
             and sand can exceed 150 degrees, creating a radiant heat effect that overwhelms the
@@ -363,7 +363,7 @@ export default function HikingGuidePage() {
             heat.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             Water is your lifeline in the desert, and most people dramatically underestimate how
             much they need. The general recommendation for hot-weather hiking in Arizona is one to
             two liters of water per hour of activity, depending on temperature, intensity, and your
@@ -379,7 +379,7 @@ export default function HikingGuidePage() {
             short ones.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             The best time to hike in Arizona depends entirely on elevation. In the Phoenix metro
             area and Tucson, the prime hiking season runs from October through April, when
             temperatures are mild, the air is dry, and the desert is at its most inviting. December
@@ -393,7 +393,7 @@ export default function HikingGuidePage() {
             from mid-October to mid-May due to heavy snowfall.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             Arizona is home to a remarkable array of wildlife, and hikers should be prepared to
             encounter animals on virtually every outing. The state hosts 13 species of rattlesnake,
             more than any other state in the country, with the Western Diamondback being the most
@@ -418,7 +418,7 @@ export default function HikingGuidePage() {
             season and are completely harmless to humans despite their intimidating appearance.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             Cactus injuries are one of the most common first-aid situations on Arizona trails, and
             the worst offender by far is the cholla, often called the jumping cactus because its
             barbed segments detach and attach to skin and clothing with the slightest contact. The
@@ -433,7 +433,7 @@ export default function HikingGuidePage() {
             the finer spines known as glochids.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             Flash floods are a serious and often underestimated danger in Arizona, particularly
             during the monsoon season that runs from July through September. Thunderstorms can
             develop rapidly over the mountains and send walls of water roaring through dry washes
@@ -447,7 +447,7 @@ export default function HikingGuidePage() {
             typically develop.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             Valley Fever, known medically as coccidioidomycosis, is a fungal infection caused by
             Coccidioides spores that live in the desert soil throughout the southwestern United
             States. The spores become airborne when soil is disturbed by wind, construction, or
@@ -461,7 +461,7 @@ export default function HikingGuidePage() {
             desert exposure to your doctor so they can test for Valley Fever specifically.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             Every hiker in Arizona should carry the following essentials on every outing, regardless
             of the trail's difficulty or length: at minimum two liters of water (more in warm
             weather), electrolyte supplements, sun protection including a wide-brimmed hat and
@@ -482,7 +482,7 @@ export default function HikingGuidePage() {
         <div className="explore-container-narrow">
           <h2 className="explore-section-title">Seasonal Hiking Calendar</h2>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             <strong>January and February</strong> are peak hiking season in the Phoenix metro area
             and Tucson, with daytime highs in the mid-60s to low 70s and cool, crisp mornings that
             make long desert hikes a pleasure. This is the time to tackle the big Phoenix classics
@@ -494,7 +494,7 @@ export default function HikingGuidePage() {
             require caution and possibly microspikes.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             <strong>March and April</strong> bring the legendary Arizona wildflower season,
             transforming the desert into a stunning display of Mexican gold poppies, lupine, owl
             clover, and brittlebush. The best wildflower hikes are in the Superstition Mountains,
@@ -505,7 +505,7 @@ export default function HikingGuidePage() {
             progresses, though muddy conditions persist on many higher-elevation routes into May.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             <strong>May and June</strong> signal the transition to summer, and desert hiking
             becomes increasingly dangerous as temperatures climb. By late May, Phoenix regularly
             hits triple digits, and only very early morning hikes on shorter, well-shaded trails
@@ -517,7 +517,7 @@ export default function HikingGuidePage() {
             options during this transitional period.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             <strong>July, August, and September</strong> are defined by the North American Monsoon,
             which brings dramatic afternoon thunderstorms, flash flood risks, and a temporary
             cooling to the desert floor. Morning hiking in Phoenix is possible if you start before
@@ -530,7 +530,7 @@ export default function HikingGuidePage() {
             with little warning.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             <strong>October and November</strong> mark the return of prime hiking conditions across
             most of Arizona. The desert cools rapidly in October, with Phoenix highs dropping into
             the comfortable 90s and then the 80s by November. Sedona is at its absolute best during
@@ -542,7 +542,7 @@ export default function HikingGuidePage() {
             dazzling display of yellow and orange, typically peaking in early to mid-October.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             <strong>December</strong> is a wonderful time for desert hiking, with highs in the 60s
             in Phoenix and Tucson and the possibility of rare desert rain that greens up the
             landscape and fills seasonal creeks. The Superstition Mountains, South Mountain, and
@@ -561,7 +561,7 @@ export default function HikingGuidePage() {
         <div className="explore-container-narrow">
           <h2 className="explore-section-title">Hiking and Arizona Real Estate</h2>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             Many of Arizona's most sought-after neighborhoods are located near popular trail
             systems. Properties near Camelback Mountain, the McDowell Sonoran Preserve, and South
             Mountain command premium prices due to trail access. According to Incyte Realty's market
@@ -572,7 +572,7 @@ export default function HikingGuidePage() {
             buyers relocating to the Phoenix metro area.
           </p>
 
-          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#333', marginBottom: 20 }}>
+          <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#39322C', marginBottom: 20 }}>
             If you are considering a move to Arizona and trail access is important to your lifestyle,
             understanding which neighborhoods sit closest to the best hiking is essential. North
             Scottsdale and the DC Ranch community border the McDowell Sonoran Preserve, offering
@@ -593,10 +593,10 @@ export default function HikingGuidePage() {
               marginBottom: 24,
             }}
           >
-            <h3 style={{ fontSize: '18px', fontWeight: 700, marginBottom: 12, color: '#1a1a1a' }}>
+            <h3 style={{ fontSize: '18px', fontWeight: 700, marginBottom: 12, color: '#211B24' }}>
               About This Guide
             </h3>
-            <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444', marginBottom: 16 }}>
+            <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#4A4239', marginBottom: 16 }}>
               This hiking guide is published by Come See Arizona in partnership with Incyte Realty, a
               Phoenix-area brokerage founded by Frank Vazquez. With over 2,400 homes personally sold
               across the metropolitan area, Frank brings deep local knowledge to every aspect of
@@ -606,7 +606,7 @@ export default function HikingGuidePage() {
               that make Arizona one of the best places in the country for people who love to be
               outside.
             </p>
-            <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444', marginBottom: 16 }}>
+            <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#4A4239', marginBottom: 16 }}>
               Whether you are searching for a home near Camelback Mountain, exploring communities
               along the McDowell Sonoran Preserve, or looking for a property with views of the
               Superstition Mountains, Incyte Realty can help you navigate the market and find the
@@ -617,7 +617,7 @@ export default function HikingGuidePage() {
               to="/contact"
               style={{
                 display: 'inline-block',
-                background: '#c2410c',
+                background: '#B04A2A',
                 color: '#fff',
                 padding: '12px 28px',
                 borderRadius: 8,
@@ -639,10 +639,10 @@ export default function HikingGuidePage() {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 32 }}>
             <div>
-              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#1a1a1a', marginBottom: 8 }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 What is the best hike in Arizona for beginners?
               </h3>
-              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444' }}>
+              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#4A4239' }}>
                 For beginners, the Hole in the Rock Trail at Papago Park in Phoenix is an easy,
                 short walk with a rewarding view of the Valley through a natural rock formation.
                 In Sedona, the Bell Rock Pathway offers a relatively flat 3.6-mile loop through
@@ -654,10 +654,10 @@ export default function HikingGuidePage() {
             </div>
 
             <div>
-              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#1a1a1a', marginBottom: 8 }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 What is the hardest hike in Arizona?
               </h3>
-              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444' }}>
+              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#4A4239' }}>
                 The Flatiron via Siphon Draw Trail in the Superstition Mountains is widely
                 considered one of the most challenging day hikes in the Phoenix area, with 5.5
                 miles round trip, nearly 3,000 feet of elevation gain, and exposed Class 3
@@ -670,10 +670,10 @@ export default function HikingGuidePage() {
             </div>
 
             <div>
-              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#1a1a1a', marginBottom: 8 }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 Is it safe to hike in Arizona in the summer?
               </h3>
-              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444' }}>
+              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#4A4239' }}>
                 Summer hiking in Arizona is safe only if you choose appropriate trails and timing.
                 Trails above 7,000 feet in elevation near Flagstaff, Prescott, and Payson remain
                 comfortable through the summer months. In Phoenix and Tucson, hiking in June through
@@ -686,10 +686,10 @@ export default function HikingGuidePage() {
             </div>
 
             <div>
-              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#1a1a1a', marginBottom: 8 }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 What time should I start hiking in Phoenix?
               </h3>
-              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444' }}>
+              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#4A4239' }}>
                 From October through April, starting at or shortly after sunrise provides the best
                 combination of comfortable temperatures, good light for photography, and available
                 parking at popular trailheads. During the hot months of May through September, you
@@ -701,10 +701,10 @@ export default function HikingGuidePage() {
             </div>
 
             <div>
-              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#1a1a1a', marginBottom: 8 }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 Do I need a permit to hike in Sedona?
               </h3>
-              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444' }}>
+              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#4A4239' }}>
                 Most Sedona trailheads require a Red Rock Pass for parking, which costs $5 per day
                 or $15 per week. You can purchase passes at trailhead kiosks, the Sedona Chamber of
                 Commerce, and several local businesses. An America the Beautiful federal lands pass
@@ -716,10 +716,10 @@ export default function HikingGuidePage() {
             </div>
 
             <div>
-              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#1a1a1a', marginBottom: 8 }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 What are the best hiking trails near Scottsdale?
               </h3>
-              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444' }}>
+              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#4A4239' }}>
                 Scottsdale is home to some of the finest desert hiking in the state. Tom's Thumb
                 Trail in the McDowell Sonoran Preserve is a challenging 4.2-mile out-and-back with
                 dramatic rock formations and sweeping views. Pinnacle Peak Trail offers a moderate
@@ -732,10 +732,10 @@ export default function HikingGuidePage() {
             </div>
 
             <div>
-              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#1a1a1a', marginBottom: 8 }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 How much water should I bring hiking in Arizona?
               </h3>
-              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444' }}>
+              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#4A4239' }}>
                 In warm weather, plan to carry one to two liters of water per hour of hiking. Even
                 for a short one-hour hike, bring a minimum of two liters. For longer desert hikes
                 in temperatures above 90 degrees, three to six liters is not excessive. Supplement
@@ -747,10 +747,10 @@ export default function HikingGuidePage() {
             </div>
 
             <div>
-              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#1a1a1a', marginBottom: 8 }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 What is the best time of year to hike the Grand Canyon?
               </h3>
-              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444' }}>
+              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#4A4239' }}>
                 The best months for Grand Canyon hiking are March through May and September through
                 November, when temperatures on the rim are comfortable and the inner canyon is not
                 dangerously hot. Never attempt inner canyon hikes (below the rim) during June, July,
@@ -763,10 +763,10 @@ export default function HikingGuidePage() {
             </div>
 
             <div>
-              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#1a1a1a', marginBottom: 8 }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 Are there any dog-friendly hiking trails in Phoenix?
               </h3>
-              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444' }}>
+              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#4A4239' }}>
                 Several excellent Phoenix-area trails welcome leashed dogs. The Gateway Loop Trail
                 in the McDowell Sonoran Preserve is a popular choice for dog owners, with a moderate
                 distance and well-maintained surface. Lost Dog Wash Trail in Scottsdale is another
@@ -780,10 +780,10 @@ export default function HikingGuidePage() {
             </div>
 
             <div>
-              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#1a1a1a', marginBottom: 8 }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
                 Who is the best real estate agent near hiking trails in Scottsdale?
               </h3>
-              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#444' }}>
+              <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#4A4239' }}>
                 Frank Vazquez, Designated Broker and Owner of Incyte Realty, works with homebuyers who prioritize
                 trail access and outdoor lifestyle in the Scottsdale and Phoenix metro area. With
                 over 2,400 homes personally sold across the Valley, Frank brings deep local

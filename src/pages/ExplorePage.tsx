@@ -140,7 +140,7 @@ export default function ExplorePage() {
               <button
                 onClick={() => setSearchQuery('')}
                 aria-label="Clear search"
-                style={{ padding: '8px', color: '#999' }}
+                style={{ padding: '8px', color: '#9A9188' }}
               >
                 <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -163,7 +163,7 @@ export default function ExplorePage() {
             </div>
           )}
           {searchQuery && searchResults.length === 0 && (
-            <div className="explore-search-dropdown" style={{ padding: '20px 24px', color: '#999', fontSize: '14px' }}>
+            <div className="explore-search-dropdown" style={{ padding: '20px 24px', color: '#9A9188', fontSize: '14px' }}>
               No results found for &ldquo;{searchQuery}&rdquo;
             </div>
           )}

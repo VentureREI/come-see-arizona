@@ -139,8 +139,8 @@ const faqSchema = {
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div style={{ marginBottom: 32 }}>
-      <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#1A1A1A', marginBottom: 12 }}>{children}</h2>
-      <div style={{ width: 40, height: 3, background: '#D32F2F' }} />
+      <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#211B24', marginBottom: 12 }}>{children}</h2>
+      <div style={{ width: 40, height: 3, background: '#C1502E' }} />
     </div>
   );
 }
@@ -156,10 +156,10 @@ function VenueCard({ name, location, stats, description, image }: { name: string
         <img src={image} alt={name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
       </div>
       <div style={{ padding: 20 }}>
-        <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 600, color: '#1A1A1A', marginBottom: 4 }}>{name}</h3>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: '#888', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 8 }}>{location}</p>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: '#D32F2F', fontWeight: 600, marginBottom: 8 }}>{stats}</p>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: '#555', lineHeight: 1.6 }}>{description}</p>
+        <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 600, color: '#211B24', marginBottom: 4 }}>{name}</h3>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: '#8D847A', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 8 }}>{location}</p>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: '#C1502E', fontWeight: 600, marginBottom: 8 }}>{stats}</p>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: '#5C5348', lineHeight: 1.6 }}>{description}</p>
       </div>
     </div>
   );
@@ -211,19 +211,19 @@ export default function MeetingsPage() {
           <SectionHeading>Why Meet in Arizona</SectionHeading>
           <div style={{ display: 'flex', gap: 48, flexWrap: 'wrap' as const }}>
             <div style={{ flex: '1 1 400px', minWidth: 300 }}>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 16 }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 16 }}>
                 Arizona has emerged as one of the top convention and meetings destinations in the
                 United States, combining world-class infrastructure with a climate and lifestyle that
                 keep delegates engaged and energized. The Phoenix Convention Center alone offers over
                 900,000 square feet of versatile event space, making it one of the largest and most
                 modern facilities in the Southwest.
               </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 16 }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 16 }}>
                 In 2025, downtown Phoenix hosted over 70 conventions drawing more than 293,000
                 delegates and generating a $453.7 million economic impact. Those numbers reflect a
                 destination that consistently delivers for planners and attendees alike.
               </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239' }}>
                 Beyond the convention floor, Arizona offers unparalleled post-conference experiences -
                 from championship golf and luxury spa treatments to red rock hikes and world-class
                 dining. It is a destination that turns a business trip into something delegates look
@@ -243,10 +243,10 @@ export default function MeetingsPage() {
       </div>
 
       {/* ─── 2. Major Venues ─── */}
-      <div style={{ background: '#FAFAFA', padding: '48px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '48px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Major Venues</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32, maxWidth: 800 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32, maxWidth: 800 }}>
             From massive convention centers to intimate resort retreats, Arizona offers venues for
             every type of meeting, conference, and corporate event.
           </p>
@@ -262,7 +262,7 @@ export default function MeetingsPage() {
       <div style={{ background: '#fff', padding: '48px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <SectionHeading>Upcoming Major Events</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32, maxWidth: 800 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32, maxWidth: 800 }}>
             Major events coming to Phoenix Convention Center and the surrounding area in 2026.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: 24 }}>
@@ -291,7 +291,7 @@ export default function MeetingsPage() {
                     flexShrink: 0,
                     width: 80,
                     minHeight: '100%',
-                    background: '#D32F2F',
+                    background: '#C1502E',
                     color: 'white',
                     display: 'flex',
                     flexDirection: 'column',
@@ -321,7 +321,7 @@ export default function MeetingsPage() {
                       fontFamily: 'var(--font-heading)',
                       fontSize: 18,
                       fontWeight: 700,
-                      color: '#1A1A1A',
+                      color: '#211B24',
                       lineHeight: 1.3,
                       marginBottom: 8,
                     }}>{ev.title}</h3>
@@ -329,7 +329,7 @@ export default function MeetingsPage() {
                       <p style={{
                         fontFamily: 'var(--font-body)',
                         fontSize: 13,
-                        color: '#888',
+                        color: '#8D847A',
                         marginBottom: 8,
                       }}>
                         Through {endFormatted}
@@ -338,7 +338,7 @@ export default function MeetingsPage() {
                     <p style={{
                       fontFamily: 'var(--font-body)',
                       fontSize: 14,
-                      color: '#555',
+                      color: '#5C5348',
                       lineHeight: 1.6,
                     }}>{ev.description}</p>
                   </div>
@@ -350,13 +350,13 @@ export default function MeetingsPage() {
       </div>
 
       {/* ─── 4. Why Attendees Love Arizona ─── */}
-      <div style={{ background: '#FAFAFA', padding: '48px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '48px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <SectionHeading>Why Attendees Love Arizona</SectionHeading>
 
-          <div style={{ borderLeft: '4px solid #D32F2F', background: '#FFF8F6', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
-            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#1A1A1A', marginBottom: 8 }}>300+ Days of Sunshine</h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#555' }}>
+          <div style={{ borderLeft: '4px solid #C1502E', background: '#FAF3EB', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
+            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#211B24', marginBottom: 8 }}>300+ Days of Sunshine</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#5C5348' }}>
               Arizona averages over 300 days of sunshine per year, making it one of the most
               weather-reliable convention destinations in the country. Planners can count on clear
               skies and comfortable temperatures from October through April, with virtually zero risk
@@ -364,27 +364,27 @@ export default function MeetingsPage() {
             </p>
           </div>
 
-          <div style={{ borderLeft: '4px solid #D32F2F', background: '#FFF8F6', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
-            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#1A1A1A', marginBottom: 8 }}>PHX Airport Direct Flights</h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#555' }}>
+          <div style={{ borderLeft: '4px solid #C1502E', background: '#FAF3EB', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
+            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#211B24', marginBottom: 8 }}>PHX Airport Direct Flights</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#5C5348' }}>
               Phoenix Sky Harbor International Airport offers nonstop service to over 100 domestic
               and 20 international destinations. It is just 10 minutes from the convention center,
               with light rail service connecting the airport directly to downtown venues.
             </p>
           </div>
 
-          <div style={{ borderLeft: '4px solid #D32F2F', background: '#FFF8F6', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
-            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#1A1A1A', marginBottom: 8 }}>75,000+ Hotel Rooms</h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#555' }}>
+          <div style={{ borderLeft: '4px solid #C1502E', background: '#FAF3EB', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
+            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#211B24', marginBottom: 8 }}>75,000+ Hotel Rooms</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#5C5348' }}>
               The Greater Phoenix metro area offers over 75,000 hotel rooms across every price point
               and style, from full-service convention hotels within walking distance of the convention
               center to luxury resorts in Scottsdale and budget-friendly options connected by light rail.
             </p>
           </div>
 
-          <div style={{ borderLeft: '4px solid #D32F2F', background: '#FFF8F6', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
-            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#1A1A1A', marginBottom: 8 }}>Walkable Downtown + Light Rail</h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#555' }}>
+          <div style={{ borderLeft: '4px solid #C1502E', background: '#FAF3EB', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
+            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#211B24', marginBottom: 8 }}>Walkable Downtown + Light Rail</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#5C5348' }}>
               Downtown Phoenix has been transformed into a walkable urban core with restaurants,
               breweries, museums, and entertainment venues surrounding the convention center. The
               Valley Metro Light Rail connects downtown to Tempe, Mesa, and Sky Harbor Airport,
@@ -392,9 +392,9 @@ export default function MeetingsPage() {
             </p>
           </div>
 
-          <div style={{ borderLeft: '4px solid #D32F2F', background: '#FFF8F6', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
-            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#1A1A1A', marginBottom: 8 }}>Post-Conference Activities</h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#555' }}>
+          <div style={{ borderLeft: '4px solid #C1502E', background: '#FAF3EB', padding: '24px 28px', borderRadius: '0 12px 12px 0', marginBottom: 16 }}>
+            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 600, color: '#211B24', marginBottom: 8 }}>Post-Conference Activities</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 15, lineHeight: 1.7, color: '#5C5348' }}>
               Arizona offers unmatched post-conference experiences including over 200 championship
               golf courses, world-class resort spas, desert hiking trails minutes from downtown,
               and a dining scene that ranges from James Beard award-winning restaurants to authentic
@@ -409,7 +409,7 @@ export default function MeetingsPage() {
       <div style={{ background: '#fff', padding: '48px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <SectionHeading>Planning Resources</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32, maxWidth: 800 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32, maxWidth: 800 }}>
             These organizations provide complimentary planning assistance, site selection support,
             and destination services for meeting planners considering Arizona.
           </p>
@@ -423,19 +423,19 @@ export default function MeetingsPage() {
                 style={{
                   display: 'block',
                   padding: '20px 24px',
-                  background: '#FAFAFA',
+                  background: '#F7F1E8',
                   borderRadius: 12,
                   textDecoration: 'none',
-                  border: '1px solid #EEE',
+                  border: '1px solid #E9E2D6',
                   transition: 'all 0.2s',
                 }}
-                onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.08)'; e.currentTarget.style.borderColor = '#D32F2F'; }}
-                onMouseLeave={e => { e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.borderColor = '#EEE'; }}
+                onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.08)'; e.currentTarget.style.borderColor = '#C1502E'; }}
+                onMouseLeave={e => { e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.borderColor = '#E9E2D6'; }}
               >
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 600, color: '#D32F2F', marginBottom: 4 }}>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 600, color: '#C1502E', marginBottom: 4 }}>
                   {resource.name} &rarr;
                 </h3>
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: '#555', lineHeight: 1.5 }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: '#5C5348', lineHeight: 1.5 }}>
                   {resource.description}
                 </p>
               </a>
@@ -447,10 +447,10 @@ export default function MeetingsPage() {
       {/* ─── 6. Incyte Realty ─── */}
       <div style={{ background: '#FAF5F0', padding: '48px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#1A1A1A', marginBottom: 16 }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#211B24', marginBottom: 16 }}>
             From Conference to Community - {siteConfig.brokerageName}
           </h2>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239' }}>
             Every year, hundreds of convention attendees who visit Arizona decide to make the move
             permanent. {siteConfig.brokerageName} specializes in helping corporate relocations and
             professionals who first experienced Arizona through a business trip find the right
@@ -461,7 +461,7 @@ export default function MeetingsPage() {
             to="/explore"
             style={{
               display: 'inline-block',
-              background: '#D32F2F',
+              background: '#C1502E',
               color: 'white',
               padding: '14px 32px',
               borderRadius: 28,

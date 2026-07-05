@@ -8,8 +8,8 @@ import AnswerBlock from '../components/AnswerBlock';
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div style={{ marginBottom: 32 }}>
-      <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#1A1A1A', marginBottom: 12 }}>{children}</h2>
-      <div style={{ width: 40, height: 3, background: '#D32F2F' }} />
+      <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#211B24', marginBottom: 12 }}>{children}</h2>
+      <div style={{ width: 40, height: 3, background: '#C1502E' }} />
     </div>
   );
 }
@@ -95,14 +95,14 @@ const CLIMATE_ZONES = [
     zone: 'Low Desert',
     locations: 'Phoenix, Tucson',
     range: '65-115\u00B0F',
-    color: '#E65100',
+    color: '#9A3B26',
     description: 'Hot summers with mild, sunny winters. Summer highs regularly exceed 110\u00B0F from June through September. Winter days average a pleasant 65-75\u00B0F with cool evenings. The most popular visitor season runs October through April.',
   },
   {
     zone: 'High Desert',
     locations: 'Sedona, Prescott',
     range: '50-100\u00B0F',
-    color: '#F9A825',
+    color: '#D18A2C',
     description: 'Moderate four-season climate with warm summers and cooler winters. Expect occasional snow in Prescott. Spring and fall are ideal for hiking with comfortable daytime temperatures in the 70s and 80s.',
   },
   {
@@ -208,10 +208,10 @@ export default function TouristInfoPage() {
       <AnswerBlock answer="Arizona visitors should know that the state does not observe daylight saving time, summer temperatures regularly exceed 110 degrees in the Phoenix metro, and a rental car is essential for getting around the Valley. This page covers visitor centers, emergency contacts, weather by season, health and safety tips, and accessibility resources." />
 
       {/* ─── 1. Visitor Centers ─── */}
-      <div style={{ background: '#FAFAFA', padding: '48px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '48px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
           <SectionHeading>Visitor Centers</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32, maxWidth: 900 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32, maxWidth: 900 }}>
             Arizona&apos;s visitor centers are staffed by knowledgeable locals who can help you make the most of your trip. Stop in for free maps, trail guides, event calendars, and personalized recommendations.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: 24 }}>
@@ -225,19 +225,19 @@ export default function TouristInfoPage() {
                   padding: 24,
                 }}
               >
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 700, color: '#1A1A1A', marginBottom: 12 }}>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 700, color: '#211B24', marginBottom: 12 }}>
                   {center.name}
                 </h3>
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: '#666', marginBottom: 6 }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: '#6B6259', marginBottom: 6 }}>
                   {center.address}
                 </p>
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: '#666', marginBottom: 6 }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: '#6B6259', marginBottom: 6 }}>
                   {center.hours}
                 </p>
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 600, color: '#D32F2F', marginBottom: 12 }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 600, color: '#C1502E', marginBottom: 12 }}>
                   {center.phone}
                 </p>
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, lineHeight: 1.7, color: '#555' }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, lineHeight: 1.7, color: '#5C5348' }}>
                   {center.description}
                 </p>
               </div>
@@ -250,27 +250,27 @@ export default function TouristInfoPage() {
       <div style={{ background: '#fff', padding: '48px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px' }}>
           <SectionHeading>Essential Phone Numbers</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32 }}>
             Save these numbers before your trip. In an emergency, always dial 911 first.
           </p>
           {PHONE_RESOURCES.map((resource) => (
             <div
               key={resource.title}
               style={{
-                borderLeft: '4px solid #D32F2F',
-                background: '#FFF8F6',
+                borderLeft: '4px solid #C1502E',
+                background: '#FAF3EB',
                 padding: '24px 28px',
                 borderRadius: '0 12px 12px 0',
                 marginBottom: 16,
               }}
             >
-              <div style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#1A1A1A', marginBottom: 4 }}>
+              <div style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#211B24', marginBottom: 4 }}>
                 {resource.title}
               </div>
-              <div style={{ fontFamily: 'var(--font-body)', fontSize: 18, fontWeight: 700, color: '#D32F2F', marginBottom: 8 }}>
+              <div style={{ fontFamily: 'var(--font-body)', fontSize: 18, fontWeight: 700, color: '#C1502E', marginBottom: 8 }}>
                 {resource.info}
               </div>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, lineHeight: 1.6, color: '#555', margin: 0 }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, lineHeight: 1.6, color: '#5C5348', margin: 0 }}>
                 {resource.detail}
               </p>
             </div>
@@ -279,7 +279,7 @@ export default function TouristInfoPage() {
       </div>
 
       {/* ─── 3. Arizona Fast Facts ─── */}
-      <div style={{ background: '#FAFAFA', padding: '48px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '48px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
           <SectionHeading>Arizona Fast Facts</SectionHeading>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: 24 }}>
@@ -293,10 +293,10 @@ export default function TouristInfoPage() {
                   textAlign: 'center',
                 }}
               >
-                <div style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 700, color: '#D32F2F', marginBottom: 8 }}>
+                <div style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 700, color: '#C1502E', marginBottom: 8 }}>
                   {fact.value}
                 </div>
-                <div style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: '#888', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                <div style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: '#8D847A', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                   {fact.label}
                 </div>
               </div>
@@ -309,7 +309,7 @@ export default function TouristInfoPage() {
       <div style={{ background: '#fff', padding: '48px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
           <SectionHeading>Weather and Climate</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32, maxWidth: 900 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32, maxWidth: 900 }}>
             Arizona spans multiple climate zones, from scorching low desert to snowy mountain peaks. Understanding the climate of your destination is essential for packing, planning activities, and staying safe.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: 24, marginBottom: 32 }}>
@@ -335,7 +335,7 @@ export default function TouristInfoPage() {
                   <div style={{ fontFamily: 'var(--font-heading)', fontSize: 22, fontWeight: 700, color: zone.color, marginBottom: 12 }}>
                     {zone.range}
                   </div>
-                  <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, lineHeight: 1.7, color: '#555', margin: 0 }}>
+                  <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, lineHeight: 1.7, color: '#5C5348', margin: 0 }}>
                     {zone.description}
                   </p>
                 </div>
@@ -343,10 +343,10 @@ export default function TouristInfoPage() {
             ))}
           </div>
           <div style={{ maxWidth: 900 }}>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239' }}>
               <strong>Monsoon Season (June-September):</strong> Arizona experiences a dramatic monsoon season with intense afternoon thunderstorms, dust storms (haboobs), and flash flooding. Storms can develop rapidly and bring dangerous lightning, hail, and sudden temperature drops. Never drive through flooded roads - Arizona&apos;s &quot;Stupid Motorist Law&quot; holds drivers liable for rescue costs if they enter a barricaded flooded crossing.
             </p>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginTop: 16 }}>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginTop: 16 }}>
               <strong>UV Exposure:</strong> Arizona&apos;s high elevation and clear skies mean intense UV radiation year-round. Wear SPF 30+ sunscreen, a wide-brimmed hat, and UV-protective sunglasses even on cloudy days. Reapply sunscreen every two hours, especially when hiking or swimming. The UV index regularly reaches &quot;Very High&quot; or &quot;Extreme&quot; levels from March through October.
             </p>
           </div>
@@ -354,77 +354,77 @@ export default function TouristInfoPage() {
       </div>
 
       {/* ─── 5. Health and Safety ─── */}
-      <div style={{ background: '#FAFAFA', padding: '48px 24px' }}>
+      <div style={{ background: '#F7F1E8', padding: '48px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px' }}>
           <SectionHeading>Health and Safety</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 32 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 32 }}>
             Arizona&apos;s desert environment presents unique safety considerations. A little preparation goes a long way toward ensuring a safe and enjoyable visit.
           </p>
 
           <div
             style={{
-              borderLeft: '4px solid #D32F2F',
-              background: '#FFF8F6',
+              borderLeft: '4px solid #C1502E',
+              background: '#FAF3EB',
               padding: '24px 28px',
               borderRadius: '0 12px 12px 0',
               marginBottom: 16,
             }}
           >
-            <div style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#1A1A1A', marginBottom: 8 }}>
+            <div style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
               Heat Safety
             </div>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', margin: 0 }}>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', margin: 0 }}>
               Heat-related illness is the leading cause of weather-related death in Arizona. Carry at least one liter of water per person per hour when outdoors. Learn to recognize the signs of heat exhaustion: heavy sweating, weakness, nausea, dizziness, and rapid pulse. If symptoms appear, move to shade or air conditioning immediately and hydrate. Never leave children or pets in a parked vehicle - interior temperatures can exceed 150&deg;F within minutes.
             </p>
           </div>
 
           <div
             style={{
-              borderLeft: '4px solid #D32F2F',
-              background: '#FFF8F6',
+              borderLeft: '4px solid #C1502E',
+              background: '#FAF3EB',
               padding: '24px 28px',
               borderRadius: '0 12px 12px 0',
               marginBottom: 16,
             }}
           >
-            <div style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#1A1A1A', marginBottom: 8 }}>
+            <div style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
               Wildlife
             </div>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', margin: 0 }}>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', margin: 0 }}>
               Arizona is home to rattlesnakes, scorpions, Gila monsters, and javelinas. Watch where you step and place your hands on trails, especially near rocks and brush. Shake out shoes and clothing left outdoors. If bitten by a rattlesnake, remain calm, immobilize the affected limb, and call 911 immediately. Do not apply a tourniquet or attempt to suck out venom.
             </p>
           </div>
 
           <div
             style={{
-              borderLeft: '4px solid #D32F2F',
-              background: '#FFF8F6',
+              borderLeft: '4px solid #C1502E',
+              background: '#FAF3EB',
               padding: '24px 28px',
               borderRadius: '0 12px 12px 0',
               marginBottom: 16,
             }}
           >
-            <div style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#1A1A1A', marginBottom: 8 }}>
+            <div style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
               Driving Safety
             </div>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', margin: 0 }}>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', margin: 0 }}>
               Dust storms (haboobs) can reduce visibility to near zero in seconds. If you encounter one while driving, pull completely off the roadway, turn off your headlights, set your parking brake, and wait for the storm to pass. Flash floods are common during monsoon season and can sweep away vehicles in seconds. Never attempt to cross a flooded wash, even if the water appears shallow. On rural highways, watch for livestock and wildlife crossings, especially at dawn and dusk.
             </p>
           </div>
 
           <div
             style={{
-              borderLeft: '4px solid #D32F2F',
-              background: '#FFF8F6',
+              borderLeft: '4px solid #C1502E',
+              background: '#FAF3EB',
               padding: '24px 28px',
               borderRadius: '0 12px 12px 0',
               marginBottom: 16,
             }}
           >
-            <div style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#1A1A1A', marginBottom: 8 }}>
+            <div style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, color: '#211B24', marginBottom: 8 }}>
               Altitude
             </div>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', margin: 0 }}>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', margin: 0 }}>
               Flagstaff sits at 7,000 feet and the Grand Canyon South Rim at 7,000 feet. If you are coming from sea level, you may experience mild altitude sickness including headache, shortness of breath, and fatigue. Take it easy on your first day at elevation, stay hydrated, and avoid strenuous activity until you acclimate. Consult your doctor if you have heart or respiratory conditions.
             </p>
           </div>
@@ -435,13 +435,13 @@ export default function TouristInfoPage() {
       <div style={{ background: '#fff', padding: '48px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px' }}>
           <SectionHeading>Accessibility</SectionHeading>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 16 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 16 }}>
             Arizona offers a growing number of wheelchair-accessible attractions and trails for visitors with mobility challenges. The Grand Canyon&apos;s paved Rim Trail stretches over 13 miles along the South Rim with multiple accessible viewpoints, shuttle stops, and rest areas. Saguaro National Park in Tucson features accessible scenic drives and short paved paths through iconic cactus forests.
           </p>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444', marginBottom: 16 }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239', marginBottom: 16 }}>
             In the Phoenix metro area, the Desert Botanical Garden, Heard Museum, and Phoenix Zoo all provide wheelchair access, accessible restrooms, and loaner wheelchairs. Papago Park and Tempe Town Lake offer paved, level paths ideal for wheelchairs and strollers. Many Scottsdale resorts provide ADA-compliant rooms, pool lifts, and accessible spa facilities.
           </p>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239' }}>
             Valley Metro operates accessible buses and the light rail system throughout the Phoenix metro area, with ramps, priority seating, and audio announcements at every station. Visitors with an Access pass from any U.S. transit agency can ride at reduced fares. For national parks, the America the Beautiful Access Pass provides free lifetime entry and discounted camping for visitors with permanent disabilities.
           </p>
         </div>
@@ -450,10 +450,10 @@ export default function TouristInfoPage() {
       {/* ─── 7. Incyte Realty ─── */}
       <div style={{ background: '#FAF5F0', padding: '64px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#1A1A1A', marginBottom: 16 }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, color: '#211B24', marginBottom: 16 }}>
             From Vacation to Home - {siteConfig.brokerageName}
           </h2>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#444' }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 16, lineHeight: 1.8, color: '#4A4239' }}>
             Many visitors who fall in love with Arizona&apos;s lifestyle choose to make it permanent.{' '}
             {siteConfig.brokerageName} helps clients transition from vacation to homeownership,
             with expertise across every Valley community. {siteConfig.leaderName}, with{' '}
@@ -464,7 +464,7 @@ export default function TouristInfoPage() {
             to="/explore"
             style={{
               display: 'inline-block',
-              background: '#D32F2F',
+              background: '#C1502E',
               color: 'white',
               padding: '14px 32px',
               borderRadius: 28,

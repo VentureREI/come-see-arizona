@@ -89,8 +89,8 @@ function LoadingFallback() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-white">
       <div className="text-center">
-        <div className="w-8 h-8 border-4 border-[#D32F2F] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-        <p className="font-['Inter'] text-[#666]">Loading...</p>
+        <div className="w-8 h-8 border-4 border-[#C1502E] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+        <p className="font-['Inter'] text-[#6B6259]">Loading...</p>
       </div>
     </div>
   );
