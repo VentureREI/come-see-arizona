@@ -280,6 +280,11 @@ function App() {
       video.pause();
       return;
     }
+    // Respect metered/slow connections: keep the poster, skip the 9.3MB stream.
+    const conn = (navigator as { connection?: { saveData?: boolean; effectiveType?: string } }).connection;
+    if (conn?.saveData || /(^|\b)(slow-)?2g$/.test(conn?.effectiveType ?? '')) {
+      return;
+    }
     video.muted = true;
     // Wait for first paint to settle before pulling the stream.
     const start = () => video.play().catch(() => { /* poster frame remains as fallback */ });

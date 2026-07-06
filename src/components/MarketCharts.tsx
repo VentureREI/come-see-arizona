@@ -29,6 +29,15 @@ function useMounted(): boolean {
   return useSyncExternalStore(emptySubscribe, () => true, () => false);
 }
 
+const resizeSubscribe = (cb: () => void) => {
+  window.addEventListener('resize', cb);
+  return () => window.removeEventListener('resize', cb);
+};
+/** True on phone-width viewports; charts shrink their label column to give bars room. */
+function useIsNarrow(): boolean {
+  return useSyncExternalStore(resizeSubscribe, () => window.innerWidth < 640, () => false);
+}
+
 function shortPrice(v: number): string {
   return v >= 1_000_000 ? `$${(v / 1_000_000).toFixed(1)}M` : `$${Math.round(v / 1000)}K`;
 }
@@ -151,9 +160,12 @@ export function MedianBarsChart({ items, title, note, highlight }: {
   highlight?: string;
 }) {
   const mounted = useMounted();
+  const narrow = useIsNarrow();
   const data = [...items].sort((a, b) => b.value - a.value).slice(0, 12);
   if (data.length < 2) return null;
   const height = 40 + data.length * 34;
+  const labelWidth = narrow ? 112 : 150;
+  const tick = narrow ? { ...TICK, fontSize: 11 } : TICK;
 
   return (
     <ChartFigure
@@ -164,15 +176,15 @@ export function MedianBarsChart({ items, title, note, highlight }: {
       <div style={{ width: '100%', height }}>
         {mounted && (
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={data} layout="vertical" margin={{ top: 4, right: 64, bottom: 4, left: 8 }} barCategoryGap={8}>
+            <BarChart data={data} layout="vertical" margin={{ top: 4, right: narrow ? 52 : 64, bottom: 4, left: narrow ? 2 : 8 }} barCategoryGap={8}>
               <XAxis type="number" hide domain={[0, 'dataMax']} />
               <YAxis
                 type="category"
                 dataKey="name"
-                tick={TICK}
+                tick={tick}
                 axisLine={false}
                 tickLine={false}
-                width={150}
+                width={labelWidth}
               />
               <Tooltip content={<ChartTooltip />} cursor={{ fill: 'rgba(193, 80, 46, 0.06)' }} />
               <Bar dataKey="value" barSize={18} radius={[0, 4, 4, 0]} fill={SERIES}>
@@ -183,7 +195,7 @@ export function MedianBarsChart({ items, title, note, highlight }: {
                   dataKey="value"
                   position="right"
                   formatter={(v: number) => shortPrice(v)}
-                  style={{ fill: '#6B6259', fontSize: 12, fontFamily: 'Inter, sans-serif' }}
+                  style={{ fill: '#6B6259', fontSize: narrow ? 11 : 12, fontFamily: 'Inter, sans-serif' }}
                 />
               </Bar>
             </BarChart>
@@ -202,6 +214,7 @@ export function ComparisonChart({ entity, benchmark, title, note }: {
   note?: string;
 }) {
   const mounted = useMounted();
+  const narrow = useIsNarrow();
   const data = [
     { name: entity.name, value: entity.value, kind: 'entity' },
     { name: benchmark.name, value: benchmark.value, kind: 'benchmark' },
@@ -216,9 +229,9 @@ export function ComparisonChart({ entity, benchmark, title, note }: {
       <div style={{ width: '100%', height: 128 }}>
         {mounted && (
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={data} layout="vertical" margin={{ top: 4, right: 64, bottom: 4, left: 8 }} barCategoryGap={10}>
+            <BarChart data={data} layout="vertical" margin={{ top: 4, right: narrow ? 52 : 64, bottom: 4, left: narrow ? 2 : 8 }} barCategoryGap={10}>
               <XAxis type="number" hide domain={[0, 'dataMax']} />
-              <YAxis type="category" dataKey="name" tick={TICK} axisLine={false} tickLine={false} width={150} />
+              <YAxis type="category" dataKey="name" tick={narrow ? { ...TICK, fontSize: 11 } : TICK} axisLine={false} tickLine={false} width={narrow ? 112 : 150} />
               <Tooltip content={<ChartTooltip />} cursor={{ fill: 'rgba(193, 80, 46, 0.06)' }} />
               <Bar dataKey="value" barSize={20} radius={[0, 4, 4, 0]}>
                 {data.map(d => (
@@ -228,7 +241,7 @@ export function ComparisonChart({ entity, benchmark, title, note }: {
                   dataKey="value"
                   position="right"
                   formatter={(v: number) => shortPrice(v)}
-                  style={{ fill: '#6B6259', fontSize: 12, fontFamily: 'Inter, sans-serif' }}
+                  style={{ fill: '#6B6259', fontSize: narrow ? 11 : 12, fontFamily: 'Inter, sans-serif' }}
                 />
               </Bar>
             </BarChart>

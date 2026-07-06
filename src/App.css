@@ -3397,3 +3397,18 @@ html, body {
 @media (prefers-reduced-motion: reduce) {
   .homes-cta-btn { transition: none; }
 }
+
+/* ── Mobile refinements ───────────────────────────────────── */
+.logo-img {
+  height: 90px;
+  width: auto;
+}
+@media (max-width: 768px) {
+  .logo-img { height: 56px; }
+  .nav-container { height: 72px; }
+  .top-banner { font-size: 12.5px; padding: 9px 40px 9px 16px; }
+  .market-chart { padding: 16px 12px 10px; }
+  .homes-cta { padding: 18px 18px; }
+  .homes-cta-btn { width: 100%; justify-content: center; }
+  .explore-container, .explore-container-narrow { padding-left: 16px; padding-right: 16px; }
+}

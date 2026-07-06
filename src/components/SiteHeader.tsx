@@ -25,7 +25,7 @@ export default function SiteHeader() {
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
             <a href="/" className="logo" aria-label="Come See Arizona - Home">
-              <img src="/come-see-arizona.png" alt="Come See Arizona" width={677} height={369} fetchPriority="high" decoding="async" style={{ height: 90, width: 'auto' }} />
+              <img src="/come-see-arizona.png" alt="Come See Arizona" width={677} height={369} fetchPriority="high" decoding="async" className="logo-img" />
             </a>
           </div>
 
