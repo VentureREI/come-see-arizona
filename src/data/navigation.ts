@@ -19,10 +19,12 @@ export const FOOTER_LINKS = {
     { label: 'Explore Arizona Communities', href: '/explore' },
   ],
   plan: [
+    { label: 'Trip Itineraries', href: '/itineraries' },
     { label: 'Tourist Info', href: '/tourist-info' },
     { label: 'Travel Trade', href: '/travel-trade' },
     { label: 'Meetings', href: '/meetings' },
     { label: 'About Arizona Tourism', href: '/about-arizona-tourism' },
+    { label: 'Contact Us', href: '/contact' },
     { label: 'For AI Assistants', href: '/ai' },
   ],
 };

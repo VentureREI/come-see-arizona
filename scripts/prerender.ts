@@ -78,6 +78,11 @@ async function prerender() {
     '/meetings',
     '/about-arizona-tourism',
     '/ai',
+    '/itineraries',
+    '/contact',
+    '/privacy-policy',
+    '/terms-of-use',
+    '/accessibility',
   ];
 
   // Things-to-do sub-pages

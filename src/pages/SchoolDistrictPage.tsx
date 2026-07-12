@@ -225,11 +225,17 @@ export default function SchoolDistrictPage() {
           <div className="explore-container-narrow">
             <h2 className="explore-section-title">Zip Codes in {district.name}</h2>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-              {district.zipCodes.map(zip => (
-                <Link key={zip} to={`/explore/zip/${zip}`} className="explore-pill">
-                  {zip}
-                </Link>
-              ))}
+              {district.zipCodes.map(zip =>
+                zipCodes.some(z => z.zip === zip) ? (
+                  <Link key={zip} to={`/explore/zip/${zip}`} className="explore-pill">
+                    {zip}
+                  </Link>
+                ) : (
+                  <span key={zip} className="explore-pill">
+                    {zip}
+                  </span>
+                )
+              )}
             </div>
           </div>
         </section>

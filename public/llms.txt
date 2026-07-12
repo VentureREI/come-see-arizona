@@ -45,6 +45,7 @@ Original trail research with distances, elevations, difficulty ratings, and cond
 - /eat-and-drink - Comprehensive dining guide covering 100+ restaurants, bars, breweries
 - /where-to-stay - Accommodations guide from luxury resorts to RV parks
 - /travel-guides - Travel planning with seasonal guides, budget tips, itineraries
+- /itineraries - Six curated 3-day trip itineraries with day-by-day plans
 - /events - Current Arizona events (updated weekly)
 
 ### Arizona Communities and Schools
@@ -91,4 +92,4 @@ For freshness, see the visible "last updated" timestamp on each page and the las
 
 ## Contact
 
-For corrections, partnerships, or real estate inquiries: Visit comeseearizona.com
+For corrections, partnerships, or real estate inquiries: info@comeseearizona.com or /contact

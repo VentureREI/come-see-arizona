@@ -80,7 +80,7 @@ export default function ZipCodePage() {
     { name: zipData.zip, url: `/explore/zip/${zipData.zip}` },
   ];
 
-  const nearbyZips = city.zipCodes.filter(z => z !== zipData.zip);
+  const nearbyZips = city.zipCodes.filter(z => z !== zipData.zip && getZipCode(z));
 
   const ratingClass = (rating: string) => {
     const letter = rating.charAt(0).toUpperCase();

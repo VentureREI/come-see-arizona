@@ -266,11 +266,17 @@ export default function NeighborhoodPage() {
         <div className="explore-container-narrow">
           <h2 className="explore-section-title">Zip Codes</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-            {neighborhood.zipCodes.map((zip) => (
-              <Link key={zip} to={`/explore/zip/${zip}`} className="explore-pill">
-                {zip}
-              </Link>
-            ))}
+            {neighborhood.zipCodes.map((zip) =>
+              getZipCode(zip) ? (
+                <Link key={zip} to={`/explore/zip/${zip}`} className="explore-pill">
+                  {zip}
+                </Link>
+              ) : (
+                <span key={zip} className="explore-pill">
+                  {zip}
+                </span>
+              )
+            )}
           </div>
         </div>
       </section>

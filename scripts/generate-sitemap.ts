@@ -61,9 +61,14 @@ function generateSitemap(): void {
   entries.push({ url: '/', lastmod: TODAY, priority: 1.0, changefreq: 'daily' });
 
   // Main section pages
-  const mainSections = ['/things-to-do', '/eat-and-drink', '/events', '/where-to-stay', '/travel-guides', '/explore', '/trails', '/tourist-info', '/travel-trade', '/meetings', '/about-arizona-tourism', '/ai'];
+  const mainSections = ['/things-to-do', '/eat-and-drink', '/events', '/where-to-stay', '/travel-guides', '/explore', '/trails', '/itineraries', '/tourist-info', '/travel-trade', '/meetings', '/about-arizona-tourism', '/ai'];
   for (const section of mainSections) {
     entries.push({ url: section, lastmod: TODAY, priority: 0.9, changefreq: 'daily' });
+  }
+
+  // Utility and legal pages
+  for (const page of ['/contact', '/privacy-policy', '/terms-of-use', '/accessibility']) {
+    entries.push({ url: page, lastmod: STATIC_DATE, priority: 0.3, changefreq: 'yearly' });
   }
 
   // County pages

@@ -83,6 +83,11 @@ const TravelTradePage = lazy(() => import('./pages/TravelTradePage'));
 const MeetingsPage = lazy(() => import('./pages/MeetingsPage'));
 const AboutArizonaTourismPage = lazy(() => import('./pages/AboutArizonaTourismPage'));
 const AIHubPage = lazy(() => import('./pages/AIHubPage'));
+const ItinerariesLandingPage = lazy(() => import('./pages/ItinerariesLandingPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
+const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'));
+const TermsOfUsePage = lazy(() => import('./pages/TermsOfUsePage'));
+const AccessibilityPage = lazy(() => import('./pages/AccessibilityPage'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 function LoadingFallback() {
@@ -115,12 +120,17 @@ export default function Router() {
           <Route path="/articles/:slug" element={<ArticlePage />} />
           <Route path="/trails" element={<TrailsLandingPage />} />
           <Route path="/trails/:slug" element={<TrailPage />} />
+          <Route path="/itineraries" element={<ItinerariesLandingPage />} />
           <Route path="/itineraries/:slug" element={<ItineraryPage />} />
           <Route path="/tourist-info" element={<TouristInfoPage />} />
           <Route path="/travel-trade" element={<TravelTradePage />} />
           <Route path="/meetings" element={<MeetingsPage />} />
           <Route path="/about-arizona-tourism" element={<AboutArizonaTourismPage />} />
           <Route path="/ai" element={<AIHubPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms-of-use" element={<TermsOfUsePage />} />
+          <Route path="/accessibility" element={<AccessibilityPage />} />
           <Route path="/explore" element={<ExplorePage />} />
           <Route path="/explore/county/:countySlug" element={<CountyPage />} />
           <Route path="/explore/city/:citySlug" element={<CityPage />} />
