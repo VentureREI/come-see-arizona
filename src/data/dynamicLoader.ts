@@ -147,6 +147,13 @@ export function getCityMarket(slug: string): DynamicCityPrice | undefined {
   return cityPrices[slug];
 }
 
+/** Every city with a verified market entry, keyed by slug. Drives the /housing-market report pages. */
+export function getAllCityMarkets(): Record<string, DynamicCityPrice> {
+  return cityPrices;
+}
+
+export type { DynamicCityPrice, DynamicCountyPrice };
+
 /** Names of the public sources behind the current marketPrices.json (e.g. ["redfin.com", "realtor.com"]). */
 export function getMarketSourceNames(): string[] {
   return ((marketPrices as { sourceNames?: string[] }).sourceNames ?? []);

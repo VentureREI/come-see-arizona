@@ -121,6 +121,16 @@ async function prerender() {
     routes.push(`/itineraries/${slug}`);
   }
 
+  // Housing market report pages (hub + one per city with verified market data)
+  routes.push('/housing-market');
+  const marketPath = path.join(ROOT, 'src/data/dynamic/marketPrices.json');
+  if (fs.existsSync(marketPath)) {
+    const marketData = JSON.parse(fs.readFileSync(marketPath, 'utf-8')) as { cities?: Record<string, unknown> };
+    for (const slug of Object.keys(marketData.cities ?? {})) {
+      routes.push(`/housing-market/${slug}`);
+    }
+  }
+
   // Article routes from Router
   const articlesDir = path.join(ROOT, 'src', 'pages', 'articles');
   if (fs.existsSync(articlesDir)) {

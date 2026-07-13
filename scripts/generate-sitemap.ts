@@ -116,6 +116,16 @@ function generateSitemap(): void {
     entries.push({ url: `/things-to-do/${slug}`, lastmod: STATIC_DATE, priority: 0.7, changefreq: 'monthly' });
   }
 
+  // Housing market report pages (hub + one per city with verified market data)
+  entries.push({ url: '/housing-market', lastmod: TODAY, priority: 0.9, changefreq: 'weekly' });
+  const marketPath = path.resolve(__dirname, '..', 'src/data/dynamic/marketPrices.json');
+  if (fs.existsSync(marketPath)) {
+    const marketData = JSON.parse(fs.readFileSync(marketPath, 'utf-8')) as { cities?: Record<string, unknown> };
+    for (const slug of Object.keys(marketData.cities ?? {})) {
+      entries.push({ url: `/housing-market/${slug}`, lastmod: TODAY, priority: 0.8, changefreq: 'weekly' });
+    }
+  }
+
   // Itinerary pages (route list mirrors scripts/prerender.ts)
   for (const slug of ['natural-wonders', 'arts-and-culture', 'arizona-dining', 'golf-paradise', 'family-fun', 'old-west-history']) {
     entries.push({ url: `/itineraries/${slug}`, lastmod: STATIC_DATE, priority: 0.6, changefreq: 'monthly' });

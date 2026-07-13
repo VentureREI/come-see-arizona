@@ -27,6 +27,8 @@ import MeetingsPage from './pages/MeetingsPage';
 import AboutArizonaTourismPage from './pages/AboutArizonaTourismPage';
 import AIHubPage from './pages/AIHubPage';
 import ItinerariesLandingPage from './pages/ItinerariesLandingPage';
+import HousingMarketPage from './pages/HousingMarketPage';
+import CityHousingMarketPage from './pages/CityHousingMarketPage';
 import ContactPage from './pages/ContactPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfUsePage from './pages/TermsOfUsePage';
@@ -68,6 +70,8 @@ function ServerApp({ location }: { location: string }) {
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/terms-of-use" element={<TermsOfUsePage />} />
         <Route path="/accessibility" element={<AccessibilityPage />} />
+        <Route path="/housing-market" element={<HousingMarketPage />} />
+        <Route path="/housing-market/:citySlug" element={<CityHousingMarketPage />} />
         <Route path="/explore" element={<ExplorePage />} />
         <Route path="/explore/county/:countySlug" element={<CountyPage />} />
         <Route path="/explore/city/:citySlug" element={<CityPage />} />

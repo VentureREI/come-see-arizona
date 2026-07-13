@@ -17,6 +17,7 @@ export const FOOTER_LINKS = {
     { label: 'Where to Stay in Arizona', href: '/where-to-stay' },
     { label: 'Arizona Travel Guides', href: '/travel-guides' },
     { label: 'Explore Arizona Communities', href: '/explore' },
+    { label: 'Housing Market Report', href: '/housing-market' },
   ],
   plan: [
     { label: 'Trip Itineraries', href: '/itineraries' },

@@ -84,6 +84,8 @@ const MeetingsPage = lazy(() => import('./pages/MeetingsPage'));
 const AboutArizonaTourismPage = lazy(() => import('./pages/AboutArizonaTourismPage'));
 const AIHubPage = lazy(() => import('./pages/AIHubPage'));
 const ItinerariesLandingPage = lazy(() => import('./pages/ItinerariesLandingPage'));
+const HousingMarketPage = lazy(() => import('./pages/HousingMarketPage'));
+const CityHousingMarketPage = lazy(() => import('./pages/CityHousingMarketPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'));
 const TermsOfUsePage = lazy(() => import('./pages/TermsOfUsePage'));
@@ -131,6 +133,8 @@ export default function Router() {
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-of-use" element={<TermsOfUsePage />} />
           <Route path="/accessibility" element={<AccessibilityPage />} />
+          <Route path="/housing-market" element={<HousingMarketPage />} />
+          <Route path="/housing-market/:citySlug" element={<CityHousingMarketPage />} />
           <Route path="/explore" element={<ExplorePage />} />
           <Route path="/explore/county/:countySlug" element={<CountyPage />} />
           <Route path="/explore/city/:citySlug" element={<CityPage />} />
