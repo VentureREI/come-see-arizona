@@ -12,7 +12,7 @@ export default function SiteFooter() {
               <img src="/come-see-arizona.png" alt="Come See Arizona" width={677} height={369} loading="lazy" decoding="async" style={{ height: 40, width: 'auto' }} />
               <h3 className="footer-logo" style={{ margin: 0 }}>Come See Arizona</h3>
             </div>
-            <p>The official guide to Arizona. Find great deals, things to do, travel guides and more.</p>
+            <p>The definitive independent guide to Arizona. Find great deals, things to do, travel guides and more.</p>
             <address className="footer-address">
               Arizona, United States<br />
               <a href="mailto:info@comeseearizona.com">info@comeseearizona.com</a>
