@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14",
+  "lastUpdated": "2026-07-15",
   "events": [
     {
       "id": "maricopa-county-home-landscape-show-2026-07-17",
@@ -814,6 +814,57 @@
       "sourceUrl": "https://heard.org/event/fair/",
       "source": "manual",
       "imageKeyword": "native art",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "downtown-phoenix-farmers-market-2026-07-18",
+      "title": "Downtown Phoenix Farmers Market",
+      "startDate": "2026-07-18",
+      "endDate": null,
+      "time": "7:30 AM - 11:30 AM",
+      "venueName": "Arizona Center",
+      "venueCity": "Phoenix",
+      "venueAddress": "455 N 3rd St, Phoenix, AZ 85004",
+      "category": "Food and Drink",
+      "description": "This year round Saturday market inside the Arizona Center offers fresh, seasonally grown produce and local goods from area farmers and small businesses. Summer hours run 7:30 to 11:30 AM, and the market accepts cash, credit, EBT and WIC or Senior FMNP coupons.",
+      "sourceUrl": "https://dtphx.org/do/downtown-phoenix-farmers-market",
+      "source": "manual",
+      "imageKeyword": "farmers market produce",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "kali-uchis-for-the-girls-tour-2026-08-07",
+      "title": "Kali Uchis: For The Girls Tour w/ Mariah the Scientist",
+      "startDate": "2026-08-07",
+      "endDate": null,
+      "time": "7:30 PM",
+      "venueName": "Talking Stick Resort Amphitheatre",
+      "venueCity": "Phoenix",
+      "venueAddress": "2121 N 83rd Ave, Phoenix, AZ 85035",
+      "category": "Music",
+      "description": "Grammy winning singer Kali Uchis brings her For The Girls Tour to Talking Stick Resort Amphitheatre with special guest Mariah the Scientist. The AT&T presented show is part of a broader North American tour.",
+      "sourceUrl": "https://www.livenation.com/event/1kk8v0r_GA2S4Ok/at-t-presents-kali-uchis-for-the-girls-tour-w-mariah-the-scientist",
+      "source": "manual",
+      "imageKeyword": "pop concert stage",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "karol-g-viajando-por-el-mundo-tropitour-2026-08-29",
+      "title": "KAROL G: Viajando Por El Mundo Tropitour",
+      "startDate": "2026-08-29",
+      "endDate": null,
+      "time": "7:00 PM",
+      "venueName": "State Farm Stadium",
+      "venueCity": "Glendale",
+      "venueAddress": "1 Cardinals Dr, Glendale, AZ 85305",
+      "category": "Music",
+      "description": "Colombian superstar KAROL G brings her Viajando Por El Mundo Tropitour to State Farm Stadium on August 29, 2026. The stadium stop is part of her global arena and stadium tour supporting her latest album.",
+      "sourceUrl": "https://www.statefarmstadium.com/events/detail/karol-g",
+      "source": "manual",
+      "imageKeyword": "latin pop concert",
       "lat": null,
       "lng": null
     }
