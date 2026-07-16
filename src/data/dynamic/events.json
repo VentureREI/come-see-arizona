@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15",
+  "lastUpdated": "2026-07-16",
   "events": [
     {
       "id": "maricopa-county-home-landscape-show-2026-07-17",
@@ -865,6 +865,57 @@
       "sourceUrl": "https://www.statefarmstadium.com/events/detail/karol-g",
       "source": "manual",
       "imageKeyword": "latin pop concert",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "arizona-cowboy-poets-gathering-2026-08-06",
+      "title": "Arizona Cowboy Poets Gathering",
+      "startDate": "2026-08-06",
+      "endDate": "2026-08-08",
+      "time": "Night shows Thu-Sat 7:00 PM, daytime sessions Fri 12:00-5:00 PM & Sat 9:00 AM-5:00 PM",
+      "venueName": "Yavapai College Performing Arts Center",
+      "venueCity": "Prescott",
+      "venueAddress": "1100 E Sheldon St, Prescott, AZ 86301",
+      "category": "Culture",
+      "description": "More than 40 cowboy poets and musicians bring Western heritage to the stage through poetry, storytelling and music at this annual gathering. Daytime sessions are free, and evening shows require admission.",
+      "sourceUrl": "https://azcowboypoets.org/",
+      "source": "manual",
+      "imageKeyword": "cowboy poetry western",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "bisbee-pirate-weekend-2026-08-07",
+      "title": "Bisbee Pirate Weekend",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-09",
+      "time": "Times vary",
+      "venueName": "Historic Downtown Bisbee",
+      "venueCity": "Bisbee",
+      "venueAddress": "",
+      "category": "Festival",
+      "description": "This three day, citywide costume event fills Bisbee's historic streets with pirate themed activities, including a meet and greet, formal ball, maritime marketplace, pub crawl and the Return of the Mermaids Parade. Most events are centered around City Park and Gore Park.",
+      "sourceUrl": "https://www.bisbeepirateweekend.com/",
+      "source": "manual",
+      "imageKeyword": "pirate costume festival",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "southeast-arizona-birding-festival-2026-08-12",
+      "title": "Southeast Arizona Birding Festival",
+      "startDate": "2026-08-12",
+      "endDate": "2026-08-16",
+      "time": "Times vary by field trip and program",
+      "venueName": "DoubleTree by Hilton Tucson - Reid Park",
+      "venueCity": "Tucson",
+      "venueAddress": "445 S Alvernon Way, Tucson, AZ 85711",
+      "category": "Outdoors",
+      "description": "The Tucson Bird Alliance hosts guided field trips, photography workshops and a free nature expo featuring live animals from Reid Park Zoo. The festival highlights southeastern Arizona's monsoon season specialty birds, including coppery tailed trogons and five striped sparrows.",
+      "sourceUrl": "https://tucsonbirds.org/festival/",
+      "source": "manual",
+      "imageKeyword": "birding festival",
       "lat": null,
       "lng": null
     }
