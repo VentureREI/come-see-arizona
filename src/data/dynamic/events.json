@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-16",
+  "lastUpdated": "2026-07-17",
   "events": [
     {
       "id": "maricopa-county-home-landscape-show-2026-07-17",
@@ -916,6 +916,57 @@
       "sourceUrl": "https://tucsonbirds.org/festival/",
       "source": "manual",
       "imageKeyword": "birding festival",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "xfinity-us-gymnastics-championships-2026-08-06",
+      "title": "Xfinity U.S. Gymnastics Championships",
+      "startDate": "2026-08-06",
+      "endDate": "2026-08-09",
+      "time": "Times vary by session",
+      "venueName": "Mortgage Matchup Center",
+      "venueCity": "Phoenix",
+      "venueAddress": "201 E Jefferson St, Phoenix, AZ 85004",
+      "category": "Sports",
+      "description": "The nation's top junior and senior artistic gymnasts compete for national titles and U.S. National Team spots at the Xfinity U.S. Gymnastics Championships. The four day event runs men's and women's sessions August 6 through 9 at the Mortgage Matchup Center in downtown Phoenix.",
+      "sourceUrl": "https://mortgagematchupcenter.com/events/u-s-gymnastics-championships/",
+      "source": "manual",
+      "imageKeyword": "gymnastics competition",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "john-mellencamp-dancing-words-tour-2026-08-09",
+      "title": "John Mellencamp: Dancing Words Tour, The Greatest Hits",
+      "startDate": "2026-08-09",
+      "endDate": null,
+      "time": "8:00 PM",
+      "venueName": "Talking Stick Resort Amphitheatre",
+      "venueCity": "Phoenix",
+      "venueAddress": "2121 N 83rd Ave, Phoenix, AZ 85035",
+      "category": "Music",
+      "description": "John Mellencamp brings his Dancing Words Tour to Talking Stick Resort Amphitheatre, performing a career spanning greatest hits set that includes Jack and Diane, Small Town and Pink Houses. Several songs return to his live set for the first time in more than a decade.",
+      "sourceUrl": "https://www.mellencamp.com/events/talking-stick-resort-amphitheatre",
+      "source": "manual",
+      "imageKeyword": "rock concert stage",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "lionel-richie-earth-wind-fire-sing-a-song-all-night-long-2026-08-11",
+      "title": "Lionel Richie & Earth, Wind & Fire: Sing a Song All Night Long",
+      "startDate": "2026-08-11",
+      "endDate": null,
+      "time": "7:30 PM",
+      "venueName": "Mortgage Matchup Center",
+      "venueCity": "Phoenix",
+      "venueAddress": "201 E Jefferson St, Phoenix, AZ 85004",
+      "category": "Music",
+      "description": "Lionel Richie and Earth, Wind & Fire co-headline a stop on their Sing a Song All Night Long tour at the Mortgage Matchup Center. The show features decades of R&B and soul hits from both acts, part of a 26 city North American run produced by Live Nation.",
+      "sourceUrl": "https://mortgagematchupcenter.com/events/lionel-richie-with-earth-wind-and-fire/",
+      "source": "manual",
+      "imageKeyword": "rnb soul concert",
       "lat": null,
       "lng": null
     }
