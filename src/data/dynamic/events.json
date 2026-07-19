@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-18",
+  "lastUpdated": "2026-07-19",
   "events": [
     {
       "id": "maricopa-county-home-landscape-show-2026-07-17",
@@ -818,9 +818,9 @@
       "lng": null
     },
     {
-      "id": "downtown-phoenix-farmers-market-2026-07-18",
+      "id": "downtown-phoenix-farmers-market-2026-07-25",
       "title": "Downtown Phoenix Farmers Market",
-      "startDate": "2026-07-18",
+      "startDate": "2026-07-25",
       "endDate": null,
       "time": "7:30 AM - 11:30 AM",
       "venueName": "Arizona Center",
@@ -1188,6 +1188,74 @@
       "sourceUrl": "https://www.america250az.org/event/prescott-indian-art-market-piam/",
       "source": "manual",
       "imageKeyword": "native american art market",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "rick-ross-orchestra-tour-celebrity-theatre-2026-08-07",
+      "title": "Rick Ross Orchestra Tour",
+      "startDate": "2026-08-07",
+      "endDate": null,
+      "time": "8:00 PM",
+      "venueName": "Celebrity Theatre",
+      "venueCity": "Phoenix",
+      "venueAddress": "440 N 32nd St, Phoenix, AZ 85008",
+      "category": "Music",
+      "description": "Rick Ross brings his Orchestra Tour, featuring The Renaissance Orchestra, to Celebrity Theatre's intimate 360 degree, revolving stage in Phoenix. The show reworks the rapper's catalog with a live orchestral backing band.",
+      "sourceUrl": "https://www.celebritytheatre.com/events/rick-ross-orchestra-tour",
+      "source": "manual",
+      "imageKeyword": "hip hop concert stage",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "oar-three-decades-tour-arizona-financial-theatre-2026-08-07",
+      "title": "O.A.R.: Three Decades Tour with Gavin DeGraw and Lisa Loeb",
+      "startDate": "2026-08-07",
+      "endDate": null,
+      "time": "6:30 PM",
+      "venueName": "Arizona Financial Theatre",
+      "venueCity": "Phoenix",
+      "venueAddress": "400 W Washington St, Phoenix, AZ 85003",
+      "category": "Music",
+      "description": "O.A.R. marks three decades as a band with a co-headlining tour stop in downtown Phoenix, joined by Gavin DeGraw and Lisa Loeb. The show blends the trio's radio hits spanning the late 1990s through today.",
+      "sourceUrl": "https://www.livenation.com/event/1Av0ZbgGkR-2JfE/o-a-r-three-decades-tour",
+      "source": "manual",
+      "imageKeyword": "rock concert amphitheater",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "sedona-first-friday-in-the-galleries-2026-08-07",
+      "title": "First Friday in the Galleries",
+      "startDate": "2026-08-07",
+      "endDate": null,
+      "time": "4:00 PM - 7:00 PM (varies by venue)",
+      "venueName": "Sedona galleries (Tlaquepaque, Hozho, Uptown, West Sedona)",
+      "venueCity": "Sedona",
+      "venueAddress": "336 State Route 179, Sedona, AZ 86336",
+      "category": "Arts",
+      "description": "Sedona's gallery association hosts a free, monthly evening art walk on the first Friday of each month, with openings, artist receptions and special guests across the Tlaquepaque, Hozho, Uptown and West Sedona gallery districts.",
+      "sourceUrl": "https://visitsedona.com/directory/1st-friday-in-the-galleries/",
+      "source": "manual",
+      "imageKeyword": "art gallery opening",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "reid-park-zoo-summer-safari-nights-reggae-2026-08-08",
+      "title": "Summer Safari Nights: Reggae Night",
+      "startDate": "2026-08-08",
+      "endDate": null,
+      "time": "6:00 PM - 8:00 PM",
+      "venueName": "Reid Park Zoo",
+      "venueCity": "Tucson",
+      "venueAddress": "3400 Zoo Court, Tucson, AZ 85716",
+      "category": "Family",
+      "description": "The final night of Reid Park Zoo's Summer Safari Nights series features live reggae music, keeper presentations, animal encounters, giraffe feedings and carousel rides during cooler evening hours. Dinner and drinks are available at the Flamingo Grill.",
+      "sourceUrl": "https://www.discovermarana.org/events/summer-safari-nights-at-reid-park-zoo/",
+      "source": "manual",
+      "imageKeyword": "zoo evening event",
       "lat": null,
       "lng": null
     }
