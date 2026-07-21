@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20",
+  "lastUpdated": "2026-07-21",
   "events": [
     {
       "id": "upper-deck-golf-at-chase-field-2026-07-24",
@@ -1239,6 +1239,57 @@
       "sourceUrl": "https://www.livenation.com/event/1Av0Z_eGkwjK0am/tori-amos-in-times-of-dragons-tour",
       "source": "manual",
       "imageKeyword": "singer songwriter concert",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260721-1",
+      "title": "Darius Rucker: Songs of Summer Tour",
+      "startDate": "2026-07-23",
+      "endDate": null,
+      "time": "7:00 PM",
+      "venueName": "Arizona Financial Theatre",
+      "venueCity": "Phoenix",
+      "venueAddress": "400 W Washington St, Phoenix, AZ 85003",
+      "category": "Music",
+      "description": "Darius Rucker headlines a stop on his Songs of Summer Tour at Arizona Financial Theatre in downtown Phoenix, joined by Old Crow Medicine Show and Austin Williams. The show blends Rucker's country hits with selections from his Hootie and the Blowfish catalog.",
+      "sourceUrl": "https://www.songkick.com/concerts/43066070-darius-rucker-at-arizona-financial-theatre",
+      "source": "manual",
+      "imageKeyword": "country concert theatre",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260721-2",
+      "title": "The Fray: Summer of Light Tour with Dashboard Confessional",
+      "startDate": "2026-07-27",
+      "endDate": null,
+      "time": "7:00 PM",
+      "venueName": "Arizona Financial Theatre",
+      "venueCity": "Phoenix",
+      "venueAddress": "400 W Washington St, Phoenix, AZ 85003",
+      "category": "Music",
+      "description": "The Fray bring their Summer of Light Tour to downtown Phoenix in support of a new album, with Dashboard Confessional and Colony House as supporting acts. The stop at Arizona Financial Theatre pairs the headliner's 2000s radio hits with newer material.",
+      "sourceUrl": "https://www.livenation.com/event/1A_Zk8MGkdKnb4x/the-fray-summer-of-light-tour-with-dashboard-confessional",
+      "source": "manual",
+      "imageKeyword": "alternative rock concert",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260721-3",
+      "title": "World Hip Hop Dance Championship 2026",
+      "startDate": "2026-07-25",
+      "endDate": "2026-08-01",
+      "time": "Varies by round; finals August 1",
+      "venueName": "Arizona Grand Resort & Spa (finals at Mullett Arena, ASU)",
+      "venueCity": "Phoenix",
+      "venueAddress": "8000 S Arizona Grand Pkwy, Phoenix, AZ 85044",
+      "category": "Family",
+      "description": "Hip Hop International's World Hip Hop Dance Championship brings crews from more than 55 countries to the Arizona Grand Resort & Spa for preliminaries, semifinals and World Moves workshops, with the finals held August 1 at Mullett Arena on the ASU campus in Tempe. Competitors range from Junior to Adult divisions plus MiniCrew and MegaCrew formats.",
+      "sourceUrl": "https://hiphopinternational.com/world-hip-hop-dance-championship/",
+      "source": "manual",
+      "imageKeyword": "hip hop dance competition",
       "lat": null,
       "lng": null
     }
