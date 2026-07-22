@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-21",
+  "lastUpdated": "2026-07-22",
   "events": [
     {
       "id": "upper-deck-golf-at-chase-field-2026-07-24",
@@ -1290,6 +1290,40 @@
       "sourceUrl": "https://hiphopinternational.com/world-hip-hop-dance-championship/",
       "source": "manual",
       "imageKeyword": "hip hop dance competition",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260722-1",
+      "title": "42nd Route 66 Regional Chili Cookoff (Flagstaff Chili Festival)",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-02",
+      "time": "Sat 10:00 AM - 4:00 PM, Sun 9:00 AM - 3:00 PM",
+      "venueName": "Thorpe Park",
+      "venueCity": "Flagstaff",
+      "venueAddress": "245 N Thorpe Rd, Flagstaff, AZ 86001",
+      "category": "Food and Drink",
+      "description": "This two day chili cookoff adjacent to downtown Flagstaff pits local restaurants, fire departments and home cooks against each other in red chili, chili verde and other categories. The event, sanctioned by the International Chili Society, also includes public tastings, a beer garden and live music.",
+      "sourceUrl": "https://www.azchili.com/event-info",
+      "source": "manual",
+      "imageKeyword": "chili cookoff festival",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260722-2",
+      "title": "Watermelon and Sweet Corn Festival at Mortimer Farms",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-23",
+      "time": "Times vary",
+      "venueName": "Mortimer Farms",
+      "venueCity": "Dewey",
+      "venueAddress": "12907 E State Route 169, Dewey, AZ 86327",
+      "category": "Food and Drink",
+      "description": "This two day harvest festival at Mortimer Farms near Prescott lets visitors ride the Grain Train out to the fields to pick their own sweet corn, then sample roasted corn, sweet corn ice cream and fresh watermelon. Family activities include a Corny Game Show with a corn eating contest and a watermelon spitting contest.",
+      "sourceUrl": "https://www.mortimerfarmsaz.com/SweetCornFestival",
+      "source": "manual",
+      "imageKeyword": "farm harvest festival",
       "lat": null,
       "lng": null
     }
