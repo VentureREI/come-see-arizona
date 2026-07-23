@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22",
+  "lastUpdated": "2026-07-23",
   "events": [
     {
       "id": "upper-deck-golf-at-chase-field-2026-07-24",
@@ -1324,6 +1324,40 @@
       "sourceUrl": "https://www.mortimerfarmsaz.com/SweetCornFestival",
       "source": "manual",
       "imageKeyword": "farm harvest festival",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260723-1",
+      "title": "The Stray Cats with Pete Bernhard of The Devil Makes Three",
+      "startDate": "2026-07-25",
+      "endDate": null,
+      "time": "7:30 PM",
+      "venueName": "Celebrity Theatre",
+      "venueCity": "Phoenix",
+      "venueAddress": "440 N 32nd St, Phoenix, AZ 85008",
+      "category": "Music",
+      "description": "Rockabilly pioneers The Stray Cats, featuring Brian Setzer, Lee Rocker and Slim Jim Phantom, play Celebrity Theatre's in the round stage with support from Pete Bernhard of The Devil Makes Three. The band is known for hits including Stray Cat Strut and Rock This Town.",
+      "sourceUrl": "https://www.celebritytheatre.com/events/the-stray-cats-with-pete-bernhard-of-the-devil-makes-three",
+      "source": "manual",
+      "imageKeyword": "rockabilly concert stage",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260723-2",
+      "title": "Downtown Chandler Summer Market",
+      "startDate": "2026-07-25",
+      "endDate": null,
+      "time": "7:00 AM - 11:00 AM",
+      "venueName": "Dr. A.J. Chandler Park West",
+      "venueCity": "Chandler",
+      "venueAddress": "3 S Arizona Ave, Chandler, AZ 85225",
+      "category": "Food and Drink",
+      "description": "Downtown Chandler's summer farmers market runs every Saturday morning from June through September, with early hours timed to beat the heat. Local farmers, gourmet food vendors and artisans sell produce and handmade goods in the park.",
+      "sourceUrl": "https://downtownchandler.org/farmers-market/summer-market",
+      "source": "manual",
+      "imageKeyword": "farmers market produce",
       "lat": null,
       "lng": null
     }
