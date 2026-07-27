@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-26",
+  "lastUpdated": "2026-07-27",
   "events": [
     {
       "id": "evt-20260726-1",
@@ -1409,6 +1409,40 @@
       "sourceUrl": "https://dtphx.org/do/lindsey-stirling-1",
       "source": "manual",
       "imageKeyword": "violin dance concert",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260727-1",
+      "title": "Shinedown: Dance, Kid, Dance Act II with Coheed and Cambria and From Ashes to New",
+      "startDate": "2026-08-04",
+      "endDate": null,
+      "time": "7:00 PM",
+      "venueName": "Tucson Arena",
+      "venueCity": "Tucson",
+      "venueAddress": "260 South Church Street, Tucson, AZ 85701",
+      "category": "Music",
+      "description": "Rock band Shinedown headlines the Dance, Kid, Dance Act II tour at Tucson Arena, with support from Coheed and Cambria and From Ashes to New. The show marks a return to Tucson for the Grammy-nominated band.",
+      "sourceUrl": "https://arena.tucsonconventioncenter.com/event/shinedown:-dance-kid-dance-act-ii/tm_1av0z_7gksrgdy2/",
+      "source": "manual",
+      "imageKeyword": "rock concert arena",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260727-2",
+      "title": "Hot Wheels Monster Trucks Live: Glow-N-Fire",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-09",
+      "time": "11:30 AM and 6:30 PM Sat, 1:30 PM Sun",
+      "venueName": "Desert Diamond Arena",
+      "venueCity": "Glendale",
+      "venueAddress": "9400 West Maryland Avenue, Glendale, AZ 85305",
+      "category": "Family",
+      "description": "Hot Wheels Monster Trucks Live brings glow in the dark production effects, fire stunts, and freestyle motocross to Desert Diamond Arena. The 2026 tour features fan favorite trucks including Bigfoot and Bone Shaker, plus the debut of Rhinomite.",
+      "sourceUrl": "https://hotwheelsmonstertruckslive.com/event/glendale-az-2026/",
+      "source": "manual",
+      "imageKeyword": "monster truck arena",
       "lat": null,
       "lng": null
     }
