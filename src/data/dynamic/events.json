@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-31",
+  "lastUpdated": "2026-08-01",
   "events": [
     {
       "id": "evt-20260726-1",
@@ -1413,23 +1413,6 @@
       "lng": null
     },
     {
-      "id": "evt-20260728-1",
-      "title": "Arizona Chef's Week",
-      "startDate": "2026-07-31",
-      "endDate": "2026-08-09",
-      "time": "Times vary by restaurant",
-      "venueName": "Participating restaurants statewide",
-      "venueCity": "Phoenix",
-      "venueAddress": "",
-      "category": "Food and Drink",
-      "description": "Arizona's top chef driven, independently owned restaurants offer elevated three course, prix fixe menus priced at 55 or 66 dollars during this statewide summer dining event. A companion Chef's Week Dinner Series pairs guest chefs with four popular Valley restaurants for one night only dinners.",
-      "sourceUrl": "https://azrestaurant.org/events/arizona-chefs-week/",
-      "source": "manual",
-      "imageKeyword": "fine dining chef",
-      "lat": null,
-      "lng": null
-    },
-    {
       "id": "evt-20260728-2",
       "title": "FREE Foam Frenzy",
       "startDate": "2026-08-08",
@@ -1783,6 +1766,57 @@
       "sourceUrl": "https://www.phoenixzoo.org/events/spooky-safari/",
       "source": "manual",
       "imageKeyword": "zoo halloween trick or treat",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260801-1",
+      "title": "Night Trip Festival Arizona",
+      "startDate": "2026-08-29",
+      "endDate": null,
+      "time": "6:00 PM",
+      "venueName": "WestWorld of Scottsdale",
+      "venueCity": "Scottsdale",
+      "venueAddress": "16601 N Pima Rd, Scottsdale, AZ 85260",
+      "category": "Music",
+      "description": "This Insomniac produced house and techno festival transforms WestWorld of Scottsdale into a club style outdoor event with high fidelity sound and stage production. The 2026 lineup includes Cloonee, Dombresky, Jackie Hollander, Matroda and Walker and Royce.",
+      "sourceUrl": "https://nighttripfestaz.frontgatetickets.com/",
+      "source": "manual",
+      "imageKeyword": "electronic music festival",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260801-2",
+      "title": "Empire of the Sun with Polo & Pan",
+      "startDate": "2026-09-29",
+      "endDate": null,
+      "time": "7:30 PM",
+      "venueName": "Talking Stick Resort Amphitheatre",
+      "venueCity": "Phoenix",
+      "venueAddress": "2121 N 83rd Ave, Phoenix, AZ 85035",
+      "category": "Music",
+      "description": "Australian electronic duo Empire of the Sun headlines Talking Stick Resort Amphitheatre with support from Polo and Pan and Midnight Generation. The stop is part of the act's 2026 North American tour.",
+      "sourceUrl": "https://www.songkick.com/concerts/43094074-empire-of-the-sun-at-talking-stick-resort-amphitheatre",
+      "source": "manual",
+      "imageKeyword": "electronic pop concert",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260801-3",
+      "title": "Phoenix Suns Preseason vs. San Antonio Spurs",
+      "startDate": "2026-10-10",
+      "endDate": null,
+      "time": "7:00 PM",
+      "venueName": "Mortgage Matchup Center",
+      "venueCity": "Phoenix",
+      "venueAddress": "201 E Jefferson St, Phoenix, AZ 85004",
+      "category": "Sports",
+      "description": "The Phoenix Suns host the reigning Western Conference champion San Antonio Spurs in a preseason matchup at Mortgage Matchup Center. It is one of two home preseason games on the Suns' 2026 exhibition schedule.",
+      "sourceUrl": "https://www.azfamily.com/2026/07/29/phoenix-suns-announce-2026-27-preseason-schedule-with-two-home-games/",
+      "source": "manual",
+      "imageKeyword": "basketball arena preseason",
       "lat": null,
       "lng": null
     }
