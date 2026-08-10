@@ -1,123 +1,116 @@
 {
-  "lastUpdated": "2026-08-03",
+  "lastUpdated": "2026-08-10",
   "method": "Perplexity Sonar web research with citation validation (scripts/market-refresh.ts). Zillow excluded by policy.",
   "sourceNames": [
     "redfin.com",
     "realtor.com",
+    "armls.com",
     "homes.com",
     "movoto.com",
     "fred.stlouisfed.org"
   ],
   "counties": {
     "maricopa": {
-      "medianHomePrice": 484000,
+      "medianHomePrice": 483550,
       "pricePerSqFt": 264,
       "avgDaysOnMarket": 59,
       "inventoryLevel": "low",
-      "marketTrend": "appreciating",
+      "marketTrend": "softening",
       "yearOverYearChange": "-0.81%",
       "asOf": "2026-05",
-      "confidence": "high",
+      "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/county/220/AZ/Maricopa-County/housing-market",
-        "https://phoenixagentmagazine.com/2026/07/14/maricopa-county-report-june-2026/",
         "https://unbiasedoptions.com/market-statistics/",
-        "https://www.therfgaz.com/blog/may-2026-maricopa-county-real-estate-market-update",
-        "https://www.facebook.com/atsa83/posts/june-market-snapshot-the-latest-numbers-are-in-for-maricopa-countys-residential-/1721688636175335/"
+        "https://www.facebook.com/atsa83/posts/-july-2026-maricopa-county-real-estate-snapshotthe-latest-market-numbers-are-in-/1755235956153936/",
+        "https://phoenixagentmagazine.com/2026/07/14/maricopa-county-report-june-2026/",
+        "https://thesantistevangroup.com/market-report",
+        "https://fred.stlouisfed.org/series/MEDLISPRI4013"
       ],
-      "narrative": "Maricopa County’s residential market is roughly flat to slightly rising in prices, with the countywide median sale price around $484,000 and year-over-year changes ranging from a small decline on Redfin to about 2% growth in recent June reports.[1][2][3][8] Inventory is moderate and slightly down year over year, with months of supply commonly reported in the 3-4 month range, indicating a generally balanced market rather than a strong buyer or seller advantage.[2][3][4][5][12] Buyer-seller dynamics are mixed by submarket: countywide data and several local analysts describe a neutral to slight seller tilt, but outlying cities like Maricopa and Buckeye are seeing longer marketing times, more concessions, and more leverage for buyers.[2][5][9][10][15] Population growth and migration, mid-6% mortgage rates, and ongoing new construction, especially the share of buyers choosing new builds, are notable local drivers sustaining demand while giving resale sellers more competition.[8][9][13]",
+      "narrative": "Maricopa County’s residential market is roughly flat to modestly higher on price, with multiple June-July 2026 reports showing year-over-year gains in the mid-single digits or low single digits, though some local commentary describes pricing as mostly stable rather than surging.[2][3][7] Inventory remains constrained but not absent: reports show active listings in the low 20,000s or a few months of supply, while days on market have edged up, which points to a slower, more balanced pace than a hot seller’s market.[2][3][1] The buyer-seller dynamic is mixed: sales and pending activity are still solid, but the rise in days on market and the lower pending volume year over year suggest buyers have a bit more leverage than during peak boom periods, even as sellers still benefit from relatively steady demand.[2][7] Local drivers remain supportive, including continued population inflow into Greater Phoenix, ongoing construction and new listings, and a broad employment base tied to the metro’s large employers and industrial growth, while some reports also note investor activity and foreclosure filings moving in opposite directions depending on the segment.[7][13][18]",
       "narrativeCitations": [
-        "https://www.redfin.com/county/220/AZ/Maricopa-County/housing-market",
+        "https://www.facebook.com/atsa83/posts/-july-2026-maricopa-county-real-estate-snapshotthe-latest-market-numbers-are-in-/1755235956153936/",
         "https://phoenixagentmagazine.com/2026/07/14/maricopa-county-report-june-2026/",
         "https://unbiasedoptions.com/market-statistics/",
-        "https://www.therfgaz.com/blog/may-2026-maricopa-county-real-estate-market-update",
-        "https://www.youtube.com/watch?v=1HCVy7oVDgk"
+        "https://www.youtube.com/watch?v=pSX-kDYFYkg",
+        "https://www.linkedin.com/posts/christina-palermo-b3a5a870_maricopacountyrealestate-phoenixhomes-realestatetrends-activity-7483612408129773568-Zr_w"
       ],
       "history": [
         {
-          "month": "2025-05",
-          "medianHomePrice": 484000
-        },
-        {
-          "month": "2025-06",
-          "medianHomePrice": 467000
-        },
-        {
-          "month": "2025-07",
-          "medianHomePrice": 465000
-        },
-        {
           "month": "2025-08",
-          "medianHomePrice": 463000
+          "medianHomePrice": 443000
         },
         {
           "month": "2025-09",
-          "medianHomePrice": 462000
+          "medianHomePrice": 457731
         },
         {
           "month": "2025-10",
-          "medianHomePrice": 462000
+          "medianHomePrice": 430000
         },
         {
           "month": "2025-11",
-          "medianHomePrice": 462000
+          "medianHomePrice": 449000
         },
         {
           "month": "2025-12",
-          "medianHomePrice": 463000
+          "medianHomePrice": 440000
         },
         {
           "month": "2026-01",
-          "medianHomePrice": 464000
+          "medianHomePrice": 433750
         },
         {
           "month": "2026-02",
-          "medianHomePrice": 464000
+          "medianHomePrice": 445000
         },
         {
           "month": "2026-03",
-          "medianHomePrice": 464000
+          "medianHomePrice": 450000
         },
         {
           "month": "2026-04",
-          "medianHomePrice": 463000
+          "medianHomePrice": 460000
         },
         {
           "month": "2026-05",
-          "medianHomePrice": 484000
+          "medianHomePrice": 450000
+        },
+        {
+          "month": "2026-06",
+          "medianHomePrice": 445000
         }
       ],
       "historyCitations": [
-        "https://www.redfin.com/county/220/AZ/Maricopa-County/housing-market",
+        "https://unbiasedoptions.com/market-statistics/",
+        "https://fred.stlouisfed.org/series/ATNHPIUS04013A",
         "https://arizonadigitalfreepress.com/greater-phoenix-home-sales-rise-for-12-straight-months-as-may-closings-increase/",
         "https://www.attomdata.com/data/us-real-estate/az/maricopa-county/",
-        "https://fred.stlouisfed.org/series/ATNHPIUS04013A",
         "https://fred.stlouisfed.org/series/MEDLISPRI4013"
       ]
     },
     "pinal": {
       "medianHomePrice": 383849,
       "pricePerSqFt": 201,
-      "avgDaysOnMarket": 81,
+      "avgDaysOnMarket": 62,
       "inventoryLevel": "balanced",
-      "marketTrend": "softening",
+      "marketTrend": "appreciating",
       "yearOverYearChange": "-0.3%",
       "asOf": "2026-05",
       "confidence": "medium",
       "citations": [
-        "https://revamp365.ai/coverage/pinal-az",
+        "https://www.realtor.com/local/property-records/arizona/pinal-county",
         "https://www.asreb.com/blog/june-2026-greater-phoenix-real-estate-market-report/",
-        "https://www.instagram.com/reel/DalfRFsh1bb/",
-        "https://www.redfin.com/county/224/AZ/Pinal-County/page-14",
-        "https://finexplained.com/studies/phoenix-housing-market/"
+        "https://homeladder.com/san-tan-valley-real-estate-and-rental-market-update/",
+        "https://www.oxfordarizonahomes.com/pinal-county-real-estate-why-casa-grande-maricopa-and-coolidge-are-growing/",
+        "https://resideline.com/blog/arizona-housing-market"
       ],
-      "narrative": "Residential prices in Pinal County are essentially flat, with the May 2026 median sale price at $383,849, down 0.3% year over year.[8] Inventory has increased compared with the peak-frenzy years and broader Phoenix data show a balanced market slightly tilted toward buyers, with more predictable pricing and less bidding-war pressure.[7][9] Buyer-seller dynamics reflect this normalization: buyers have more leverage and choice, while sellers face longer marketing times and must price realistically rather than expect rapid appreciation.[7][9] Local demand is supported by Pinal County’s status as Arizona’s fastest-growing county, significant population inflows, and large-scale employers and infrastructure tied to the Phoenix semiconductor and logistics corridor, including recent land trades and a 400 MW battery storage project near these advanced manufacturing hubs.[1][5]",
+      "narrative": "Pinal County’s residential market is showing flat-to-slightly softer pricing rather than a surge: Realtor.com’s county page shows a median listing price of $394.9K in May 2026, down year over year, while ARMLS-linked regional reporting says Greater Phoenix median prices were still edging up in June even as inventory remained constrained.[2][1] Inventory is still a central theme, with Realtor.com showing 7.5K active listings for the county and regional reporting noting that new listings and overall supply have not fully caught up with demand.[2][1] The buyer-seller balance is more active than overheated: homes are taking longer to sell, and the market is still giving buyers more choice than during the pandemic peak, but contract activity remains solid enough to keep sellers engaged.[2][1] Local demand is being supported by population growth in Pinal County, which ranked among the nation’s fastest-growing counties over five years, and by continued in-migration into fast-growing communities such as Casa Grande, Maricopa, and Florence.[1][4][8] Regional reports also point to ongoing new construction across the Phoenix-Pinal corridor and broader employment/migration pull from metro-area growth, which together keep housing demand anchored even as pricing cools from earlier highs.[9][8]",
       "narrativeCitations": [
-        "https://www.thelandletter.com/p/phoenix-cre-brief-phoenix-arizona-land-broker-insights-7-9-2026",
         "https://www.asreb.com/blog/june-2026-greater-phoenix-real-estate-market-report/",
-        "https://www.instagram.com/reel/DalfRFsh1bb/",
-        "https://unbiasedoptions.com/market-statistics/",
-        "https://www.oxfordarizonahomes.com/pinal-county-real-estate-why-casa-grande-maricopa-and-coolidge-are-growing/"
+        "https://www.realtor.com/local/property-records/arizona/pinal-county",
+        "https://homeladder.com/san-tan-valley-real-estate-and-rental-market-update/",
+        "https://www.oxfordarizonahomes.com/pinal-county-real-estate-why-casa-grande-maricopa-and-coolidge-are-growing/",
+        "https://openshawrealestategroup.com/blog/what-your-money-actually-buys-in-maricopa-right-now-the-hidden-mechanics-behind-a-dollar345k-median"
       ],
       "history": [
         {
@@ -133,26 +126,26 @@
     "pima": {
       "medianHomePrice": 385000,
       "pricePerSqFt": 231,
-      "avgDaysOnMarket": 33,
+      "avgDaysOnMarket": 58,
       "inventoryLevel": "balanced",
-      "marketTrend": "stable",
+      "marketTrend": "appreciating",
       "yearOverYearChange": "-1.3%",
-      "asOf": "2026-06",
+      "asOf": "2026-05",
       "confidence": "medium",
       "citations": [
+        "https://www.realtor.com/local/property-records/arizona/pima-county",
         "https://www.facebook.com/AzJesseRealtor/posts/-pima-county-market-update-july-20-2026the-latest-numbers-show-a-market-thats-co/1672675721529270/",
         "https://southwestlifestyles.com/pima-county-june-2026-market-update-what-buyers-and-sellers-need-to-know.html",
-        "https://www.loangraphs.com/market/arizona/pima-county/85611",
-        "https://fred.stlouisfed.org/series/PHXRNSA",
-        "https://www.masteryourmovenow.com/stats/arizona-real-estate-market"
+        "https://realtywire.com/markets/tucson-az/",
+        "https://mapazdashboard.arizona.edu/housing-vacancy"
       ],
-      "narrative": "Pima County’s residential market is in a mildly cooling but still active phase: June’s median sale price of $385,000 was down about 1.3% year over year, framed locally as a small pause within a longer upward price trend rather than a true reversal.[1] Inventory has risen to about 3.1 months of supply with 3,329 active listings, and roughly half of all listings have taken price cuts, signaling more negotiation room and a shift away from the extreme seller leverage of past years.[1] Despite this, buyer activity remains solid, closed sales in June were up 4.5% year over year to 1,065 homes, around 81% of listings are going pending or closing, and homes still go under contract in a median of 33 days, suggesting a balanced-to-slightly buyer-leaning market rather than a slump.[1] Local dynamics are shaped by steady in-migration into the Tucson/Pima area and ongoing, though moderating, construction statewide,[12][15] with affordability relative to Phoenix and continued employment growth in Tucson’s education, defense, and healthcare sectors providing underlying support to demand.[19][11]",
+      "narrative": "Pima County’s residential market appears to be cooling but still active: recent updates show median sale prices easing slightly while buyer demand remains steady, and many listings are still taking price cuts to move. [2][1] Inventory remains relatively tight by local-report standards, with active listings around the low 3,000s and about 3.1 months of supply, which points to a market that is more balanced than strongly seller-driven. [2] On buyer/seller dynamics, homes are taking longer to sell than in hotter periods, but sales are still happening at a healthy pace, with a large share of listings going pending or closing and buyers retaining some negotiating room through price reductions. [2][1] For local drivers, the supplied results do not include strong Pima-specific evidence on employers, construction, or migration; the closest cited context says the Tucson/Pima area has been described as facing a housing surplus in prior affordability research, but that source is from 2025 and does not give current demand drivers. [8]",
       "narrativeCitations": [
-        "https://southwestlifestyles.com/pima-county-june-2026-market-update-what-buyers-and-sellers-need-to-know.html",
         "https://www.facebook.com/AzJesseRealtor/posts/-pima-county-market-update-july-20-2026the-latest-numbers-show-a-market-thats-co/1672675721529270/",
-        "https://www.youtube.com/watch?v=NoKhiep-_ng",
+        "https://southwestlifestyles.com/pima-county-june-2026-market-update-what-buyers-and-sellers-need-to-know.html",
+        "https://realtywire.com/markets/tucson-az/",
         "https://openshawrealestategroup.com/blog/what-your-money-actually-buys-in-maricopa-right-now-the-hidden-mechanics-behind-a-dollar345k-median",
-        "https://www.homes.com/reports/phoenix-housing-market/"
+        "https://commonsenseinstituteus.org/arizona/research/housing-and-our-community/housing-affordability-in-arizona-2026/"
       ],
       "history": [
         {
@@ -185,18 +178,18 @@
     },
     "scottsdale": {
       "medianHomePrice": 968750,
-      "pricePerSqFt": 549,
+      "pricePerSqFt": null,
       "avgDaysOnMarket": 74,
       "marketType": "balanced",
       "yearOverYearChange": "+7.8%",
       "asOf": "2026-06",
       "confidence": "medium",
       "citations": [
-        "https://www.instagram.com/p/DaJmIsbGm-U/",
+        "https://www.homie.com/scottsdale-arizona-housing-market-2026-median-price-the-luxury-vs-entry-level-split-and-days-on-market/",
+        "https://resideline.com/blog/scottsdale-az-housing-market",
+        "https://www.homevaluepros.com/az/scottsdale/",
         "https://www.trulia.com/AZ/Scottsdale/",
-        "https://www.sweephoenixazhomes.com/market-trends/2026-june-scottsdale-az-housing-market-update/",
-        "https://www.masteryourmovenow.com/stats/scottsdale-real-estate-market",
-        "https://azandrea.com/scottsdale-housing-market-july-2026/"
+        "https://www.homes.com/scottsdale-az/"
       ]
     },
     "mesa": {
@@ -204,127 +197,127 @@
       "pricePerSqFt": 269,
       "avgDaysOnMarket": 64,
       "marketType": "buyer",
-      "yearOverYearChange": "-1.4%",
+      "yearOverYearChange": "-0.2%",
       "asOf": "2026-07",
       "confidence": "high",
       "citations": [
         "https://azandrea.com/mesa-az-housing-market-july-2026/",
-        "https://www.sweephoenixazhomes.com/market-trends/mesa-az-real-estate-housing-market-trend-report/amp/",
-        "https://azbigmedia.com/real-estate/metro-phoenix-outpaces-the-nation-in-home-sales/",
-        "https://www.redfin.com/zipcode/85204/housing-market",
-        "https://www.realtrends.com/ranking/best-real-estate-agents-mesa-arizona/individuals-by-sides/?page=299"
+        "https://www.sweephoenixazhomes.com/market-trends/mesa-az-real-estate-housing-market-trend-report/",
+        "https://ryanmoxleyrealestate.com/blog/mesa-market-update-july-2026",
+        "https://resideline.com/blog/mesa-housing-market-2026",
+        "https://www.homevaluepros.com/az/mesa/"
       ]
     },
     "chandler": {
-      "medianHomePrice": 540000,
-      "pricePerSqFt": 281,
+      "medianHomePrice": 559900,
+      "pricePerSqFt": 295,
       "avgDaysOnMarket": 57,
-      "marketType": "balanced",
-      "yearOverYearChange": "-4.8%",
-      "asOf": "2026-07",
-      "confidence": "medium",
-      "citations": [
-        "https://www.trulia.com/AZ/Chandler/",
-        "https://resideline.com/blog/chandler-az-housing-market",
-        "https://www.sweephoenixazhomes.com/market-trends/2026-june-chandler-az-housing-market-update/",
-        "https://www.masteryourmovenow.com/stats/chandler-real-estate-market",
-        "https://sanctuaryrealtygroup.com/blog/pricing-a-chandler-home-to-spark-strong-early-offers"
-      ]
-    },
-    "gilbert": {
-      "medianHomePrice": 577000,
-      "pricePerSqFt": 286,
-      "avgDaysOnMarket": 45,
-      "marketType": "buyer",
-      "yearOverYearChange": "-1.4%",
-      "asOf": "2026-05",
-      "confidence": "high",
-      "citations": [
-        "https://www.redfin.com/city/6998/AZ/Gilbert/housing-market",
-        "https://www.masteryourmovenow.com/stats/gilbert-real-estate-market",
-        "https://resideline.com/blog/gilbert-az-housing-market",
-        "https://www.homie.com/gilbert-arizona-housing-market-2026-median-price-greatschools-ratings-and-southeast-valley-demand/",
-        "https://www.facebook.com/gilbertnow/posts/the-gilbert-housing-market-remained-active-in-june-with-304-homes-sold-the-avera/1476857557809745/"
-      ]
-    },
-    "tempe": {
-      "medianHomePrice": 523000,
-      "pricePerSqFt": 333,
-      "avgDaysOnMarket": null,
       "marketType": "balanced",
       "yearOverYearChange": null,
       "asOf": "2026-07",
       "confidence": "medium",
       "citations": [
-        "https://azandrea.com/tempe-housing-market-july-2026/",
-        "https://www.sweephoenixazhomes.com/market-trends/tempe-az-real-estate-housing-market-trend-report/",
-        "https://resideline.com/blog/tempe-az-housing-market",
-        "https://www.elevated.loans/locations/tempe-az",
-        "https://www.redfin.com/city/18607/AZ/Tempe"
+        "https://www.homevaluepros.com/az/chandler/",
+        "https://resideline.com/blog/chandler-az-housing-market",
+        "https://www.homes.com/chandler-az/",
+        "https://www.masteryourmovenow.com/stats/chandler-real-estate-market",
+        "https://www.sweephoenixazhomes.com/market-trends/2026-june-chandler-az-housing-market-update/"
       ]
     },
-    "glendale": {
-      "medianHomePrice": 430000,
-      "pricePerSqFt": 243,
-      "avgDaysOnMarket": 72,
+    "gilbert": {
+      "medianHomePrice": 627500,
+      "pricePerSqFt": 288,
+      "avgDaysOnMarket": 54,
       "marketType": "balanced",
-      "yearOverYearChange": "+2%",
+      "yearOverYearChange": "+4.6%",
       "asOf": "2026-07",
-      "confidence": "medium",
+      "confidence": "high",
       "citations": [
-        "https://www.masteryourmovenow.com/stats/glendale-real-estate-market",
-        "https://resideline.com/blog/glendale-az-housing-market",
-        "https://www.yourvalley.net/stories/glendales-rising-home-sale-prices-buck-valley-trend,705092",
-        "https://johnrowan.com/blog/glendale-home-value-trends-and-insights-for-sellers",
-        "https://www.movoto.com/glendale-az/market-trends/"
+        "https://azandrea.com/gilbert-housing-market-july-2026/",
+        "https://www.masteryourmovenow.com/stats/gilbert-real-estate-market",
+        "https://resideline.com/blog/gilbert-az-housing-market",
+        "https://ryanmoxleyrealestate.com/blog/gilbert-market-update-july-2026",
+        "https://www.homie.com/gilbert-arizona-housing-market-2026-median-price-greatschools-ratings-and-southeast-valley-demand/"
       ]
     },
-    "peoria": {
-      "medianHomePrice": 530000,
-      "pricePerSqFt": 258,
-      "avgDaysOnMarket": 118,
-      "marketType": "seller",
-      "yearOverYearChange": "+2%",
-      "asOf": "2026-05",
-      "confidence": "medium",
-      "citations": [
-        "https://www.masteryourmovenow.com/stats/peoria-real-estate-market",
-        "https://saundersteamaz.com/market-report/Peoria/2780749/",
-        "https://resideline.com/blog/peoria-az-housing-market",
-        "https://www.redfin.com/zipcode/85381/housing-market",
-        "https://www.aol.com/articles/why-peoria-home-sales-rise-091114000.html"
-      ]
-    },
-    "surprise": {
-      "medianHomePrice": 422500,
-      "pricePerSqFt": 230,
-      "avgDaysOnMarket": 60,
+    "tempe": {
+      "medianHomePrice": 479739,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 61,
       "marketType": "balanced",
-      "yearOverYearChange": "+1.08%",
+      "yearOverYearChange": "-4.0%",
       "asOf": "2026-06",
       "confidence": "medium",
       "citations": [
-        "https://www.instagram.com/reel/DavMkRhD20k/",
-        "https://www.masteryourmovenow.com/stats/surprise-real-estate-market",
-        "https://www.redfin.com/zipcode/85388/housing-market",
-        "https://azbigmedia.com/real-estate/phoenix-home-sales-extend-growth-streak-to-12-months/",
-        "https://www.redfin.com/city/18267/AZ/Surprise"
+        "https://azandrea.com/tempe-housing-market-july-2026/",
+        "https://www.sweephoenixazhomes.com/market-trends/tempe-az-real-estate-housing-market-trend-report/",
+        "https://www.homevaluepros.com/az/tempe/",
+        "https://resideline.com/blog/tempe-az-housing-market",
+        "https://www.homie.com/tempe-arizona-housing-market-2026-median-price-condo-share-and-asu-driven-rental-demand/"
       ]
     },
-    "goodyear": {
-      "medianHomePrice": 470486,
-      "pricePerSqFt": null,
-      "avgDaysOnMarket": 84,
-      "marketType": "seller",
-      "yearOverYearChange": "+4.8%",
+    "glendale": {
+      "medianHomePrice": 440000,
+      "pricePerSqFt": 242,
+      "avgDaysOnMarket": 54,
+      "marketType": "balanced",
+      "yearOverYearChange": null,
+      "asOf": "2026-07",
+      "confidence": "high",
+      "citations": [
+        "https://www.masteryourmovenow.com/stats/glendale-real-estate-market",
+        "https://resideline.com/blog/glendale-az-housing-market",
+        "https://www.redfin.com/zipcode/85303/housing-market",
+        "https://www.homevaluepros.com/az/glendale/",
+        "https://www.yourvalley.net/stories/glendales-rising-home-sale-prices-buck-valley-trend,705092"
+      ]
+    },
+    "peoria": {
+      "medianHomePrice": 516969,
+      "pricePerSqFt": 237,
+      "avgDaysOnMarket": 51,
+      "marketType": "balanced",
+      "yearOverYearChange": "-0.58%",
+      "asOf": "2026-06",
+      "confidence": "high",
+      "citations": [
+        "https://www.realtor.com/local/property-records/arizona/maricopa-county/peoria",
+        "https://www.masteryourmovenow.com/stats/peoria-real-estate-market",
+        "https://ryanmoxleyrealestate.com/blog/peoria-market-update-july-2026",
+        "https://www.wcbu.org/local-news/2026-08-04/peoria-area-sees-surge-in-home-sales-during-second-quarter",
+        "https://ryanmoxleyrealestate.com/blog/peoria-real-estate-market-update-2026"
+      ]
+    },
+    "surprise": {
+      "medianHomePrice": 428000,
+      "pricePerSqFt": 212,
+      "avgDaysOnMarket": 37,
+      "marketType": "balanced",
+      "yearOverYearChange": "+3.8%",
       "asOf": "2026-07",
       "confidence": "medium",
       "citations": [
+        "https://ryanmoxleyrealestate.com/blog/surprise-market-update-july-2026",
+        "https://www.masteryourmovenow.com/stats/surprise-real-estate-market",
+        "https://www.redfin.com/city/18267/AZ/Surprise",
+        "https://www.instagram.com/reel/DavMkRhD20k/",
+        "https://www.homes.com/local-guide/surprise-az/"
+      ]
+    },
+    "goodyear": {
+      "medianHomePrice": 474990,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 83,
+      "marketType": "seller",
+      "yearOverYearChange": "+1.1%",
+      "asOf": "2026-06",
+      "confidence": "medium",
+      "citations": [
+        "https://www.linkedin.com/posts/juantheagent_westvalleyaz-goodyearaz-phoenixrealestate-activity-7490115177313357824-94sR",
+        "https://ryanmoxleyrealestate.com/blog/top-realtor-goodyear-az",
         "https://resideline.com/blog/goodyear-az-housing-market",
-        "https://www.youtube.com/watch?v=peZu4qilk00",
-        "https://www.trulia.com/AZ/Goodyear/",
-        "https://www.yourvalley.net/litchfield-park-independent/stories/housing-market-stabilizes-goodyear-and-litchfield-park-sell-at-different-speeds,703442",
-        "https://www.youtube.com/watch?v=stBQ4aJWfUc&list=TLPQMjIwNzIwMjaw5k-RSzEH9A&index=3"
+        "https://www.opendoor.com/sell/arizona/goodyear",
+        "https://ryanmoxleyrealestate.com/blog/goodyear-rental-market-guide-2026"
       ]
     },
     "avondale": {
@@ -345,82 +338,82 @@
     },
     "buckeye": {
       "medianHomePrice": 399990,
-      "pricePerSqFt": 218,
-      "avgDaysOnMarket": 84,
-      "marketType": "balanced",
-      "yearOverYearChange": "-1.5%",
-      "asOf": "2026-06",
+      "pricePerSqFt": 230,
+      "avgDaysOnMarket": 62,
+      "marketType": "buyer",
+      "yearOverYearChange": "-3.6%",
+      "asOf": "2026-07",
       "confidence": "medium",
       "citations": [
         "https://resideline.com/blog/buckeye-az-housing-market",
-        "https://blog.clearlysold.com/post/buckeye-az-real-estate-market-summer-2026",
-        "https://www.opendoor.com/sell/arizona/buckeye",
         "https://www.trulia.com/AZ/Buckeye/",
+        "https://resideline.com/blog/arizona-housing-market",
+        "https://www.redfin.com/neighborhood/548326/AZ/Buckeye/Central-Buckeye",
         "https://unbiasedoptions.com/market-statistics/"
       ]
     },
     "queen-creek": {
-      "medianHomePrice": 692500,
-      "pricePerSqFt": 267,
-      "avgDaysOnMarket": 86,
-      "marketType": "seller",
-      "yearOverYearChange": "+9%",
+      "medianHomePrice": 614406,
+      "pricePerSqFt": 255,
+      "avgDaysOnMarket": 71,
+      "marketType": "buyer",
+      "yearOverYearChange": "-1.7%",
       "asOf": "2026-06",
-      "confidence": "medium",
+      "confidence": "high",
       "citations": [
-        "https://unbiasedoptions.com/market-statistics/",
+        "https://www.redfin.com/city/30786/AZ/Queen-Creek/housing-market",
+        "https://ryanmoxleyrealestate.com/blog/queen-creek-market-update-july-2026",
         "https://resideline.com/blog/queen-creek-az-housing-market",
-        "https://www.youtube.com/watch?v=xOnWRYJJOQA",
         "https://azbrian.com/greater-phoenix/queen-creek/encanterra/home-market-report",
-        "https://www.homesbymarco.com/cities/queen-creek-az/housing-market-report"
+        "https://www.homevaluepros.com/az/queen-creek/"
       ]
     },
     "paradise-valley": {
-      "medianHomePrice": 4000000,
-      "pricePerSqFt": 975,
-      "avgDaysOnMarket": 84,
-      "marketType": "seller",
-      "yearOverYearChange": "+10%",
-      "asOf": "2026-02",
-      "confidence": "medium",
+      "medianHomePrice": 3100000,
+      "pricePerSqFt": 676,
+      "avgDaysOnMarket": 107,
+      "marketType": "buyer",
+      "yearOverYearChange": "+1.3%",
+      "asOf": "2026-09",
+      "confidence": "high",
       "citations": [
+        "https://www.redfin.com/zipcode/85253/housing-market",
         "https://thecalamiagroup.com/blog/monday-market-update-paradise-valley-just-jumped-23",
         "https://www.homes.com/local-guide/paradise-valley-az/",
-        "https://saundersteamaz.com/market-report/Paradise-Valley/2780744/",
-        "https://roselawgroupreporter.com/2026/07/paradise-valley-home-market-defies-broader-slowdown/",
-        "https://www.redfin.com/city/13625/AZ/Paradise-Valley"
+        "https://therealdeal.com/national/phoenix/2026/07/14/paradise-valley-home-sets-phoenix-price-record/",
+        "https://www.livebetterinscottsdale.com/paradise-valley-homes-and-lifestyle/"
       ]
     },
     "fountain-hills": {
-      "medianHomePrice": 725000,
+      "medianHomePrice": 730000,
       "pricePerSqFt": 380,
-      "avgDaysOnMarket": 68,
-      "marketType": "balanced",
-      "yearOverYearChange": "+1%",
-      "asOf": "2026-07",
+      "avgDaysOnMarket": 66,
+      "marketType": "seller",
+      "yearOverYearChange": "+2%",
+      "asOf": "2026-05",
       "confidence": "medium",
       "citations": [
-        "https://www.youtube.com/watch?v=--ZplXOfwKY",
-        "https://www.facebook.com/61552257136602/posts/-fountain-hills-real-estate-expert-fountain-hills-current-market-trends-alan-bla/122307345698075237/",
-        "https://www.trulia.com/AZ/Fountain_Hills/",
-        "https://unbiasedoptions.com/market-statistics/",
-        "https://fred.stlouisfed.org/series/PHXRMTSA"
+        "https://ryanmoxleyrealestate.com/blog/fountain-hills-real-estate-market-update-2026",
+        "https://ryanmoxleyrealestate.com/blog/best-realtor-fountain-hills-az",
+        "https://www.sonoranlivingwithsarah.com/fountain-hills-AZ",
+        "https://www.redfin.com/city/6516/AZ/Fountain-Hills/page-2",
+        "https://unbiasedoptions.com/market-statistics/"
       ]
     },
     "cave-creek": {
-      "medianHomePrice": 1211775,
-      "pricePerSqFt": 400,
-      "avgDaysOnMarket": 85,
-      "marketType": "balanced",
-      "yearOverYearChange": "+1.0%",
-      "asOf": "2026-05",
+      "medianHomePrice": 1088607,
+      "pricePerSqFt": 383,
+      "avgDaysOnMarket": 67,
+      "marketType": "seller",
+      "yearOverYearChange": null,
+      "asOf": "2026-07",
       "confidence": "high",
       "citations": [
-        "https://www.redfin.com/city/2922/AZ/Cave-Creek/housing-market",
-        "https://www.redfin.com/county/220/AZ/Maricopa-County/housing-market",
-        "https://www.redfin.com/city/34610/AZ/San-Tan-Valley/housing-market",
-        "https://www.redfin.com/city/6998/AZ/Gilbert/housing-market",
-        "https://www.redfin.com/AZ/Cave-Creek/6525-E-Cave-Creek-Rd-85331/unit-23/home/110193593"
+        "https://www.masteryourmovenow.com/stats/cave-creek-real-estate-market",
+        "https://www.bhhsaz.com/community/az/cave-creek",
+        "https://ryanmoxleyrealestate.com/blog/cave-creek-lifestyle-guide-2026",
+        "https://valleyhomesaz.com/cave-creek-AZ",
+        "https://www.homes.com/cave-creek-az/"
       ]
     },
     "carefree": {
@@ -441,64 +434,64 @@
     },
     "anthem": {
       "medianHomePrice": 520000,
-      "pricePerSqFt": 264,
+      "pricePerSqFt": 283,
       "avgDaysOnMarket": 65,
-      "marketType": "balanced",
-      "yearOverYearChange": "-9.07%",
-      "asOf": "2026-05",
-      "confidence": "high",
+      "marketType": "buyer",
+      "yearOverYearChange": "-8%",
+      "asOf": "2026-06",
+      "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/city/31465/AZ/Anthem/housing-market",
-        "https://www.homes.com/anthem-az/",
-        "https://www.youranthemhome.com/blog/broomfield-housing-market-update-2026",
-        "https://www.trulia.com/AZ/Anthem/",
-        "https://brightersideofliving.com/area/anthem-AZ/anthem"
+        "https://ryanmoxleyrealestate.com/blog/anthem-real-estate-guide-2026",
+        "https://www.redfin.com/city/31465/AZ/Anthem",
+        "https://agentpronto.com/arizona/anthem",
+        "https://thesakalagroup.com/85086-real-estate-market-report",
+        "https://themitchellgroupaz.com/blog/from-listing-to-closing-how-to-sell-your-anthem-home-smoothly"
       ]
     },
     "litchfield-park": {
-      "medianHomePrice": 599641,
+      "medianHomePrice": 699619,
       "pricePerSqFt": null,
-      "avgDaysOnMarket": 30,
+      "avgDaysOnMarket": null,
       "marketType": "balanced",
-      "yearOverYearChange": "-4.5%",
-      "asOf": "2026-05",
-      "confidence": "medium",
+      "yearOverYearChange": "-5.5%",
+      "asOf": "2026-06",
+      "confidence": "high",
       "citations": [
         "https://www.westvalleyhomefinder.com/guides/city/az/litchfield%20park/",
         "https://www.trulia.com/AZ/Litchfield_Park/",
         "https://www.redfin.com/city/10525/AZ/Litchfield-Park",
-        "https://www.redfin.com/AZ/Litchfield-Park/4969-N-Village-Rd-85340/home/27359106",
-        "https://www.homes.com/litchfield-park-az/houses-for-sale/under-1-5m/"
+        "https://www.homes.com/litchfield-park-az/private-pool/",
+        "https://www.realtor.com/realestateandhomes-detail/18509-W-Rancho-Ct_Litchfield-Park_AZ_85340_M28917-85798"
       ]
     },
     "tolleson": {
-      "medianHomePrice": 390042,
-      "pricePerSqFt": null,
-      "avgDaysOnMarket": 40,
+      "medianHomePrice": 429990,
+      "pricePerSqFt": 230,
+      "avgDaysOnMarket": 46,
       "marketType": "balanced",
-      "yearOverYearChange": null,
+      "yearOverYearChange": "+2%",
       "asOf": "2026-07",
-      "confidence": "medium",
+      "confidence": "high",
       "citations": [
+        "https://www.homes.com/tolleson-az/",
         "https://unbiasedoptions.com/market-statistics/",
-        "https://www.fhfa.gov/data/hpi",
-        "https://purpleheartrealtor.com/area/tolleson-AZ/listings",
-        "https://www.weichert.com/135236769/",
-        "https://mlssaz.com/"
+        "https://fred.stlouisfed.org/series/MEDLISPRIAZ",
+        "https://www.redfin.com/news/data-center/",
+        "https://www.redfin.com/AZ/Tolleson/8317-W-Gross-Ave-85353/home/27997450"
       ]
     },
     "el-mirage": {
       "medianHomePrice": 340000,
       "pricePerSqFt": 244,
       "avgDaysOnMarket": 60,
-      "marketType": "balanced",
+      "marketType": "buyer",
       "yearOverYearChange": "-2.9%",
       "asOf": "2026-03",
       "confidence": "high",
       "citations": [
         "https://www.redfin.com/city/5724/AZ/El-Mirage/housing-market",
         "https://www.findallphoenixareahomes.com/guides/city/az/el%20mirage/",
-        "https://www.homes.com/local-guide/el-mirage-az/",
+        "https://www.realtor.com/realestateandhomes-search/El-Mirage_AZ",
         "https://unbiasedoptions.com/market-statistics/",
         "https://www.desertdreamrealty.com/el-mirage-AZ"
       ]
@@ -520,67 +513,67 @@
       ]
     },
     "sun-city": {
-      "medianHomePrice": 265000,
-      "pricePerSqFt": 182,
-      "avgDaysOnMarket": 71,
-      "marketType": "balanced",
-      "yearOverYearChange": "-6%",
-      "asOf": "2026-07",
-      "confidence": "medium",
+      "medianHomePrice": 257860,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": null,
+      "marketType": "buyer",
+      "yearOverYearChange": "-7.9%",
+      "asOf": "2026-06",
+      "confidence": "high",
       "citations": [
-        "https://retireaz-resortstyle.com/phoenix-55-retirement-community-home-value-update-2026-q2/",
+        "https://www.redfin.com/city/25888/AZ/Sun-City",
         "https://www.youtube.com/watch?v=GCBcmXPm0w8",
-        "https://www.trulia.com/AZ/Sun_City/",
-        "https://www.homes.com/sun-city-az/",
-        "https://www.homes.com/local-guide/sun-city-az/"
+        "https://retireaz-resortstyle.com/phoenix-55-retirement-community-home-value-update-2026-q2/",
+        "https://www.homes.com/local-guide/sun-city-az/",
+        "https://www.redfin.com/city/26277/CA/Sun-City/housing-market"
       ]
     },
     "sun-city-west": {
-      "medianHomePrice": 354788,
+      "medianHomePrice": 300000,
       "pricePerSqFt": null,
-      "avgDaysOnMarket": null,
+      "avgDaysOnMarket": 97,
       "marketType": "seller",
-      "yearOverYearChange": "-2.8%",
-      "asOf": "2026-05",
+      "yearOverYearChange": "-8.2%",
+      "asOf": "2026-07",
       "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/city/25890/AZ/Sun-City-West",
         "https://www.youtube.com/watch?v=GCBcmXPm0w8",
         "https://www.homesbymarco.com/neighborhoods/corte-bella-in-sun-city-west-az/housing-market-report",
-        "https://retireaz-resortstyle.com/phoenix-55-retirement-community-home-value-update-2026-q2/",
-        "https://revinreaz.com/area/sun-city-west-AZ"
+        "https://ryanmoxleyrealestate.com/blog/sun-city-west-real-estate-guide-2026",
+        "https://ryanmoxleyrealestate.com/blog/surprise-market-update-july-2026",
+        "https://retireaz-resortstyle.com/phoenix-55-retirement-community-home-value-update-2026-q2/"
       ]
     },
     "wickenburg": {
-      "medianHomePrice": 507988,
-      "pricePerSqFt": null,
-      "avgDaysOnMarket": 69,
+      "medianHomePrice": 613000,
+      "pricePerSqFt": 302,
+      "avgDaysOnMarket": null,
       "marketType": "buyer",
       "yearOverYearChange": null,
       "asOf": "2026-06",
       "confidence": "medium",
       "citations": [
-        "https://www.instagram.com/reel/Dak3IyGCLAU/",
-        "https://www.airdna.co/vacation-rental-data/app/us/arizona/wickenburg/overview",
-        "https://www.homes.com/property/30207-e-wickenburg-way-wickenburg-az/c1jm25edg11hm/",
-        "https://www.redfin.com/county/220/AZ/Maricopa-County/housing-market",
-        "https://www.mainepropertygroup.com/city_search/Wickenburg"
+        "https://stacker.com/stories/arizona/phoenix/cities-fastest-growing-home-prices-phoenix-metro-area-0",
+        "https://phoenixagentmagazine.com/",
+        "https://www.trulia.com/home/00xxa-s-falcon-dr-wickenburg-az-85390-460620298",
+        "https://fred.stlouisfed.org/series/MEDLISPRIAZ",
+        "https://www.homes.com/property/30207-e-wickenburg-way-wickenburg-az/c1jm25edg11hm/"
       ]
     },
     "apache-junction": {
-      "medianHomePrice": 409755,
-      "pricePerSqFt": 303,
-      "avgDaysOnMarket": 71,
-      "marketType": "balanced",
-      "yearOverYearChange": "-4.7%",
-      "asOf": "2026-05",
+      "medianHomePrice": 450000,
+      "pricePerSqFt": 299,
+      "avgDaysOnMarket": 64,
+      "marketType": "buyer",
+      "yearOverYearChange": "+5.9%",
+      "asOf": "2026-07",
       "confidence": "medium",
       "citations": [
-        "https://www.nexthomecompleterealty.com/areas/apache+junction/az",
         "https://resideline.com/blog/apache-junction-az-housing-market",
+        "https://www.nexthomecompleterealty.com/areas/apache+junction/az",
+        "https://ryanmoxleyrealestate.com/blog/apache-junction-guide-2026",
         "https://www.redfin.com/city/30787/AZ/Apache-Junction",
-        "https://newsandhomes.com/articles/14782/2026-07-18-are-offers-still-competitive-in-apache-junction-az-in-july-2026",
-        "https://keyselectrealestate.com/area/apache-junction-AZ"
+        "https://unbiasedoptions.com/market-statistics/"
       ]
     },
     "gold-canyon": {
@@ -600,50 +593,50 @@
       ]
     },
     "san-tan-valley": {
-      "medianHomePrice": 424746,
-      "pricePerSqFt": 223,
-      "avgDaysOnMarket": 54,
-      "marketType": "balanced",
-      "yearOverYearChange": "+1.1%",
-      "asOf": "2026-05",
+      "medianHomePrice": 424769,
+      "pricePerSqFt": 218,
+      "avgDaysOnMarket": 60,
+      "marketType": "buyer",
+      "yearOverYearChange": "-0.054%",
+      "asOf": "2026-06",
       "confidence": "medium",
       "citations": [
-        "https://www.trulia.com/AZ/San_Tan_Valley/",
+        "https://homeladder.com/san-tan-valley-real-estate-and-rental-market-update/",
         "https://azandrea.com/san-tan-valley-housing-market-july-2026/",
-        "https://www.homes.com/san-tan-valley-az/houses-for-sale/under-1-5m/",
-        "https://www.homes.com/san-tan-valley-az/",
+        "https://resideline.com/market/85140/",
+        "https://www.redfin.com/city/34610/AZ/San-Tan-Valley",
         "https://unbiasedoptions.com/market-statistics/"
       ]
     },
     "florence": {
-      "medianHomePrice": 357776,
-      "pricePerSqFt": 191,
+      "medianHomePrice": 351809,
+      "pricePerSqFt": 167,
       "avgDaysOnMarket": 96,
-      "marketType": "seller",
-      "yearOverYearChange": "-5.2%",
-      "asOf": "2026-05",
-      "confidence": "medium",
+      "marketType": "buyer",
+      "yearOverYearChange": "-3.2%",
+      "asOf": "2026-06",
+      "confidence": "high",
       "citations": [
         "https://www.redfin.com/city/6123/AZ/Florence/housing-market",
-        "https://resideline.com/market/85132/",
-        "https://www.homes.com/florence-az/",
-        "https://www.apartments.com/rent-market-trends/florence-az/",
-        "https://www.fhfa.gov/data/hpi"
+        "https://www.blackbeltnewsnetwork.com/news/state/florence-mid-year-housing-market-review/article_d4a45efc-c84e-5a85-a566-91308fd71c39.html",
+        "https://www.fhfa.gov/data/hpi",
+        "https://fred.stlouisfed.org/series/MEDLISPRIAZ",
+        "https://www.homes.com/florence-az/"
       ]
     },
     "maricopa-city": {
       "medianHomePrice": 345000,
-      "pricePerSqFt": null,
-      "avgDaysOnMarket": 157,
+      "pricePerSqFt": 187,
+      "avgDaysOnMarket": 96,
       "marketType": "buyer",
       "yearOverYearChange": "-3%",
-      "asOf": "2026-05",
+      "asOf": "2026-06",
       "confidence": "medium",
       "citations": [
-        "https://inmaricopa.com/by-the-numbers-maricopa-real-estate-in-2026/",
-        "https://www.redfin.com/county/220/AZ/Maricopa-County/housing-market",
-        "https://www.youtube.com/watch?v=E0RyUr-ZefA",
-        "https://www.therfgaz.com/blog/may-2026-maricopa-county-real-estate-market-update",
+        "https://openshawrealestategroup.com/blog/what-your-money-actually-buys-in-maricopa-right-now-the-hidden-mechanics-behind-a-dollar345k-median",
+        "https://unbiasedoptions.com/market-statistics/",
+        "https://fred.stlouisfed.org/series/MEDLISPRI4013",
+        "https://www.redfin.com/neighborhood/555090/AZ/Maricopa/Province/housing-market",
         "https://phoenixagentmagazine.com/2026/07/14/maricopa-county-report-june-2026/"
       ]
     },
@@ -664,19 +657,19 @@
       ]
     },
     "coolidge": {
-      "medianHomePrice": 294990,
-      "pricePerSqFt": 166,
-      "avgDaysOnMarket": 46,
-      "marketType": "seller",
-      "yearOverYearChange": "+4%",
-      "asOf": "2026-07",
-      "confidence": "medium",
+      "medianHomePrice": 281400,
+      "pricePerSqFt": 177,
+      "avgDaysOnMarket": 59,
+      "marketType": "buyer",
+      "yearOverYearChange": "-4.6%",
+      "asOf": "2025-06",
+      "confidence": "high",
       "citations": [
         "https://barreproperties.com/markets/coolidge/",
-        "https://www.homes.com/coolidge-az/",
+        "https://www.redfin.com/zipcode/85128/housing-market",
+        "https://www.oxfordarizonahomes.com/pinal-county-real-estate-why-casa-grande-maricopa-and-coolidge-are-growing/",
         "https://www.fhfa.gov/data/hpi",
-        "https://www.trulia.com/AZ/Coolidge/",
-        "https://www.oxfordarizonahomes.com/pinal-county-real-estate-why-casa-grande-maricopa-and-coolidge-are-growing/"
+        "https://fred.stlouisfed.org/series/MEDLISPRIAZ"
       ]
     },
     "eloy": {
@@ -712,19 +705,19 @@
       ]
     },
     "tucson": {
-      "medianHomePrice": 357000,
-      "pricePerSqFt": 230,
-      "avgDaysOnMarket": 29,
+      "medianHomePrice": 320326,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 62,
       "marketType": "buyer",
-      "yearOverYearChange": "+1.9%",
+      "yearOverYearChange": "-1.4%",
       "asOf": "2026-06",
-      "confidence": "medium",
+      "confidence": "high",
       "citations": [
-        "https://tucsonwithryan.com/blog/tucson-real-estate-market-2026",
-        "https://www.youtube.com/watch?v=RwPwNlRAhw0",
         "https://www.tucsonrealtors.org/mlssaz-statistics/",
+        "https://realtywire.com/markets/tucson-az/",
+        "https://tucsonwithryan.com/blog/tucson-real-estate-market-2026",
         "https://www.realtor.com/news/local/tucson-az/real-estate-market-tucson-az-june-2026/",
-        "https://premiertucsonhomes.com/tucsons-housing-market-pulse-june-2026/"
+        "https://fred.stlouisfed.org/series/MEDLISPRIYY46060"
       ]
     },
     "oro-valley": {
@@ -736,27 +729,27 @@
       "asOf": "2026-06",
       "confidence": "high",
       "citations": [
-        "https://www.redfin.com/city/13300/AZ/Oro-Valley/housing-market",
-        "https://oliverrealty.net/blog/oro-valley-real-estate-market-update-august-2026",
-        "https://resident.com/amp/story/real-estate-resources/2026/07/09/oliver-realty-tucsons-top-performing-luxury-brokerage-by-the-numbers",
-        "https://www.brendaobrien.com/tucson-housing-report.html",
-        "https://tucsonwithryan.com/blog/tucson-real-estate-market-2026"
+        "https://www.trulia.com/AZ/Oro_Valley/",
+        "https://www.facebook.com/AgentBondAz/posts/-oro-valley-june-2026-market-snapshot-closed-sales-57%EF%B8%8F-24-from-last-year-median-/1068223205772283/",
+        "https://www.homes.com/oro-valley-az/",
+        "https://tucsonwithryan.com/blog/tucson-real-estate-market-2026",
+        "https://oliverrealty.net/blog/oro-valley-real-estate-market-update-august-2026"
       ]
     },
     "marana": {
-      "medianHomePrice": 409990,
-      "pricePerSqFt": 233,
-      "avgDaysOnMarket": 50,
+      "medianHomePrice": 434763,
+      "pricePerSqFt": 223,
+      "avgDaysOnMarket": 67,
       "marketType": "seller",
-      "yearOverYearChange": "-1.9%",
+      "yearOverYearChange": "-1.2%",
       "asOf": "2026-06",
-      "confidence": "high",
+      "confidence": "medium",
       "citations": [
-        "https://www.prop-metrics.com/zip/85658",
         "https://resideline.com/blog/marana-az-housing-market",
+        "https://www.prop-metrics.com/zip/85658",
         "https://www.redfin.com/city/11280/AZ/Marana",
-        "https://tucsonwithryan.com/blog/tucson-real-estate-market-2026",
-        "https://www.redfin.com/neighborhood/103635/AZ/Marana/Continental-Reserve/housing-market"
+        "https://www.homes.com/marana-az/",
+        "https://tucsonwithryan.com/blog/tucson-real-estate-market-2026"
       ]
     },
     "sahuarita": {
