@@ -1,240 +1,240 @@
 {
-  "lastUpdated": "2026-08-11",
+  "lastUpdated": "2026-08-12",
   "conditions": {
     "camelback-echo-canyon": {
       "status": "restricted",
-      "note": "Echo Canyon Trail closes 8am to 5pm daily under the City of Phoenix Trail Heat Safety Program on days when the National Weather Service issues an Extreme Heat Warning for the Phoenix metro area. No such warning was active as of the August 11, 2026 morning check; the prior warning expired August 9 at 8pm and had not been renewed, so the mandatory program closure is not currently triggered. Forecast highs remain around 107 degrees, so hike before 8am or after 7pm and carry extra water. Source: City of Phoenix Parks and Recreation; National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Echo Canyon Trail closes 8am to 5pm daily under the City of Phoenix Trail Heat Safety Program on days when the National Weather Service issues an Extreme Heat Warning for the Phoenix metro area. No such warning was active as of the August 12, 2026 morning check; the prior warning expired August 9 at 8pm and had not been renewed, so the mandatory program closure is not currently triggered. Hike before 8am or after 7pm and carry extra water. Source: City of Phoenix Parks and Recreation; National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "camelback-cholla": {
       "status": "restricted",
-      "note": "Cholla Trail closes 8am to 5pm daily under the City of Phoenix Trail Heat Safety Program on days when the National Weather Service issues an Extreme Heat Warning for the Phoenix metro area. No such warning was active as of the August 11, 2026 morning check; the prior warning expired August 9 at 8pm and had not been renewed, so the mandatory program closure is not currently triggered. Forecast highs remain around 107 degrees, so hike before 8am or after 7pm and carry extra water. Cholla Trail is also scheduled to close entirely August 17-28, 2026 for the Cholla Sewer Diversion and Abandonment Project; Echo Canyon Trailhead will be the alternate access point during that closure. Source: City of Phoenix Parks and Recreation; National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Cholla Trail closes 8am to 5pm daily under the City of Phoenix Trail Heat Safety Program on days when the National Weather Service issues an Extreme Heat Warning for the Phoenix metro area. No such warning was active as of the August 12, 2026 morning check; the prior warning expired August 9 at 8pm and had not been renewed, so the mandatory program closure is not currently triggered. Hike before 8am or after 7pm and carry extra water. Cholla Trail is also scheduled to close entirely August 17-28, 2026 for the Cholla Sewer Diversion and Abandonment Project; Echo Canyon Trailhead will be the alternate access point during that closure, though it is considered a more difficult route. Source: City of Phoenix Parks and Recreation; National Weather Service; azfamily.com.",
+      "lastChecked": "2026-08-12"
     },
     "piestewa-peak": {
       "status": "restricted",
-      "note": "Piestewa Peak Summit Trail and associated trails closes 8am to 5pm daily under the City of Phoenix Trail Heat Safety Program on days when the National Weather Service issues an Extreme Heat Warning for the Phoenix metro area. No such warning was active as of the August 11, 2026 morning check; the prior warning expired August 9 at 8pm and had not been renewed, so the mandatory program closure is not currently triggered. Forecast highs remain around 107 degrees, so hike before 8am or after 7pm and carry extra water. Source: City of Phoenix Parks and Recreation; National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Piestewa Peak Summit Trail and associated trails closes 8am to 5pm daily under the City of Phoenix Trail Heat Safety Program on days when the National Weather Service issues an Extreme Heat Warning for the Phoenix metro area. No such warning was active as of the August 12, 2026 morning check; the prior warning expired August 9 at 8pm and had not been renewed, so the mandatory program closure is not currently triggered. Hike before 8am or after 7pm and carry extra water. Source: City of Phoenix Parks and Recreation; National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "toms-thumb": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 107 degrees. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "pinnacle-peak": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 107 degrees. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "gateway-loop": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 107 degrees. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "south-mountain-mormon": {
       "status": "restricted",
-      "note": "Mormon Trail closes 8am to 5pm daily under the City of Phoenix Trail Heat Safety Program on days when the National Weather Service issues an Extreme Heat Warning for the Phoenix metro area. No such warning was active as of the August 11, 2026 morning check; the prior warning expired August 9 at 8pm and had not been renewed, so the mandatory program closure is not currently triggered; most other South Mountain trails remain open regardless. Forecast highs remain around 107 degrees, so hike before 8am or after 7pm and carry extra water. Source: City of Phoenix Parks and Recreation; National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Mormon Trail closes 8am to 5pm daily under the City of Phoenix Trail Heat Safety Program on days when the National Weather Service issues an Extreme Heat Warning for the Phoenix metro area. No such warning was active as of the August 12, 2026 morning check; the prior warning expired August 9 at 8pm and had not been renewed, so the mandatory program closure is not currently triggered; most other South Mountain trails remain open regardless. Hike before 8am or after 7pm and carry extra water. Source: City of Phoenix Parks and Recreation; National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "papago-hole-in-rock": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 107 degrees. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "double-butte-loop": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 107 degrees. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "lookout-mountain": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 107 degrees. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "sunrise-peak": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 107 degrees. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "lost-dog-wash": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 107 degrees. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "usery-wind-cave": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 107 degrees. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. In addition, a Flash Flood Watch is in effect for the East Mesa/Usery Mountain area from 4pm today, August 12, through 6am Thursday, August 13, for thunderstorms capable of heavy rainfall; avoid washes and low areas during and after storms. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "peralta-fremont-saddle": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail in the Superstition Wilderness. The National Weather Service Extreme Heat Warning for rural Maricopa and northern Pinal counties, including the Superstition Mountains and Apache Junction area, expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check. Tonto National Forest currently has no fire restrictions in effect forest-wide, per the forest's alerts page, following the July 20, 2026 lifting of Stage 2 restrictions; fire danger is rated High to Very High depending on ranger district, and there is no trail closure here. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service; Tonto National Forest.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail in the Superstition Wilderness. The National Weather Service Extreme Heat Warning for rural Maricopa and northern Pinal counties, including the Superstition Mountains and Apache Junction area, expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. A Flash Flood Watch covering the Superstition Mountains/Apache Junction area is in effect from 4pm today, August 12, through 6am Thursday, August 13, for thunderstorms capable of heavy rainfall; avoid washes and canyon bottoms during and after storms. Tonto National Forest currently has no fire restrictions in effect forest-wide, following the July 20, 2026 lifting of Stage 2 restrictions; fire danger is rated High to Very High depending on ranger district, and there is no trail closure here. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service; Tonto National Forest.",
+      "lastChecked": "2026-08-12"
     },
     "flatiron-siphon-draw": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail with a history of heat-related rescues. The National Weather Service Extreme Heat Warning for rural Maricopa and northern Pinal counties, including the Superstition Mountains and Apache Junction area, expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check. This trail is inside Lost Dutchman State Park, which has Stage II fire restrictions in effect through October 31, 2026: no wood, charcoal, or open flame, and no smoking on trails. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service; Arizona State Parks.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail with a history of heat-related rescues. The National Weather Service Extreme Heat Warning for rural Maricopa and northern Pinal counties, including the Superstition Mountains and Apache Junction area, expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. A Flash Flood Watch covering the Superior/Apache Junction/Gold Canyon area is in effect from 4pm today, August 12, through 6am Thursday, August 13, for thunderstorms capable of heavy rainfall; avoid washes and canyon bottoms during and after storms. This trail is inside Lost Dutchman State Park, which has Stage II fire restrictions in effect through October 31, 2026: no wood, charcoal, or open flame, and no smoking on trails. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service; Arizona State Parks.",
+      "lastChecked": "2026-08-12"
     },
     "pass-mountain": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 107 degrees. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. In addition, a Flash Flood Watch is in effect for the East Mesa/Usery Mountain area from 4pm today, August 12, through 6am Thursday, August 13, for thunderstorms capable of heavy rainfall; avoid washes and low areas during and after storms. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "white-tank-waterfall": {
       "status": "restricted",
-      "note": "Main Trailhead Staging Area closed for construction through 9/30/26. Waterfall, Mesquite Canyon, Mule Deer, and Maricopa Trails remain open but are not reachable from the staging area during the closure. Source: Maricopa County Parks and Recreation. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 107 degrees; hike only in early morning hours and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Main Trailhead Staging Area closed for construction through 9/30/26. Waterfall, Mesquite Canyon, Mule Deer, and Maricopa Trails remain open but are not reachable from the staging area during the closure. Source: Maricopa County Parks and Recreation. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check; hike only in early morning hours and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "browns-ranch": {
       "status": "closed",
       "note": "Brown's Ranch Trailhead (building, parking lot, and portions of the surrounding trail system) closed since July 13, 2026 for a $1.17 million improvement project; the city expects the work to wrap up by fall 2026. Alternate access points include Pima Dynamite, Fraesfield, Granite Mountain, and Tom's Thumb trailheads. Source: City of Scottsdale McDowell Sonoran Preserve.",
-      "lastChecked": "2026-08-11"
+      "lastChecked": "2026-08-12"
     },
     "thunderbird-h3": {
       "status": "restricted",
-      "note": "Both the 59th Avenue Trailhead (closed since April 2026, running through December 2026) and the 55th Avenue Trailhead (closure began this month, running August 2026 through February 2027) are now closed for improvement construction. Trails throughout the park remain open during construction, but visitors should use the 67th Avenue Trailhead as the main alternate access point until the January 2027 to August 2027 closure there begins. Source: City of Glendale Parks and Recreation. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain up to 107 degrees; hike only in early morning hours and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Both the 59th Avenue Trailhead (closed since April 2026, running through December 2026) and the 55th Avenue Trailhead (closure began this month, running August 2026 through February 2027) are now closed for improvement construction; trails throughout the park remain open during construction, and the city is staggering the work so at least one trailhead stays open. Visitors should use the 67th Avenue Trailhead as the main alternate access point until the January 2027 to August 2027 closure there begins. Source: City of Glendale Parks and Recreation. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check; hike only in early morning hours and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "estrella-competitive": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 107 degrees. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "victory-steps-verrado": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 107 degrees. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated trail. The National Weather Service Extreme Heat Warning for the Phoenix metro area expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "cathedral-rock": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated red rock trail. The National Weather Service Extreme Heat Warning for Yavapai County valleys and basins, including the Verde Valley/Sedona area, expired August 3, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 100 to 103 degrees. Hike before 7am or after 7pm and carry extra water. Source: National Weather Service Flagstaff.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated red rock trail. The National Weather Service Extreme Heat Warning for Yavapai County valleys and basins, including the Verde Valley/Sedona area, expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. A Flash Flood Watch covering the Sedona/Oak Creek Canyon area is in effect from noon to midnight today, August 12, for thunderstorms capable of very heavy rainfall; avoid creek crossings and canyon bottoms during and after storms. Hike before 7am or after 7pm and carry extra water. Source: National Weather Service Flagstaff.",
+      "lastChecked": "2026-08-12"
     },
     "devils-bridge": {
       "status": "restricted",
-      "note": "The Pocket Fire was declared 100 percent contained July 30, 2026 and the broad forest closure was significantly reduced effective July 31, 2026, replaced by narrower closures of specific trails and recreation sites. Devil's Bridge Trail (No. 120) is not on the current closed-trail list (Bear Sign No. 59, David Miller No. 164, Dry Creek No. 52, HS Canyon No. 50, Secret Canyon No. 121, West Fork No. 108), confirmed again via the Visit Sedona Pocket Fire update (last updated July 31, 2026). Source: Coconino National Forest, Forest Order 03-04-06-26-003; Visit Sedona. The NWS Extreme Heat Warning for the Verde Valley/Sedona area expired August 3, 2026 at 8pm and had not been renewed as of August 11, 2026 morning, though forecast highs remain around 100 to 103 degrees; hike early morning and carry extra water. Source: National Weather Service Flagstaff.",
-      "lastChecked": "2026-08-11"
+      "note": "The Pocket Fire was declared 100 percent contained July 30, 2026 and the broad forest closure was significantly reduced effective July 31, 2026, replaced by narrower closures of specific trails and recreation sites. Devil's Bridge Trail (No. 120) is not on the current closed-trail list (Bear Sign No. 59, David Miller No. 164, Dry Creek No. 52, HS Canyon No. 50, Secret Canyon No. 121, West Fork No. 108), reconfirmed via the Visit Sedona Pocket Fire update. Source: Coconino National Forest, Forest Order 03-04-06-26-003; Visit Sedona. A Flash Flood Watch covering the Sedona/Oak Creek Canyon area is in effect from noon to midnight today, August 12, for thunderstorms capable of very heavy rainfall; avoid washes and canyon bottoms during and after storms. The NWS Extreme Heat Warning for the Verde Valley/Sedona area expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check; hike early morning and carry extra water. Source: National Weather Service Flagstaff.",
+      "lastChecked": "2026-08-12"
     },
     "bell-rock-courthouse": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated red rock trail. The National Weather Service Extreme Heat Warning for Yavapai County valleys and basins, including the Verde Valley/Sedona area, expired August 3, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 100 to 103 degrees. Hike before 7am or after 7pm and carry extra water. Source: National Weather Service Flagstaff.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated red rock trail. The National Weather Service Extreme Heat Warning for Yavapai County valleys and basins, including the Verde Valley/Sedona area, expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. A Flash Flood Watch covering the Sedona/Oak Creek Canyon area is in effect from noon to midnight today, August 12, for thunderstorms capable of very heavy rainfall; avoid washes during and after storms. Hike before 7am or after 7pm and carry extra water. Source: National Weather Service Flagstaff.",
+      "lastChecked": "2026-08-12"
     },
     "boynton-canyon": {
       "status": "restricted",
-      "note": "The Pocket Fire was declared 100 percent contained July 30, 2026 and the broad forest closure was significantly reduced effective July 31, 2026, replaced by narrower closures of specific trails and recreation sites. Boynton Canyon Trail (No. 47) is not on the current closed-trail list (Bear Sign No. 59, David Miller No. 164, Dry Creek No. 52, HS Canyon No. 50, Secret Canyon No. 121, West Fork No. 108), confirmed again via the Visit Sedona Pocket Fire update (last updated July 31, 2026). Source: Coconino National Forest, Forest Order 03-04-06-26-003; Visit Sedona. The NWS Extreme Heat Warning for the Verde Valley/Sedona area expired August 3, 2026 at 8pm and had not been renewed as of August 11, 2026 morning, though forecast highs remain around 100 to 103 degrees; hike early morning and carry extra water. Source: National Weather Service Flagstaff.",
-      "lastChecked": "2026-08-11"
+      "note": "The Pocket Fire was declared 100 percent contained July 30, 2026 and the broad forest closure was significantly reduced effective July 31, 2026, replaced by narrower closures of specific trails and recreation sites. Boynton Canyon Trail (No. 47) is not on the current closed-trail list (Bear Sign No. 59, David Miller No. 164, Dry Creek No. 52, HS Canyon No. 50, Secret Canyon No. 121, West Fork No. 108), reconfirmed via the Visit Sedona Pocket Fire update. Source: Coconino National Forest, Forest Order 03-04-06-26-003; Visit Sedona. A Flash Flood Watch covering the Sedona/Oak Creek Canyon area is in effect from noon to midnight today, August 12, for thunderstorms capable of very heavy rainfall; this trail is in a canyon, so avoid washes during and after storms. The NWS Extreme Heat Warning for the Verde Valley/Sedona area expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check; hike early morning and carry extra water. Source: National Weather Service Flagstaff.",
+      "lastChecked": "2026-08-12"
     },
     "west-fork-oak-creek": {
       "status": "closed",
-      "note": "West Fork Trail (No. 108) and Call of the Canyon Picnic Site remain closed under the reduced Pocket Fire closure order in effect through September 30, 2026 unless lifted earlier, due to flood, debris-flow, and burn-scar hazards; the fire itself was declared 100 percent contained July 30, 2026 and is no longer the direct threat. A related Oak Creek closure (from where the West Fork drainage meets the creek south to where Oak Creek exits National Forest land) also remains in effect. Confirmed still closed per the Coconino National Forest and Visit Sedona Pocket Fire update (last updated July 31, 2026). Source: Coconino National Forest, Forest Order 03-04-06-26-002/003; Visit Sedona.",
-      "lastChecked": "2026-08-11"
+      "note": "West Fork Trail (No. 108) and Call of the Canyon Picnic Site remain closed under the reduced Pocket Fire closure order in effect through September 30, 2026 unless lifted earlier, due to flood, debris-flow, and burn-scar hazards; the fire itself was declared 100 percent contained July 30, 2026 and is no longer the direct threat. A related Oak Creek closure (from where the West Fork drainage meets the creek south to where Oak Creek exits National Forest land) also remains in effect. A Flash Flood Watch covering Oak Creek and Sycamore Canyons is additionally in effect from noon to midnight today, August 12, underscoring the debris-flow risk in this drainage. Confirmed still closed per the Coconino National Forest and Visit Sedona Pocket Fire update. Source: Coconino National Forest, Forest Order 03-04-06-26-002/003; Visit Sedona; National Weather Service Flagstaff.",
+      "lastChecked": "2026-08-12"
     },
     "soldier-pass": {
       "status": "restricted",
-      "note": "The Pocket Fire was declared 100 percent contained July 30, 2026 and the broad forest closure was significantly reduced effective July 31, 2026, replaced by narrower closures of specific trails and recreation sites. Soldier Pass Trail (No. 66) and trailhead are not on the current closed-trail list (Bear Sign No. 59, David Miller No. 164, Dry Creek No. 52, HS Canyon No. 50, Secret Canyon No. 121, West Fork No. 108), confirmed again via the Visit Sedona Pocket Fire update (last updated July 31, 2026); the Soldier Pass shuttle route resumed regular service July 31, 2026. Source: Coconino National Forest, Forest Order 03-04-06-26-003; Visit Sedona. The NWS Extreme Heat Warning for the Verde Valley/Sedona area expired August 3, 2026 at 8pm and had not been renewed as of August 11, 2026 morning, though forecast highs remain around 100 to 103 degrees; hike early morning and carry extra water. Source: National Weather Service Flagstaff.",
-      "lastChecked": "2026-08-11"
+      "note": "The Pocket Fire was declared 100 percent contained July 30, 2026 and the broad forest closure was significantly reduced effective July 31, 2026, replaced by narrower closures of specific trails and recreation sites. Soldier Pass Trail (No. 66) and trailhead are not on the current closed-trail list (Bear Sign No. 59, David Miller No. 164, Dry Creek No. 52, HS Canyon No. 50, Secret Canyon No. 121, West Fork No. 108), reconfirmed via the Visit Sedona Pocket Fire update. Source: Coconino National Forest, Forest Order 03-04-06-26-003; Visit Sedona. A Flash Flood Watch covering the Sedona/Oak Creek Canyon area is in effect from noon to midnight today, August 12, for thunderstorms capable of very heavy rainfall; avoid washes during and after storms. The NWS Extreme Heat Warning for the Verde Valley/Sedona area expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check; hike early morning and carry extra water. Source: National Weather Service Flagstaff.",
+      "lastChecked": "2026-08-12"
     },
     "bear-mountain": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is a steep, fully exposed trail with no shade. The National Weather Service Extreme Heat Warning for Yavapai County valleys and basins, including the Verde Valley/Sedona area, expired August 3, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 100 to 103 degrees. Hike before 7am and carry extra water. Source: National Weather Service Flagstaff.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is a steep, fully exposed trail with no shade. The National Weather Service Extreme Heat Warning for Yavapai County valleys and basins, including the Verde Valley/Sedona area, expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. A Flash Flood Watch covering the Sedona/Oak Creek Canyon area is in effect from noon to midnight today, August 12, for thunderstorms capable of very heavy rainfall. Hike before 7am and carry extra water. Source: National Weather Service Flagstaff.",
+      "lastChecked": "2026-08-12"
     },
     "fay-canyon": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated red rock trail. The National Weather Service Extreme Heat Warning for Yavapai County valleys and basins, including the Verde Valley/Sedona area, expired August 3, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 100 to 103 degrees. Hike before 7am or after 7pm and carry extra water. Source: National Weather Service Flagstaff.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated red rock trail. The National Weather Service Extreme Heat Warning for Yavapai County valleys and basins, including the Verde Valley/Sedona area, expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. A Flash Flood Watch covering the Sedona/Oak Creek Canyon area is in effect from noon to midnight today, August 12, for thunderstorms capable of very heavy rainfall; this trail enters a canyon, so avoid washes during and after storms. Hike before 7am or after 7pm and carry extra water. Source: National Weather Service Flagstaff.",
+      "lastChecked": "2026-08-12"
     },
     "airport-mesa": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated trail. The National Weather Service Extreme Heat Warning for Yavapai County valleys and basins, including the Verde Valley/Sedona area, expired August 3, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though forecast highs remain around 100 to 103 degrees. Hike before 7am or after 7pm and carry extra water. Source: National Weather Service Flagstaff.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated trail. The National Weather Service Extreme Heat Warning for Yavapai County valleys and basins, including the Verde Valley/Sedona area, expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. A Flash Flood Watch covering the Sedona/Oak Creek Canyon area is in effect from noon to midnight today, August 12, for thunderstorms capable of very heavy rainfall. Hike before 7am or after 7pm and carry extra water. Source: National Weather Service Flagstaff.",
+      "lastChecked": "2026-08-12"
     },
     "mescal-courthouse": {
       "status": "restricted",
-      "note": "Mescal Trail (No. 174C) itself is not on the current Pocket Fire closed-trail list, but Dry Creek Trail (No. 52) in the same Dry Creek Road corridor remains closed under the reduced closure order in effect through September 30, 2026 unless lifted earlier. Access and connector routes may be affected, so check current trailhead signage before hiking. Source: Coconino National Forest, Forest Order 03-04-06-26-003; Visit Sedona. The NWS Extreme Heat Warning for the Verde Valley/Sedona area expired August 3, 2026 at 8pm and had not been renewed as of August 11, 2026 morning, though forecast highs remain around 100 to 103 degrees; hike early morning and carry extra water. Source: National Weather Service Flagstaff.",
-      "lastChecked": "2026-08-11"
+      "note": "Mescal Trail (No. 174C) itself is not on the current Pocket Fire closed-trail list, but Dry Creek Trail (No. 52) in the same Dry Creek Road corridor remains closed under the reduced closure order in effect through September 30, 2026 unless lifted earlier. Access and connector routes may be affected, so check current trailhead signage before hiking. Source: Coconino National Forest, Forest Order 03-04-06-26-003; Visit Sedona. A Flash Flood Watch covering the Sedona/Oak Creek Canyon area is in effect from noon to midnight today, August 12, for thunderstorms capable of very heavy rainfall. The NWS Extreme Heat Warning for the Verde Valley/Sedona area expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check; hike early morning and carry extra water. Source: National Weather Service Flagstaff.",
+      "lastChecked": "2026-08-12"
     },
     "seven-falls-sabino": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Tucson metro area expired August 3, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check. A Flood Watch is in effect for southeast Arizona, including the Tucson metro area and the Santa Catalina and Rincon Mountains, from 2:59am to 11pm today, August 11, 2026, due to scattered thunderstorms with rainfall rates that could exceed 1 inch per hour; this trail has multiple creek crossings in Sabino Canyon; avoid wash crossings during and after storms. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail with multiple creek crossings in Sabino Canyon. The National Weather Service Extreme Heat Warning for the Tucson metro area expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. The Flood Watch that had been posted for southeast Arizona overnight was allowed to expire around 11pm on August 11 after NWS Tucson determined the widespread flash flood threat had ended, and no new watch was active as of the August 12, 2026 morning check; still, avoid wash crossings if storms redevelop. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "romero-pools": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Tucson metro area expired August 3, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check. A Flood Watch is in effect for southeast Arizona, including the Tucson metro area and the Santa Catalina and Rincon Mountains, from 2:59am to 11pm today, August 11, 2026, due to scattered thunderstorms with rainfall rates that could exceed 1 inch per hour; this trail has multiple creek crossings in Catalina State Park; avoid wash crossings during and after storms. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail with multiple creek crossings in Catalina State Park. The National Weather Service Extreme Heat Warning for the Tucson metro area expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. The Flood Watch that had been posted for southeast Arizona overnight was allowed to expire around 11pm on August 11 after NWS Tucson determined the widespread flash flood threat had ended, and no new watch was active as of the August 12, 2026 morning check; still, avoid wash crossings if storms redevelop. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "finger-rock": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Tucson metro area expired August 3, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check. A Flood Watch is in effect for southeast Arizona, including the Tucson metro area and the Santa Catalina and Rincon Mountains, from 2:59am to 11pm today, August 11, 2026, due to scattered thunderstorms with rainfall rates that could exceed 1 inch per hour; avoid wash crossings during and after storms. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Tucson metro area expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. The Flood Watch that had been posted for southeast Arizona overnight was allowed to expire around 11pm on August 11 after NWS Tucson determined the widespread flash flood threat had ended, and no new watch was active as of the August 12, 2026 morning check; still, avoid wash crossings if storms redevelop. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "tumamoc-hill": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Tucson metro area expired August 3, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check. A Flood Watch is in effect for southeast Arizona, including the Tucson metro area and the Santa Catalina and Rincon Mountains, from 2:59am to 11pm today, August 11, 2026, due to scattered thunderstorms with rainfall rates that could exceed 1 inch per hour; avoid wash crossings during and after storms. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Tucson metro area expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "wasson-peak": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Tucson metro area expired August 3, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check. A Flood Watch is in effect for southeast Arizona, including the Tucson metro area and the Santa Catalina and Rincon Mountains, from 2:59am to 11pm today, August 11, 2026, due to scattered thunderstorms with rainfall rates that could exceed 1 inch per hour; avoid wash crossings during and after storms. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Tucson metro area expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "valley-view-overlook": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Tucson metro area expired August 3, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check. A Flood Watch is in effect for southeast Arizona, including the Tucson metro area and the Santa Catalina and Rincon Mountains, from 2:59am to 11pm today, August 11, 2026, due to scattered thunderstorms with rainfall rates that could exceed 1 inch per hour; avoid wash crossings during and after storms. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Tucson metro area expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "tanque-verde-ridge": {
       "status": "restricted",
-      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail. The National Weather Service Extreme Heat Warning for the Tucson metro area expired August 3, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check. A Flood Watch is in effect for southeast Arizona, including the Tucson metro area and the Santa Catalina and Rincon Mountains, from 2:59am to 11pm today, August 11, 2026, due to scattered thunderstorms with rainfall rates that could exceed 1 inch per hour; this trail is in the Rincon Mountain foothills within the flood watch area; avoid wash crossings during and after storms. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this is an exposed, sun-elevated desert trail in the Rincon Mountain foothills. The National Weather Service Extreme Heat Warning for the Tucson metro area expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. The Flood Watch that had been posted for southeast Arizona overnight was allowed to expire around 11pm on August 11 after NWS Tucson determined the widespread flash flood threat had ended, and no new watch was active as of the August 12, 2026 morning check; still, avoid wash crossings if storms redevelop. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service.",
+      "lastChecked": "2026-08-12"
     },
     "humphreys-peak": {
       "status": "open",
       "note": "",
-      "lastChecked": "2026-08-11"
+      "lastChecked": "2026-08-12"
     },
     "kachina-trail": {
       "status": "open",
       "note": "",
-      "lastChecked": "2026-08-11"
+      "lastChecked": "2026-08-12"
     },
     "walnut-canyon": {
       "status": "open",
       "note": "",
-      "lastChecked": "2026-08-11"
+      "lastChecked": "2026-08-12"
     },
     "lava-river-cave": {
       "status": "restricted",
       "note": "FR 171, the access road from FR 245 to the Lava River Cave trailhead, remains closed to motorized vehicles for maintenance (closed since July 13, 2026); reaching the cave requires hiking or biking a longer unpaved approach. Source: Coconino National Forest (Forest Order 03-04-08-26-02).",
-      "lastChecked": "2026-08-11"
+      "lastChecked": "2026-08-12"
     },
     "fossil-springs": {
       "status": "restricted",
-      "note": "Heat safety advisory: this trail descends into a canyon. The National Weather Service Extreme Heat Warning for northern Gila County (below 4000 feet) expired August 3, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though canyon conditions remain hot. A permit is required to park in the Fossil Creek permit area through October 1, 2026, and permits are available seven days a week for the rest of the season. Hike early morning and carry extra water. Source: National Weather Service Flagstaff; Coconino National Forest.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: this trail descends into a canyon with creek crossings. The National Weather Service Extreme Heat Warning for northern Gila County (below 4000 feet) expired August 3, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. A Flash Flood Watch covering northern Gila County, including the Fossil Creek area, is in effect from noon to midnight today, August 12, for thunderstorms capable of very heavy rainfall; avoid creek crossings during and after storms. A permit is required to park in the Fossil Creek permit area through October 1, 2026, and permits are available seven days a week for the rest of the season. Hike early morning and carry extra water. Source: National Weather Service Flagstaff; Coconino National Forest.",
+      "lastChecked": "2026-08-12"
     },
     "south-kaibab-ooh-aah": {
       "status": "restricted",
-      "note": "Heat safety advisory: Grand Canyon National Park continues to urge visitors to avoid Inner Canyon trails between 10am and 4pm, when canyon temperatures regularly exceed 109 degrees; this standing advisory follows several heat-related hiker deaths this summer and remains posted on the park's key hiking messages page (last updated August 4, 2026). South Kaibab Trail is fully sun-exposed with no water source. The National Weather Service Extreme Heat Warning for the Grand Canyon area below 4000 feet expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though highs remain very hot in the Inner Canyon. Source: National Park Service, Grand Canyon National Park; National Weather Service Flagstaff.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: Grand Canyon National Park continues to urge visitors to avoid Inner Canyon trails between 10am and 4pm, rating today's heat risk as Extreme at Phantom Ranch, per the park's key hiking messages page (last updated August 4, 2026). South Kaibab Trail is fully sun-exposed with no water source. The National Weather Service Extreme Heat Warning for the Grand Canyon area below 4000 feet expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. A Flash Flood Watch covering Grand Canyon Country, including Grand Canyon Village, is in effect from noon to midnight today, August 12, for thunderstorms capable of very heavy rainfall. Source: National Park Service, Grand Canyon National Park; National Weather Service Flagstaff.",
+      "lastChecked": "2026-08-12"
     },
     "bright-angel-indian-garden": {
       "status": "restricted",
-      "note": "Heat safety advisory: Grand Canyon National Park continues to urge visitors to avoid Inner Canyon trails between 10am and 4pm, when canyon temperatures regularly exceed 109 degrees; this standing advisory follows several heat-related hiker deaths this summer, including on Bright Angel Trail, and remains posted on the park's key hiking messages page (last updated August 4, 2026). The National Weather Service Extreme Heat Warning for the Grand Canyon area below 4000 feet expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though highs remain very hot in the Inner Canyon. Source: National Park Service, Grand Canyon National Park; National Weather Service Flagstaff.",
-      "lastChecked": "2026-08-11"
+      "note": "Heat safety advisory: Grand Canyon National Park continues to urge visitors to avoid Inner Canyon trails between 10am and 4pm, rating today's heat risk as Extreme at Phantom Ranch, per the park's key hiking messages page (last updated August 4, 2026), which also notes pipeline breaks have shut off water at Cottonwood Campground, Bright Angel Campground, Manzanita Day Use Area, and Phantom Delta Restroom; water remains available at Phantom Ranch Canteen, Havasupai Gardens, and both resthouses on Bright Angel Trail. The National Weather Service Extreme Heat Warning for the Grand Canyon area below 4000 feet expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. A Flash Flood Watch covering Grand Canyon Country, including Grand Canyon Village, is in effect from noon to midnight today, August 12, for thunderstorms capable of very heavy rainfall. Source: National Park Service, Grand Canyon National Park; National Weather Service Flagstaff.",
+      "lastChecked": "2026-08-12"
     },
     "rim-trail": {
       "status": "open",
       "note": "",
-      "lastChecked": "2026-08-11"
+      "lastChecked": "2026-08-12"
     },
     "north-kaibab-coconino": {
       "status": "restricted",
-      "note": "The North Rim reopened for the 2026 season on May 15 and North Kaibab Trail from the trailhead through Phantom Ranch is open to foot traffic, but the National Park Service advises increased caution near Supai Tunnel and Coconino Overlook due to Dragon Bravo Fire burn-scar hazards, including debris flows, rockfalls, and falling trees, and recommends traveling quickly through that section with limited breaks. Water sources are offline at the North Kaibab Trailhead and Supai Tunnel; hikers must carry all water needed for that section, though single bottles and gallon jugs can be purchased at the North Rim General Store from 9am to 4pm daily. Grand Canyon National Park continues to urge hikers to avoid Inner Canyon trails between 10am and 4pm, rating the current heat risk as Extreme, after several heat-related deaths this summer (key hiking messages page last updated August 4, 2026). The National Weather Service Extreme Heat Warning for the Grand Canyon area below 4000 feet expired August 9, 2026 at 8pm and had not been renewed as of the August 11, 2026 morning check, though highs remain very hot in the Inner Canyon. Source: National Park Service, Grand Canyon National Park (key hiking messages, August 4, 2026); National Weather Service Flagstaff.",
-      "lastChecked": "2026-08-11"
+      "note": "The North Rim reopened for the 2026 season on May 15 and North Kaibab Trail is open to foot traffic through Phantom Ranch, but the National Park Service advises increased caution near Supai Tunnel and Coconino Overlook due to Dragon Bravo Fire burn-scar hazards, including debris flows, rockfalls, falling trees, and flash flooding with little to no warning even when storms are not visible overhead; the park recommends traveling quickly through that section with limited breaks (key hiking messages page last updated August 4, 2026). A Flash Flood Watch covering Grand Canyon Country, including the North Rim, is in effect from noon to midnight today, August 12, which directly raises the burn-scar flash flood risk in this section. Water sources are offline at the North Kaibab Trailhead and Supai Tunnel; hikers must carry all water needed for that section, though single bottles and gallon jugs can be purchased at the North Rim General Store from 9am to 4pm daily. Grand Canyon National Park rates today's heat risk as Extreme at Phantom Ranch. The National Weather Service Extreme Heat Warning for the Grand Canyon area below 4000 feet expired August 9, 2026 at 8pm and had not been renewed as of the August 12, 2026 morning check. Source: National Park Service, Grand Canyon National Park (key hiking messages, August 4, 2026); National Weather Service Flagstaff.",
+      "lastChecked": "2026-08-12"
     }
   }
 }
