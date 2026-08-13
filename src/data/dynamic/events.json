@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12",
+  "lastUpdated": "2026-08-13",
   "events": [
     {
       "id": "evt-20260810-1",
@@ -236,6 +236,23 @@
       "sourceUrl": "https://dtphx.org/do/downtown-phoenix-farmers-market",
       "source": "manual",
       "imageKeyword": "farmers market",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260813-1",
+      "title": "The Black Crowes and Whiskey Myers: Southern Hospitality Tour",
+      "startDate": "2026-08-15",
+      "endDate": null,
+      "time": "6:30 PM",
+      "venueName": "Mortgage Matchup Center",
+      "venueCity": "Phoenix",
+      "venueAddress": "201 E. Jefferson St., Phoenix, AZ 85004",
+      "category": "Music",
+      "description": "The Black Crowes headline a co-headlining arena show with Whiskey Myers and Southall as part of the Southern Hospitality Tour. The performance brings Southern rock and country rock together for one night at downtown Phoenix's arena.",
+      "sourceUrl": "https://mortgagematchupcenter.com/events/the-black-crowes-and-whiskey-myers/",
+      "source": "manual",
+      "imageKeyword": "southern rock concert arena stage",
       "lat": null,
       "lng": null
     },
@@ -665,6 +682,23 @@
       "lng": null
     },
     {
+      "id": "evt-20260813-2",
+      "title": "Red Dirt Fest 10-Year Celebration",
+      "startDate": "2026-09-05",
+      "endDate": null,
+      "time": "1:00 PM - 8:00 PM",
+      "venueName": "Posse Grounds Pavilion",
+      "venueCity": "Sedona",
+      "venueAddress": "505 Posse Grounds Rd., Sedona, AZ 86336",
+      "category": "Festival",
+      "description": "The City of Sedona's Red Dirt Concert Series marks its tenth anniversary with a full day festival instead of its usual single evening show. Five local and regional acts perform live, alongside Mexican food from La Tapatia, wood fired pizza from Inferno 51, and free raffle prizes.",
+      "sourceUrl": "https://www.sedonaaz.gov/your-government/departments-and-programs/parks-recreation/events/red-dirt-concert-series",
+      "source": "manual",
+      "imageKeyword": "outdoor live music festival red rocks",
+      "lat": null,
+      "lng": null
+    },
+    {
       "id": "evt-20260730-4",
       "title": "My Chemical Romance: The Black Parade 2026",
       "startDate": "2026-09-06",
@@ -852,6 +886,23 @@
       "lng": null
     },
     {
+      "id": "evt-20260813-4",
+      "title": "Mohave County Fair",
+      "startDate": "2026-09-17",
+      "endDate": "2026-09-20",
+      "time": "10:00 AM - 8:00 PM",
+      "venueName": "Mohave County Fairgrounds",
+      "venueCity": "Kingman",
+      "venueAddress": "2600 Fairgrounds Blvd, Kingman, AZ 86401",
+      "category": "Community",
+      "description": "The annual Mohave County Fair returns with carnival rides, live music, livestock auctions, and exhibit halls over four days. Admission ranges from free for young children to ten dollars for adults, with discounts for seniors, veterans, and first responders.",
+      "sourceUrl": "https://parks.mohave.gov/fairgrounds/annual-county-fair/",
+      "source": "manual",
+      "imageKeyword": "county fair carnival rides evening",
+      "lat": null,
+      "lng": null
+    },
+    {
       "id": "arizona-restaurant-week-fall-2026-09-18",
       "title": "Arizona Restaurant Week (Fall)",
       "startDate": "2026-09-18",
@@ -967,6 +1018,23 @@
       "sourceUrl": "https://www.azcardinals.com/schedule/",
       "source": "manual",
       "imageKeyword": "NFL football",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260813-3",
+      "title": "Weird Al Yankovic: Bigger & Weirder 2026 Tour",
+      "startDate": "2026-09-20",
+      "endDate": null,
+      "time": "7:30 PM",
+      "venueName": "Tucson Arena at Tucson Convention Center",
+      "venueCity": "Tucson",
+      "venueAddress": "260 S. Church Ave., Tucson, AZ 85701",
+      "category": "Music",
+      "description": "Weird Al Yankovic brings his multimedia comedy and music show to Tucson Arena with an eight piece band, backed by special guest Puddles Pity Party. The Bigger and Weirder tour features costume changes, video segments, and parody hits spanning his decades long career.",
+      "sourceUrl": "https://gametime.co/comedy/weird-al-yankovic-tickets/9-20-2026-tucson-az-tucson-arena/events/691bc4e9bbd80bf903952b29",
+      "source": "manual",
+      "imageKeyword": "comedy concert arena stage lights",
       "lat": null,
       "lng": null
     },
@@ -1090,6 +1158,23 @@
       "lng": null
     },
     {
+      "id": "evt-20260813-5",
+      "title": "Toadies & Local H: The Charmer Tour",
+      "startDate": "2026-09-29",
+      "endDate": null,
+      "time": "8:00 PM",
+      "venueName": "Orpheum Theater",
+      "venueCity": "Flagstaff",
+      "venueAddress": "15 W. Aspen Ave., Flagstaff, AZ 86001",
+      "category": "Music",
+      "description": "Texas alt rock band Toadies co-headline with Local H at Flagstaff's historic Orpheum Theater, with support from Olive Vox. The show is part of the Charmer Tour supporting Toadies' latest album release, in an all ages venue setting.",
+      "sourceUrl": "https://www.tickpick.com/buy-toadies-local-h-tickets-orpheum-theatre-flagstaff-9-29-26-8pm/7914072/",
+      "source": "manual",
+      "imageKeyword": "alt rock band live theater venue",
+      "lat": null,
+      "lng": null
+    },
+    {
       "id": "arizona-state-fair-2026-10-01",
       "title": "Arizona State Fair",
       "startDate": "2026-10-01",
@@ -1188,6 +1273,23 @@
       "sourceUrl": "https://visitsedona.com/directory/sedona-wagfest-fair/",
       "source": "manual",
       "imageKeyword": "dog festival outdoors",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260813-7",
+      "title": "Prescott Fall Arts & Crafts Show",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-04",
+      "time": "9:00 AM - 5:00 PM",
+      "venueName": "Yavapai County Courthouse Plaza",
+      "venueCity": "Prescott",
+      "venueAddress": "120 S. Cortez St., Prescott, AZ 86303",
+      "category": "Arts",
+      "description": "The Prescott Chamber of Commerce hosts more than one hundred vendors selling handmade and artisan goods around the historic courthouse square. The two day outdoor show includes artwork, pottery, jewelry, textiles, seasonal decor, and food vendors beneath the plaza's elm trees.",
+      "sourceUrl": "https://www.prescott.org/arts--crafts-shows.html",
+      "source": "manual",
+      "imageKeyword": "outdoor arts crafts vendor booths plaza",
       "lat": null,
       "lng": null
     },
@@ -1392,6 +1494,23 @@
       "sourceUrl": "https://www.phoenixraceway.com/events/fall-cup-series/",
       "source": "manual",
       "imageKeyword": "NASCAR racing",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260813-6",
+      "title": "Foreigner: Celebrating 50 Years",
+      "startDate": "2026-10-18",
+      "endDate": null,
+      "time": "8:00 PM",
+      "venueName": "The Pool at Talking Stick Resort",
+      "venueCity": "Scottsdale",
+      "venueAddress": "9800 E. Talking Stick Way, Scottsdale, AZ 85256",
+      "category": "Music",
+      "description": "Classic rock band Foreigner performs an outdoor poolside concert at Talking Stick Resort as part of a fiftieth anniversary run, playing hits including Cold as Ice and I Want to Know What Love Is. The show is part of the resort's outdoor entertainment series.",
+      "sourceUrl": "https://www.livenation.com/event/1Av0Z_AGknsT_3c/foreigner",
+      "source": "manual",
+      "imageKeyword": "classic rock band outdoor pool concert",
       "lat": null,
       "lng": null
     },
