@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-19",
+  "lastUpdated": "2026-08-20",
   "events": [
     {
       "id": "evt-20260814-5",
@@ -19,23 +19,6 @@
       "lng": null
     },
     {
-      "id": "evt-20260812-1",
-      "title": "WordCamp US 2026",
-      "startDate": "2026-08-16",
-      "endDate": "2026-08-19",
-      "time": "Contributor Day Aug 16, main conference Aug 17-19",
-      "venueName": "Phoenix Convention Center",
-      "venueCity": "Phoenix",
-      "venueAddress": "100 N 3rd St, Phoenix, AZ 85004",
-      "category": "Community",
-      "description": "The premier North American gathering for WordPress contributors, developers and web professionals lands in downtown Phoenix. The event opens with a Contributor Day on August 16, followed by three days of sessions and networking through August 19.",
-      "sourceUrl": "https://us.wordcamp.org/2026/about/",
-      "source": "manual",
-      "imageKeyword": "tech conference convention center",
-      "lat": null,
-      "lng": null
-    },
-    {
       "id": "evt-20260817-3",
       "title": "Hell's Kitchen (Broadway in Tucson)",
       "startDate": "2026-08-18",
@@ -49,23 +32,6 @@
       "sourceUrl": "https://arts.arizona.edu/events/hells-kitchen/",
       "source": "manual",
       "imageKeyword": "broadway musical theater stage",
-      "lat": null,
-      "lng": null
-    },
-    {
-      "id": "evt-20260728-5",
-      "title": "Noah Kahan: The Great Divide Tour",
-      "startDate": "2026-08-19",
-      "endDate": null,
-      "time": "6:30 PM",
-      "venueName": "Chase Field",
-      "venueCity": "Phoenix",
-      "venueAddress": "401 E Jefferson St, Phoenix, AZ 85004",
-      "category": "Music",
-      "description": "Singer-songwriter Noah Kahan brings The Great Divide Tour to Chase Field in downtown Phoenix, with support from Gigi Perez and Annabelle Dinda. The stadium show follows the folk pop artist's breakout success with Stick Season.",
-      "sourceUrl": "https://www.livenation.com/event/1Av0Z_dGkTNIbOa/noah-kahan-the-great-divide-tour",
-      "source": "manual",
-      "imageKeyword": "folk pop concert",
       "lat": null,
       "lng": null
     },
@@ -2276,6 +2242,57 @@
       "sourceUrl": "https://heard.org/event/fair/",
       "source": "manual",
       "imageKeyword": "native art",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "arizona-fall-festival-2026-11-07",
+      "title": "Arizona Fall Festival",
+      "startDate": "2026-11-07",
+      "endDate": null,
+      "time": "10:00 AM - 4:00 PM",
+      "venueName": "Margaret T. Hance Park",
+      "venueCity": "Phoenix",
+      "venueAddress": "1202 N 3rd St, Phoenix, AZ 85004",
+      "category": "Community",
+      "description": "Local First Arizona marks the 20th anniversary of its Certified Local Fall Festival at Hance Park, gathering more than 200 Arizona makers, local businesses and artisans. The free, family friendly day includes local food and drink, live music and shopping in the heart of downtown Phoenix.",
+      "sourceUrl": "https://localfirstaz.com/fall-fest",
+      "source": "manual",
+      "imageKeyword": "local makers market festival downtown",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "smashing-pumpkins-rats-in-a-cage-tour-2026-11-11",
+      "title": "The Smashing Pumpkins: The Rats In A Cage Tour",
+      "startDate": "2026-11-11",
+      "endDate": null,
+      "time": "8:00 PM",
+      "venueName": "Mortgage Matchup Center",
+      "venueCity": "Phoenix",
+      "venueAddress": "201 E Jefferson St, Phoenix, AZ 85004",
+      "category": "Music",
+      "description": "The Smashing Pumpkins bring The Rats In A Cage Tour to downtown Phoenix, marking the 30th anniversary of Mellon Collie and the Infinite Sadness with a full performance of the album alongside a set spanning the band nearly four decade catalog.",
+      "sourceUrl": "https://mortgagematchupcenter.com/events/smashing-pumpkins/",
+      "source": "manual",
+      "imageKeyword": "alternative rock concert arena",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "aps-electric-light-parade-2026-12-05",
+      "title": "APS Electric Light Parade",
+      "startDate": "2026-12-05",
+      "endDate": null,
+      "time": "7:00 PM",
+      "venueName": "Central Avenue, Downtown Phoenix",
+      "venueCity": "Phoenix",
+      "venueAddress": "Central Ave & Montebello Ave to 7th St & Indian School Rd, Phoenix, AZ",
+      "category": "Community",
+      "description": "The annual APS Electric Light Parade sends illuminated floats down Central Avenue in Phoenix, starting at Montebello Avenue and ending near Indian School Road. Street closures run along Central Avenue, 7th Street and Camelback Road from 5 to 11 PM for the evening procession.",
+      "sourceUrl": "https://www.phoenix.gov/administration/departments/parks/classes-programs/featured-events/aps-electric-light-parade.html",
+      "source": "manual",
+      "imageKeyword": "holiday light parade night downtown",
       "lat": null,
       "lng": null
     }
