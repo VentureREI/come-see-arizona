@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25",
+  "lastUpdated": "2026-08-26",
   "events": [
     {
       "id": "avenged-sevenfold-good-charlotte-2026-08-27",
@@ -2293,6 +2293,40 @@
       "sourceUrl": "https://heard.org/event/fair/",
       "source": "manual",
       "imageKeyword": "native art",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260826-1",
+      "title": "Arizona State Sun Devils Football vs. Baylor (Maroon Monsoon)",
+      "startDate": "2026-10-03",
+      "endDate": null,
+      "time": "TBA",
+      "venueName": "Mountain America Stadium",
+      "venueCity": "Tempe",
+      "venueAddress": "500 E Veterans Way, Tempe, AZ 85287",
+      "category": "Sports",
+      "description": "Arizona State hosts Baylor in its Big 12 home opener, a game the program has billed as Maroon Monsoon. The matchup is one of six home dates on ASU's 2026 schedule at Mountain America Stadium in Tempe.",
+      "sourceUrl": "https://thesundevils.com/sports/football/schedule/season/2026",
+      "source": "manual",
+      "imageKeyword": "college football stadium tempe",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260826-2",
+      "title": "Uptown Farmers Market",
+      "startDate": "2026-08-29",
+      "endDate": null,
+      "time": "Saturdays, 7:00 AM - 11:00 AM",
+      "venueName": "North Phoenix Baptist Church",
+      "venueCity": "Phoenix",
+      "venueAddress": "5757 N Central Ave, Phoenix, AZ 85012",
+      "category": "Community",
+      "description": "This year round Saturday market at North Phoenix Baptist Church brings together more than 60 local vendors selling produce, artisan breads, grass fed meats, honey, prepared foods and handcrafted goods. A Wednesday market runs the rest of the year but is closed for summer, reopening in October.",
+      "sourceUrl": "https://uptownmarketaz.com/",
+      "source": "manual",
+      "imageKeyword": "farmers market produce vendors phoenix",
       "lat": null,
       "lng": null
     }
