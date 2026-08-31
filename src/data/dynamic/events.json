@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30",
+  "lastUpdated": "2026-08-31",
   "events": [
     {
       "id": "evt-20260802-7",
@@ -903,23 +903,6 @@
       "lng": null
     },
     {
-      "id": "flagstaff-star-party-2026-10-01",
-      "title": "Flagstaff Star Party and Celebration of the Night",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-03",
-      "time": "6:00 PM - 10:00 PM",
-      "venueName": "Buffalo Park",
-      "venueCity": "Flagstaff",
-      "venueAddress": "2400 N Gemini Rd, Flagstaff, AZ 86004",
-      "category": "Outdoors",
-      "description": "The Flagstaff Dark Skies Coalition hosts three nights of free public telescope viewing and stargazing programs at Buffalo Park. The event celebrates Flagstaff's status as a Dark Sky city with family-friendly astronomy activities and guest speakers.",
-      "sourceUrl": "https://www.flagstaffarizona.org/events/festivals/flagstaff-star-party/",
-      "source": "manual",
-      "imageKeyword": "night sky stargazing",
-      "lat": null,
-      "lng": null
-    },
-    {
       "id": "evt-20260729-4",
       "title": "Gin Blossoms: Arizona State Fair Coliseum Concert Series",
       "startDate": "2026-10-02",
@@ -1294,23 +1277,6 @@
       "lng": null
     },
     {
-      "id": "tucson-meet-yourself-folklife-festival-2026-10-16",
-      "title": "Tucson Meet Yourself Folklife Festival",
-      "startDate": "2026-10-16",
-      "endDate": "2026-10-18",
-      "time": "Times vary",
-      "venueName": "Jacome Plaza, Downtown Tucson",
-      "venueCity": "Tucson",
-      "venueAddress": "101 N Stone Ave, Tucson, AZ 85701",
-      "category": "Culture",
-      "description": "This free three-day folklife festival gathers more than 500 artists, musicians, dancers and cooks who share the foods, crafts and traditions of southern Arizona's many cultural communities.",
-      "sourceUrl": "https://tucsonmeetyourself.org/",
-      "source": "manual",
-      "imageKeyword": "folk festival",
-      "lat": null,
-      "lng": null
-    },
-    {
       "id": "evt-20260729-5",
       "title": "The Offspring: Arizona State Fair Coliseum Concert Series",
       "startDate": "2026-10-16",
@@ -1528,23 +1494,6 @@
       "sourceUrl": "https://www.livenation.com/event/1Av0Z_AGknsT_3c/foreigner",
       "source": "manual",
       "imageKeyword": "classic rock band outdoor pool concert",
-      "lat": null,
-      "lng": null
-    },
-    {
-      "id": "foreigner-celebrating-50-years-2026-10-18",
-      "title": "Foreigner: Celebrating 50 Years Tour",
-      "startDate": "2026-10-18",
-      "endDate": null,
-      "time": "8:00 PM",
-      "venueName": "Talking Stick Resort",
-      "venueCity": "Scottsdale",
-      "venueAddress": "9800 E Talking Stick Way, Scottsdale, AZ 85256",
-      "category": "Music",
-      "description": "Classic rock band Foreigner performs as part of a tour celebrating five decades of hits including 'Cold as Ice' and 'I Want to Know What Love Is.' The show takes place at Talking Stick Resort's entertainment venue in Scottsdale.",
-      "sourceUrl": "https://www.talkingstickresort.com/phoenix-scottsdale-concerts-entertainment/",
-      "source": "manual",
-      "imageKeyword": "rock concert",
       "lat": null,
       "lng": null
     },
@@ -2599,6 +2548,23 @@
       "sourceUrl": "https://heard.org/event/fair/",
       "source": "manual",
       "imageKeyword": "native art",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260831-1",
+      "title": "Taco Fest at Salt River Fields",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-18",
+      "time": "11:00 AM - 6:00 PM",
+      "venueName": "Salt River Fields at Talking Stick",
+      "venueCity": "Scottsdale",
+      "venueAddress": "7555 N Pima Rd, Scottsdale, AZ 85258",
+      "category": "Food and Drink",
+      "description": "Arizona iconic culinary festival brings together more than 40 taco makers and over 30 brands of tequila and mezcal for a two day celebration. The event also features multiple music stages, art activations and a mercado shopping area.",
+      "sourceUrl": "https://saltriverfields.com/tacofest/",
+      "source": "manual",
+      "imageKeyword": "taco festival food",
       "lat": null,
       "lng": null
     }
