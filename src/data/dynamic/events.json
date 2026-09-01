@@ -1,23 +1,6 @@
 {
-  "lastUpdated": "2026-08-31",
+  "lastUpdated": "2026-09-01",
   "events": [
-    {
-      "id": "evt-20260802-7",
-      "title": "Arizona Diamondbacks vs. Philadelphia Phillies",
-      "startDate": "2026-08-31",
-      "endDate": "2026-09-02",
-      "time": "6:40 PM (Wed 12:40 PM)",
-      "venueName": "Chase Field",
-      "venueCity": "Phoenix",
-      "venueAddress": "401 E Jefferson St, Phoenix, AZ 85004",
-      "category": "Sports",
-      "description": "The Diamondbacks host the Philadelphia Phillies for a three-game series at Chase Field over Labor Day weekend. MLB has billed the matchup as one of the season's marquee series for Arizona.",
-      "sourceUrl": "https://www.mlb.com/press-release/d-backs-2026-schedule-packed-with-marquee-match-ups-signature-holiday-weekends-advantage-memberships-on-sale-now",
-      "source": "manual",
-      "imageKeyword": "baseball stadium",
-      "lat": null,
-      "lng": null
-    },
     {
       "id": "chicago-styx-windy-cities-tour-2026-09-01",
       "title": "Chicago & Styx: The Windy Cities Tour",
@@ -1243,6 +1226,23 @@
       "lng": null
     },
     {
+      "id": "evt-20260901-1",
+      "title": "Arizona Cardinals vs. Detroit Lions",
+      "startDate": "2026-10-11",
+      "endDate": null,
+      "time": "1:25 PM",
+      "venueName": "State Farm Stadium",
+      "venueCity": "Glendale",
+      "venueAddress": "1 Cardinals Dr, Glendale, AZ 85305",
+      "category": "Sports",
+      "description": "The Arizona Cardinals host the Detroit Lions in a Week 5 NFL matchup at State Farm Stadium. Kickoff is set for 1:25 PM.",
+      "sourceUrl": "https://www.azcardinals.com/schedule/",
+      "source": "manual",
+      "imageKeyword": "NFL football stadium",
+      "lat": null,
+      "lng": null
+    },
+    {
       "id": "evt-20260814-6",
       "title": "Red Rocks Oktoberfest",
       "startDate": "2026-10-12",
@@ -1494,6 +1494,23 @@
       "sourceUrl": "https://www.livenation.com/event/1Av0Z_AGknsT_3c/foreigner",
       "source": "manual",
       "imageKeyword": "classic rock band outdoor pool concert",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260901-2",
+      "title": "Charli XCX: Music, Fashion, Film Tour",
+      "startDate": "2026-10-21",
+      "endDate": null,
+      "time": "8:00 PM",
+      "venueName": "Desert Diamond Arena",
+      "venueCity": "Glendale",
+      "venueAddress": "9400 W Maryland Ave, Glendale, AZ 85305",
+      "category": "Music",
+      "description": "Pop artist Charli XCX brings her Music, Fashion, Film Tour to Desert Diamond Arena. The arena show blends live performance with fashion and film elements.",
+      "sourceUrl": "https://www.vividseats.com/charli-xcx-tickets/performer/30249",
+      "source": "manual",
+      "imageKeyword": "pop concert arena",
       "lat": null,
       "lng": null
     },
@@ -1919,6 +1936,23 @@
       "sourceUrl": "https://mortgagematchupcenter.com/events/smashing-pumpkins/",
       "source": "manual",
       "imageKeyword": "alternative rock concert arena",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260901-3",
+      "title": "Sabaton: Legends on Tour",
+      "startDate": "2026-11-11",
+      "endDate": null,
+      "time": "7:00 PM",
+      "venueName": "Arizona Financial Theatre",
+      "venueCity": "Phoenix",
+      "venueAddress": "400 W Washington St, Phoenix, AZ 85003",
+      "category": "Music",
+      "description": "Swedish power metal band Sabaton performs at Arizona Financial Theatre on their Legends on Tour, rescheduled from an earlier February date, with support from Pop Evil and Wings of Steel.",
+      "sourceUrl": "https://www.sabaton.net/concert/phoenix-arizona-arizona-financial-theatre-2026/",
+      "source": "manual",
+      "imageKeyword": "power metal concert",
       "lat": null,
       "lng": null
     },
@@ -2548,23 +2582,6 @@
       "sourceUrl": "https://heard.org/event/fair/",
       "source": "manual",
       "imageKeyword": "native art",
-      "lat": null,
-      "lng": null
-    },
-    {
-      "id": "evt-20260831-1",
-      "title": "Taco Fest at Salt River Fields",
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-18",
-      "time": "11:00 AM - 6:00 PM",
-      "venueName": "Salt River Fields at Talking Stick",
-      "venueCity": "Scottsdale",
-      "venueAddress": "7555 N Pima Rd, Scottsdale, AZ 85258",
-      "category": "Food and Drink",
-      "description": "Arizona iconic culinary festival brings together more than 40 taco makers and over 30 brands of tequila and mezcal for a two day celebration. The event also features multiple music stages, art activations and a mercado shopping area.",
-      "sourceUrl": "https://saltriverfields.com/tacofest/",
-      "source": "manual",
-      "imageKeyword": "taco festival food",
       "lat": null,
       "lng": null
     }
