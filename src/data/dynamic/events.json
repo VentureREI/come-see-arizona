@@ -1,23 +1,6 @@
 {
-  "lastUpdated": "2026-09-01",
+  "lastUpdated": "2026-09-02",
   "events": [
-    {
-      "id": "chicago-styx-windy-cities-tour-2026-09-01",
-      "title": "Chicago & Styx: The Windy Cities Tour",
-      "startDate": "2026-09-01",
-      "endDate": null,
-      "time": "7:00 PM",
-      "venueName": "Mortgage Matchup Center",
-      "venueCity": "Phoenix",
-      "venueAddress": "201 E Jefferson St, Phoenix, AZ 85004",
-      "category": "Music",
-      "description": "Classic rock bands Chicago and Styx, both of whom formed in the Windy City decades ago, join forces on a co-headlining arena tour. The show stops at the Mortgage Matchup Center on Tuesday, September 1, 2026.",
-      "sourceUrl": "https://mortgagematchupcenter.com/events/chicago-and-styx/",
-      "source": "manual",
-      "imageKeyword": "arena rock concert",
-      "lat": null,
-      "lng": null
-    },
     {
       "id": "coconino-county-fair-2026-09-04",
       "title": "Coconino County Fair",
@@ -2582,6 +2565,40 @@
       "sourceUrl": "https://heard.org/event/fair/",
       "source": "manual",
       "imageKeyword": "native art",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260902-1",
+      "title": "Scottsdale Fashion Week",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-11",
+      "time": "Times vary",
+      "venueName": "Venues throughout Scottsdale",
+      "venueCity": "Scottsdale",
+      "venueAddress": "",
+      "category": "Arts",
+      "description": "Scottsdale's marquee fashion event marks its 10th year with four days of runway shows, live entertainment and curated shopping experiences at venues across the city, including Scottsdale Quarter and Hotel Adeline.",
+      "sourceUrl": "https://scottsdalefashionweek.com/",
+      "source": "manual",
+      "imageKeyword": "fashion show runway",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260902-2",
+      "title": "Spook-Track-Ula at McCormick-Stillman Railroad Park",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "time": "6:00 PM - 9:30 PM, timed entry slots",
+      "venueName": "McCormick-Stillman Railroad Park",
+      "venueCity": "Scottsdale",
+      "venueAddress": "7301 E Indian Bend Rd, Scottsdale, AZ 85250",
+      "category": "Family",
+      "description": "The Paradise and Pacific Railroad transforms into a not too scary haunted train ride for this month long Halloween event, with fog, lighting effects and friendly spooky characters. Admission includes unlimited train and carousel rides.",
+      "sourceUrl": "https://www.therailroadpark.com/event/halloween-spook-track-ula/",
+      "source": "manual",
+      "imageKeyword": "halloween train ride",
       "lat": null,
       "lng": null
     }
