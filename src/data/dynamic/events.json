@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02",
+  "lastUpdated": "2026-09-03",
   "events": [
     {
       "id": "coconino-county-fair-2026-09-04",
@@ -2599,6 +2599,40 @@
       "sourceUrl": "https://www.therailroadpark.com/event/halloween-spook-track-ula/",
       "source": "manual",
       "imageKeyword": "halloween train ride",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260903-1",
+      "title": "Better Together 2026",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-21",
+      "time": "Doors 2:00 PM, curfew 10:15 PM",
+      "venueName": "Steele Indian School Park",
+      "venueCity": "Phoenix",
+      "venueAddress": "300 E Indian School Rd, Phoenix, AZ 85012",
+      "category": "Festival",
+      "description": "This 18 and up, two day electronic music festival returns to Steele Indian School Park after the 2025 edition was canceled for weather and safety reasons. Relentless Beats, Arizona's flagship EDM promoter, presents the celebration of music, unity and community.",
+      "sourceUrl": "https://relentlessbeats.com/events/better-together-2026",
+      "source": "manual",
+      "imageKeyword": "electronic music festival park",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260903-2",
+      "title": "The Hondo Rodeo Fest",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-15",
+      "time": "Street Fest opens 12:00 PM daily, rodeo and concerts in the evening",
+      "venueName": "Chase Field",
+      "venueCity": "Phoenix",
+      "venueAddress": "401 E Jefferson St, Phoenix, AZ 85004",
+      "category": "Sports",
+      "description": "The Hondo Rodeo Fest returns to Chase Field for its third consecutive year, combining a million dollar rodeo competition with nightly concerts from Tim McGraw, Blake Shelton and Parker McCollum. The free Hondo Street Fest runs daily alongside the ticketed rodeo and concert program.",
+      "sourceUrl": "https://www.thehondorodeofest.com/",
+      "source": "manual",
+      "imageKeyword": "rodeo arena concert",
       "lat": null,
       "lng": null
     }
