@@ -1,240 +1,240 @@
 {
-  "lastUpdated": "2026-09-09",
+  "lastUpdated": "2026-09-10",
   "conditions": {
     "camelback-echo-canyon": {
       "status": "closed",
-      "note": "Echo Canyon Trail remains closed today through September 18, 2026 for installation of new automatic gates and trail posts, confirmed today on the City of Phoenix Camelback Mountain trails page (Source: City of Phoenix Parks and Recreation). NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected (Source: National Weather Service); the City of Phoenix Trail Heat Safety Program is restricting Echo Canyon and Cholla trails from 8am to 5pm for the duration of the warning, on top of Echo Canyon's ongoing construction closure. Cholla Trail remains the only summit route while Echo Canyon is closed, and is itself restricted 8am to 5pm during the active warning; hike before 8am or after 5pm and carry extra water. Source: City of Phoenix Parks and Recreation; National Weather Service.",
-      "lastChecked": "2026-09-09"
+      "note": "Echo Canyon Trail remains closed today through September 18, 2026 for installation of new automatic gates and trail posts, confirmed today on the City of Phoenix Camelback Mountain trails page (Source: City of Phoenix Parks and Recreation). NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected (Source: National Weather Service); the City of Phoenix Trail Heat Safety Program is restricting Echo Canyon and Cholla trails from 8am to 5pm for the duration of the warning, on top of Echo Canyon's ongoing construction closure. Cholla Trail remains the only summit route while Echo Canyon is closed, and is itself restricted 8am to 5pm during the active warning; hike before 8am or after 5pm and carry extra water. Source: City of Phoenix Parks and Recreation; National Weather Service.",
+      "lastChecked": "2026-09-10"
     },
     "camelback-cholla": {
       "status": "restricted",
-      "note": "Cholla Trail's own construction closure (August 17-28, 2026) remains ended and the trail is otherwise open, but NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected (Source: National Weather Service); the City of Phoenix Trail Heat Safety Program is restricting Cholla Trail from 8am to 5pm for the duration of the warning (Source: City of Phoenix Parks and Recreation). Echo Canyon Trail remains closed separately through September 18, 2026 for trail safety installations, so Cholla is currently the only access to the Camelback summit outside the 8am-5pm heat restriction. Hike before 8am or after 5pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "note": "Cholla Trail's own construction closure (August 17-28, 2026) remains ended and the trail is otherwise open, but NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected (Source: National Weather Service); the City of Phoenix Trail Heat Safety Program is restricting Cholla Trail from 8am to 5pm for the duration of the warning (Source: City of Phoenix Parks and Recreation). Echo Canyon Trail remains closed separately through September 18, 2026 for trail safety installations, so Cholla is currently the only access to the Camelback summit outside the 8am-5pm heat restriction. Hike before 8am or after 5pm and carry extra water.",
+      "lastChecked": "2026-09-10"
     },
     "piestewa-peak": {
       "status": "restricted",
-      "note": "NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected (Source: National Weather Service); the City of Phoenix Trail Heat Safety Program is restricting the Piestewa Peak Summit Trail and associated trails from 8am to 5pm for the duration of the warning (Source: City of Phoenix Parks and Recreation). No other trail-specific closures reported. Hike before 8am or after 5pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "note": "NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected (Source: National Weather Service); the City of Phoenix Trail Heat Safety Program is restricting the Piestewa Peak Summit Trail and associated trails from 8am to 5pm for the duration of the warning (Source: City of Phoenix Parks and Recreation). No other trail-specific closures reported. Hike before 8am or after 5pm and carry extra water.",
+      "lastChecked": "2026-09-10"
     },
     "toms-thumb": {
       "status": "open",
-      "note": "No trail-specific closures reported for the McDowell Sonoran Preserve today (Source: City of Scottsdale). NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). This trail is not on the City of Phoenix Trail Heat Safety Program's restricted list, but hike before 8am or after 6pm and carry extra water given the active warning.",
-      "lastChecked": "2026-09-09"
+      "note": "No trail-specific closures reported for the McDowell Sonoran Preserve today (Source: City of Scottsdale). NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). This trail is not on the City of Phoenix Trail Heat Safety Program's restricted list, but hike before 8am or after 6pm and carry extra water given the active warning.",
+      "lastChecked": "2026-09-10"
     },
     "pinnacle-peak": {
       "status": "open",
-      "note": "No trail-specific closures reported for the McDowell Sonoran Preserve today (Source: City of Scottsdale). NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
-      "lastChecked": "2026-09-09"
+      "note": "No trail-specific closures reported for the McDowell Sonoran Preserve today (Source: City of Scottsdale). NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
+      "lastChecked": "2026-09-10"
     },
     "gateway-loop": {
       "status": "open",
-      "note": "No trail-specific closures reported for the McDowell Sonoran Preserve today (Source: City of Scottsdale). NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
-      "lastChecked": "2026-09-09"
+      "note": "No trail-specific closures reported for the McDowell Sonoran Preserve today (Source: City of Scottsdale). NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
+      "lastChecked": "2026-09-10"
     },
     "south-mountain-mormon": {
       "status": "restricted",
-      "note": "NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected (Source: National Weather Service); the City of Phoenix Trail Heat Safety Program is restricting Mormon Trail, Holbert Trail, Hau'Pal Loop, and the Pima Canyon Trailhead access to National Trail from 8am to 5pm for the duration of the warning. More than 100 miles of other South Mountain Park trails remain accessible outside those restricted segments (Source: City of Phoenix Parks and Recreation). Hike before 8am or after 5pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "note": "NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected (Source: National Weather Service); the City of Phoenix Trail Heat Safety Program is restricting Mormon Trail, Holbert Trail, Hau'Pal Loop, and the Pima Canyon Trailhead access to National Trail from 8am to 5pm for the duration of the warning. More than 100 miles of other South Mountain Park trails remain accessible outside those restricted segments (Source: City of Phoenix Parks and Recreation). Hike before 8am or after 5pm and carry extra water.",
+      "lastChecked": "2026-09-10"
     },
     "papago-hole-in-rock": {
       "status": "open",
-      "note": "No closures reported for Papago Park today (Source: City of Phoenix Parks and Recreation). NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
-      "lastChecked": "2026-09-09"
+      "note": "No closures reported for Papago Park today (Source: City of Phoenix Parks and Recreation). NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
+      "lastChecked": "2026-09-10"
     },
     "double-butte-loop": {
       "status": "open",
-      "note": "No closures reported today. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
-      "lastChecked": "2026-09-09"
+      "note": "No closures reported today. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
+      "lastChecked": "2026-09-10"
     },
     "lookout-mountain": {
       "status": "open",
-      "note": "No closures reported today. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
-      "lastChecked": "2026-09-09"
+      "note": "No closures reported today. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
+      "lastChecked": "2026-09-10"
     },
     "sunrise-peak": {
       "status": "open",
-      "note": "No closures reported today. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
-      "lastChecked": "2026-09-09"
+      "note": "No closures reported today. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
+      "lastChecked": "2026-09-10"
     },
     "lost-dog-wash": {
       "status": "open",
-      "note": "This trail follows a desert wash in the McDowell Sonoran Preserve, so flash flood risk rises quickly during storms, but no Flood Watch is active for the Phoenix metro area today (Source: National Weather Service). No trail-specific closures reported (Source: City of Scottsdale). NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected (Source: National Weather Service). Avoid the wash during and shortly after any storm and do not enter if water is flowing. Hike before 8am or after 6pm and carry extra water given the active warning.",
-      "lastChecked": "2026-09-09"
+      "note": "This trail follows a desert wash in the McDowell Sonoran Preserve, so flash flood risk rises quickly during storms, but no Flood Watch is active for the Phoenix metro area today (Source: National Weather Service). No trail-specific closures reported (Source: City of Scottsdale). NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected (Source: National Weather Service). Avoid the wash during and shortly after any storm and do not enter if water is flowing. Hike before 8am or after 6pm and carry extra water given the active warning.",
+      "lastChecked": "2026-09-10"
     },
     "usery-wind-cave": {
       "status": "open",
-      "note": "No closures reported for Usery Mountain Regional Park today (Source: Maricopa County Parks and Recreation). Maricopa County's annual regional parks fire ban remains in effect May 1 through September 30, prohibiting campfires, fire pits, and charcoal grills; it does not close the trail. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
-      "lastChecked": "2026-09-09"
+      "note": "No closures reported for Usery Mountain Regional Park today (Source: Maricopa County Parks and Recreation). Maricopa County's annual regional parks fire ban remains in effect May 1 through September 30, prohibiting campfires, fire pits, and charcoal grills; it does not close the trail. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
+      "lastChecked": "2026-09-10"
     },
     "peralta-fremont-saddle": {
       "status": "open",
-      "note": "Tonto National Forest confirmed today via its official alerts page that there are currently no fire restrictions in effect forest-wide (Source: Tonto National Forest). No trail-specific alert was found for Peralta Trail today; new Tonto National Forest closures around Canyon Lake, Houston Mesa, and Tonto Creek Campgrounds do not affect this trailhead. This is an exposed trail in the Superstition Wilderness with wash crossings; afternoon monsoon thunderstorms are possible, so avoid washes during and after storms. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected, and covers the Apache Junction/Gold Canyon area near this trailhead (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "note": "Correction from prior checks: Tonto National Forest has Stage 1 fire restrictions in effect forest-wide from May 15, 2026 through September 30, 2026 unless rescinded, prohibiting campfires, charcoal fires, and smoking outside enclosed vehicles or cleared areas (Source: Tonto National Forest). This is a conduct restriction, not a trail closure. No trail-specific alert was found for Peralta Trail today; Tonto National Forest closures around Canyon Lake, Houston Mesa, and Tonto Creek Campgrounds do not affect this trailhead. This is an exposed trail in the Superstition Wilderness with wash crossings; afternoon monsoon thunderstorms are possible, so avoid washes during and after storms. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected, and covers the Apache Junction/Gold Canyon area near this trailhead (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water.",
+      "lastChecked": "2026-09-10"
     },
     "flatiron-siphon-draw": {
       "status": "restricted",
-      "note": "A partial closure of Siphon Draw Trail near the campground for a construction project remains reported, with a marked detour via the Saguaro, Treasure Loop, and Jacob's Crosscut trails; construction hours are 5am to 7pm and walk-in entry or drop-off at the closed section is not permitted; today's check again could not confirm an end date for this closure against an official 2026 Arizona State Parks source, so this portion remains marked restricted until confirmed otherwise (Source: Arizona State Parks, unconfirmed today). The trail remains accessible from other campground access points. Lost Dutchman State Park's Stage II fire restrictions remain in effect through October 31, 2026: no wood, charcoal, or open flame, and no smoking on trails, though gas stoves are permitted for cooking (Source: Arizona State Parks). NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected, and covers the Apache Junction area near this trailhead (Source: National Weather Service). Siphon Draw is a natural drainage; afternoon monsoon thunderstorms are possible, so avoid it during and after storms. Hike before 8am or after 6pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "note": "A partial closure of Siphon Draw Trail near the campground for a construction project remains reported, with a marked detour via the Saguaro, Treasure Loop, and Jacob's Crosscut trails; construction hours are 5am to 7pm and walk-in entry or drop-off at the closed section is not permitted; today's check again could not confirm an end date for this closure against an official 2026 Arizona State Parks source, so this portion remains marked restricted until confirmed otherwise (Source: Arizona State Parks, unconfirmed today). The trail remains accessible from other campground access points. Lost Dutchman State Park's Stage II fire restrictions remain in effect through October 31, 2026: no wood, charcoal, or open flame, and no smoking on trails, though gas stoves are permitted for cooking (Source: Arizona State Parks). NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected, and covers the Apache Junction area near this trailhead (Source: National Weather Service). Siphon Draw is a natural drainage; afternoon monsoon thunderstorms are possible, so avoid it during and after storms. Hike before 8am or after 6pm and carry extra water.",
+      "lastChecked": "2026-09-10"
     },
     "pass-mountain": {
       "status": "open",
-      "note": "No closures reported for Usery Mountain Regional Park today (Source: Maricopa County Parks and Recreation). Maricopa County's annual regional parks fire ban remains in effect May 1 through September 30, prohibiting campfires, fire pits, and charcoal grills; it does not close the trail. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
-      "lastChecked": "2026-09-09"
+      "note": "No closures reported for Usery Mountain Regional Park today (Source: Maricopa County Parks and Recreation). Maricopa County's annual regional parks fire ban remains in effect May 1 through September 30, prohibiting campfires, fire pits, and charcoal grills; it does not close the trail. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
+      "lastChecked": "2026-09-10"
     },
     "white-tank-waterfall": {
       "status": "restricted",
-      "note": "The Main Trailhead Staging Area remains closed for construction through September 30, 2026, confirmed today via the county's live park alerts page (Source: Maricopa County Parks and Recreation). Waterfall, Mesquite Canyon, Mule Deer, and Maricopa Trails remain open but are not reachable from the staging area during the closure. Maricopa County's annual regional parks fire ban remains in effect May 1 through September 30, prohibiting campfires and charcoal grills. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Waterfall Trail follows a wash; avoid it during and shortly after storms. Hike before 8am or after 6pm and carry extra water given the active warning.",
-      "lastChecked": "2026-09-09"
+      "note": "The Main Trailhead Staging Area remains closed for construction through September 30, 2026, confirmed today via the county's live park alerts page (Source: Maricopa County Parks and Recreation). Waterfall, Mesquite Canyon, Mule Deer, and Maricopa Trails remain open but are not reachable from the staging area during the closure. Maricopa County's annual regional parks fire ban remains in effect May 1 through September 30, prohibiting campfires and charcoal grills. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Waterfall Trail follows a wash; avoid it during and shortly after storms. Hike before 8am or after 6pm and carry extra water given the active warning.",
+      "lastChecked": "2026-09-10"
     },
     "browns-ranch": {
       "status": "closed",
-      "note": "Brown's Ranch Trailhead, including the building, parking lot, and portions of the surrounding trail system, remains closed today for a $1.17 million improvement project that began July 13, 2026; the City of Scottsdale is still targeting completion in fall 2026 with no firmer reopening date published, confirmed via the city's live Preserve alerts page today. Alternate access points include Pima Dynamite, Fraesfield, Granite Mountain, and Tom's Thumb trailheads. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected (Source: National Weather Service). Source: City of Scottsdale McDowell Sonoran Preserve.",
-      "lastChecked": "2026-09-09"
+      "note": "Brown's Ranch Trailhead, including the building, parking lot, and portions of the surrounding trail system, remains closed today for a $1.17 million improvement project that began July 13, 2026; the City of Scottsdale is still targeting completion in fall 2026 with no firmer reopening date published, confirmed via the city's live Preserve alerts page today. Alternate access points include Pima Dynamite, Fraesfield, Granite Mountain, and Tom's Thumb trailheads. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected (Source: National Weather Service). Source: City of Scottsdale McDowell Sonoran Preserve.",
+      "lastChecked": "2026-09-10"
     },
     "thunderbird-h3": {
       "status": "restricted",
-      "note": "The City of Glendale's phased trailhead improvement project continues at Thunderbird Conservation Park, confirmed unchanged today. The 59th Avenue parking lot and trailhead remain closed April through December 2026, and the 55th Avenue parking lot and trailhead remain closed August 2026 through February 2027; a third phase closing the 67th Avenue lot is planned for January through August 2027. The city is staggering the work so at least one trailhead stays open at a time; use the 55th Avenue or 67th Avenue access points while 59th Avenue is closed. Trails throughout the park remain open during construction. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning. Source: City of Glendale Parks and Recreation.",
-      "lastChecked": "2026-09-09"
+      "note": "The City of Glendale's phased trailhead improvement project continues at Thunderbird Conservation Park, confirmed unchanged today. The 59th Avenue parking lot and trailhead remain closed April through December 2026, and the 55th Avenue parking lot and trailhead remain closed August 2026 through February 2027; a third phase closing the 67th Avenue lot is planned for January through August 2027. The city is staggering the work so at least one trailhead stays open at a time; use the 55th Avenue or 67th Avenue access points while 59th Avenue is closed. Trails throughout the park remain open during construction. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning. Source: City of Glendale Parks and Recreation.",
+      "lastChecked": "2026-09-10"
     },
     "estrella-competitive": {
       "status": "open",
-      "note": "Gila and Quail trailheads and the Competitive Track remain open today, confirmed via the county's live park alerts page (Source: Maricopa County Parks and Recreation). Following storm damage reported August 17, 2026, the 1-mile concrete path and playground remain closed for structural repairs and the Nature Center remains closed indefinitely due to a power outage; portable restrooms are provided in place of permanent facilities. The Loop Drive ramadas and parking closure is confirmed still in effect today through September 18, 2026 due to the August 17 storm damage (Source: Maricopa County Parks and Recreation). Maricopa County's annual regional parks fire ban remains in effect May 1 through September 30. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
-      "lastChecked": "2026-09-09"
+      "note": "Gila and Quail trailheads and the Competitive Track remain open today, confirmed via the county's live park alerts page (Source: Maricopa County Parks and Recreation). Following storm damage reported August 17, 2026, the 1-mile concrete path and playground remain closed for structural repairs and the Nature Center remains closed indefinitely due to a power outage; portable restrooms are provided in place of permanent facilities. The Loop Drive ramadas and parking closure is confirmed still in effect today through September 18, 2026 due to the August 17 storm damage (Source: Maricopa County Parks and Recreation). Maricopa County's annual regional parks fire ban remains in effect May 1 through September 30. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
+      "lastChecked": "2026-09-10"
     },
     "victory-steps-verrado": {
       "status": "open",
-      "note": "No closures reported today; the stairs are subject to a standard daily closure at dusk. This could not be cross-checked today against an official Town of Buckeye or Verrado parks status page. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 9 at 4:22am MST and in effect through 8pm September 10, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
-      "lastChecked": "2026-09-09"
+      "note": "No closures reported today; the stairs are subject to a standard daily closure at dusk. This could not be cross-checked today against an official Town of Buckeye or Verrado parks status page. NWS Phoenix's Extreme Heat Warning for the Phoenix metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 105 to 109 degrees expected; no Flood Watch is active (Source: National Weather Service). Hike before 8am or after 6pm and carry extra water given the active warning.",
+      "lastChecked": "2026-09-10"
     },
     "cathedral-rock": {
       "status": "open",
       "note": "No trail-specific closure is reported for Cathedral Rock today (Source: Coconino National Forest). No Flood Watch is active for the Sedona area today (Source: National Weather Service, NWS Flagstaff). Coconino National Forest confirmed today via its official alerts page that no Stage 1 or Stage 2 fire restrictions are currently in effect, with fire danger rated Moderate forest-wide (Source: Coconino National Forest). No NWS Excessive Heat Warning is active for Coconino County today. Hike before 7am or after 7pm and carry extra water regardless, since summer afternoon temperatures remain high; afternoon monsoon storms remain possible, so avoid washes during and after storms.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "devils-bridge": {
       "status": "restricted",
       "note": "Devil's Bridge Trail (No. 120) is open and not on the current Pocket Fire closed-trail list, but Dry Creek Trail (No. 52), a standard approach route, remains closed today under the Pocket Fire Closure Order (Forest Order #03-04-06-26-003) through September 30, 2026 unless rescinded earlier, along with Bear Sign, Secret Canyon, HS Canyon, and David Miller trails in the same closure area, confirmed today directly on the Coconino National Forest alerts page (Source: Coconino National Forest). Mescal Trail is open and, along with Long Canyon Trail, is confirmed as a working alternate approach. No Flood Watch is active for the Sedona area today; no active NWS alerts are in effect in Coconino County today (Source: National Weather Service). Coconino National Forest confirmed today that no fire restrictions are currently in effect forest-wide. No NWS Excessive Heat Warning is active for Coconino County today. Hike before 7am or after 7pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "bell-rock-courthouse": {
       "status": "open",
       "note": "No trail-specific closure is reported for Bell Rock or Courthouse Butte today (Source: Coconino National Forest). No Flood Watch is active for the Sedona area today (Source: National Weather Service, NWS Flagstaff). Coconino National Forest confirmed today that no fire restrictions are currently in effect forest-wide, with fire danger rated Moderate (Source: Coconino National Forest). No NWS Excessive Heat Warning is active for Coconino County today. Hike before 7am or after 7pm and carry extra water regardless, since summer afternoon temperatures remain high; avoid wash crossings during and after any storm.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "boynton-canyon": {
       "status": "open",
       "note": "Boynton Canyon Trail (No. 47) remains open today and is not on the current Pocket Fire closed-trail list, confirmed via the Coconino National Forest alerts page (Source: Coconino National Forest). No Flood Watch is active for the Sedona area today (Source: National Weather Service, NWS Flagstaff). This trail enters a canyon, so flash flood risk rises during storms; avoid washes during and after any storm. Coconino National Forest confirmed today that no fire restrictions are currently in effect forest-wide. No NWS Excessive Heat Warning is active for Coconino County today. Hike before 7am or after 7pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "west-fork-oak-creek": {
       "status": "closed",
       "note": "West Fork Trail (No. 108) and the Call of the Canyon Picnic Site remain closed today under Coconino National Forest's Oak Creek Temporary Area Closure Order (Forest Order #03-04-00-26-005), confirmed unchanged today directly on the Coconino National Forest alerts page, due to flood, debris flow, and burn scar hazards. The same order also closes Bootlegger, Banjo Bill, Halfway, Manzanita, Encinoso, and Grasshopper Point recreation sites. Slide Rock State Park remains open for hiking, picnicking, and homestead access; its swim area in Oak Creek remains closed. Coconino National Forest confirmed today that no Stage 1 or 2 fire restrictions are in effect forest-wide, but this closure order is separate and remains active (Source: Coconino National Forest). This is a burned drainage with ongoing flood and debris flow risk even without an active watch. Source: Coconino National Forest.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "soldier-pass": {
       "status": "open",
       "note": "Soldier Pass Trail (No. 66) is not on the current Pocket Fire closed-trail list (Source: Coconino National Forest). The trailhead parking lot is closed Thursday through Sunday year round; confirm current shuttle and parking access before visiting on those days. No Flood Watch is active for the Sedona area today; no active NWS alerts are in effect in Coconino County today (Source: National Weather Service). Coconino National Forest confirmed today that no fire restrictions are currently in effect forest-wide. No NWS Excessive Heat Warning is active for Coconino County today. Hike before 7am or after 7pm and carry extra water; avoid wash crossings during and after any storm.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "bear-mountain": {
       "status": "open",
       "note": "Bear Mountain Trail is not on the current Pocket Fire closed-trail list (Source: Coconino National Forest). This is a steep, fully exposed trail with no shade. No Flood Watch is active for the Sedona area today (Source: National Weather Service, NWS Flagstaff). Coconino National Forest confirmed today that no fire restrictions are currently in effect forest-wide. No NWS Excessive Heat Warning is active for Coconino County today. Hike before 7am or after 7pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "fay-canyon": {
       "status": "open",
       "note": "Fay Canyon Trail is not on the current Pocket Fire closed-trail list (Source: Coconino National Forest). This trail enters a canyon, so flash flood risk rises during storms; avoid washes during and after any storm. No Flood Watch is active for the Sedona area today (Source: National Weather Service, NWS Flagstaff). Coconino National Forest confirmed today that no fire restrictions are currently in effect forest-wide. No NWS Excessive Heat Warning is active for Coconino County today. Hike before 7am or after 7pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "airport-mesa": {
       "status": "open",
       "note": "No closures reported today (Source: Coconino National Forest). No Flood Watch is active for the Sedona area today (Source: National Weather Service, NWS Flagstaff). Coconino National Forest confirmed today that no fire restrictions are currently in effect forest-wide. No NWS Excessive Heat Warning is active for Coconino County today. Hike before 7am or after 7pm and carry extra water regardless, since summer afternoon temperatures remain high.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "mescal-courthouse": {
       "status": "open",
       "note": "Mescal Trail (No. 174C) remains open today, serving as the recommended alternate approach to Devil's Bridge (Source: Coconino National Forest). Dry Creek Trail (No. 52), in the same Dry Creek Road corridor, remains closed under the Pocket Fire Closure Order through September 30, 2026 unless rescinded earlier, but does not block access to Mescal Trail itself. No Flood Watch is active for the Sedona area today (Source: National Weather Service, NWS Flagstaff). Coconino National Forest confirmed today that no fire restrictions are currently in effect forest-wide. No NWS Excessive Heat Warning is active for Coconino County today. Hike before 7am or after 7pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "seven-falls-sabino": {
       "status": "open",
-      "note": "No Flash Flood Watch or Warning is active for the Tucson metro area today (Source: National Weather Service, NWS Tucson). This trail has multiple creek crossings in Sabino Canyon; turn back if water is flowing and avoid crossings during and shortly after any storm, since afternoon thunderstorms remain possible this time of year. A standing Forest Service closure order restricts camping, alcohol, and wheeled vehicles in the Bear Canyon Trail corridor and listed Sabino recreation sites through January 2028; this is a conduct restriction, not a hiking closure (Source: Coronado National Forest). Coronado National Forest confirmed today via its official alerts page that no fire restrictions are currently in effect forest-wide, with fire danger rated Very High. No NWS Excessive Heat Warning is active for the Tucson metro area today. Hike before 8am or after 7pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "note": "No Flash Flood Watch or Warning is active for the Tucson metro area today (Source: National Weather Service, NWS Tucson). This trail has multiple creek crossings in Sabino Canyon; turn back if water is flowing and avoid crossings during and shortly after any storm, since afternoon thunderstorms remain possible this time of year. A standing Forest Service closure order restricts camping, alcohol, and wheeled vehicles in the Bear Canyon Trail corridor and listed Sabino recreation sites through January 2028; this is a conduct restriction, not a hiking closure (Source: Coronado National Forest). Coronado National Forest confirmed today via its official alerts page that no fire restrictions are currently in effect forest-wide, with fire danger rated Very High. NWS Tucson's Extreme Heat Warning for the Tucson metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 106 to 110 degrees expected (Source: National Weather Service). Pima County does not close trails during heat warnings (unlike Phoenix's Trail Heat Safety Program), but posts on-trail heat warning signage; extra caution and extra water are strongly advised. Hike before 8am or after 7pm and carry extra water.",
+      "lastChecked": "2026-09-10"
     },
     "romero-pools": {
       "status": "open",
-      "note": "No Flash Flood Watch or Warning is active for the Tucson metro area today (Source: National Weather Service, NWS Tucson). This trail has multiple creek crossings in Catalina State Park; be prepared for sudden rises in pool and creek levels and avoid crossings during and shortly after any storm, since afternoon thunderstorms remain possible this time of year. No closure was found for Catalina State Park in today's check. No NWS Excessive Heat Warning is active for the Tucson metro area today. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service; Arizona State Parks.",
-      "lastChecked": "2026-09-09"
+      "note": "No Flash Flood Watch or Warning is active for the Tucson metro area today (Source: National Weather Service, NWS Tucson). This trail has multiple creek crossings in Catalina State Park; be prepared for sudden rises in pool and creek levels and avoid crossings during and shortly after any storm, since afternoon thunderstorms remain possible this time of year. No closure was found for Catalina State Park in today's check. NWS Tucson's Extreme Heat Warning for the Tucson metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 106 to 110 degrees expected (Source: National Weather Service). Pima County does not close trails during heat warnings (unlike Phoenix's Trail Heat Safety Program), but posts on-trail heat warning signage; extra caution and extra water are strongly advised. Hike before 8am or after 7pm and carry extra water. Source: National Weather Service; Arizona State Parks.",
+      "lastChecked": "2026-09-10"
     },
     "finger-rock": {
       "status": "open",
-      "note": "Finger Rock Trail remains open today; no current closure alert was found on the Coronado National Forest alerts page and the August 2026 Finger Ridge Fire near Finger Rock Canyon does not appear as an active incident (Source: Coronado National Forest). No Flash Flood Watch or Warning is active for the Tucson metro area today (Source: National Weather Service, NWS Tucson). Debris flow risk remains elevated in the burn scar during and after storms. No NWS Excessive Heat Warning is active for the Tucson metro area today. Hike before 8am or after 7pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "note": "Finger Rock Trail remains open today; no current closure alert was found on the Coronado National Forest alerts page and the August 2026 Finger Ridge Fire near Finger Rock Canyon does not appear as an active incident (Source: Coronado National Forest). No Flash Flood Watch or Warning is active for the Tucson metro area today (Source: National Weather Service, NWS Tucson). Debris flow risk remains elevated in the burn scar during and after storms. NWS Tucson's Extreme Heat Warning for the Tucson metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 106 to 110 degrees expected (Source: National Weather Service). Pima County does not close trails during heat warnings (unlike Phoenix's Trail Heat Safety Program), but posts on-trail heat warning signage; extra caution and extra water are strongly advised. Hike before 8am or after 7pm and carry extra water.",
+      "lastChecked": "2026-09-10"
     },
     "tumamoc-hill": {
       "status": "open",
-      "note": "Tumamoc Hill remains open today with its standard public access hours of 4am to 10pm daily; no closures were found in a check of current listings today (Source: University of Arizona). No NWS Excessive Heat Warning is active for the Tucson metro area today. Hike before 8am or after 7pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "note": "Tumamoc Hill remains open today with its standard public access hours of 4am to 10pm daily; no closures were found in a check of current listings today (Source: University of Arizona). NWS Tucson's Extreme Heat Warning for the Tucson metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 106 to 110 degrees expected (Source: National Weather Service). Pima County does not close trails during heat warnings (unlike Phoenix's Trail Heat Safety Program), but posts on-trail heat warning signage; extra caution and extra water are strongly advised. Hike before 8am or after 7pm and carry extra water.",
+      "lastChecked": "2026-09-10"
     },
     "wasson-peak": {
       "status": "open",
-      "note": "Saguaro National Park West (Tucson Mountain District) is confirmed open today via the National Park Service's live conditions page: all visitor services are operational (Source: National Park Service). Golden Gate Road remains permanently closed to vehicles between Sendero Esperanza Trailhead and Picture Rocks Road, converted to a multi-use trail, unrelated to this trail. No Flash Flood Watch or Warning is active for the Tucson metro area today (Source: National Weather Service, NWS Tucson). No NWS Excessive Heat Warning is active for the Tucson metro area today. Hike before 8am or after 7pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "note": "Saguaro National Park West (Tucson Mountain District) is confirmed open today via the National Park Service's live conditions page: all visitor services are operational (Source: National Park Service). Golden Gate Road remains permanently closed to vehicles between Sendero Esperanza Trailhead and Picture Rocks Road, converted to a multi-use trail, unrelated to this trail. No Flash Flood Watch or Warning is active for the Tucson metro area today (Source: National Weather Service, NWS Tucson). NWS Tucson's Extreme Heat Warning for the Tucson metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 106 to 110 degrees expected (Source: National Weather Service). Pima County does not close trails during heat warnings (unlike Phoenix's Trail Heat Safety Program), but posts on-trail heat warning signage; extra caution and extra water are strongly advised. Hike before 8am or after 7pm and carry extra water.",
+      "lastChecked": "2026-09-10"
     },
     "valley-view-overlook": {
       "status": "open",
-      "note": "Saguaro National Park West (Tucson Mountain District) is confirmed open today via the National Park Service's live conditions page: all visitor services are operational (Source: National Park Service). Golden Gate Road remains permanently closed to vehicles between Sendero Esperanza Trailhead and Picture Rocks Road, converted to a multi-use trail, unrelated to this trail. No Flash Flood Watch or Warning is active for the Tucson metro area today (Source: National Weather Service, NWS Tucson). No NWS Excessive Heat Warning is active for the Tucson metro area today. Hike before 8am or after 7pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "note": "Saguaro National Park West (Tucson Mountain District) is confirmed open today via the National Park Service's live conditions page: all visitor services are operational (Source: National Park Service). Golden Gate Road remains permanently closed to vehicles between Sendero Esperanza Trailhead and Picture Rocks Road, converted to a multi-use trail, unrelated to this trail. No Flash Flood Watch or Warning is active for the Tucson metro area today (Source: National Weather Service, NWS Tucson). NWS Tucson's Extreme Heat Warning for the Tucson metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 106 to 110 degrees expected (Source: National Weather Service). Pima County does not close trails during heat warnings (unlike Phoenix's Trail Heat Safety Program), but posts on-trail heat warning signage; extra caution and extra water are strongly advised. Hike before 8am or after 7pm and carry extra water.",
+      "lastChecked": "2026-09-10"
     },
     "tanque-verde-ridge": {
       "status": "open",
-      "note": "Saguaro National Park East (Rincon Mountain District) is confirmed open today via the National Park Service's live conditions page: all roads, picnic areas, and trails are open (Source: National Park Service). Use standard caution around unstable ground, stump holes, and weakened trees in the 2020 burn areas, and watch for slick trail sections and rolling debris during rain. No Flash Flood Watch or Warning is active for the Tucson metro area today (Source: National Weather Service, NWS Tucson). No NWS Excessive Heat Warning is active for the Tucson metro area today. Hike before 8am or after 7pm and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "note": "Saguaro National Park East (Rincon Mountain District) is confirmed open today via the National Park Service's live conditions page: all roads, picnic areas, and trails are open (Source: National Park Service). Use standard caution around unstable ground, stump holes, and weakened trees in the 2020 burn areas, and watch for slick trail sections and rolling debris during rain. No Flash Flood Watch or Warning is active for the Tucson metro area today (Source: National Weather Service, NWS Tucson). NWS Tucson's Extreme Heat Warning for the Tucson metro area is active today, issued September 10 at 1:12am MST and in effect through 8pm September 11, 2026, with afternoon highs of 106 to 110 degrees expected (Source: National Weather Service). Pima County does not close trails during heat warnings (unlike Phoenix's Trail Heat Safety Program), but posts on-trail heat warning signage; extra caution and extra water are strongly advised. Hike before 8am or after 7pm and carry extra water.",
+      "lastChecked": "2026-09-10"
     },
     "humphreys-peak": {
       "status": "restricted",
       "note": "Humphreys Peak Trail No. 151 is not on Coconino National Forest's Pocket Fire closed-trail list, and the standard approach via the lower Arizona Snowbowl parking lot has no closure alert against it today, aside from a one-time scheduled closure of that trailhead from 5am to noon on September 19, 2026 for a running event (Source: Coconino National Forest). Lockett Meadow Road (FR 552), an alternate approach on the Inner Basin side, remains closed today for heavy machinery Inner Basin waterline and road restoration work that began July 14, 2026, projected through November 2026 (Source: Coconino National Forest). Marked restricted out of caution because the Inner Basin approach remains closed; confirm current access with the Flagstaff Ranger District at 928-526-0866 before relying on either route. Coconino National Forest confirmed today that no fire restrictions are currently in effect forest-wide. This trail rises above treeline, so standard summer monsoon lightning risk applies; start early and be off the exposed summit ridge before early afternoon.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "kachina-trail": {
       "status": "open",
       "note": "No closures or advisories specific to this trail were found today (Source: Coconino National Forest). Coconino National Forest confirmed today that no fire restrictions are currently in effect forest-wide, with fire danger rated Moderate. Afternoon monsoon thunderstorms are possible on the San Francisco Peaks; start early and avoid exposed ridgelines during storms.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "walnut-canyon": {
       "status": "restricted",
       "note": "The Island Trail's current status could not be confirmed today; the National Park Service's alerts and conditions page for Walnut Canyon National Monument again did not show a populated current alert, so this trail is marked restricted out of caution until confirmed (Source: National Park Service, unconfirmed today). Historical NPS guidance states the Island Trail closes only during an active Red Flag Warning, but current Red Flag Warning status could not be confirmed today either. Call the monument at 928-526-3367 to confirm access before visiting. Afternoon monsoon thunderstorms are possible; check current conditions before visiting.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "lava-river-cave": {
       "status": "open",
       "note": "FR 171, the access road from FR 245 to the Lava River Cave trailhead, remains open; the Forest Order that closed it to motorized vehicles from July 13 through August 7, 2026 for maintenance has ended, and the Coconino National Forest Forest Roads Status page continues to list FR 171 and Lava River Cave access as open (Source: Coconino National Forest). Coconino National Forest confirmed today that no fire restrictions are currently in effect forest-wide. The cave itself is unlit and near freezing year round; bring multiple light sources and sturdy footwear.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "fossil-springs": {
       "status": "restricted",
       "note": "A parking permit ($6 per vehicle via Recreation.gov) remains required April 1 through October 1, 2026 for the Fossil Creek corridor, with permits released both a month out and two days out; permit holders must reach the FR 708/SR 260 junction by 2pm, camping is prohibited in the permit area, and campfires and glass containers are banned (Source: Coconino National Forest; Recreation.gov). Coconino National Forest confirmed today that no fire restrictions are currently in effect forest-wide. No Flood Watch is active for northern Arizona today, but this trail crosses Fossil Creek in a canyon, so avoid hiking during and shortly after any storm. Hike early morning and carry extra water.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "south-kaibab-ooh-aah": {
       "status": "restricted",
       "note": "No change since the Park Service expanded closures on September 3, 2026, confirmed unchanged today directly against the NPS news release on the expanded inner canyon closures: South Kaibab Trail is open only from the trailhead to Tip-Off Point (about 4.4 miles down) and closed below that due to hazardous conditions from flash flooding (Source: National Park Service). Ooh Aah Point (0.9 miles) and Cedar Ridge (1.5 miles), the trail's popular shorter destinations, remain within the open section. This follows the severe flash flood in Bright Angel Canyon on August 29 that destroyed nearly all footbridges over Bright Angel Creek; the park states there is no estimated reopening at this time. The NPS continues to warn that additional thunderstorms could bring further flash flooding, debris flows, or rockfall with little to no warning. This trail is fully sun exposed with no water source below the trailhead; confirm current water status at the trailhead before descending. No NWS Excessive Heat Warning is active for Grand Canyon country today; no active NWS alerts were found for the area today (Source: National Weather Service). Source: National Park Service, Grand Canyon National Park.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "bright-angel-indian-garden": {
       "status": "restricted",
       "note": "No change since the Park Service expanded closures on September 3, 2026, confirmed unchanged today directly against the NPS news release: Bright Angel Trail remains open only from the trailhead to Havasupai Gardens (formerly Indian Garden) at the Tonto Trail intersection; the trail is closed below that intersection except for river-trip exchanges at Pipe Creek Beach (Source: National Park Service). This follows the severe flash flood in Bright Angel Canyon on August 29 that closed Phantom Ranch, the North Kaibab Trail, and the river-crossing bridges; the park states there is no estimated reopening at this time. Confirm current water status at the trailhead before descending, since prior scheduled shutoffs at the lower resthouses may still be in effect. Grand Canyon National Park separately advises day hikers descend no farther than 1.5 miles from the upper trailhead due to elevated Inner Canyon heat risk regardless of warning status. No NWS Excessive Heat Warning is active for Grand Canyon country today; no active NWS alerts were found for the area today (Source: National Weather Service). Source: National Park Service, Grand Canyon National Park.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "rim-trail": {
       "status": "open",
       "note": "No closures reported today; the Rim Trail is not affected by the Bright Angel Canyon flash flood closure, confirmed unchanged today. Source: National Park Service, Grand Canyon National Park.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     },
     "north-kaibab-coconino": {
       "status": "closed",
       "note": "The entirety of North Kaibab Trail, Phantom Ranch (including Bright Angel Campground, the Canteen, and cabins), and the Black Bridge and Silver Bridge river crossings remain closed with no estimated reopening, confirmed unchanged today directly against the NPS news release on the expanded inner canyon closures (Source: National Park Service). The closure follows the severe flash flood that struck Bright Angel Canyon on August 29, destroying nearly all footbridges over Bright Angel Creek and damaging the Transcanyon pipeline that supplies South Rim water. Phantom Ranch reservations remain cancelled and Colorado River traffic through the area remains halted. The National Park Service continues to warn that additional thunderstorms could bring further flash flooding, debris flows, and rockfall with little to no warning. Water status at the North Kaibab Trailhead, Supai Tunnel, and Cottonwood Campground should be considered uncertain until the park posts a post-flood update. No NWS Excessive Heat Warning is active for Grand Canyon country today; no active NWS alerts were found for the area today (Source: National Weather Service). Source: National Park Service, Grand Canyon National Park.",
-      "lastChecked": "2026-09-09"
+      "lastChecked": "2026-09-10"
     }
   }
 }
