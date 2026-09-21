@@ -1,12 +1,10 @@
 {
-  "lastUpdated": "2026-09-14",
+  "lastUpdated": "2026-09-21",
   "method": "Perplexity Sonar web research with citation validation (scripts/market-refresh.ts). Zillow excluded by policy.",
   "sourceNames": [
     "redfin.com",
     "realtor.com",
-    "armls.com",
-    "homes.com",
-    "marketreports.longrealty.com"
+    "homes.com"
   ],
   "counties": {
     "maricopa": {
@@ -169,19 +167,19 @@
   },
   "cities": {
     "phoenix": {
-      "medianHomePrice": 445500,
-      "pricePerSqFt": 292,
+      "medianHomePrice": 475000,
+      "pricePerSqFt": null,
       "avgDaysOnMarket": 67,
       "marketType": "buyer",
-      "yearOverYearChange": "+0.7%",
+      "yearOverYearChange": "-4.8%",
       "asOf": "2026-08",
       "confidence": "medium",
       "citations": [
-        "https://azbigmedia.com/real-estate/phoenix-housing-prices-fall-as-buyers-gain-leverage/",
-        "https://www.realtor.com/news/local/phoenix-az/real-estate-market-phoenix-az-august-2026/",
-        "https://www.redfin.com/news/new-listings-surge-august-2026/",
-        "https://www.redfin.com/neighborhood/548330/AZ/Phoenix/South-Phoenix/housing-market",
-        "https://www.axios.com/local/phoenix/2026/08/19/the-phoenix-housing-market-is-cooling-off"
+        "https://www.vwagents.com/blog/phoenix-market-report-2026-09",
+        "https://rjhhomesteam.com/phoenix-real-estate-market-update-september-2026/",
+        "https://theravenscroftgroup.com/blog/phoenix-housing-market-update-august-2026",
+        "https://williamsluxuryhomes.com/greater-phoenix-esttae-update-sept-2026/",
+        "https://trolto.com/agent/valeria-jaramillo-velazquez/blog/average-home-price-phoenix-arizona-september-2026"
       ]
     },
     "scottsdale": {
@@ -201,51 +199,51 @@
       ]
     },
     "mesa": {
-      "medianHomePrice": 405000,
-      "pricePerSqFt": 253,
+      "medianHomePrice": 498000,
+      "pricePerSqFt": 263,
       "avgDaysOnMarket": 64,
       "marketType": "buyer",
-      "yearOverYearChange": "-1.4%",
-      "asOf": "2026-06",
+      "yearOverYearChange": "-1.9%",
+      "asOf": "2026-08",
       "confidence": "medium",
       "citations": [
+        "https://www.realtor.com/realestateandhomes-detail/8011-E-Redberry_Mesa_AZ_85207_M12180-10141",
+        "https://www.realtor.com/realestateandhomes-detail/4610-S-Hassett-Cir_Mesa_AZ_85212_M20107-84800",
+        "https://www.realtor.com/realestateandhomes-detail/1350-S-Greenfield-Rd-Unit-1033_Mesa_AZ_85206_M10978-32368",
         "https://www.redfin.com/AZ/Mesa/2026-N-64th-St-85215/home/27738711",
-        "https://www.redfin.com/AZ/Mesa/3215-E-Russell-St-85213/home/95460550",
-        "https://www.redfin.com/AZ/Mesa/9431-E-Solina-Ave-85212/home/173738142",
-        "https://www.redfin.com/AZ/Mesa/8049-E-Jerome-Ave-85209/unit-E/home/27250086",
-        "https://themelissabailey.com/blog/first-time-buyer-guide-mesa-east-valley-az"
+        "https://www.realtor.com/realestateandhomes-detail/4206-E-Fountain-St_Mesa_AZ_85205_M26679-81955"
       ]
     },
     "chandler": {
-      "medianHomePrice": 526310,
-      "pricePerSqFt": 297,
-      "avgDaysOnMarket": 57,
-      "marketType": "balanced",
-      "yearOverYearChange": null,
+      "medianHomePrice": 547500,
+      "pricePerSqFt": 285,
+      "avgDaysOnMarket": 69,
+      "marketType": "buyer",
+      "yearOverYearChange": "-5.8%",
       "asOf": "2026-08",
       "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/city/3104/AZ/Chandler/amenity/4+bed",
-        "https://www.redfin.com/AZ/Chandler/3651-S-Adobe-Dr-85286/home/108606800",
-        "https://www.redfin.com/AZ/Chandler/3941-S-Adobe-Dr-85286/home/110295190",
-        "https://www.redfin.com/AZ/Chandler/12137-E-Bluebird-Dr-85286/home/144555682",
-        "https://www.redfin.com/AZ/Chandler/4981-S-Cotton-Ct-85248/home/27241250"
+        "https://ryanharju.com/market/chandler/",
+        "https://www.redfin.com/AZ/Chandler/4713-W-Orchid-Ln-85226/home/28047480",
+        "https://dankaercher.com/blog/chandler-az-market-report-september-2026",
+        "https://livelovelaughchandleraz.com/2026-august-chandler-az-market-report/",
+        "https://thepropertyprofessor.blog/besides-phoenix-where-californians-buy-arizona/"
       ]
     },
     "gilbert": {
-      "medianHomePrice": 585000,
-      "pricePerSqFt": 288,
-      "avgDaysOnMarket": 60,
+      "medianHomePrice": 600000,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 62,
       "marketType": "balanced",
-      "yearOverYearChange": null,
-      "asOf": "2026-08",
+      "yearOverYearChange": "+0.0%",
+      "asOf": "2026-09",
       "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/zipcode/85298/housing-market",
-        "https://www.redfin.com/AZ/Gilbert/E-Queen-Creek-Rd-85298/home/173925175",
-        "https://www.redfin.com/AZ/Gilbert/3127-E-San-Pedro-Ct-85234/home/27922928",
-        "https://www.redfin.com/AZ/Gilbert/4269-E-Cullumber-Ct-85234/home/28297696",
-        "https://www.realtor.com/realestateandhomes-detail/1557-E-Douglas-Ave_Gilbert_AZ_85234_M10948-73318"
+        "https://www.sweephoenixazhomes.com/market-trends/2026-august-gilbert-az-housing-market-update/",
+        "https://www.desert-dreamers-team.com/blog/south-gilbert-85298-neighborhood-guide",
+        "https://www.realtor.com/realestateandhomes-detail/Gilbert_AZ_85296_M10928-01096",
+        "https://www.bestwestagent.com/gilbert-real-estate-agent-near-you/",
+        "https://www.realtor.com/realestateandhomes-detail/4180-E-Sidewinder-Ct_Gilbert_AZ_85297_M15863-30790"
       ]
     },
     "tempe": {
@@ -265,19 +263,19 @@
       ]
     },
     "glendale": {
-      "medianHomePrice": 559000,
-      "pricePerSqFt": null,
-      "avgDaysOnMarket": 48,
-      "marketType": "seller",
-      "yearOverYearChange": null,
-      "asOf": "2026-08",
+      "medianHomePrice": 435000,
+      "pricePerSqFt": 240,
+      "avgDaysOnMarket": 57,
+      "marketType": "balanced",
+      "yearOverYearChange": "-1.1%",
+      "asOf": "2026-07",
       "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/city/7483/OR/Glendale/housing-market",
-        "https://www.realtor.com/realestateandhomes-detail/4327-W-Chama-Dr_Glendale_AZ_85310_M10587-51950",
-        "https://www.redfin.com/AZ/Glendale/5815-N-46th-Ave-85301/home/27607637",
-        "https://www.redfin.com/AZ/Glendale/7644-W-Sands-Rd-85303/home/195801111",
-        "https://www.redfin.com/AZ/Glendale/7739-W-Sands-Rd-85303/home/195801039"
+        "https://eztimehomebuyers.com/locations/arizona/glendale/",
+        "https://www.redfin.com/AZ/Glendale/8947-W-Solano-Dr-85305/home/172955870",
+        "https://www.redfin.com/AZ/Glendale/6223-W-Wikieup-Ln-85308/home/27760133",
+        "https://www.redfin.com/AZ/Glendale/24423-N-46th-Ln-85310/unit-5/home/205220786",
+        "https://stella.jhagents.com/blog/2026/09/16/glendale-market-update-august-2026-real-estate-insights"
       ]
     },
     "peoria": {
@@ -313,19 +311,19 @@
       ]
     },
     "goodyear": {
-      "medianHomePrice": 415000,
-      "pricePerSqFt": null,
-      "avgDaysOnMarket": 62,
+      "medianHomePrice": 478755,
+      "pricePerSqFt": 226,
+      "avgDaysOnMarket": 71,
       "marketType": "balanced",
-      "yearOverYearChange": null,
-      "asOf": "2026-08",
+      "yearOverYearChange": "+2.5%",
+      "asOf": "2026-07",
       "confidence": "medium",
       "citations": [
-        "https://www.realtor.com/realestateandhomes-detail/13642-S-176th-Ave_Goodyear_AZ_85338_M18840-34403",
-        "https://www.redfin.com/AZ/Goodyear/15957-W-Sheila-Ln-85395/home/27932576",
-        "https://www.realtor.com/realestateandhomes-detail/17488-W-Illini-St_Goodyear_AZ_85338_M97421-06852",
-        "https://www.realtor.com/realestateandhomes-detail/17392-W-Superior-Ave_Goodyear_AZ_85338_M91879-86789",
-        "https://www.realtor.com/realestateandhomes-detail/17973-W-Granite-View-Dr_Goodyear_AZ_85338_M14489-73875"
+        "https://www.redfin.com/city/7245/AZ/Goodyear/page-17",
+        "https://www.bestwestagent.com/goodyear-real-estate-agent-near-you/",
+        "https://www.redfin.com/AZ/Goodyear/3799-N-159th-Ave-85395/home/28056295",
+        "https://www.redfin.com/AZ/Goodyear/2499-S-180th-Ave-85338/home/173049872",
+        "https://resideline.com/market/85395/"
       ]
     },
     "avondale": {
@@ -345,19 +343,19 @@
       ]
     },
     "buckeye": {
-      "medianHomePrice": 396000,
-      "pricePerSqFt": 220,
-      "avgDaysOnMarket": 62,
-      "marketType": "balanced",
+      "medianHomePrice": 381000,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": 71,
+      "marketType": "buyer",
       "yearOverYearChange": null,
-      "asOf": "2026-09",
+      "asOf": "2026-08",
       "confidence": "medium",
       "citations": [
-        "https://www.homesbymarco.com/cities/buckeye-az/housing-market-report",
-        "https://www.redfin.com/AZ/Buckeye/13664-S-189th-Ave-85326/home/183171046",
-        "https://www.redfin.com/AZ/Buckeye/27684-W-Abraham-Ln-85396/home/205379540",
-        "https://www.redfin.com/AZ/Buckeye/22013-N-261st-Ln-85396/home/28596499",
-        "https://www.redfin.com/AZ/Buckeye/6499-S-244th-Ln-85326/home/185673938"
+        "https://www.redfin.com/AZ/Buckeye/22548-W-Southern-Ave-85326/home/185672969",
+        "https://www.redfin.com/AZ/Buckeye/18927-W-Woodlands-Ave-85326/home/173049532",
+        "https://www.redfin.com/AZ/Buckeye/21505-N-276th-Ave-85396/home/205378570",
+        "https://www.redfin.com/AZ/Buckeye/W-Rock-Wren-Rd-85326/unit-1/home/204344837",
+        "https://www.realtor.com/realestateandhomes-detail/4458-N-203rd-Ln_Buckeye_AZ_85396_M98896-35196"
       ]
     },
     "queen-creek": {
@@ -379,33 +377,33 @@
     "paradise-valley": {
       "medianHomePrice": 3100000,
       "pricePerSqFt": 676,
-      "avgDaysOnMarket": 107,
+      "avgDaysOnMarket": 101,
       "marketType": "buyer",
-      "yearOverYearChange": "+1.3%",
+      "yearOverYearChange": "+10.3%",
       "asOf": "2026-09",
-      "confidence": "high",
+      "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/zipcode/85253/housing-market",
-        "https://thecalamiagroup.com/blog/monday-market-update-paradise-valley-just-jumped-23",
-        "https://www.homes.com/local-guide/paradise-valley-az/",
-        "https://therealdeal.com/national/phoenix/2026/07/14/paradise-valley-home-sets-phoenix-price-record/",
-        "https://www.livebetterinscottsdale.com/paradise-valley-homes-and-lifestyle/"
+        "https://williamsluxuryhomes.com/paradise-valley-market-update-sept-2026/",
+        "https://themitchellgroupaz.com/blog/the-paradise-valley-listings-that-sit-at-121-days-arent-the-ones-youd-guess",
+        "https://thecalamiagroup.com/blog/paradise-valley-luxury-what-sets-it-apart-in-85253",
+        "https://thecalamiagroup.com/blog/is-paradise-valley-a-good-place-to-buy-in-2026-who-it-fits-and-who-it-doesn-t",
+        "https://rjhhomesteam.com/what-800k-gets-you-phoenix-metro/"
       ]
     },
     "fountain-hills": {
-      "medianHomePrice": 773999,
-      "pricePerSqFt": 340,
-      "avgDaysOnMarket": 63,
+      "medianHomePrice": 680000,
+      "pricePerSqFt": 353,
+      "avgDaysOnMarket": 90,
       "marketType": "balanced",
-      "yearOverYearChange": "+14%",
-      "asOf": "2026-08",
+      "yearOverYearChange": null,
+      "asOf": "2026-09",
       "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/AZ/Fountain-Hills/16004-N-Ringtail-Trl-85268/home/27328047",
-        "https://www.redfin.com/AZ/Fountain-Hills/15935-N-Mountain-Pkwy-85268/home/27328049",
-        "https://www.redfin.com/AZ/Fountain-Hills/15926-E-Rocky-Mountain-Pl-85268/home/27527264",
-        "https://www.redfin.com/AZ/Fountain-Hills/9750-N-Monterey-Dr-85268/unit-70/home/28215451",
-        "https://johnrowan.com/blog/the-fountain-hills-median-depends-on-who-you-ask-thats-the-story"
+        "https://www.redfin.com/AZ/Fountain-Hills/Fountain-Hills/Western/home/205469504",
+        "https://resideline.com/blog/fountain-hills-az-housing-market",
+        "https://www.redfin.com/AZ/Fountain-Hills/14216-N-Ibsen-Dr-85268/unit-A/home/28435675",
+        "https://www.realtor.com/realestateandhomes-detail/14422-N-Sherwood-Dr_Fountain-Hills_AZ_85268_M19320-76164",
+        "https://www.redfin.com/AZ/Fountain-Hills/9801-N-Sunrise-Cir-85268/home/27741186"
       ]
     },
     "cave-creek": {
@@ -425,35 +423,35 @@
       ]
     },
     "carefree": {
-      "medianHomePrice": 1271500,
-      "pricePerSqFt": 440,
-      "avgDaysOnMarket": 79,
+      "medianHomePrice": 1299349,
+      "pricePerSqFt": 350,
+      "avgDaysOnMarket": 140,
       "marketType": "balanced",
       "yearOverYearChange": null,
-      "asOf": "2026-05",
+      "asOf": "2026-07",
       "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/AZ/Carefree/7502-E-Carefree-Dr-85377/unit-104/home/26865650",
-        "https://www.redfin.com/AZ/Carefree/7199-E-Ridgeview-Pl-85377/unit-105/home/28380380",
-        "https://www.realtor.com/realestateandhomes-detail/6964-E-Stagecoach-Pass_Carefree_AZ_85377_M10472-41665",
-        "https://www.realtor.com/realestateandhomes-detail/36632-N-Never-Mind-Trl_Carefree_AZ_85377_M95304-29168",
-        "https://www.redfin.com/AZ/Carefree/5590-E-El-Sendero-DR-85377/unit-1/home/202102962"
+        "https://www.bestwestagent.com/carefree-real-estate-agent-near-you/",
+        "https://www.redfin.com/AZ/Carefree/7200-E-Ridgeview-Pl-85377/unit-6/home/28180157",
+        "https://www.azhomesearchcentral.com/market-data",
+        "https://reneeandkevinazliving.com/category/market-update/",
+        "https://www.redfin.com/neighborhood/548329/AZ/Phoenix/North-Phoenix/page-39"
       ]
     },
     "anthem": {
-      "medianHomePrice": 575000,
-      "pricePerSqFt": 273,
-      "avgDaysOnMarket": 57,
+      "medianHomePrice": 525000,
+      "pricePerSqFt": 283,
+      "avgDaysOnMarket": 63,
       "marketType": "balanced",
-      "yearOverYearChange": null,
+      "yearOverYearChange": "-6%",
       "asOf": "2026-08",
       "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/AZ/Anthem/2449-W-Muirfield-Dr-85086/home/28069846",
-        "https://www.realtor.com/realestateandhomes-detail/1235-W-Spirit-Dr_Anthem_AZ_85086_M28160-98668",
-        "https://www.realtor.com/realestateandhomes-detail/40425-N-Candlewyck-Ln_Anthem_AZ_85086_M12760-85274",
-        "https://www.redfin.com/city/31465/AZ/Anthem/apartments-deals",
-        "https://www.realtor.com/realestateandhomes-detail/2731-W-Adventure-Dr_Anthem_AZ_85086_M29023-14389"
+        "https://karenvthai.com/blog/green-valley-ranch-vs-anthem-the-henderson-trade-youre-actually-making",
+        "https://www.azhomesearchcentral.com/market-data",
+        "https://www.redfin.com/zipcode/85086/housing-market",
+        "https://www.redfin.com/AZ/Anthem/3640-W-Wayne-Ln-85086/home/28057465",
+        "https://www.redfin.com/city/14240/AZ/Phoenix/housing-market"
       ]
     },
     "litchfield-park": {
@@ -521,51 +519,51 @@
       ]
     },
     "sun-city": {
-      "medianHomePrice": 260000,
-      "pricePerSqFt": 183,
-      "avgDaysOnMarket": 78,
+      "medianHomePrice": 250000,
+      "pricePerSqFt": 174,
+      "avgDaysOnMarket": 55,
       "marketType": "balanced",
       "yearOverYearChange": null,
       "asOf": "2026-08",
       "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/AZ/Sun-City/16005-N-Nicklaus-Ln-85351/home/28073132",
-        "https://www.redfin.com/AZ/Sun-City/10888-W-Emerald-Dr-85351/home/27948319",
-        "https://www.redfin.com/AZ/Sun-City/15908-N-109th-Dr-85351/home/28375622",
-        "https://www.realtor.com/realestateandhomes-detail/17618-N-Jasmine-Dr_Sun-City_AZ_85373_M22695-45167",
-        "https://www.realtor.com/realestateandhomes-detail/10405-W-Peoria-Ave_Sun-City_AZ_85351_M19411-33562"
+        "https://www.bestwestagent.com/sun-city-real-estate-agent-near-you/",
+        "https://www.bestwestagent.com/sun-city-west-real-estate-agent-near-you/",
+        "https://www.redfin.com/AZ/Sun-City/10921-W-Loma-Blanca-Dr-85351/home/27838859",
+        "https://www.redfin.com/AZ/Sun-City-West/13654-W-Desert-Glen-Dr-85375/home/173721545",
+        "https://www.redfin.com/AZ/Sun-City/9530-W-Appaloosa-Dr-85373/home/28261923"
       ]
     },
     "sun-city-west": {
-      "medianHomePrice": 360000,
-      "pricePerSqFt": null,
-      "avgDaysOnMarket": 83,
+      "medianHomePrice": 349769,
+      "pricePerSqFt": 215,
+      "avgDaysOnMarket": 74,
       "marketType": "balanced",
-      "yearOverYearChange": null,
-      "asOf": "2026-08",
-      "confidence": "medium",
-      "citations": [
-        "https://www.redfin.com/AZ/Sun-City-West/17803-N-136th-Ct-85375/home/27481949",
-        "https://www.redfin.com/AZ/Sun-City-West/13144-W-Junipero-Dr-85375/home/28217166",
-        "https://www.redfin.com/AZ/Sun-City-West/18007-N-Conquistador-Dr-85375/home/27618078",
-        "https://www.redfin.com/AZ/Sun-City-West/13253-W-Countryside-Dr-85375/home/28011241",
-        "https://www.redfin.com/AZ/Sun-City-West/12909-W-Pontiac-Dr-85375/home/27888851"
-      ]
-    },
-    "wickenburg": {
-      "medianHomePrice": 533000,
-      "pricePerSqFt": 281,
-      "avgDaysOnMarket": 169,
-      "marketType": "buyer",
-      "yearOverYearChange": "+1%",
+      "yearOverYearChange": "-4.2%",
       "asOf": "2026-08",
       "confidence": "high",
       "citations": [
-        "https://www.redfin.com/AZ/Wickenburg/480-N-Country-Club-Dr-85390/home/27676563",
-        "https://www.redfin.com/AZ/Wickenburg/3618-Stampede-Dr-85390/home/145153296",
-        "https://www.redfin.com/AZ/Wickenburg/Wickenburg/Palomino/home/205027275",
-        "https://www.redfin.com/AZ/Wickenburg/55400-N-Vulture-Mine-Rd-85390/home/177343131",
-        "https://www.redfin.com/AZ/Wickenburg/18000-Miramonte-Trl-85390/home/62352124"
+        "https://www.redfin.com/city/25890/AZ/Sun-City-West/housing-market",
+        "https://www.redfin.com/AZ/Sun-City-West/12909-W-Pontiac-Dr-85375/home/27888851",
+        "https://www.realtor.com/realestateandhomes-detail/12402-W-Sonnet-Dr_Sun-City-West_AZ_85375_M19396-16480",
+        "https://www.realtor.com/realestateandhomes-detail/18850-N-130th-Ave_Sun-City-West_AZ_85375_M11233-43275",
+        "https://www.redfin.com/city/25890/AZ/Sun-City-West/amenity/backyard"
+      ]
+    },
+    "wickenburg": {
+      "medianHomePrice": 423290,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": null,
+      "marketType": "balanced",
+      "yearOverYearChange": "-12.5%",
+      "asOf": "2026-08",
+      "confidence": "medium",
+      "citations": [
+        "https://www.redfin.com/AZ/Wickenburg/855-Milky-Way-85390/home/27940271",
+        "https://www.redfin.com/AZ/Yuma/3758-W-20th-Pl-85364/home/125962331",
+        "https://www.redfin.com/AZ/Wickenburg/36520-S-Matthie-Ranch-Rd-85390/home/167259056",
+        "https://www.redfin.com/AZ/Wickenburg/4041-Fence-Post-Way-85390/home/178944100",
+        "https://www.tophap.com/market/WICKENBURG/place/f101bc83ce904921d1735c1421d2720c"
       ]
     },
     "apache-junction": {
@@ -601,67 +599,67 @@
       ]
     },
     "san-tan-valley": {
-      "medianHomePrice": 426949,
-      "pricePerSqFt": 209,
-      "avgDaysOnMarket": 69,
-      "marketType": "balanced",
-      "yearOverYearChange": "+1.1%",
+      "medianHomePrice": 429775,
+      "pricePerSqFt": 218,
+      "avgDaysOnMarket": 87,
+      "marketType": "buyer",
+      "yearOverYearChange": "-2.1%",
       "asOf": "2026-08",
-      "confidence": "high",
+      "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/city/34610/AZ/San-Tan-Valley/housing-market",
-        "https://www.redfin.com/city/34610/AZ/San-Tan-Valley/page-11",
-        "https://www.redfin.com/city/34610/AZ/San-Tan-Valley/page-10",
-        "https://www.realtor.com/realestateandhomes-detail/37178-N-El-Morro-Trl_San-Tan-Valley_AZ_85140_M20536-70010",
-        "https://www.realtor.com/realestateandhomes-detail/36162-N-Quiros-Dr_San-Tan-Valley_AZ_85143_M90148-11689"
+        "https://www.homevaluepros.com/az/san-tan-valley/",
+        "https://www.bestwestagent.com/san-tan-valley-real-estate-agent-near-you/",
+        "https://www.redfin.com/AZ/San-Tan-Valley/39318-N-Trajen-Pl-85140/home/173533752",
+        "https://www.redfin.com/AZ/San-Tan-Valley/6122-W-Prospector-Way-85142/home/205206077",
+        "https://www.homevaluepros.com/sell-my-house-fast/san-tan-valley-az"
       ]
     },
     "florence": {
-      "medianHomePrice": 350000,
-      "pricePerSqFt": 184,
-      "avgDaysOnMarket": 88,
-      "marketType": "buyer",
-      "yearOverYearChange": "+1.7%",
-      "asOf": "2025-11",
+      "medianHomePrice": 339000,
+      "pricePerSqFt": 191,
+      "avgDaysOnMarket": 83,
+      "marketType": "balanced",
+      "yearOverYearChange": null,
+      "asOf": "2026-09",
       "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/zipcode/85132/housing-market",
-        "https://www.redfin.com/AZ/Florence/1032-W-Feliz-St-85132/home/162429054",
-        "https://www.redfin.com/AZ/Florence/11857-E-Sunflower-Ln-85132/home/162372644",
-        "https://www.redfin.com/AZ/Florence/10741-E-Marigold-Ct-85132/home/80125575",
-        "https://www.redfin.com/AZ/Florence/523-W-Van-Haren-Rd-85132/home/193242618"
+        "https://www.redfin.com/AZ/Florence/523-W-Keating-St-85132/home/190901324",
+        "https://www.realtor.com/realestateandhomes-detail/E-Cactus-Forest-Rd_Florence_AZ_85132_M91051-73333",
+        "https://www.redfin.com/AZ/Florence/635-W-Bunker-Hill-St-85132/home/190901414",
+        "https://www.redfin.com/AZ/Florence/7446-E-Agua-Caliente-TRL-85132/home/205387974",
+        "https://www.redfin.com/AZ/Florence/4233-N-Brigadier-Dr-85132/home/171283122"
       ]
     },
     "maricopa-city": {
-      "medianHomePrice": 358300,
-      "pricePerSqFt": null,
-      "avgDaysOnMarket": 82,
+      "medianHomePrice": 344827,
+      "pricePerSqFt": 176,
+      "avgDaysOnMarket": 80,
       "marketType": "balanced",
-      "yearOverYearChange": null,
-      "asOf": "2026-08",
-      "confidence": "medium",
-      "citations": [
-        "https://www.redfin.com/living-in/AZ/Maricopa/6/11323",
-        "https://www.redfin.com/AZ/Maricopa/Maricopa/Lilac/home/205325794",
-        "https://www.redfin.com/AZ/Maricopa/22170-N-Lynn-St-85138/home/182840357",
-        "https://www.redfin.com/AZ/Maricopa/Maricopa/HAWKEYE/home/204714223",
-        "https://www.redfin.com/AZ/Maricopa/Maricopa/Lavender/home/205325764"
-      ]
-    },
-    "casa-grande": {
-      "medianHomePrice": 380000,
-      "pricePerSqFt": null,
-      "avgDaysOnMarket": 84,
-      "marketType": "buyer",
       "yearOverYearChange": null,
       "asOf": "2026-07",
       "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/AZ/Casa-Grande/6085-N-Jessie-RD-85194/home/204655295",
-        "https://www.redfin.com/AZ/Casa-Grande/1645-E-Caballero-Dr-85122/home/204589490",
-        "https://www.redfin.com/AZ/Casa-Grande/9317-W-Limestone-Dr-85194/home/204592634",
-        "https://www.redfin.com/AZ/Casa-Grande/2679-E-Rosario-Mission-Dr-85194/home/162415297",
-        "https://www.redfin.com/AZ/Casa-Grande/1627-E-Demain-Dr-85122/home/204551954"
+        "https://www.bestwestagent.com/maricopa-real-estate-agent-near-you/",
+        "https://www.redfin.com/AZ/Maricopa/18744-N-Arbor-Dr-85138/home/27137553",
+        "https://www.redfin.com/county/220/AZ/Maricopa-County/page-137",
+        "https://www.redfin.com/AZ/Maricopa/35430-W-Marin-Ave-85138/home/182836956",
+        "https://www.homesbymarco.com/cities/maricopa-az/housing-market-report"
+      ]
+    },
+    "casa-grande": {
+      "medianHomePrice": 310000,
+      "pricePerSqFt": 183,
+      "avgDaysOnMarket": 34,
+      "marketType": "balanced",
+      "yearOverYearChange": null,
+      "asOf": "2026-09",
+      "confidence": "medium",
+      "citations": [
+        "https://www.redfin.com/AZ/Casa-Grande/2618-E-Alvaro-Trl-85194/home/162243300",
+        "https://www.redfin.com/AZ/Casa-Grande/2874-N-Blossom-Ln-85122/home/162358222",
+        "https://www.redfin.com/AZ/Casa-Grande/1645-E-Demain-Dr-85122/home/205497557",
+        "https://www.redfin.com/AZ/Casa-Grande/425-S-Russell-Rd-85193/home/205331730",
+        "https://www.redfin.com/AZ/Casa-Grande/2495-E-Katrina-Trl-85194/home/28631893"
       ]
     },
     "coolidge": {
@@ -697,8 +695,8 @@
       ]
     },
     "arizona-city": {
-      "medianHomePrice": 255821,
-      "pricePerSqFt": 167,
+      "medianHomePrice": 256000,
+      "pricePerSqFt": 165,
       "avgDaysOnMarket": 62,
       "marketType": "balanced",
       "yearOverYearChange": "-1.6%",
@@ -706,26 +704,26 @@
       "confidence": "high",
       "citations": [
         "https://www.redfin.com/city/21311/AZ/Arizona-City/housing-market",
-        "https://www.redfin.com/AZ/Arizona-City/10933-W-Carmelita-Cir-85123/home/27086757",
-        "https://www.redfin.com/AZ/Arizona-City/10065-W-Heather-Dr-85123/home/26869128",
+        "https://www.redfin.com/AZ/Arizona-City/10577-W-Fernando-Dr-85123/home/26869272",
         "https://www.redfin.com/AZ/Arizona-City/14733-S-Diablo-Rd-85123/home/26975365",
-        "https://www.redfin.com/AZ/Arizona-City/15158-S-Country-Club-Dr-85123/home/26934952"
+        "https://www.redfin.com/AZ/Arizona-City/10580-W-Monaco-Blvd-85123/home/27112093",
+        "https://www.redfin.com/city/14240/AZ/Phoenix/housing-market"
       ]
     },
     "tucson": {
       "medianHomePrice": 345000,
       "pricePerSqFt": 225,
       "avgDaysOnMarket": 32,
-      "marketType": "buyer",
+      "marketType": "balanced",
       "yearOverYearChange": "+3.0%",
       "asOf": "2026-08",
-      "confidence": "high",
+      "confidence": "medium",
       "citations": [
         "https://tucsonhomesandlots.com/tucson-housing-market-report-august-2026/",
-        "https://pecanstreet.com/markets/az/tucson",
-        "https://azbigmedia.com/real-estate/phoenix-housing-prices-fall-as-buyers-gain-leverage/",
-        "https://marketreports.longrealty.com/r?boundary=624d9d6ff6035d0009069a5d&agent=",
-        "https://marketreports.longrealty.com/r?boundary=62733f6ac4bfed0009a81655&agent=2011408"
+        "https://oliverrealty.net/blog/2026/9/14/tucson-average-home-price",
+        "https://eztimehomebuyers.com/locations/arizona/tucson/",
+        "https://www.redfin.com/county/223/AZ/Pima-County/page-69",
+        "https://strattonhomestucson.net/tucson-home-prices-are-cooling-is-this-the-window-buyers-have-been-waiting-for/"
       ]
     },
     "oro-valley": {
@@ -745,19 +743,19 @@
       ]
     },
     "marana": {
-      "medianHomePrice": 434900,
-      "pricePerSqFt": 229,
-      "avgDaysOnMarket": 45,
-      "marketType": "buyer",
-      "yearOverYearChange": "+4.5%",
-      "asOf": "2026-08",
+      "medianHomePrice": 434763,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": null,
+      "marketType": "balanced",
+      "yearOverYearChange": "-1.2%",
+      "asOf": "2026-06",
       "confidence": "medium",
       "citations": [
-        "https://yourmarana.com/marana-housing-market/",
         "https://www.redfin.com/city/11280/AZ/Marana/page-15",
-        "https://www.redfin.com/AZ/Marana/13296-N-Red-Lantern-Way-85653/home/204432241",
-        "https://www.redfin.com/AZ/Marana/12360-N-Anway-Rd-85653/unit-00111/home/204708028",
-        "https://www.redfin.com/AZ/Marana/13304-N-Red-Lantern-Way-85653/home/204432083"
+        "https://www.redfin.com/AZ/Marana/9737-N-Heavenly-Bamboo-Dr-85653/home/185042152",
+        "https://www.redfin.com/AZ/Marana/10292-N-Leopard-Gecko-Ter-85653/home/167268008",
+        "https://www.redfin.com/AZ/Marana/10416-W-Robertson-St-85653/home/189640933",
+        "https://www.redfin.com/AZ/Marana/15009-N-Secret-Star-View-Pl-85658/home/50353085"
       ]
     },
     "sahuarita": {
@@ -825,19 +823,19 @@
       ]
     },
     "vail": {
-      "medianHomePrice": 375000,
-      "pricePerSqFt": 172,
-      "avgDaysOnMarket": 66,
-      "marketType": "buyer",
+      "medianHomePrice": 390000,
+      "pricePerSqFt": 203,
+      "avgDaysOnMarket": 90,
+      "marketType": "balanced",
       "yearOverYearChange": null,
-      "asOf": "2026-08",
+      "asOf": "2026-09",
       "confidence": "medium",
       "citations": [
-        "https://resideline.com/blog/vail-az-housing-market",
-        "https://vailrealestatemtnviews.com/2026/09/03/eagle-county-market-report-september-2026/",
-        "https://vailluxurygroup.com/july-was-the-strongest-closing-month-of-the-year/",
-        "https://holidayhomesfamily.com/blog/new-construction-is-quietly-repricing-resale-homes-in-vail-arizona",
-        "https://www.realtor.com/realestateandhomes-detail/13253-E-Mesquite-Flat-Spring-Dr_Vail_AZ_85641_M11168-65694"
+        "https://tucsonexperts.com/market/vail",
+        "https://www.redfin.com/AZ/Vail/13992-E-Corte-Sincero-85641/home/205587465",
+        "https://www.realtor.com/realestateandhomes-detail/12782-E-Tortoise-Canyon-Ln_Vail_AZ_85641_M98822-58467",
+        "https://www.realtor.com/realestateandhomes-detail/13960-E-Crotalus-Way_Vail_AZ_85641_M98562-45304",
+        "https://www.redfin.com/AZ/Vail/14009-E-Corte-Sincero-85641/home/205325989"
       ]
     }
   },
