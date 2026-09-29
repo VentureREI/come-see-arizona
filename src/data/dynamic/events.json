@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-28",
+  "lastUpdated": "2026-09-29",
   "events": [
     {
       "id": "evt-20260801-2",
@@ -1192,6 +1192,23 @@
       "lng": null
     },
     {
+      "id": "evt-20260929-1",
+      "title": "Downtown Phoenix Farmers Market (Fall Season Opening)",
+      "startDate": "2026-10-17",
+      "endDate": null,
+      "time": "8:00 AM - 1:00 PM",
+      "venueName": "Arizona Center",
+      "venueCity": "Phoenix",
+      "venueAddress": "455 N 3rd St, Phoenix, AZ 85004",
+      "category": "Food and Drink",
+      "description": "The Downtown Phoenix Farmers Market kicks off its main fall through spring season with local produce, baked goods and specialty food vendors. The market runs every Saturday morning at the Arizona Center through mid May.",
+      "sourceUrl": "https://dtphx.org/go/downtown-phoenix-farmers-market",
+      "source": "manual",
+      "imageKeyword": "farmers market produce stand",
+      "lat": null,
+      "lng": null
+    },
+    {
       "id": "nascar-cup-series-freeway-insurance-500-2026-10-18",
       "title": "NASCAR Cup Series Freeway Insurance 500",
       "startDate": "2026-10-18",
@@ -1511,6 +1528,23 @@
       "sourceUrl": "https://www.flagstaffarizona.org/events/festivals/celebraciones-de-la-gente/",
       "source": "manual",
       "imageKeyword": "day of the dead altar festival",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20260929-2",
+      "title": "MIKIZTLI: Dia de los Muertos Phoenix Festival",
+      "startDate": "2026-10-24",
+      "endDate": null,
+      "time": "4:00 PM - 9:00 PM",
+      "venueName": "Arizona Center",
+      "venueCity": "Phoenix",
+      "venueAddress": "455 N 3rd St, Phoenix, AZ 85004",
+      "category": "Culture",
+      "description": "This free, family friendly festival marks its 15th year with Day of the Dead cultural performances, art vendors, food trucks, interactive art activities and a large community ofrenda in downtown Phoenix.",
+      "sourceUrl": "https://www.simpletix.com/e/15th-annual-mikiztli-dia-de-los-muertos-fe-tickets-271523",
+      "source": "manual",
+      "imageKeyword": "dia de los muertos altar",
       "lat": null,
       "lng": null
     },
