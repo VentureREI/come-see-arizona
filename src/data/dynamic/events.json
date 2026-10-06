@@ -1,23 +1,6 @@
 {
-  "lastUpdated": "2026-10-05",
+  "lastUpdated": "2026-10-06",
   "events": [
-    {
-      "id": "evt-20260913-1",
-      "title": "Breaking Benjamin, Chevelle & Starset: Fall Tour 2026",
-      "startDate": "2026-10-05",
-      "endDate": null,
-      "time": "6:00 PM",
-      "venueName": "Talking Stick Resort Amphitheatre",
-      "venueCity": "Phoenix",
-      "venueAddress": "2121 N 83rd Ave, Phoenix, AZ 85035",
-      "category": "Music",
-      "description": "Breaking Benjamin headlines a fall tour stop at Talking Stick Resort Amphitheatre with support from Chevelle, Starset and Kami Kehoe. The outdoor show is part of a broader 2026 North American rock tour.",
-      "sourceUrl": "https://www.livenation.com/event/1Av0Z_7GkRfdMK0/breaking-benjamin",
-      "source": "manual",
-      "imageKeyword": "rock concert amphitheater stage",
-      "lat": null,
-      "lng": null
-    },
     {
       "id": "evt-20260917-2",
       "title": "2026 Best of the West and NRHA Southwest Affiliate Championship",
@@ -304,6 +287,23 @@
       "sourceUrl": "https://sedonaairport.org/upcoming-events",
       "source": "manual",
       "imageKeyword": "vintage airplanes airport",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20261006-3",
+      "title": "Phoenix Lowrider Magazine Super Show",
+      "startDate": "2026-10-10",
+      "endDate": null,
+      "time": "11:00 AM - 6:00 PM",
+      "venueName": "Phoenix Convention Center",
+      "venueCity": "Phoenix",
+      "venueAddress": "100 N 3rd St, Phoenix, AZ 85004",
+      "category": "Culture",
+      "description": "Lowrider Magazine brings its Super Show to the Phoenix Convention Center with custom car clubs, master builders and hydraulic hopping competitions. The family friendly event also includes live music and vendor booths celebrating lowrider heritage.",
+      "sourceUrl": "https://feverup.com/m/739850",
+      "source": "manual",
+      "imageKeyword": "custom lowrider car show",
       "lat": null,
       "lng": null
     },
@@ -1562,6 +1562,23 @@
       "sourceUrl": "https://www.psiloveaz.com/projects-6",
       "source": "manual",
       "imageKeyword": "food truck festival outdoor",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20261007-1",
+      "title": "Kierland Fine Art & Wine Festival",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-08",
+      "time": "10:00 AM - 5:00 PM",
+      "venueName": "Kierland Commons",
+      "venueCity": "Scottsdale",
+      "venueAddress": "15210 N Scottsdale Rd, Scottsdale, AZ 85254",
+      "category": "Arts",
+      "description": "More than 100 juried artists display fine art along Kierland Commons Main Street, paired with tastings from Arizona regional wineries and live music. Admission is free, with wine tasting available for a separate ticket.",
+      "sourceUrl": "https://www.kierlandcommons.com/festival",
+      "source": "manual",
+      "imageKeyword": "outdoor art festival wine tasting",
       "lat": null,
       "lng": null
     },
