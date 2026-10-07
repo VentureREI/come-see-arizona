@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06",
+  "lastUpdated": "2026-10-07",
   "events": [
     {
       "id": "evt-20260917-2",
@@ -32,40 +32,6 @@
       "sourceUrl": "https://www.desertdesignweek.com/",
       "source": "manual",
       "imageKeyword": "modern architecture design interior",
-      "lat": null,
-      "lng": null
-    },
-    {
-      "id": "evt-20261006-1",
-      "title": "Jack Johnson: SURFILMUSIC Tour 2026",
-      "startDate": "2026-10-06",
-      "endDate": null,
-      "time": "7:30 PM",
-      "venueName": "Talking Stick Resort Amphitheatre",
-      "venueCity": "Phoenix",
-      "venueAddress": "2121 N 83rd Ave, Phoenix, AZ 85035",
-      "category": "Music",
-      "description": "Singer-songwriter Jack Johnson brings his SURFILMUSIC Tour to Talking Stick Resort Amphitheatre, with Hermanos Gutierrez opening the show.",
-      "sourceUrl": "https://www.livenation.com/venue/KovZpZAE6vJA/talking-stick-resort-amphitheatre-events",
-      "source": "manual",
-      "imageKeyword": "acoustic guitar concert",
-      "lat": null,
-      "lng": null
-    },
-    {
-      "id": "evt-20261006-2",
-      "title": "Brit Floyd: The Moon, The Wall and Beyond",
-      "startDate": "2026-10-06",
-      "endDate": null,
-      "time": "7:30 PM",
-      "venueName": "Linda Ronstadt Music Hall, Tucson Convention Center",
-      "venueCity": "Tucson",
-      "venueAddress": "260 S Church Ave, Tucson, AZ 85701",
-      "category": "Music",
-      "description": "Pink Floyd tribute act Brit Floyd marks its 15th anniversary with a staging of Dark Side of the Moon and The Wall, featuring a full laser and light show with LED walls and inflatables.",
-      "sourceUrl": "https://musichall.tucsonconventioncenter.com/",
-      "source": "manual",
-      "imageKeyword": "rock concert laser light show",
       "lat": null,
       "lng": null
     },
