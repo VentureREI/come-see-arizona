@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-07",
+  "lastUpdated": "2026-10-08",
   "events": [
     {
       "id": "evt-20260917-2",
@@ -32,23 +32,6 @@
       "sourceUrl": "https://www.desertdesignweek.com/",
       "source": "manual",
       "imageKeyword": "modern architecture design interior",
-      "lat": null,
-      "lng": null
-    },
-    {
-      "id": "evt-20260810-2",
-      "title": "TLC & Salt-N-Pepa with En Vogue: It's Iconic Tour",
-      "startDate": "2026-10-07",
-      "endDate": null,
-      "time": "7:30 PM",
-      "venueName": "Talking Stick Resort Amphitheatre",
-      "venueCity": "Phoenix",
-      "venueAddress": "2121 N 83rd Ave, Phoenix, AZ 85035",
-      "category": "Music",
-      "description": "TLC and Salt-N-Pepa co-headline their first ever joint tour, It's Iconic, with special guest En Vogue. The stop at Talking Stick Resort Amphitheatre marks the first time all three groups have shared a stage together.",
-      "sourceUrl": "https://www.livenation.com/event/1A_ZkoYGke02EKN/tlc-salt-n-pepa-with-en-vogue-it-s-iconic",
-      "source": "manual",
-      "imageKeyword": "rnb hip hop concert",
       "lat": null,
       "lng": null
     },
@@ -1766,6 +1749,23 @@
       "sourceUrl": "https://www.mortimerfarmsaz.com/Christmas",
       "source": "manual",
       "imageKeyword": "christmas lights farm holiday",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20261008-2",
+      "title": "Arizona Cardinals vs. Los Angeles Rams",
+      "startDate": "2026-11-15",
+      "endDate": null,
+      "time": "2:05 PM",
+      "venueName": "State Farm Stadium",
+      "venueCity": "Glendale",
+      "venueAddress": "1 Cardinals Dr, Glendale, AZ 85305",
+      "category": "Sports",
+      "description": "The Arizona Cardinals host the Los Angeles Rams in a Week 10 NFL matchup at State Farm Stadium. Kickoff is set for 2:05 PM MST.",
+      "sourceUrl": "https://www.azcardinals.com/schedule/",
+      "source": "manual",
+      "imageKeyword": "NFL football stadium",
       "lat": null,
       "lng": null
     },
