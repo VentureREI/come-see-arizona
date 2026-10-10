@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-09",
+  "lastUpdated": "2026-10-10",
   "events": [
     {
       "id": "four-peaks-oktoberfest-2026-10-09",
@@ -15,40 +15,6 @@
       "sourceUrl": "https://fourpeaksoktoberfest.com/",
       "source": "manual",
       "imageKeyword": "oktoberfest beer",
-      "lat": null,
-      "lng": null
-    },
-    {
-      "id": "evt-20260814-2",
-      "title": "Ingrid Michaelson: Cozy Fall Trio Tour",
-      "startDate": "2026-10-09",
-      "endDate": null,
-      "time": "8:00 PM",
-      "venueName": "Rialto Theatre",
-      "venueCity": "Tucson",
-      "venueAddress": "318 E Congress St, Tucson, AZ 85701",
-      "category": "Music",
-      "description": "Singer-songwriter Ingrid Michaelson brings her Cozy Fall Trio Tour to the historic Rialto Theatre in downtown Tucson, with support from Allie Moss and Hannah Winkler. The intimate, stripped-down show highlights Michaelson's catalog of indie-pop favorites.",
-      "sourceUrl": "https://www.ticketmaster.com/ingrid-michaelson-rialto-theatre-tucson-arizona-10-09-2026/event/1900649DB7B4A064",
-      "source": "manual",
-      "imageKeyword": "singer songwriter acoustic concert theater",
-      "lat": null,
-      "lng": null
-    },
-    {
-      "id": "evt-20260816-1",
-      "title": "Becky G: Arizona State Fair Coliseum Concert Series",
-      "startDate": "2026-10-09",
-      "endDate": null,
-      "time": "7:00 PM",
-      "venueName": "Veterans Memorial Coliseum",
-      "venueCity": "Phoenix",
-      "venueAddress": "1826 W McDowell Rd, Phoenix, AZ 85007",
-      "category": "Music",
-      "description": "Latin Grammy winning singer Becky G performs a full headlining set at the Arizona State Fair's Coliseum Concert Series. The ticket includes reserved coliseum seating and admission to the fair, with no opening act.",
-      "sourceUrl": "https://azstatefair.com/concerts/",
-      "source": "manual",
-      "imageKeyword": "pop concert coliseum",
       "lat": null,
       "lng": null
     },
@@ -1545,6 +1511,23 @@
       "sourceUrl": "https://www.sabaton.net/concert/phoenix-arizona-arizona-financial-theatre-2026/",
       "source": "manual",
       "imageKeyword": "power metal concert",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20261010-1",
+      "title": "Daughtry: 20 Years Unplugged Tour",
+      "startDate": "2026-11-11",
+      "endDate": null,
+      "time": "7:00 PM",
+      "venueName": "Fox Tucson Theatre",
+      "venueCity": "Tucson",
+      "venueAddress": "17 W Congress St, Tucson, AZ 85701",
+      "category": "Music",
+      "description": "Rock band Daughtry performs an acoustic, stripped-down set as part of their 20 Years Unplugged Tour at the historic Fox Tucson Theatre. The show marks two decades since the band formed on American Idol.",
+      "sourceUrl": "https://foxtucson.com/event/daughtry-2026/",
+      "source": "manual",
+      "imageKeyword": "rock band acoustic concert theater",
       "lat": null,
       "lng": null
     },
