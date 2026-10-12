@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05",
+  "lastUpdated": "2026-10-12",
   "method": "Perplexity Sonar web research with citation validation (scripts/market-refresh.ts). Zillow excluded by policy.",
   "sourceNames": [
     "redfin.com",
@@ -168,19 +168,19 @@
   },
   "cities": {
     "phoenix": {
-      "medianHomePrice": 445000,
-      "pricePerSqFt": 258,
-      "avgDaysOnMarket": 64,
-      "marketType": "buyer",
-      "yearOverYearChange": "+1.14%",
-      "asOf": "2026-08",
+      "medianHomePrice": 485000,
+      "pricePerSqFt": 301,
+      "avgDaysOnMarket": 71,
+      "marketType": "seller",
+      "yearOverYearChange": "-3.0%",
+      "asOf": "2026-09",
       "confidence": "medium",
       "citations": [
-        "https://azbigmedia.com/real-estate/home-price-cuts-reach-yearly-high-as-inventory-nears-pre-pandemic-levels/",
-        "https://www.realtor.com/news/local/phoenix-az/real-estate-market-phoenix-az-august-2026/",
+        "https://azbigmedia.com/real-estate/affordability-pressures-cool-off-phoenix-housing-market/",
+        "https://www.realtor.com/realestateandhomes-detail/526-W-Townley-Ave_Phoenix_AZ_85021_M14933-37925",
+        "https://www.sweephoenixazhomes.com/market-trends/2026-september-phoenix-az-housing-market-update/amp/",
         "https://azandrea.com/phoenix-housing-market-september-2026/",
-        "https://pillarmortgagegroup.com/post/verify-listing-agent-license-track-record-arizona-2026",
-        "https://azandrea.com/greater-phoenix-housing-market-update-september-2026/"
+        "https://azbigmedia.com/real-estate/home-price-cuts-reach-yearly-high-as-inventory-nears-pre-pandemic-levels/"
       ]
     },
     "scottsdale": {
@@ -208,11 +208,11 @@
       "asOf": "2026-09",
       "confidence": "medium",
       "citations": [
-        "https://azandrea.com/mesa-az-housing-market-september-2026/",
-        "https://www.realtor.com/realestateandhomes-detail/4206-E-Fountain-St_Mesa_AZ_85205_M26679-81955",
-        "https://www.redfin.com/city/11736/AZ/Mesa/page-41",
-        "https://www.realtor.com/realestateandhomes-detail/1350-S-Greenfield-Rd-Unit-1033_Mesa_AZ_85206_M10978-32368",
-        "https://themelissabailey.com/blog/keep-your-low-rate-and-still-move-in-mesa-and-apache-junction"
+        "https://www.realtor.com/realestateandhomes-detail/8011-E-Redberry_Mesa_AZ_85207_M12180-10141",
+        "https://www.realtor.com/realestateandhomes-detail/425-S-Parkcrest-Unit-342_Mesa_AZ_85206_M21736-90679",
+        "https://www.newsbreak.com/abc15-arizona-563651/4934145611531-september-s-rising-mortgage-rates-deepen-phoenix-area-housing-freeze",
+        "https://azbigmedia.com/real-estate/affordability-pressures-cool-off-phoenix-housing-market/",
+        "https://www.realtor.com/realestateandhomes-detail/8103-E-Southern-Ave-Lot-318_Mesa_AZ_85209_M99341-75615"
       ]
     },
     "chandler": {
@@ -224,10 +224,10 @@
       "asOf": "2026-09",
       "confidence": "medium",
       "citations": [
-        "https://www.realtor.com/realestateandhomes-detail/917-W-Mission-Dr_Chandler_AZ_85225_M16711-55779",
-        "https://www.morningstar.com/news/pr-newswire/20260930la59579/price-cuts-reach-yearly-high-as-inventory-nears-pre-pandemic-levels-realtorcom-september-housing-report",
-        "https://www.realtor.com/realestateandhomes-detail/3928-S-Hollyhock-Pl_Chandler_AZ_85248_M20445-78193",
-        "https://www.realtor.com/realestateandhomes-detail/1905-N-Verano-Way_Chandler_AZ_85224_M16647-15068",
+        "https://www.realtor.com/realestateandhomes-detail/1551-E-Nolan-Pl_Chandler_AZ_85249_M93511-63963",
+        "https://www.realtor.com/realestateandhomes-detail/2336-W-Highland-Ct_Chandler_AZ_85224_M15783-14944",
+        "https://markets.ft.com/data/announce/detail?dockey=600-202609300600PR_NEWS_USPRX____LA59579-1",
+        "https://azbrian.com/greater-phoenix/chandler/townhome-market-report",
         "https://azandrea.com/chandler-housing-market-september-2026/"
       ]
     },
@@ -240,27 +240,27 @@
       "asOf": "2026-09",
       "confidence": "medium",
       "citations": [
-        "https://azandrea.com/gilbert-housing-market-september-2026/",
         "https://www.realtor.com/realestateandhomes-detail/4180-E-Sidewinder-Ct_Gilbert_AZ_85297_M15863-30790",
-        "https://www.redfin.com/AZ/Gilbert/2265-S-Jeffry-St-85295/home/204613984",
-        "https://www.trulia.com/home/2769-e-megan-st-gilbert-az-85295-67807475",
-        "https://www.redfin.com/AZ/Gilbert/2264-S-Swan-Ct-85295/home/204599299"
+        "https://www.realtor.com/realestateandhomes-detail/3316-E-Maplewood-St_Gilbert_AZ_85297_M12414-94502",
+        "https://www.realtor.com/realestateandhomes-detail/946-S-Parkcrest-St_Gilbert_AZ_85296_M20342-35931",
+        "https://azbigmedia.com/real-estate/affordability-pressures-cool-off-phoenix-housing-market/",
+        "https://www.redfin.com/AZ/Gilbert/685-E-Hummingbird-Way-85297/home/28415293"
       ]
     },
     "tempe": {
-      "medianHomePrice": 520000,
-      "pricePerSqFt": 315,
-      "avgDaysOnMarket": 55,
+      "medianHomePrice": 512500,
+      "pricePerSqFt": 305,
+      "avgDaysOnMarket": 62,
       "marketType": "buyer",
-      "yearOverYearChange": "-1.9%",
-      "asOf": "2026-08",
+      "yearOverYearChange": "-2.0%",
+      "asOf": "2026-09",
       "confidence": "medium",
       "citations": [
-        "https://www.bestwestagent.com/tempe-real-estate-agent-near-you/",
-        "https://www.redfin.com/AZ/Tempe/616-S-Hardy-Dr-85281/unit-114/home/205603688",
-        "https://www.redfin.com/AZ/Tempe/901-S-Smith-Rd-85281/unit-1035/home/172970589",
-        "https://www.redfin.com/AZ/Tempe/2401-W-Southern-Ave-85282/unit-229/home/205646968",
-        "https://www.redfin.com/AZ/Tempe/117-E-15th-St-85281/unit-4A/home/180788508"
+        "https://azandrea.com/tempe-housing-market-september-2026/",
+        "https://azbrian.com/greater-phoenix/tempe/townhome-market-report",
+        "https://allrealestateintelligence.com/geo/state/AZ",
+        "https://rjhhomesteam.com/best-cities-to-live-in-arizona/",
+        "https://reneeandkevinazliving.com/2026/09/asu-expansion-and-tempe-real-estate-in-2026/"
       ]
     },
     "glendale": {
@@ -296,35 +296,35 @@
       ]
     },
     "surprise": {
-      "medianHomePrice": 415000,
-      "pricePerSqFt": null,
-      "avgDaysOnMarket": 45,
+      "medianHomePrice": 425000,
+      "pricePerSqFt": 222,
+      "avgDaysOnMarket": 79,
       "marketType": "buyer",
-      "yearOverYearChange": null,
-      "asOf": "2026-09",
+      "yearOverYearChange": "+1.1%",
+      "asOf": "2026-08",
       "confidence": "medium",
       "citations": [
-        "https://www.realtor.com/realestateandhomes-detail/17616-W-El-Cortez-Pl_Surprise_AZ_85387_M98228-50481",
-        "https://www.realtor.com/realestateandhomes-detail/24926-N-175th-Ln_Surprise_AZ_85387_M90886-69967",
-        "https://www.realtor.com/realestateandhomes-detail/17018-W-Marconi-Ave_Surprise_AZ_85388_M19392-76531",
-        "https://www.redfin.com/AZ/Surprise/14314-W-Artemisa-Ave-85387/home/167791187",
-        "https://www.redfin.com/AZ/Surprise/15327-W-Echo-Canyon-Dr-85374/home/27803399"
+        "https://www.cincinnati.com/press-release/story/134323/todd-pooler-shares-surprise-housing-market-analysis-and-2027-outlook/",
+        "https://azbigmedia.com/real-estate/affordability-pressures-cool-off-phoenix-housing-market/",
+        "https://www.realtor.com/realestateandhomes-detail/17270-W-Aubrey-Ln_Surprise_AZ_85387_M97965-40937",
+        "https://www.redfin.com/AZ/Surprise/17766-W-Red-Fox-Rd-85387/home/177339249",
+        "https://activerain.com/blogsview/5950072/why-a-similar-home-sells-faster-in-surprise--az"
       ]
     },
     "goodyear": {
-      "medianHomePrice": 478755,
-      "pricePerSqFt": 226,
-      "avgDaysOnMarket": 71,
-      "marketType": "balanced",
-      "yearOverYearChange": null,
-      "asOf": "2026-07",
+      "medianHomePrice": 476000,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": null,
+      "marketType": "seller",
+      "yearOverYearChange": "+2.6%",
+      "asOf": "2026-08",
       "confidence": "medium",
       "citations": [
-        "https://azbigmedia.com/real-estate/home-price-cuts-reach-yearly-high-as-inventory-nears-pre-pandemic-levels/",
-        "https://www.redfin.com/AZ/Goodyear/17261-W-Sunward-Dr-85338/home/183170907",
+        "https://www.redfin.com/AZ/Goodyear/16119-W-Morning-Glory-St-85338/home/27430927",
         "https://www.redfin.com/AZ/Goodyear/219-S-175th-Ave-85338/home/185728120",
-        "https://www.redfin.com/AZ/Goodyear/14853-S-178th-Dr-85338/home/167773038",
-        "https://www.redfin.com/AZ/Goodyear/17745-W-Southgate-Ave-85338/home/183130010"
+        "https://www.redfin.com/city/7245/AZ/Goodyear/page-6",
+        "https://www.redfin.com/AZ/Goodyear/17261-W-Sunward-Dr-85338/home/183170907",
+        "https://www.movoto.com/goodyear-az/17653-w-college-dr-goodyear-az-85395/pid_2gsrkqipn9ab/"
       ]
     },
     "avondale": {
@@ -364,15 +364,15 @@
       "pricePerSqFt": 290,
       "avgDaysOnMarket": 110,
       "marketType": "buyer",
-      "yearOverYearChange": "-3.0%",
+      "yearOverYearChange": "-1.4%",
       "asOf": "2026-09",
       "confidence": "medium",
       "citations": [
-        "https://www.realtor.com/realestateandhomes-detail/22461-E-Firestone-Dr_Queen-Creek_AZ_85142_M94545-25879",
-        "https://www.redfin.com/AZ/Queen-Creek/1171-E-Sweet-Citrus-Dr-85140/home/80130218",
-        "https://www.queencreektribune.com/news/queen-creek-home-market-hits-the-brakes-as-rates-rise/article_4e88e752-7d1f-41ec-8d3a-f638b8540d30.html",
         "https://azandrea.com/queen-creek-housing-market-september-2026/",
-        "https://www.redfin.com/AZ/Queen-Creek/38408-N-Dena-Ct-85140/home/27160230"
+        "https://www.realtor.com/realestateandhomes-detail/22461-E-Firestone-Dr_Queen-Creek_AZ_85142_M94545-25879",
+        "https://www.redfin.com/AZ/Queen-Creek/7441-E-Tintype-Rd-85143/home/190890989",
+        "https://www.redfin.com/AZ/Queen-Creek/22860-E-Starflower-Dr-85142/home/194310101",
+        "https://www.redfin.com/AZ/Queen-Creek/26601-S-229th-Pl-85142/home/194310059"
       ]
     },
     "paradise-valley": {
@@ -432,11 +432,11 @@
       "asOf": "2026-07",
       "confidence": "medium",
       "citations": [
-        "https://www.realtor.com/research/September-2026-data/",
+        "https://www.previewarizonahomes.com/communities/carefree",
         "https://www.bestwestagent.com/carefree-real-estate-agent-near-you/",
-        "https://valleyvibenews.com/2026/09/homes-under-contract-dip-24-mortgage-rates-still-high/",
-        "https://azbigmedia.com/real-estate/home-price-cuts-reach-yearly-high-as-inventory-nears-pre-pandemic-levels/",
-        "https://www.redfin.com/AZ/Carefree/1-Easy-St-85377/unit-21/home/175272219"
+        "https://www.previewarizonahomes.com/market-data",
+        "https://www.movoto.com/carefree-az/8502-e-cave-creek-rd-31-carefree-az-85377/pid_e5evz01d8g/",
+        "https://www.redfin.com/AZ/Wickenburg/33639-W-Carefree-Hwy-85390/home/49759554"
       ]
     },
     "anthem": {
@@ -456,19 +456,19 @@
       ]
     },
     "litchfield-park": {
-      "medianHomePrice": 549000,
+      "medianHomePrice": 525995,
       "pricePerSqFt": null,
-      "avgDaysOnMarket": 89,
+      "avgDaysOnMarket": 98,
       "marketType": "buyer",
-      "yearOverYearChange": "+1.7%",
-      "asOf": "2026-08",
+      "yearOverYearChange": "-9.7%",
+      "asOf": "2026-09",
       "confidence": "medium",
       "citations": [
-        "https://resideline.com/blog/litchfield-park-az-housing-market",
-        "https://www.redfin.com/AZ/Litchfield-Park/20205-W-Glenrosa-Ave-85340/home/179277741",
-        "https://www.redfin.com/AZ/Litchfield-Park/20235-W-Exeter-Blvd-85340/home/179277705",
-        "https://azbigmedia.com/real-estate/metro-phoenix-home-sales-jump-5-1-over-last-year/",
-        "https://www.redfin.com/AZ/Litchfield-Park/5907-N-191st-Dr-85340/home/185726547"
+        "https://www.redfin.com/AZ/Litchfield-Park/5915-N-191st-Dr-85340/unit-39/home/185726546",
+        "https://www.yourvalley.net/litchfield-park-independent/stories/west-valley-residential-real-estate-round-up,724696",
+        "https://www.redfin.com/city/7245/AZ/Goodyear/page-6",
+        "https://www.redfin.com/AZ/Litchfield-Park/13310-W-Berridge-Ln-85340/home/27931984",
+        "https://www.redfin.com/AZ/Litchfield-Park/4141-N-Dania-Ct-85340/home/27666619"
       ]
     },
     "tolleson": {
@@ -520,19 +520,19 @@
       ]
     },
     "sun-city": {
-      "medianHomePrice": 250000,
-      "pricePerSqFt": 174,
-      "avgDaysOnMarket": 55,
+      "medianHomePrice": 254333,
+      "pricePerSqFt": null,
+      "avgDaysOnMarket": null,
       "marketType": "balanced",
-      "yearOverYearChange": null,
+      "yearOverYearChange": "-2.8%",
       "asOf": "2026-08",
       "confidence": "medium",
       "citations": [
-        "https://www.bestwestagent.com/sun-city-real-estate-agent-near-you/",
-        "https://www.bestwestagent.com/sun-city-west-real-estate-agent-near-you/",
-        "https://www.redfin.com/AZ/Sun-City/10921-W-Loma-Blanca-Dr-85351/home/27838859",
-        "https://www.redfin.com/AZ/Sun-City-West/13654-W-Desert-Glen-Dr-85375/home/173721545",
-        "https://www.redfin.com/AZ/Sun-City/9530-W-Appaloosa-Dr-85373/home/28261923"
+        "https://www.realtor.com/realestateandhomes-search/Sun-City_AZ/with_fruittrees",
+        "https://www.redfin.com/AZ/Sun-City/9723-W-Briarwood-Cir-85351/home/27757910",
+        "https://www.redfin.com/AZ/Sun-City/9907-W-Spruce-Dr-85351/home/28251432",
+        "https://www.redfin.com/city/25888/AZ/Sun-City/amenity/outdoor+living",
+        "https://www.redfin.com/AZ/Sun-City/10841-W-Hatcher-Rd-85351/home/28038448"
       ]
     },
     "sun-city-west": {
@@ -608,11 +608,11 @@
       "asOf": "2026-09",
       "confidence": "medium",
       "citations": [
-        "https://www.redfin.com/AZ/San-Tan-Valley/5443-E-Santa-Rita-Dr-85140/home/26960611",
-        "https://www.redfin.com/AZ/San-Tan-Valley/2586-E-Vintage-Dr-85143/home/195506451",
+        "https://www.redfin.com/AZ/San-Tan-Valley/4572-E-Alamo-St-85140/home/27188473",
         "https://azandrea.com/san-tan-valley-housing-market-september-2026/",
-        "https://www.redfin.com/AZ/San-Tan-Valley/1431-W-Danish-Red-Trl-85143/home/28631707",
-        "https://www.redfin.com/AZ/San-Tan-Valley/2520-E-Dolcetto-Dr-85143/home/195506755"
+        "https://www.realtor.com/realestateandhomes-detail/33911-N-Mirage-Ct_San-Tan-Valley_AZ_85144_M99938-71403",
+        "https://www.redfin.com/AZ/San-Tan-Valley/2947-E-Manzanilla-AVE-85140/home/205669287",
+        "https://www.redfin.com/AZ/San-Tan-Valley/1657-E-McEntee-Ln-85143/home/190901647"
       ]
     },
     "florence": {
@@ -712,19 +712,19 @@
       ]
     },
     "tucson": {
-      "medianHomePrice": 345000,
-      "pricePerSqFt": 225,
-      "avgDaysOnMarket": 32,
-      "marketType": "buyer",
-      "yearOverYearChange": "+3.0%",
-      "asOf": "2026-08",
+      "medianHomePrice": 363000,
+      "pricePerSqFt": 216,
+      "avgDaysOnMarket": 42,
+      "marketType": "balanced",
+      "yearOverYearChange": "0.0%",
+      "asOf": "2026-10",
       "confidence": "medium",
       "citations": [
-        "https://tucsonhomesandlots.com/tucson-housing-market-report-august-2026/",
-        "https://strattonhomestucson.net/tucson-home-prices-are-cooling-is-this-the-window-buyers-have-been-waiting-for/",
-        "https://azbigmedia.com/real-estate/phoenix-housing-prices-fall-as-buyers-gain-leverage/",
-        "https://mediaroom.realtor.com/2026-09-02-Delistings-Trend-Below-Last-Years-Pace-As-Summer-Comes-to-an-End-Realtor-com-R-August-Housing-Report",
-        "https://oliverrealty.net/blog/2026/9/14/tucson-average-home-price"
+        "https://www.realtor.com/research/September-2026-data/",
+        "https://www.newsbreak.com/realtor-com-news-insights-321466098/4923783542279-tucson-home-prices-drop-further-than-the-national-average",
+        "https://www.realtor.com/realestateandhomes-detail/5934-N-Placita-Del-Conde_Tucson_AZ_85718_M28184-79317",
+        "https://www.realtor.com/realestateandhomes-detail/38080-S-Elbow-Bend-Dr_Tucson_AZ_85739_M24679-62159",
+        "https://www.realtor.com/realestateandhomes-detail/8604-N-Cantora-Way_Tucson_AZ_85743_M16843-08027"
       ]
     },
     "oro-valley": {
