@@ -1,23 +1,6 @@
 {
-  "lastUpdated": "2026-10-11",
+  "lastUpdated": "2026-10-12",
   "events": [
-    {
-      "id": "evt-20260901-1",
-      "title": "Arizona Cardinals vs. Detroit Lions",
-      "startDate": "2026-10-11",
-      "endDate": null,
-      "time": "1:25 PM",
-      "venueName": "State Farm Stadium",
-      "venueCity": "Glendale",
-      "venueAddress": "1 Cardinals Dr, Glendale, AZ 85305",
-      "category": "Sports",
-      "description": "The Arizona Cardinals host the Detroit Lions in a Week 5 NFL matchup at State Farm Stadium. Kickoff is set for 1:25 PM.",
-      "sourceUrl": "https://www.azcardinals.com/schedule/",
-      "source": "manual",
-      "imageKeyword": "NFL football stadium",
-      "lat": null,
-      "lng": null
-    },
     {
       "id": "evt-20260814-6",
       "title": "Red Rocks Oktoberfest",
@@ -49,6 +32,23 @@
       "sourceUrl": "https://98kupd.com/event/98kupd-presents-staind/",
       "source": "manual",
       "imageKeyword": "rock concert amphitheater",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20261012-1",
+      "title": "Altan",
+      "startDate": "2026-10-13",
+      "endDate": null,
+      "time": "7:30 PM",
+      "venueName": "Fox Tucson Theatre",
+      "venueCity": "Tucson",
+      "venueAddress": "17 W Congress St, Tucson, AZ 85701",
+      "category": "Music",
+      "description": "Irish traditional group Altan performs at the historic Fox Tucson Theatre. The band is known for fiddle and vocal driven arrangements of Donegal folk music.",
+      "sourceUrl": "https://foxtucson.com/event/altan/tickets",
+      "source": "manual",
+      "imageKeyword": "irish folk music concert theater",
       "lat": null,
       "lng": null
     },
@@ -512,6 +512,23 @@
       "lng": null
     },
     {
+      "id": "evt-20261012-4",
+      "title": "Phoenix Wicked Half Marathon, 10K, 5K and Spooky Sprint",
+      "startDate": "2026-10-18",
+      "endDate": null,
+      "time": "Half Marathon 7:00 AM, Spooky Kids Sprint 7:30 AM, 10K 7:50 AM, 5K 8:00 AM",
+      "venueName": "Rio Vista Park",
+      "venueCity": "Peoria",
+      "venueAddress": "8866 W Thunderbird Rd, Peoria, AZ 85381",
+      "category": "Sports",
+      "description": "The 11th annual Phoenix Wicked Half Marathon brings a half marathon, 10K, 5K and a costumed kids Spooky Sprint to Rio Vista Park. Organized by StartLine Racing, the Halloween themed race weekend includes packet pickup the day before and an awards ceremony after the races.",
+      "sourceUrl": "https://www.active.com/peoria-az/running/distance-running-races/phoenix-wicked-half-marathon-10k-5k-and-spooky-sprint-2026",
+      "source": "manual",
+      "imageKeyword": "halloween themed running race",
+      "lat": null,
+      "lng": null
+    },
+    {
       "id": "evt-20260913-2",
       "title": "Weezer: The Gathering with The Shins and Silversun Pickups",
       "startDate": "2026-10-20",
@@ -971,6 +988,23 @@
       "lng": null
     },
     {
+      "id": "evt-20261012-2",
+      "title": "UB40",
+      "startDate": "2026-11-03",
+      "endDate": null,
+      "time": "7:30 PM",
+      "venueName": "Fox Tucson Theatre",
+      "venueCity": "Tucson",
+      "venueAddress": "17 W Congress St, Tucson, AZ 85701",
+      "category": "Music",
+      "description": "British reggae band UB40 performs at the historic Fox Tucson Theatre. The group is known for hits including Red Red Wine and Kingston Town.",
+      "sourceUrl": "https://foxtucson.com/event/ub40/tickets",
+      "source": "manual",
+      "imageKeyword": "reggae concert theater",
+      "lat": null,
+      "lng": null
+    },
+    {
       "id": "evt-20261104-1",
       "title": "Derek Hough: Dance For The Holidays",
       "startDate": "2026-11-04",
@@ -1290,6 +1324,23 @@
       "sourceUrl": "https://shemerartcenter.org/happenings/events/",
       "source": "manual",
       "imageKeyword": "art festival fine art booths",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20261012-3",
+      "title": "Henry Cho: The Empty Nest Tour",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-08",
+      "time": "Sat 8:00 PM, Sun 7:00 PM",
+      "venueName": "Fox Tucson Theatre",
+      "venueCity": "Tucson",
+      "venueAddress": "17 W Congress St, Tucson, AZ 85701",
+      "category": "Arts",
+      "description": "Stand up comedian Henry Cho brings The Empty Nest Tour to the Fox Tucson Theatre for two shows. Cho is known for clean, family friendly comedy drawing on his Korean American, Southern upbringing.",
+      "sourceUrl": "https://foxtucson.com/event/henry-cho-sat/tickets",
+      "source": "manual",
+      "imageKeyword": "stand up comedy theater",
       "lat": null,
       "lng": null
     },
@@ -1868,6 +1919,23 @@
       "sourceUrl": "https://visitdowntownglendale.com/",
       "source": "manual",
       "imageKeyword": "downtown holiday lights",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20261011-1",
+      "title": "Las Noches de las Luminarias",
+      "startDate": "2026-11-27",
+      "endDate": "2027-01-03",
+      "time": "5:00 PM - 9:30 PM",
+      "venueName": "Desert Botanical Garden",
+      "venueCity": "Phoenix",
+      "venueAddress": "1201 N Galvin Pkwy, Phoenix, AZ 85008",
+      "category": "Culture",
+      "description": "The Desert Botanical Garden lights its desert trails with thousands of hand-lit luminaria bags for its annual holiday season tradition. The event runs select nights from late November through early January and includes live music and seasonal treats. Advance reservations are required due to limited nightly capacity.",
+      "sourceUrl": "https://dbg.org/events/las-noches-de-las-luminarias",
+      "source": "manual",
+      "imageKeyword": "luminaria lights desert garden",
       "lat": null,
       "lng": null
     },
@@ -2854,23 +2922,6 @@
       "sourceUrl": "https://www.tucsonmariachi.org/",
       "source": "manual",
       "imageKeyword": "mariachi performance stage",
-      "lat": null,
-      "lng": null
-    },
-    {
-      "id": "evt-20261011-1",
-      "title": "Las Noches de las Luminarias",
-      "startDate": "2026-11-27",
-      "endDate": "2027-01-03",
-      "time": "5:00 PM - 9:30 PM",
-      "venueName": "Desert Botanical Garden",
-      "venueCity": "Phoenix",
-      "venueAddress": "1201 N Galvin Pkwy, Phoenix, AZ 85008",
-      "category": "Culture",
-      "description": "The Desert Botanical Garden lights its desert trails with thousands of hand-lit luminaria bags for its annual holiday season tradition. The event runs select nights from late November through early January and includes live music and seasonal treats. Advance reservations are required due to limited nightly capacity.",
-      "sourceUrl": "https://dbg.org/events/las-noches-de-las-luminarias",
-      "source": "manual",
-      "imageKeyword": "luminaria lights desert garden",
       "lat": null,
       "lng": null
     }
