@@ -1,23 +1,6 @@
 {
-  "lastUpdated": "2026-10-12",
+  "lastUpdated": "2026-10-13",
   "events": [
-    {
-      "id": "evt-20260814-6",
-      "title": "Red Rocks Oktoberfest",
-      "startDate": "2026-10-12",
-      "endDate": null,
-      "time": "3:00 PM - 8:00 PM",
-      "venueName": "Posse Grounds Park",
-      "venueCity": "Sedona",
-      "venueAddress": "525 Posse Grounds Rd, Sedona, AZ 86336",
-      "category": "Food and Drink",
-      "description": "Sedona's annual Bavarian-style craft beer festival features brewery tastings, food trucks, live music and a stein-holding contest at Posse Grounds Park. The event benefits youth-oriented programs supported by the Rotary Club of Sedona Red Rocks, with a free shuttle available from around town.",
-      "sourceUrl": "https://www.redrocksoktoberfest.com/festival",
-      "source": "manual",
-      "imageKeyword": "oktoberfest beer festival mountains",
-      "lat": null,
-      "lng": null
-    },
     {
       "id": "evt-20260816-4",
       "title": "Staind: Break The Cycle 25th Anniversary Tour",
@@ -2922,6 +2905,40 @@
       "sourceUrl": "https://www.tucsonmariachi.org/",
       "source": "manual",
       "imageKeyword": "mariachi performance stage",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20261013-1",
+      "title": "Garmin Marathon Tucson",
+      "startDate": "2026-11-08",
+      "endDate": null,
+      "time": "Marathon/Half/10K 6:30 AM, 5K 6:50 AM",
+      "venueName": "Tucson Convention Center area (Cushing St and Church Ave)",
+      "venueCity": "Tucson",
+      "venueAddress": "38 W Cushing St, Tucson, AZ 85701",
+      "category": "Sports",
+      "description": "The Garmin Marathon Tucson brings marathon, half marathon, 10K and 5K races through downtown Tucson and toward the Tucson Mountains. The marathon is a Boston Marathon qualifier with a seven hour time limit.",
+      "sourceUrl": "https://runsignup.com/garminmarathontucson",
+      "source": "manual",
+      "imageKeyword": "marathon runners downtown street",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20261013-2",
+      "title": "Marana Holiday Festival and Tree Lighting",
+      "startDate": "2026-12-05",
+      "endDate": null,
+      "time": "2:00 PM - 9:00 PM",
+      "venueName": "Ed Honea Marana Municipal Complex",
+      "venueCity": "Marana",
+      "venueAddress": "11555 W Civic Center Dr, Marana, AZ 85653",
+      "category": "Community",
+      "description": "The Town of Marana lights its 45 foot municipal Christmas tree, strung with 100,000 RGB lights, with a first show at 6:00 PM and an encore at 8:30 PM. The free family event also includes vendors, entertainment and activities at the Municipal Complex.",
+      "sourceUrl": "https://www.maranaaz.gov/Calendar-Entries/Holiday-Festival-Tree-Lighting",
+      "source": "manual",
+      "imageKeyword": "holiday tree lighting festival night",
       "lat": null,
       "lng": null
     }
