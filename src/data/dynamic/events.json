@@ -1,40 +1,6 @@
 {
-  "lastUpdated": "2026-10-13",
+  "lastUpdated": "2026-10-14",
   "events": [
-    {
-      "id": "evt-20260816-4",
-      "title": "Staind: Break The Cycle 25th Anniversary Tour",
-      "startDate": "2026-10-13",
-      "endDate": null,
-      "time": "6:00 PM doors",
-      "venueName": "Talking Stick Resort Amphitheatre",
-      "venueCity": "Phoenix",
-      "venueAddress": "2121 N 83rd Ave, Phoenix, AZ 85035",
-      "category": "Music",
-      "description": "Staind marks 25 years of their album Break the Cycle with a headlining amphitheatre show, joined by Seether, Hoobastank and Hinder. The outdoor concert is a stop on the band's 2026 anniversary tour.",
-      "sourceUrl": "https://98kupd.com/event/98kupd-presents-staind/",
-      "source": "manual",
-      "imageKeyword": "rock concert amphitheater",
-      "lat": null,
-      "lng": null
-    },
-    {
-      "id": "evt-20261012-1",
-      "title": "Altan",
-      "startDate": "2026-10-13",
-      "endDate": null,
-      "time": "7:30 PM",
-      "venueName": "Fox Tucson Theatre",
-      "venueCity": "Tucson",
-      "venueAddress": "17 W Congress St, Tucson, AZ 85701",
-      "category": "Music",
-      "description": "Irish traditional group Altan performs at the historic Fox Tucson Theatre. The band is known for fiddle and vocal driven arrangements of Donegal folk music.",
-      "sourceUrl": "https://foxtucson.com/event/altan/tickets",
-      "source": "manual",
-      "imageKeyword": "irish folk music concert theater",
-      "lat": null,
-      "lng": null
-    },
     {
       "id": "evt-20260915-3",
       "title": "Logic & G-Eazy: The Endless Summer Tour Part II",
@@ -2939,6 +2905,23 @@
       "sourceUrl": "https://www.maranaaz.gov/Calendar-Entries/Holiday-Festival-Tree-Lighting",
       "source": "manual",
       "imageKeyword": "holiday tree lighting festival night",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "luminaria-nights-tubac-2026-12-04",
+      "title": "Luminaria Nights",
+      "startDate": "2026-12-04",
+      "endDate": "2026-12-05",
+      "time": "5:00 PM - 9:00 PM",
+      "venueName": "Tubac Historic Village",
+      "venueCity": "Tubac",
+      "venueAddress": "Tubac Historic Village, Tubac, AZ 85646",
+      "category": "Holiday",
+      "description": "The historic art village of Tubac lines its streets and galleries with luminarias for a two night holiday walk on the first Friday and Saturday of December. Shops and studios stay open late with local vendors and seasonal activities throughout downtown.",
+      "sourceUrl": "https://www.tubacaz.com/event-list",
+      "source": "manual",
+      "imageKeyword": "luminaria lights holiday village",
       "lat": null,
       "lng": null
     }
