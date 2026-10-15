@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14",
+  "lastUpdated": "2026-10-15",
   "events": [
     {
       "id": "evt-20260915-3",
@@ -2922,6 +2922,23 @@
       "sourceUrl": "https://www.tubacaz.com/event-list",
       "source": "manual",
       "imageKeyword": "luminaria lights holiday village",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "stroll-in-the-glow-2026-12-05",
+      "title": "Stroll in the Glow",
+      "startDate": "2026-12-05",
+      "endDate": null,
+      "time": "5:00 PM - 8:00 PM",
+      "venueName": "Avenue of the Fountains",
+      "venueCity": "Fountain Hills",
+      "venueAddress": "Avenue of the Fountains, Fountain Hills, AZ 85268",
+      "category": "Community",
+      "description": "The Fountain Hills Chamber of Commerce's 37th annual Stroll in the Glow lights the Avenue of the Fountains and the town Christmas tree around 5:45 PM. Santa arrives by fire truck for free photos, and hot air balloons glow over Fountain Park from 6:00 to 8:00 PM.",
+      "sourceUrl": "https://www.experiencefountainhills.org/events/2026/stroll-in-the-glow-2026",
+      "source": "manual",
+      "imageKeyword": "holiday balloon glow night festival",
       "lat": null,
       "lng": null
     }
