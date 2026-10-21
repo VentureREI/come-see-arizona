@@ -1,23 +1,6 @@
 {
-  "lastUpdated": "2026-10-20",
+  "lastUpdated": "2026-10-21",
   "events": [
-    {
-      "id": "evt-20260913-2",
-      "title": "Weezer: The Gathering with The Shins and Silversun Pickups",
-      "startDate": "2026-10-20",
-      "endDate": null,
-      "time": "7:00 PM",
-      "venueName": "Mortgage Matchup Center",
-      "venueCity": "Phoenix",
-      "venueAddress": "201 E Jefferson St, Phoenix, AZ 85004",
-      "category": "Music",
-      "description": "Weezer brings The Gathering arena tour to downtown Phoenix with support from The Shins and Silversun Pickups. Doors open 60 minutes before the scheduled start time.",
-      "sourceUrl": "https://mortgagematchupcenter.com/events/weezer-the-gathering/",
-      "source": "manual",
-      "imageKeyword": "alternative rock concert arena",
-      "lat": null,
-      "lng": null
-    },
     {
       "id": "evt-20260901-2",
       "title": "Charli XCX: Music, Fashion, Film Tour",
@@ -1549,6 +1532,23 @@
       "lng": null
     },
     {
+      "id": "evt-20261021-2",
+      "title": "La Encantada Fine Art Festival",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-22",
+      "time": "10:00 AM",
+      "venueName": "La Encantada",
+      "venueCity": "Tucson",
+      "venueAddress": "2905 E Skyline Dr, Tucson, AZ 85718",
+      "category": "Arts",
+      "description": "Art State Arizona presents a two day juried fine art festival in La Encantada's covered garden walkways in the Tucson foothills. Around 50 juried artisans exhibit alongside live demonstrations from the Southern Arizona Artists Guild. Admission is free, Saturday 10am to 5pm and Sunday 11am to 4pm.",
+      "sourceUrl": "https://artstateaz.org/la-encantada-fine-art-festival/",
+      "source": "manual",
+      "imageKeyword": "outdoor fine art festival booths",
+      "lat": null,
+      "lng": null
+    },
+    {
       "id": "evt-20261002-4",
       "title": "Steep Canyon Rangers",
       "startDate": "2026-11-22",
@@ -2055,6 +2055,23 @@
       "sourceUrl": "https://www.experiencefountainhills.org/events/2026/stroll-in-the-glow-2026",
       "source": "manual",
       "imageKeyword": "holiday balloon glow night festival",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20261021-1",
+      "title": "AJ McLean presents Alexander James: The Better Man Tour",
+      "startDate": "2026-12-05",
+      "endDate": null,
+      "time": "7:30 PM",
+      "venueName": "Fox Tucson Theatre",
+      "venueCity": "Tucson",
+      "venueAddress": "17 W Congress St, Tucson, AZ 85701",
+      "category": "Music",
+      "description": "Backstreet Boys member AJ McLean performs songs from his solo project Alexander James at the historic Fox Tucson Theatre. The show spans his solo catalog, including material from his 2010 debut album Have It All.",
+      "sourceUrl": "https://foxtucson.com/event/aj-mclean/",
+      "source": "manual",
+      "imageKeyword": "solo pop singer theater stage",
       "lat": null,
       "lng": null
     },
