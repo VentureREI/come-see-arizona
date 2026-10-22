@@ -1,23 +1,6 @@
 {
-  "lastUpdated": "2026-10-21",
+  "lastUpdated": "2026-10-22",
   "events": [
-    {
-      "id": "evt-20260901-2",
-      "title": "Charli XCX: Music, Fashion, Film Tour",
-      "startDate": "2026-10-21",
-      "endDate": null,
-      "time": "8:00 PM",
-      "venueName": "Desert Diamond Arena",
-      "venueCity": "Glendale",
-      "venueAddress": "9400 W Maryland Ave, Glendale, AZ 85305",
-      "category": "Music",
-      "description": "Pop artist Charli XCX brings her Music, Fashion, Film Tour to Desert Diamond Arena. The arena show blends live performance with fashion and film elements.",
-      "sourceUrl": "https://www.vividseats.com/charli-xcx-tickets/performer/30249",
-      "source": "manual",
-      "imageKeyword": "pop concert arena",
-      "lat": null,
-      "lng": null
-    },
     {
       "id": "evt-20260814-8",
       "title": "Strange Garden",
@@ -2837,6 +2820,40 @@
       "sourceUrl": "https://www.tucsonmariachi.org/",
       "source": "manual",
       "imageKeyword": "mariachi performance stage",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20261022-1",
+      "title": "Boo Arizona",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-31",
+      "time": "6:00 PM",
+      "venueName": "WestWorld of Scottsdale",
+      "venueCity": "Scottsdale",
+      "venueAddress": "16601 N Pima Rd, Scottsdale, AZ 85260",
+      "category": "Music",
+      "description": "Insomniac brings its two night Halloween weekend dance music festival to WestWorld of Scottsdale, marking the event's first Arizona edition since 2019. Headliners include Zedd, The Chainsmokers, Deorro and Seven Lions across general admission and VIP viewing areas.",
+      "sourceUrl": "https://arizona.boo-halloween.com",
+      "source": "manual",
+      "imageKeyword": "halloween dance music festival night",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20261022-2",
+      "title": "Arizona State Sun Devils Football vs. Colorado",
+      "startDate": "2026-11-07",
+      "endDate": null,
+      "time": "Time TBA",
+      "venueName": "Mountain America Stadium",
+      "venueCity": "Tempe",
+      "venueAddress": "500 E Veterans Way, Tempe, AZ 85281",
+      "category": "Sports",
+      "description": "Arizona State hosts Colorado in a Big 12 matchup that doubles as the Sun Devils' Salute to Service and Family Weekend game. Kickoff time will be set closer to the date based on television scheduling.",
+      "sourceUrl": "https://thesundevils.com/news/2026/03/27/details-announced-for-six-sun-devil-football-home-games",
+      "source": "manual",
+      "imageKeyword": "college football stadium game",
       "lat": null,
       "lng": null
     }
