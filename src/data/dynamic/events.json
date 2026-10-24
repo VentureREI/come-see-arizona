@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23",
+  "lastUpdated": "2026-10-24",
   "events": [
     {
       "id": "evt-20260814-8",
@@ -15,23 +15,6 @@
       "sourceUrl": "https://dbg.org/explore/events/",
       "source": "manual",
       "imageKeyword": "botanical garden evening lights halloween",
-      "lat": null,
-      "lng": null
-    },
-    {
-      "id": "evt-20260729-1",
-      "title": "Gorillaz: The Mountain Tour",
-      "startDate": "2026-10-23",
-      "endDate": null,
-      "time": "6:30 PM",
-      "venueName": "Mortgage Matchup Center",
-      "venueCity": "Phoenix",
-      "venueAddress": "201 E Jefferson St, Phoenix, AZ 85004",
-      "category": "Music",
-      "description": "Gorillaz bring The Mountain Tour to downtown Phoenix, with support from Little Simz and Deltron 3030. The virtual band's stadium and arena shows are known for elaborate animated visuals paired with live performance.",
-      "sourceUrl": "https://mortgagematchupcenter.com/events/gorillaz/",
-      "source": "manual",
-      "imageKeyword": "alternative rock concert",
       "lat": null,
       "lng": null
     },
@@ -66,23 +49,6 @@
       "sourceUrl": "https://www.tucsonsymphony.org/event/latin-sizzle/2026-10-23/",
       "source": "manual",
       "imageKeyword": "orchestra performance",
-      "lat": null,
-      "lng": null
-    },
-    {
-      "id": "gabriel-iglesias-1976-tour-2026-10-23",
-      "title": "Gabriel Iglesias: The 1976 Tour",
-      "startDate": "2026-10-23",
-      "endDate": null,
-      "time": "8:00 PM",
-      "venueName": "Tucson Arena at Tucson Convention Center",
-      "venueCity": "Tucson",
-      "venueAddress": "260 S Church Ave, Tucson, AZ 85701",
-      "category": "Arts",
-      "description": "Comedian Gabriel Iglesias performs a rescheduled stand-up show as part of his 1976 Tour at Tucson Arena. The date was moved from an original May 2026 booking.",
-      "sourceUrl": "https://www.songkick.com/concerts/43039779-gabriel-iglesias-at-tucson-arena",
-      "source": "manual",
-      "imageKeyword": "comedy show stage",
       "lat": null,
       "lng": null
     },
@@ -2922,6 +2888,23 @@
       "sourceUrl": "https://www.tucsonmariachi.org/",
       "source": "manual",
       "imageKeyword": "mariachi performance stage",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20261024-1",
+      "title": "Katseye: The Wildworld Tour",
+      "startDate": "2026-11-24",
+      "endDate": null,
+      "time": "8:00 PM",
+      "venueName": "Mortgage Matchup Center",
+      "venueCity": "Phoenix",
+      "venueAddress": "201 E Jefferson St, Phoenix, AZ 85004",
+      "category": "Music",
+      "description": "Global pop group Katseye brings The Wildworld Tour to downtown Phoenix, their first headline arena run. The show follows the group breakout year with a set built around their chart topping singles.",
+      "sourceUrl": "https://mortgagematchupcenter.com/news/katseye-announces-2026-headline-arena-tour-of-uk-eu-and-north-america/",
+      "source": "manual",
+      "imageKeyword": "pop concert arena",
       "lat": null,
       "lng": null
     }
