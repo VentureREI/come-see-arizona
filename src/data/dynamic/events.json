@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-27",
+  "lastUpdated": "2026-10-28",
   "events": [
     {
       "id": "evt-20260731-4",
@@ -682,6 +682,23 @@
       "lng": null
     },
     {
+      "id": "evt-20261107-anne-wilson",
+      "title": "The STARS Tour featuring Anne Wilson",
+      "startDate": "2026-11-07",
+      "endDate": null,
+      "time": "7:00 PM",
+      "venueName": "Linda Ronstadt Music Hall, Tucson Convention Center",
+      "venueCity": "Tucson",
+      "venueAddress": "260 S Church Ave, Tucson, AZ 85701",
+      "category": "Music",
+      "description": "Contemporary Christian singer Anne Wilson brings her STARS Tour to the Linda Ronstadt Music Hall, with support from Peter Burton. The fall run extends her 2026 touring schedule to additional cities nationwide.",
+      "sourceUrl": "https://www.livenation.com/event/17k8v0G61LrptmV/the-stars-tour-featuring-anne-wilson",
+      "source": "manual",
+      "imageKeyword": "christian music concert theater",
+      "lat": null,
+      "lng": null
+    },
+    {
       "id": "all-souls-procession-2026-11-08",
       "title": "All Souls Procession",
       "startDate": "2026-11-08",
@@ -729,6 +746,23 @@
       "sourceUrl": "https://runsignup.com/garminmarathontucson",
       "source": "manual",
       "imageKeyword": "marathon runners downtown street",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "evt-20261108-laurie-berkner",
+      "title": "The Laurie Berkner Band",
+      "startDate": "2026-11-08",
+      "endDate": null,
+      "time": "11:00 AM",
+      "venueName": "Fox Tucson Theatre",
+      "venueCity": "Tucson",
+      "venueAddress": "17 W Congress St, Tucson, AZ 85701",
+      "category": "Family",
+      "description": "Children's music favorite Laurie Berkner performs a family friendly concert at the historic Fox Tucson Theatre. The approximately 75 minute show draws young fans of her sing along catalog.",
+      "sourceUrl": "https://foxtucson.com/events",
+      "source": "manual",
+      "imageKeyword": "childrens music concert family theater",
       "lat": null,
       "lng": null
     },
@@ -1226,6 +1260,23 @@
       "lng": null
     },
     {
+      "id": "evt-20261120-outlander-concert",
+      "title": "Outlander in Concert",
+      "startDate": "2026-11-20",
+      "endDate": null,
+      "time": "7:30 PM",
+      "venueName": "Fox Tucson Theatre",
+      "venueCity": "Tucson",
+      "venueAddress": "17 W Congress St, Tucson, AZ 85701",
+      "category": "Arts",
+      "description": "A live orchestra performs Bear McCreary's acclaimed score from the Outlander television series at the historic Fox Tucson Theatre, as part of the Echoes Through the Highlands world tour.",
+      "sourceUrl": "https://foxtucson.com/?p=9373",
+      "source": "manual",
+      "imageKeyword": "live orchestra film score concert theater",
+      "lat": null,
+      "lng": null
+    },
+    {
       "id": "el-tour-de-tucson-2026-11-21",
       "title": "El Tour de Tucson",
       "startDate": "2026-11-21",
@@ -1392,23 +1443,6 @@
       "sourceUrl": "https://calendar.westworldaz.com/scottsdaleaz_westworld/260201007",
       "source": "manual",
       "imageKeyword": "rodeo roping arena",
-      "lat": null,
-      "lng": null
-    },
-    {
-      "id": "evt-20260809-3",
-      "title": "KATSEYE: The Wildworld Tour",
-      "startDate": "2026-11-24",
-      "endDate": null,
-      "time": "8:00 PM",
-      "venueName": "Mortgage Matchup Center",
-      "venueCity": "Phoenix",
-      "venueAddress": "201 E Jefferson St, Phoenix, AZ 85004",
-      "category": "Music",
-      "description": "Global pop group KATSEYE brings The Wildworld Tour to the Mortgage Matchup Center, featuring six vocalists and full arena scale staging and choreography.",
-      "sourceUrl": "https://www.livenation.com/event/17k8v0G61m4tf9t/katseye-the-wildworld-tour",
-      "source": "manual",
-      "imageKeyword": "pop concert arena",
       "lat": null,
       "lng": null
     },
